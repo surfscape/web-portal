@@ -1,0 +1,12 @@
+<header>
+  <span class="header_site_title">{{ site.title }}</span>
+  <nav>
+    <ul>
+						{% for section in collections.section %} 
+						<li>
+							<a href="{{section.url}}">{{section.data.title}}</a>
+						</li>
+						{% endfor %}
+    </ul>
+  </nav>
+</header>
