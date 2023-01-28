@@ -7,4 +7,5 @@ The design and layout is very reminiscent from the 90's an 2000's blog websites;
 ## Credits:
 
 SSG: 11ty
+
 Host: neocities
