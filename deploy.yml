@@ -1,2 +1,0 @@
-- name: Deploy to Neocities
-  uses: bcomnes/deploy-to-neocities@v1.1.13
