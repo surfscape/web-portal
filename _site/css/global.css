@@ -1,5 +1,203 @@
 @import url("./reset.css");
 
 :root {
-  --bg: #131e23;
+  --body-bg: #232323;
+  --accent: #b08bff;
+  --container-bg: #1a052f;
+  --container-accent: #7645df;
+  --container-accent-dark: #051726;
+  --container-grad: linear-gradient(
+    180deg,
+    rgba(114, 43, 85, 1) 0%,
+    rgba(170, 61, 65, 1) 100%
+  );
+  --color-text: #f1e5ff;
+  --text-shd: 0px 0px 5px rgba(0, 0, 0, 0.7);
+  --container-shd: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  --rounded: 6px;
+  --back-art: url("/assets/images/001.jpg");
+  --font-sans: "Asap", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  font-size: 16px;
+  padding: 0.5rem;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(/assets/images/body-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(20, 20, 20, 0) 66%, rgba(0, 0, 0, 0.05) 33%);
+  background-size: auto;
+  background-size: 100% 10px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: scanlines-anim 2s linear infinite;
+}
+
+@keyframes scanlines-anim {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 0px 20px;
+  }
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@keyframes color-change {
+  0% {
+    color: var(--accent);
+  }
+  50% {
+    color: var(--color-text);
+  }
+  100% {
+    color: var(--accent);
+  }
+}
+
+a:active {
+  color: var(--container-accent);
+  text-decoration: none;
+  animation: color-change 1s linear infinite;
+}
+
+.layout_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 980px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--back-art);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+  user-select: none;
+  font-family: var(--font-mono);
+}
+
+header .header_site_title {
+  font-size: 2rem;
+  text-shadow: var(--text-shd);
+}
+
+header .header_site_description,
+em {
+  text-shadow: var(--text-shd);
+}
+
+header em {
+  opacity: 0.85;
+}
+
+.pod {
+  overflow: hidden;
+  border-radius: var(--rounded);
+  border: 1px solid var(--container-accent-dark);
+  box-shadow: var(--container-shd);
+}
+
+.pod_heading {
+  background: var(--container-grad);
+  font-family: var(--font-mono);
+  margin: 0;
+}
+
+.content_grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 275px;
+}
+
+aside.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+aside.sidebar .aside_section_title {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  text-shadow: var(--text-shd);
+}
+
+aside.sidebar section article {
+  padding: 0.5rem;
+  background: var(--container-bg);
+}
+
+aside.sidebar nav.aside_navigation ul {
+  margin: 0;
+  padding: 0.75rem 1.5rem;
+  background: var(--container-bg);
+}
+
+main .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+main .content .pod {
+  background: var(--container-bg);
+}
+
+main .content .pod .pod_heading {
+  display: block;
+  font-size: 1.45rem;
+  font-weight: 400;
+  padding: 0.25rem 0.5rem;
+  text-shadow: var(--text-shd);
+}
+
+main .content article {
+  padding: 0 0.5rem;
+}
+
+main .content article ul.blog_post_list {
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  font-family: var(--font-mono);
+  padding: 0.5rem;
+  background: var(--back-art);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-shadow: var(--text-shd);
+}
+
+/* now playing widget */
+section.now_playing article iframe {
+  display: flex;
+  height: 64px;
 }

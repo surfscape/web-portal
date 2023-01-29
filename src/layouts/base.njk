@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include "basehead.njk" %}
+  </head>
+  <body>
+    <div class="layout_wrapper">
+      {% include "header.njk" %}
+      <main class="content_grid">
+        <div class="content">{{ content | safe }}</div>
+        
+          {% include "sidebar.njk" %}
+      </main>
+      {% include "footer.njk" %}
+    </div>
+  </body>
+</html>

@@ -1,12 +1,5 @@
-<header>
+<header class="pod">
   <span class="header_site_title">{{ site.title }}</span>
-  <nav>
-    <ul>
-						{% for section in collections.section %} 
-						<li>
-							<a href="{{section.url}}">{{section.data.title}}</a>
-						</li>
-						{% endfor %}
-    </ul>
-  </nav>
+  <span class="header_site_description">{{ site.description }}</span>
+  <em class="header_site_author">created by: {{ site.author }}</em>
 </header>

@@ -1,0 +1,25 @@
+{
+    "navItems": [
+      {
+        "title": "Home",
+        "url": "/"
+      },
+      {
+        "title": "Blog",
+        "url": "/blog/"
+      },
+      {
+        "title": "Guides",
+        "url": "/guides/"
+      },
+      {
+        "title": "Now",
+        "url": "/now/"
+      },
+      {
+        "title": "Contact",
+        "url": "/contact"
+      }
+    ]
+  }
+  
