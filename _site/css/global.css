@@ -3,9 +3,9 @@
 :root {
   --body-bg: #232323;
   --accent: #b08bff;
-  --container-bg: #1a052f;
+  --container-bg: #1a052f95;
   --container-accent: #7645df;
-  --container-accent-dark: #051726;
+  --container-border: hsla(0, 0%, 0%, 0.5);
   --container-grad: linear-gradient(
     180deg,
     rgba(114, 43, 85, 1) 0%,
@@ -15,20 +15,21 @@
   --text-shd: 0px 0px 5px rgba(0, 0, 0, 0.7);
   --container-shd: 0px 0px 5px rgba(0, 0, 0, 0.25);
   --rounded: 6px;
-  --back-art: url("/assets/images/001.jpg");
   --font-sans: "Asap", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
 }
 
 body {
-  font-size: 16px;
+  font-size: 15px;
   padding: 0.5rem;
   font-family: var(--font-sans);
   color: var(--color-text);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
-    url(/assets/images/body-bg.jpg);
+    url(/assets/images/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body:before {
@@ -86,7 +87,7 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 980px;
+  max-width: 900px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -96,8 +97,10 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: var(--back-art);
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.7)),
+    url(/assets/images/header-bg.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 180px;
   user-select: none;
@@ -121,7 +124,7 @@ header em {
 .pod {
   overflow: hidden;
   border-radius: var(--rounded);
-  border: 1px solid var(--container-accent-dark);
+  border: 1px solid var(--container-border);
   box-shadow: var(--container-shd);
 }
 
@@ -134,7 +137,7 @@ header em {
 .content_grid {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: 1fr 275px;
+  grid-template-columns: 1fr 250px;
 }
 
 aside.sidebar {
@@ -198,9 +201,7 @@ footer {
   text-align: center;
   font-family: var(--font-mono);
   padding: 0.5rem;
-  background: var(--back-art);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: var(--container-grad);
   text-shadow: var(--text-shd);
 }
 

@@ -21,12 +21,18 @@
   </section>
 
   <section class="pod now_playing">
-    <span class="aside_section_title pod_heading">Last.fm Status</span>
     <div class="article">
-      <iframe
-        src="https://lastfm-widget.web.app/"
-        frameborder="0"
-      ></iframe>
+<a id="music-link" href="#" target="_blank">
+      <em><span id="playing-status"></span></em>
+      <section id="metadata">
+        <img id="album-cover" src="" alt="Album cover art">
+        <article>
+          <p><span id="music-title"></span></p>
+          <p>by <span id="artist-name"></span></p>
+          <p>from <span id="album-name"></span></p>
+        </article>
+      </section>
+    </a>
     </div>
   </section>
 
@@ -34,6 +40,7 @@
     <span class="aside_section_title pod_heading">Website Buttons</span>
     <article>
       <em>soon</em>
+      <div id="status">Loading...</div>
     </article>
   </section>
 </aside>
