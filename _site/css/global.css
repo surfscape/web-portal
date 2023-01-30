@@ -149,7 +149,8 @@ aside.sidebar .aside_section_title {
   text-shadow: var(--text-shd);
 }
 
-aside.sidebar section article {
+aside.sidebar section article,
+aside.sidebar section div.article {
   padding: 0.5rem;
   background: var(--container-bg);
 }
@@ -196,8 +197,26 @@ footer {
   text-shadow: var(--text-shd);
 }
 
+@media only screen and (max-width: 750px) {
+  .content_grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr;
+  }
+}
+
 /* now playing widget */
-section.now_playing article iframe {
+section.now_playing {
+  padding: 0;
+}
+
+section.now_playing div.article iframe {
+  width: 100%;
+}
+
+aside.sidebar section.now_playing div.article {
   display: flex;
-  height: 64px;
+  padding: 0;
+  height: 111.4px;
+  overflow: hidden;
 }

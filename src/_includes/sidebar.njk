@@ -1,16 +1,12 @@
 <aside class="sidebar">
-  {% block post_metadata %} 
-  <section class="pod"></section>
-  {% endblock %}
-
   <section class="pod">
     <span class="aside_section_title pod_heading">Navigation</span>
     <nav class="aside_navigation">
       <ul>
         {% for navItem in nav.navItems %}
-        <li>
-          <a href="{{ navItem.url }}">{{ navItem.title }}</a>
-        </li>
+          <li>
+            <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+          </li>
         {% endfor %}
       </ul>
     </nav>
@@ -20,26 +16,24 @@
     <span class="aside_section_title pod_heading">Webmaser</span>
     <article>
       My name is ReduxFlakes, I am an open source Android app developer & web
-      developer and designer.
+      developer and <em>designer</em>.
     </article>
   </section>
 
   <section class="pod now_playing">
-    <span class="aside_section_title pod_heading">Now Playing</span>
-    <article>
+    <span class="aside_section_title pod_heading">Last.fm Status</span>
+    <div class="article">
       <iframe
-        src="https://now-playing-2e8d3.web.app/?user=ReduxFlakes&theme=stacked"
+        src="https://lastfm-widget.web.app/"
         frameborder="0"
-        seamless
       ></iframe>
-    </article>
+    </div>
   </section>
 
   <section class="pod">
     <span class="aside_section_title pod_heading">Website Buttons</span>
     <article>
-      If you like eversoul here is a list of 88x31 official buttons
+      <em>soon</em>
     </article>
   </section>
 </aside>
-

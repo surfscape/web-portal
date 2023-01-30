@@ -5,7 +5,19 @@ title: Home
 
 <div class="pod" markdown=1>
 
-# Welcome - _in construction_ {.pod_heading}
+# In Construction {.pod_heading}
+
+<article>
+
+Before getting ahead of ourselfs be aware that eversoul is in construction meaning that most pages, services and other content are not complete, most giving 404.
+
+</article>
+
+</div>
+
+<div class="pod" markdown=1>
+
+# Welcome {.pod_heading}
 
 <article>
 
