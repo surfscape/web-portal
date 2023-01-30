@@ -3,14 +3,10 @@
 :root {
   --body-bg: #232323;
   --accent: #b08bff;
-  --container-bg: #1a052f95;
+  --container-bg: #1d1e349e;
   --container-accent: #7645df;
-  --container-border: hsla(0, 0%, 0%, 0.5);
-  --container-grad: linear-gradient(
-    180deg,
-    rgba(114, 43, 85, 1) 0%,
-    rgba(170, 61, 65, 1) 100%
-  );
+  --container-border: hwb(0 0% 100% / 0.5);
+  --container-grad: linear-gradient(180deg, #a1179d 0%, #821ac2 100%);
   --color-text: #f1e5ff;
   --text-shd: 0px 0px 5px rgba(0, 0, 0, 0.7);
   --container-shd: 0px 0px 5px rgba(0, 0, 0, 0.25);
@@ -94,9 +90,10 @@ a:active {
 
 header {
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
+  padding: 0.25rem;
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.7)),
     url(/assets/images/header-bg.png);
   background-size: cover;
@@ -129,8 +126,14 @@ header em {
 }
 
 .pod_heading {
+  display: block;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: 400;
+  text-shadow: var(--text-shd);
   background: var(--container-grad);
   font-family: var(--font-mono);
+  border-bottom: 1px solid var(--container-border);
   margin: 0;
 }
 
@@ -146,18 +149,16 @@ aside.sidebar {
   gap: 0.5rem;
 }
 
-aside.sidebar .aside_section_title {
-  display: block;
-  padding: 0.25rem 0.5rem;
-  text-shadow: var(--text-shd);
-}
-
 aside.sidebar section article,
 aside.sidebar section div.article {
   padding: 0.5rem;
   background: var(--container-bg);
 }
 
+aside.sidebar section article p {
+  margin: 0;
+  padding: 0;
+}
 aside.sidebar nav.aside_navigation ul {
   margin: 0;
   padding: 0.5rem;
@@ -179,14 +180,6 @@ main .content {
 
 main .content .pod {
   background: var(--container-bg);
-}
-
-main .content .pod .pod_heading {
-  display: block;
-  font-size: 1.45rem;
-  font-weight: 400;
-  padding: 0.25rem 0.5rem;
-  text-shadow: var(--text-shd);
 }
 
 main .content article {
@@ -230,4 +223,10 @@ aside.sidebar section.now_playing div.article {
   padding: 0;
   height: 111.4px;
   overflow: hidden;
+}
+
+img.button_88_31 {
+  display: block;
+  padding-top: 0.25rem;
+  margin: 0 auto;
 }

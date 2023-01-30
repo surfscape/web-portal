@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Home | eversoul</title>
-<meta name="description" content="An abstract and bizarre construction of me" />
+<meta name="description" content="A web portal for people that like the old web, tech or just want some nostalgia" />
 <link rel="stylesheet" href="/css/global.css" />
 <link rel="icon" type="image/x-icon" href="assets//images/icon.png" />
 <link
@@ -18,7 +18,7 @@
     <div class="layout_wrapper">
       <header class="pod">
   <span class="header_site_title">eversoul</span>
-  <span class="header_site_description">An abstract and bizarre construction of me</span>
+  <span class="header_site_description">A web portal for people that like the old web, tech or just want some nostalgia</span>
   <em class="header_site_author">created by: reduxflakes</em>
 </header>
 
@@ -51,33 +51,33 @@
     <nav class="aside_navigation">
       <ul>
         
-          <li>
-            <a href="/">Home</a>
-          </li>
+        <li>
+          <a href="/">Home</a>
+        </li>
         
-          <li>
-            <a href="/blog/">Blog</a>
-          </li>
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
         
-          <li>
-            <a href="/guides/">Guides</a>
-          </li>
+        <li>
+          <a href="/guides/">Guides</a>
+        </li>
         
-          <li>
-            <a href="/now/">Now</a>
-          </li>
+        <li>
+          <a href="/now/">Now</a>
+        </li>
         
-          <li>
-            <a href="/changes/">Changes</a>
-          </li>
+        <li>
+          <a href="/changes/">Changes</a>
+        </li>
         
-          <li>
-            <a href="/roadmap/">Roadmap</a>
-          </li>
+        <li>
+          <a href="/roadmap/">Roadmap</a>
+        </li>
         
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
         
       </ul>
     </nav>
@@ -91,36 +91,67 @@
     </article>
   </section>
 
-  <section class="pod now_playing">
-    <div class="article">
-<a id="music-link" href="#" target="_blank">
-      <em><span id="playing-status"></span></em>
-      <section id="metadata">
-        <img id="album-cover" src="" alt="Album cover art">
-        <article>
-          <p><span id="music-title"></span></p>
-          <p>by <span id="artist-name"></span></p>
-          <p>from <span id="album-name"></span></p>
-        </article>
-      </section>
-    </a>
-    </div>
-  </section>
+  <!-- <section class="pod">
+    <article>
+      <script>
+        const username = "ReduxFlakes";
+        const api_key = "OTUxNzI4NDllZGQxNmQ0OWVhNjQ1MDFlOTdiNTAzNTU" =
+          (base64EncodedString);
+        fetch(
+          "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=&{username}&api_key=&{api_key}&format=json"
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            let track = data.recenttracks.track[0];
+            let trackName = track.name;
+            let albumName = track.album["#text"];
+            let artistName = track.artist["#text"];
+            let albumCover = track.image[3]["#text"];
+            let isPlaying =
+              track["@attr"] && track["@attr"].nowplaying === "true";
+
+            document.getElementById("music-title").innerHTML = trackName;
+            document.getElementById("album-name").innerHTML = albumName;
+            document.getElementById("artist-name").innerHTML = artistName;
+            document.getElementById("album-cover").src = albumCover;
+            document.getElementById(
+              "music-link"
+            ).href = `https://www.last.fm/music/${artistName}/_/${trackName}`;
+
+            document.getElementById("playing-status").innerHTML = isPlaying
+              ? "Playing"
+              : "Recently scrobbled";
+          });
+      </script>
+      <div id="lastfm-widget">
+        <img id="album-cover" src="" alt="Album cover art" />
+        <p>
+          Track: <a id="music-link" href="#"><span id="music-title"></span></a>
+        </p>
+        <p>Artist: <span id="artist-name"></span></p>
+        <p>Album: <span id="album-name"></span></p>
+        <p>Status: <span id="playing-status"></span></p>
+      </div>
+    </article>
+  </section> -->
 
   <section class="pod">
-    <span class="aside_section_title pod_heading">Website Buttons</span>
     <article>
-      <em>soon</em>
-      <div id="status">Loading...</div>
+      <p>Support us by adding our 88x31 button on your website!</p>
+      <img
+        class="button_88_31"
+        src="/assets/buttons/eversoul.png"
+        alt="eversoul 88x31 button"
+      />
     </article>
   </section>
 </aside>
+
       </main>
       <footer class="pod">
   &copy; 2023 ReduxFlakes - eversoul v0.0.2
 </footer>
 
-    </div>
-    <script src="/assets/scripts.js"></script>
+</div>
   </body>
 </html>
