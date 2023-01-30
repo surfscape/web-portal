@@ -1,5 +1,5 @@
 {
-    "navItems": [
+    "changeEntries": [
       {
         "title": "Home",
         "url": "/"
@@ -15,14 +15,6 @@
       {
         "title": "Now",
         "url": "/now/"
-      },
-      {
-        "title": "Changes",
-        "url": "/changes/"
-      },
-      {
-        "title": "Roadmap",
-        "url": "/roadmap/"
       },
       {
         "title": "Contact",
