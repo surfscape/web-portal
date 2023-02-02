@@ -3,9 +3,10 @@
 :root {
   --body-bg: #232323;
   --accent: #b08bff;
+  --onAccent: #cbbfff;
   --container-bg: #1d1e349e;
   --container-accent: #7645df;
-  --container-border: hwb(0 0% 100% / 0.5);
+  --container-border: rgba(54, 55, 63, 0.5);
   --container-grad: linear-gradient(180deg, #a1179d 0%, #821ac2 100%);
   --color-text: #f1e5ff;
   --text-shd: 0px 0px 5px rgba(0, 0, 0, 0.7);
@@ -16,7 +17,6 @@
 }
 
 body {
-  margin: 0;
   font-size: 15px;
   padding: 0.5rem;
   font-family: var(--font-sans);
@@ -84,7 +84,7 @@ a:active {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  max-width: 900px;
+  max-width: 980px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -100,7 +100,7 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 180px;
+  min-height: 180px;
   user-select: none;
   font-family: var(--font-mono);
 }
@@ -141,7 +141,16 @@ header em {
 .content_grid {
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: 1fr 250px;
+  grid-template-areas: "aside_left main aside_right";
+  grid-template-columns: 200px 1fr 200px;
+}
+
+aside.sidebar_left {
+  grid-area: aside_left;
+}
+
+aside.sidebar_right {
+  grid-area: aside_right;
 }
 
 aside.sidebar {
@@ -156,9 +165,13 @@ aside.sidebar section div.article {
   background: var(--container-bg);
 }
 
-aside.sidebar section article p {
+aside.sidebar > section > article p {
   margin: 0;
-  padding: 0;
+}
+
+aside.sidebar > section > article ul {
+  margin: 0;
+  padding: 0 1rem;
 }
 aside.sidebar nav.aside_navigation ul {
   margin: 0;
@@ -173,10 +186,16 @@ aside.sidebar nav.aside_navigation ul li:before {
   margin-right: 0.15rem;
 }
 
+aside.sidebar section article details {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
 main .content {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  grid-area: main;
 }
 
 main .content .pod {
@@ -199,14 +218,37 @@ footer {
   text-shadow: var(--text-shd);
 }
 
+footer a {
+  color: var(--onAccent);
+}
+
+.update-box {
+  border-radius: var(--rounded);
+  border: 2px dashed var(--accent);
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.update-box > * {
+  margin: 0;
+  padding: 0;
+}
+
 @media only screen and (max-width: 750px) {
   .content_grid {
     display: grid;
     gap: 0.5rem;
+    grid-template-areas:
+      "main"
+      "aside_left"
+      "aside_right";
     grid-template-columns: 1fr;
   }
   aside.sidebar nav.aside_navigation ul li a {
     font-size: 1.05rem;
+  }
+  .mobile {
+    display: none;
   }
 }
 

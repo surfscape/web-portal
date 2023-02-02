@@ -3,7 +3,7 @@ layout: base.njk
 title: Home
 ---
 
-<div class="pod" markdown=1>
+<div class="pod">
 
 # In Construction {.pod_heading}
 
@@ -15,31 +15,33 @@ Before getting ahead of ourselfs be aware that eversoul is in construction meani
 
 </div>
 
-<div class="pod" markdown=1>
+<div class="pod">
 
 # Welcome {.pod_heading}
 
 <article>
 
-This is my little home on the web or what most people call it, a personal website.
+Hi, my name is ReduxFlakes and this is my little home on the internet and a tribute to the old web.
 
-I always had a website since 2021 but it wasn't personal enough, I tried to make it more similar to what I'm actually am but I just couldn't make it so in the start of 2023 I decided that I would change things and this website was born, _eversoul_.
+Here you can find a lot of stuff related to old tech from games to homebrew or tutorials and guides and obviously, a blog.
+
+Since it's also my personal website you can find a lot about me especially my projects and social media.
 
 </article>
 
 </div>
 
-<div class="pod" markdown=1>
+<div class="pod">
 
-# Blog {.pod_heading}
+# What's New {.pod_heading}
 
 <article>
 
-<ul class="blog_post_list" role="list">
-{% for post in collections.post %}
-<li><a href="{{post.url}}"><b>{{ post.data.title }}</b></a> - {{ post.data.date | asPostDate }}</li>
+<div class="update-box">
+{% for post in collections.update %}
+<a href="{{post.url}}"><b>{{ post.data.title }} / {{ post.data.date | asPostDate }}</b></a> - {{ post.data.description }}
 {% endfor %}
-</ul>
+</div>
 
 </article>
 

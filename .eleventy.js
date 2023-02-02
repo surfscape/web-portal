@@ -5,6 +5,7 @@ const { DateTime } = require("luxon");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/");
   eleventyConfig.addPassthroughCopy("src/css/");
+  eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
   eleventyConfig.addWatchTarget("src/css");
   const md = markdownIt({ html: true, linkify: true });
   md.use(markdownItAttrs);

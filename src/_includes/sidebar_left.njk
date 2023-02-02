@@ -1,0 +1,39 @@
+<aside class="sidebar sidebar_left">
+  <section class="pod">
+    <span class="aside_section_title pod_heading">Webmaser</span>
+    <article>
+      <span>
+        My name is ReduxFlakes, I am an open source Android app developer & web
+        developer and <em>designer</em>.</span
+      >
+    </article>
+  </section>
+
+    <section class="pod mobile">
+    <span class="aside_section_title pod_heading">Support
+    </span>
+    <article style="padding-bottom:0;">
+      Like eversould? Support us on the platforms below or add our button into your website to show us your love!
+      <details>
+            <img
+        class="button_88_31"
+        src="/assets/buttons/eversoul.png"
+        alt="eversoul 88x31 button"
+      />
+      <summary>
+        88x31 Button (outdated)
+      </summary>
+      </details>
+    </article>
+    <nav class="aside_navigation" >
+      <ul style="padding-top:0;">
+        {% for navItem in support_nav.navItems %}
+        <li>
+          <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </section>
+
+</aside>

@@ -1,0 +1,40 @@
+<aside class="sidebar sidebar_right">
+  <section class="pod">
+    <span class="aside_section_title pod_heading">Navigation</span>
+    <nav class="aside_navigation">
+      <ul>
+        {% for navItem in nav.navItems %}
+        <li>
+          <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </section>
+  <section class="pod">
+    <span class="aside_section_title pod_heading">Cyberspace
+    </span>
+    <nav class="aside_navigation">
+      <ul>
+        {% for navItem in cyber_nav.navItems %}
+        <li>
+          <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </section>
+    <section class="pod">
+    <span class="aside_section_title pod_heading">Projects
+    </span>
+    <nav class="aside_navigation">
+      <ul>
+        {% for navItem in projects_nav.navItems %}
+        <li>
+          <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </section>
+</aside>

@@ -1,0 +1,17 @@
+{
+    "navItems": [
+      {
+        "title": "Manifesto",
+        "url": "/manifesto/"
+      },
+      {
+        "title": "Hubs",
+        "url": "/hubs/"
+      },
+      {
+        "title": "Directory",
+        "url": "/directory/"
+      }
+    ]
+  }
+  

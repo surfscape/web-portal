@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+
+<div class="pod">
+
+<h1 class="pod_heading">{{ title }}</h1>
+
+<article>
+<p><em>Released on: </em>{{ date | asPostDate }}</p>
+{{ content | safe }}
+</article>
+
+</div>

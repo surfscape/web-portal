@@ -7,10 +7,11 @@
     <div class="layout_wrapper">
       {% include "header.njk" %}
       <main class="content_grid">
+        {% include "sidebar_left.njk" %}
         <div class="content">{{ content | safe }}</div>
-          {% include "sidebar.njk" %}
+        {% include "sidebar_nav.njk" %}
       </main>
       {% include "footer.njk" %}
-</div>
+    </div>
   </body>
 </html>

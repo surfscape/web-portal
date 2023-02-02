@@ -1,9 +1,9 @@
 {
   "title": "eversoul",
-  "url": "https://eversoul.neocities.",
+  "url": "https://eversoul.neocities.org",
   "lang": "en",
   "locale": "en",
-  "description": "A web portal for people that like the old web, tech or just want some nostalgia",
+  "description": "The web portal for people that like all things related to the 2000's web and tech!",
   "author": "reduxflakes",
-  "version": "v0.0.2"
+  "version": "v0.0.1"
 }

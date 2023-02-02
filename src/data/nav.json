@@ -9,24 +9,16 @@
         "url": "/blog/"
       },
       {
-        "title": "Guides",
-        "url": "/guides/"
+        "title": "About",
+        "url": "/about/"
       },
       {
-        "title": "Now",
-        "url": "/now/"
-      },
-      {
-        "title": "Changes",
-        "url": "/changes/"
+        "title": "Updates",
+        "url": "/updates/"
       },
       {
         "title": "Roadmap",
         "url": "/roadmap/"
-      },
-      {
-        "title": "Contact",
-        "url": "/contact"
       }
     ]
   }
