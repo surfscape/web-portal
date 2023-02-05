@@ -302,6 +302,11 @@ nav.cloud {
   padding: 0;
 }
 
+li.inner_list::before {
+  content: "" !important;
+  display: block;
+}
+
 @media only screen and (max-width: 750px) {
   .content_grid {
     display: grid;

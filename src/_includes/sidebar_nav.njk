@@ -8,53 +8,55 @@
             <a href="{{ navItem.url }}">{{ navItem.title }}</a>
           </li>
           {% if navItem.subNav %}
-            <ul>
-              {% for subNavItem in navItem.subNav %}
-                <li>
-                  <a href="{{ subNavItem.url }}">{{ subNavItem.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
+            <li class="inner_list">
+              <ul>
+                {% for subNavItem in navItem.subNav %}
+                  <li>
+                    <a href="{{ subNavItem.url }}">{{ subNavItem.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
           {% endif %}
         {% endfor %}
-    </ul>
-  </nav>
-</div>
-<div class="pod">
-  <span class="pod_title">Cyberspace [soon]</span>
-  <nav>
-    <ul>
-      {% for cyberItem in nav.cyberItems %}
-        <li>
-          <a href="{{ cyberItem.url }}">{{ cyberItem.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
-<div class="pod">
-  <span class="pod_title">Community [soon]</span>
-  <nav>
-    <ul>
-      {% for ircItem in nav.ircItems %}
-        <li>
-          <a href="{{ ircItem.url }}">{{ ircItem.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
-<div class="pod">
-  <span class="pod_title">Projects
+      </ul>
+    </nav>
+  </div>
+  <div class="pod">
+    <span class="pod_title">Cyberspace [soon]</span>
+    <nav>
+      <ul>
+        {% for cyberItem in nav.cyberItems %}
+          <li>
+            <a href="{{ cyberItem.url }}">{{ cyberItem.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="pod">
+    <span class="pod_title">Community [soon]</span>
+    <nav>
+      <ul>
+        {% for ircItem in nav.ircItems %}
+          <li>
+            <a href="{{ ircItem.url }}">{{ ircItem.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="pod">
+    <span class="pod_title">Projects
   </span>
-  <nav>
-    <ul>
-      {% for projectsItem in nav.projectsItems %}
-        <li>
-          <a href="{{ projectsItem.url }}">{{ projectsItem.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
-</div>
+    <nav>
+      <ul>
+        {% for projectsItem in nav.projectsItems %}
+          <li>
+            <a href="{{ projectsItem.url }}">{{ projectsItem.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
 </aside>
