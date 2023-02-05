@@ -1,39 +1,50 @@
 <aside class="sidebar sidebar_left">
-  <section class="pod">
-    <span class="aside_section_title pod_heading">Webmaser</span>
-    <article>
+  <div class="pod">
+    <span class="pod_title">Webmaster</span>
+    <div class="article">
       <span>
         My name is ReduxFlakes, I am an open source Android app developer & web
-        developer and <em>designer</em>.</span
-      >
-    </article>
-  </section>
-
-    <section class="pod mobile">
-    <span class="aside_section_title pod_heading">Support
+        developer and <em>designer</em>.</span>
+    </div>
+    <nav class="cloud" style="padding-top:0;">
+      {% for navItem in social.navItems %}
+        <a rel="me" target="_" href="{{ navItem.url }}">{{ navItem.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="pod">
+    <span class="pod_title">Support
     </span>
-    <article style="padding-bottom:0;">
+    <div class="article">
       Like eversould? Support us on the platforms below or add our button into your website to show us your love!
-      <details>
-            <img
-        class="button_88_31"
+      <div class="button_wrap">
+        <img style="padding-bottom:0;"
         src="/assets/buttons/eversoul.png"
-        alt="eversoul 88x31 button"
-      />
-      <summary>
-        88x31 Button (outdated)
-      </summary>
-      </details>
-    </article>
-    <nav class="aside_navigation" >
+        alt="eversoul 88x31 button"/>
+        <textarea readonly>
+&lt;a href="http://eversoul.neocities.org/"&gt;&lt;img style="padding-bottom:0;" src="http://eversoul.neocities.org/assets/buttons/eversoul.png"alt="eversoul 88x31 button"/&gt;&lt;/a&gt;</textarea>
+      </div>
+    </div>
+    <nav>
       <ul style="padding-top:0;">
         {% for navItem in support_nav.navItems %}
-        <li>
-          <a href="{{ navItem.url }}">{{ navItem.title }}</a>
-        </li>
+          <li>
+            <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+          </li>
         {% endfor %}
       </ul>
     </nav>
-  </section>
+  </div>
+
+  <div class="pod">
+    <span class="pod_title">Settings
+    </span>
+    <div class="article">
+      <select id="theme-selector">
+        <option value="default">Default</option>
+        <option value="dark_green">Nature</option>
+      </select>
+    </div>
+  </div>
 
 </aside>

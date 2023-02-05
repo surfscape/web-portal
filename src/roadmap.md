@@ -1,13 +1,8 @@
 ---
-layout: base.njk
+layout: page.njk
 title: Roadmap
+permalink: "updates/roadmap/"
 ---
-
-<div class="pod">
-
-# {{title}} {.pod_heading}
-
-<article>
 
 This page is dedicated to listing almost everything that is currently being added to the website or simply ideas for the website.
 
@@ -21,7 +16,3 @@ This page is dedicated to listing almost everything that is currently being adde
 ## Ideas
 
 - **Music** - A page dedicated to indie artists that I like.
-
-</article>
-
-</div>

@@ -4,11 +4,12 @@ layout: base.njk
 
 <div class="pod">
 
-<h1 class="pod_heading">{{ title }}</h1>
+    <span class="pod_title">{{ title }}</span>
 
-<article>
-<p><em>Released on: </em>{{ date | asPostDate }}</p>
-{{ content | safe }}
-</article>
+    <div class="article">
+        <p>
+            <em>Released on: </em>{{ date | asPostDate }}</p>
+        {{ content | safe }}
+    </div>
 
 </div>

@@ -14,12 +14,48 @@
       },
       {
         "title": "Updates",
-        "url": "/updates/"
+        "url": "/updates/",
+        "subNav": [
+          {
+            "title": "Roadmap",
+            "url": "/updates/roadmap/"
+          }
+        ]
+      }
+    ],
+    "cyberItems": [
+      {
+        "title": "Manifesto",
+        "url": "/manifesto/"
       },
       {
-        "title": "Roadmap",
-        "url": "/roadmap/"
+        "title": "Hubs",
+        "url": "/hubs/"
+      },
+      {
+        "title": "Directory",
+        "url": "/directory/"
       }
+    ],
+    "ircItems": [
+      {
+        "title": "About",
+        "url": "/community/"
+      },
+      {
+        "title": "How to join",
+        "url": "/community/join"
+      },
+      {
+        "title": "Guidelines",
+        "url": "/community/guidelines/"
+      }
+    ],
+    "projectsItems": [
+    {
+        "title": "OTR SC",
+        "url": "https://github.com/OTR-Speed-Calculator"
+    }
     ]
   }
   

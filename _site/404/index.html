@@ -1,154 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Page not found :( | eversoul</title>
-<meta name="description" content="The web portal for people that like all things related to the 2000&#39;s web and tech!" />
-<link rel="stylesheet" href="/css/global.css" />
-<link rel="icon" type="image/x-icon" href="/assets/images/icon.png" />
-<link
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Page not found | eversoul</title>
+        <meta name="description" content="The web portal for people that like all things related to the 2000&#39;s web and tech!"/>
+        <link rel="stylesheet" href="/css/global.css"/>
+        <link rel="icon" type="image/x-icon" href="/assets/images/icon.png"/>
+        <link
   href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Baloo+Tamma+2:wght@400;500;600;700;800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
   rel="stylesheet"
 />
 
-  </head>
-  <body>
-    <div class="layout_wrapper">
-      <header class="pod">
-  <span class="header_site_title">eversoul</span>
-  <span class="header_site_description">The web portal for people that like all things related to the 2000&#39;s web and tech!</span>
-  <em class="header_site_author">created by: reduxflakes</em>
-</header>
+    </head>
+    <body>
+        <script>
+            let kelvinRect = kelvin.getBoundingClientRect();
+            let nekoPosX = kelvinRect.x + 50;
+            let nekoPosY = kelvin.offsetTop + 220;
+            (async function oneko() {
+                const nekoEl = document.createElement("div");
+                let mousePosX = 0;
+                let mousePosY = 0;
+                let frameCount = 0;
+                let idleTime = 0;
+                let idleAnimation = null;
+                let idleAnimationFrame = 0;
+                const nekoSpeed = 11;
+                const spriteSets = {
+                    idle: [
+                        [-3, -3]
+                    ],
+                    alert: [
+                        [-7, -3]
+                    ],
+                    scratch: [
+                        [
+                            -5, 0
+                        ],
+                        [
+                            -6, 0
+                        ],
+                        [
+                            -7, 0
+                        ]
+                    ],
+                    tired: [
+                        [-3, -2]
+                    ],
+                    sleeping: [
+                        [
+                            -2, 0
+                        ],
+                        [
+                            -2, -1
+                        ]
+                    ],
+                    N: [
+                        [
+                            -1, -2
+                        ],
+                        [
+                            -1, -3
+                        ]
+                    ],
+                    NE: [
+                        [
+                            0, -2
+                        ],
+                        [
+                            0, -3
+                        ]
+                    ],
+                    E: [
+                        [
+                            -3, 0
+                        ],
+                        [
+                            -3, -1
+                        ]
+                    ],
+                    SE: [
+                        [
+                            -5, -1
+                        ],
+                        [
+                            -5, -2
+                        ]
+                    ],
+                    S: [
+                        [
+                            -6, -3
+                        ],
+                        [
+                            -7, -2
+                        ]
+                    ],
+                    SW: [
+                        [
+                            -5, -3
+                        ],
+                        [
+                            -6, -1
+                        ]
+                    ],
+                    W: [
+                        [
+                            -4, -2
+                        ],
+                        [
+                            -4, -3
+                        ]
+                    ],
+                    NW: [
+                        [
+                            -1, 0
+                        ],
+                        [
+                            -1, -1
+                        ]
+                    ]
+                };
+                function create() {
+                    nekoEl.id = "oneko";
+                    nekoEl.style.zIndex = 5;
+                    nekoEl.style.width = "32px";
+                    nekoEl.style.height = "32px";
+                    nekoEl.style.position = "absolute";
+                    nekoEl.style.pointerEvents = "none";
+                    nekoEl.style.backgroundImage = "url('./images/oneko.gif')";
+                    nekoEl.style.imageRendering = "pixelated";
+                    nekoEl.style.left = `${kelvinRect.x + 50}px`;
+                    nekoEl.style.top = `${kelvin.offsetTop + 220}px`;
+                    document
+                        .body
+                        .appendChild(nekoEl);
+                    document.onmousemove = (event) => {
+                        mousePosX = event.pageX;
+                        mousePosY = event.pageY;
+                    };
+                    window.onekoInterval = setInterval(frame, 100);
+                }
+                function setSprite(name, frame) {
+                    const sprite = spriteSets[name][frame % spriteSets[name].length];
+                    nekoEl.style.backgroundPosition = `${sprite[0] * 32}px ${
+                    sprite[1] * 32}px`;
+                }
+                function resetIdleAnimation() {
+                    idleAnimation = null;
+                    idleAnimationFrame = 0;
+                }
+                function idle() {
+                    idleTime += 1;
+                    if (idleTime > 10 && Math.floor(Math.random() * 200) == 0 && idleAnimation == null) {
+                        idleAnimation = ["sleeping", "scratch"][Math.floor(Math.random() * 2)];
+                    }
+                    switch (idleAnimation) {
+                        case "sleeping":
+                            if (idleAnimationFrame < 8) {
+                                setSprite("tired", 0);
+                                break;
+                            }
+                            setSprite("sleeping", Math.floor(idleAnimationFrame / 4));
+                            if (idleAnimationFrame > 192) {
+                                resetIdleAnimation();
+                            }
+                            break;
+                        case "scratch":
+                            setSprite("scratch", idleAnimationFrame);
+                            if (idleAnimationFrame > 9) {
+                                resetIdleAnimation();
+                            }
+                            break;
+                        default:
+                            setSprite("idle", 0);
+                            return;
+                    }
+                    idleAnimationFrame += 1;
+                }
+                function frame() {
+                    let realCursors = [
+                        ...cursors, {
+                            x: mousePosX,
+                            y: mousePosY,
+                            h: document.body.clientHeight,
+                            real: true
+                        }
+                    ];
+                    let closestCursor = realCursors
+                        .filter(c => c.x !== 0 && c.y !== 0)
+                        .map(c => {
+                            let ratio = document.body.clientHeight / c.h;
+                            c.ry = c.y * ratio;
+                            c.dist = Math.sqrt((nekoPosX - c.x - (
+                                c.real
+                                ? 0
+                                : rectLeft)) ** 2 + (nekoPosY - c.ry) ** 2);
+                            return c;
+                        })
+                        .sort((a, b) => {
+                            return a.dist - b.dist;
+                        })[0];
+                    if (!closestCursor) 
+                        return;
+                    frameCount += 1;
+                    if (closestCursor.x - (
+                        closestCursor.real
+                        ? 0
+                        : rectLeft) > innerWidth - 100 || (window.isThunder && (closestCursor.x - (
+                        closestCursor.real
+                        ? 0
+                        : rectLeft) > rectRight || closestCursor.x - (
+                        closestCursor.real
+                        ? 0
+                        : rectLeft) < rectLeft))) {
+                        kelvinRect = kelvin.getBoundingClientRect();
+                        closestCursor.x = kelvinRect.x + 50 + (
+                            closestCursor.real
+                            ? 0
+                            : rectLeft);
+                        closestCursor.ry = kelvin.offsetTop + 220;
+                    }
+                    const diffX = nekoPosX - closestCursor.x - (
+                        closestCursor.real
+                        ? 0
+                        : rectLeft);
+                    const diffY = nekoPosY - closestCursor.ry - (
+                        closestCursor.real
+                        ? 0
+                        : 83);
+                    const distance = Math.sqrt(diffX ** 2 + diffY ** 2);
+                    if (distance < nekoSpeed || distance < 24) {
+                        idle();
+                        return;
+                    }
+                    idleAnimation = null;
+                    idleAnimationFrame = 0;
+                    if (idleTime > 1) {
+                        setSprite("alert", 0);
+                        idleTime = Math.min(idleTime, 7);
+                        idleTime -= 1;
+                        return;
+                    }
+                    direction = diffY / distance > 0.5
+                        ? "N"
+                        : "";
+                    direction += diffY / distance < -0.5
+                        ? "S"
+                        : "";
+                    direction += diffX / distance > 0.5
+                        ? "W"
+                        : "";
+                    direction += diffX / distance < -0.5
+                        ? "E"
+                        : "";
+                    setSprite(direction, frameCount);
+                    nekoPosX -= (diffX / distance) * nekoSpeed;
+                    nekoPosY -= (diffY / distance) * nekoSpeed;
+                    nekoEl.style.left = `${nekoPosX - 16}px`;
+                    nekoEl.style.top = `${nekoPosY - 16}px`;
+                }
+                create();
+            })();
+        </script>
+        <div id="wrapper">
+            <header>
 
-      <main class="content_grid">
-        <aside class="sidebar sidebar_left">
-  <section class="pod">
-    <span class="aside_section_title pod_heading">Webmaser</span>
-    <article>
-      <span>
+                <span class="header_site_title">eversoul</span>
+                <span>The web portal for people that like all things related to the 2000&#39;s web and tech!</span>
+                <em>created by: reduxflakes</em>
+            </header>
+            <main class="content_grid">
+                <aside class="sidebar sidebar_left">
+                    <div class="pod">
+                        <span class="pod_title">Webmaster</span>
+                        <div class="pod">
+                            <span>
         My name is ReduxFlakes, I am an open source Android app developer & web
         developer and <em>designer</em>.</span
       >
-    </article>
-  </section>
+                        </div>
+                        <nav class="cloud" style="padding-top:0;">
 
-    <section class="pod mobile">
-    <span class="aside_section_title pod_heading">Support
+                            <a href="/">GitHub</a>
+
+                            <a href="/">Discord</a>
+
+                            <a href="/">Telegram</a>
+
+                            <a href="/">Mastodon</a>
+
+                            <a href="/">YouTube</a>
+
+                        </nav>
+                    </div>
+
+                    <div class="pod">
+                        <span class="pod_title">Support
     </span>
-    <article style="padding-bottom:0;">
+                        <div class="pod">
       Like eversould? Support us on the platforms below or add our button into your website to show us your love!
-      <details>
-            <img
-        class="button_88_31"
+            <img style="padding-bottom:0;"
         src="/assets/buttons/eversoul.png"
         alt="eversoul 88x31 button"
-      />
-      <summary>
-        88x31 Button (outdated)
-      </summary>
-      </details>
-    </article>
-    <nav class="aside_navigation" >
-      <ul style="padding-top:0;">
-        
-        <li>
-          <a href="https://neocities.org/site/eversoul">Neocities</a>
-        </li>
-        
-      </ul>
-    </nav>
-  </section>
+/>
+                        </div>
+                        <nav>
+                            <ul style="padding-top:0;">
 
-</aside>
+                                <li>
+                                    <a href="https://neocities.org/site/eversoul">Neocities</a>
+                                </li>
 
-        <div class="content"><div class="pod">
-<h1 class="pod_heading">Page not found :(</h1>
-<article>
-<h1>404</h1>
-<p>Looks like this page doesn't exist</p>
-</article>
-</div>
-</div>
-        <aside class="sidebar sidebar_right">
-  <section class="pod">
-    <span class="aside_section_title pod_heading">Navigation</span>
-    <nav class="aside_navigation">
-      <ul>
-        
-        <li>
-          <a href="/">Home</a>
-        </li>
-        
-        <li>
-          <a href="/blog/">Blog</a>
-        </li>
-        
-        <li>
-          <a href="/about/">About</a>
-        </li>
-        
-        <li>
-          <a href="/updates/">Updates</a>
-        </li>
-        
-        <li>
-          <a href="/roadmap/">Roadmap</a>
-        </li>
-        
-      </ul>
-    </nav>
-  </section>
-  <section class="pod">
-    <span class="aside_section_title pod_heading">Cyberspace
-    </span>
-    <nav class="aside_navigation">
-      <ul>
-        
-        <li>
-          <a href="/manifesto/">Manifesto</a>
-        </li>
-        
-        <li>
-          <a href="/hubs/">Hubs</a>
-        </li>
-        
-        <li>
-          <a href="/directory/">Directory</a>
-        </li>
-        
-      </ul>
-    </nav>
-  </section>
-    <section class="pod">
-    <span class="aside_section_title pod_heading">Projects
-    </span>
-    <nav class="aside_navigation">
-      <ul>
-        
-        <li>
-          <a href="https://github.com/ReduxFlakes/eversoul/">eversoul</a>
-        </li>
-        
-        <li>
-          <a href="/navinet/">NaviNet</a>
-        </li>
-        
-        <li>
-          <a href="https://github.com/OTR-Speed-Calculator">OTR SC</a>
-        </li>
-        
-      </ul>
-    </nav>
-  </section>
-</aside>
+                            </ul>
+                        </nav>
+                    </div>
 
-      </main>
-      <footer class="pod">
-  &copy; 2023 ReduxFlakes / <em>eversoul</em> <a href="/updates">v0.0.1</a> / <a href="/sitemap">Sitemap</a> - <a href="/security/privacy-policy">Privacy Policy</a> - <a href="https://raw.githubusercontent.com/ReduxFlakes/eversoul/main/LICENSE">License</a>
-</footer>
+                </aside>
+                <div class="content">
+                    <div class="pod">
+
+                        <span class="pod_title">Page not found</span>
+
+                        <div class="pod">
+                            <h1>404 Not found :(</h1>
+                            <p>Looks like <code>
+                                    <script>
+                                        document.write(location.href);
+                                    </script>
+                                </code> doesn't exist.</p>
+                            <p>
+                                <a href="/">go to front-page</a>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+                <aside class="sidebar sidebar_right">
+                    <div class="pod">
+                        <span class="pod_title">Navigation</span>
+                        <nav>
+                            <ul>
+
+                                <li>
+                                    <a href="/">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="/blog/">Blog</a>
+                                </li>
+
+                                <li>
+                                    <a href="/about/">About</a>
+                                </li>
+
+                                <li>
+                                    <a href="/updates/">Updates</a>
+                                </li>
+
+                                <ul>
+
+                                    <li>
+                                        <a href="/updates/roadmap/">Roadmap</a>
+                                    </li>
+
+                                </ul>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="pod">
+                    <span class="pod_title">Cyberspace {closed}</span>
+                    <nav>
+                        <ul>
+
+                            <li>
+                                <a href="/manifesto/">Manifesto</a>
+                            </li>
+
+                            <li>
+                                <a href="/hubs/">Hubs</a>
+                            </li>
+
+                            <li>
+                                <a href="/directory/">Directory</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="pod">
+                    <span class="pod_title">Community</span>
+                    <nav>
+                        <ul>
+
+                            <li>
+                                <a href="/community/">About</a>
+                            </li>
+
+                            <li>
+                                <a href="/community/join">How to join</a>
+                            </li>
+
+                            <li>
+                                <a href="/community/guidelines/">Guidelines</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <div class="pod">
+                    <span class="pod_title">Projects <a href="/projects" class="button">More</a>
+                    </span>
+                    <nav>
+                        <ul>
+
+                            <li>
+                                <a href="https://github.com/ReduxFlakes/eversoul/">eversoul</a>
+                            </li>
+
+                            <li>
+                                <a href="/navinet/">NaviNet</a>
+                            </li>
+
+                            <li>
+                                <a href="https://github.com/OTR-Speed-Calculator">OTR SC</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+            </aside>
+        </main>
+        <footer class="pod">
+  &copy; 2023 ReduxFlakes / <em>eversoul</em>
+            <a href="/updates">v0.0.2</a> / <a href="/sitemap">Sitemap</a> - <a href="/security/privacy-policy">Privacy Policy</a> - <a href="https://raw.githubusercontent.com/ReduxFlakes/eversoul/main/LICENSE">License</a>
+        </footer>
 
     </div>
-  </body>
+</body>
 </html>

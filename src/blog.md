@@ -1,13 +1,7 @@
 ---
-layout: base.njk
+layout: page.njk
 title: Blog
 ---
-
-<div class="pod">
-
-# {{title}} {.pod_heading}
-
-<article>
 
 Hey you found my personal blog!
 
@@ -18,7 +12,3 @@ Random posts mostly related to my life or simply programming stuff.
 <li><a href="{{post.url}}"><b>{{ post.data.title }}</b></a> - {{ post.data.date | asPostDate }}</li>
 {% endfor %}
 </ul>
-
-</article>
-
-</div>

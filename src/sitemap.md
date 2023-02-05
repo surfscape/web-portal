@@ -1,14 +1,8 @@
 ---
-layout: base.njk
+layout: page.njk
 title: Sitemap
 eleventyExcludeFromCollections: true
 ---
-
-<div class="pod">
-
-# {{title}} {.pod_heading}
-
-<article>
 
 Searching for the xml version? Check [here](/sitemap.xml)!
 
@@ -17,7 +11,3 @@ Searching for the xml version? Check [here](/sitemap.xml)!
 <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
 {% endfor %}
 </ul>
-
-</article>
-
-</div>

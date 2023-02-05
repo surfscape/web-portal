@@ -1,0 +1,25 @@
+{
+    "navItems": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/ReduxFlakes"
+      },
+      {
+        "title": "Discord",
+        "url": "/"
+      },
+      {
+        "title": "Telegram",
+        "url": "/"
+      },
+      {
+        "title": "Mastodon",
+        "url": "https://fosstodon.org/@redux"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/@reduxflakes"
+      }
+    ]
+  }
+  

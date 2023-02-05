@@ -12,8 +12,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", md);
   eleventyConfig.addFilter("asPostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("LLL dd yyyy");
-
-    // other config likely here
   });
   return {
     dir: {
