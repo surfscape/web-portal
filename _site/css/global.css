@@ -165,6 +165,11 @@ header {
   overflow: hidden;
 }
 
+header * {
+  margin: 0;
+  padding: 0;
+}
+
 header .header_site_title {
   font-weight: 500;
   font-size: 2rem;
@@ -258,6 +263,16 @@ aside.sidebar_right {
 
 aside.sidebar .article {
   padding: 0.5rem;
+}
+
+aside.sidebar .article h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 aside.sidebar .article p {
@@ -355,6 +370,52 @@ li.inner_list::before {
   display: block;
 }
 
+.webring_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.webring_wrap div {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+ul.cards_list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.cards_list li a {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: 200ms all ease-in;
+}
+
+ul.cards_list li a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+ul.cards_list li * {
+  margin: 0;
+  padding: 0;
+}
+
+ul.cards_list li img {
+  border-radius: var(--rounded);
+  box-shadow: var(--container-shd);
+  border: 1px solid var(--accent);
+  width: 75px;
+  height: 75px;
+}
+
 @media only screen and (max-width: 750px) {
   .content_grid {
     display: grid;
@@ -367,5 +428,11 @@ li.inner_list::before {
   }
   aside.sidebar nav.navigation ul li a {
     font-size: 1.05rem;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  ul.cards_list {
+    grid-template-columns: 1fr;
   }
 }

@@ -5,7 +5,7 @@ title: Home
 
 <div class="pod">
 
-In Construction {.pod_title}
+## In Construction {.pod_title}
 
 <div class="article">
 
@@ -17,7 +17,7 @@ Before getting ahead of ourselfs be aware that eversoul is in construction meani
 
 <div class="pod">
 
-Welcome {.pod_title}
+## Welcome {.pod_title}
 
 <div class="article">
 
@@ -33,7 +33,7 @@ Since it's also my personal website you can find a lot about me especially my pr
 
 <div class="pod">
 
-What's New <a class="button" href="/updates">Updates</a> {.pod_title}
+## What's New <a class="button" href="/updates">Updates</a> {.pod_title}
 
 <div class="article">
 
@@ -49,7 +49,7 @@ What's New <a class="button" href="/updates">Updates</a> {.pod_title}
 
 <div class="pod">
 
-Buttons {.pod_title}
+## Buttons {.pod_title}
 
 <div class="article">
 

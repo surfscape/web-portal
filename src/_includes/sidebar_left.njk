@@ -1,49 +1,63 @@
 <aside class="sidebar sidebar_left">
+
   <div class="pod">
-    <span class="pod_title">Webmaster</span>
+    <h3 class="pod_title">Webmaster</h3>
     <div class="article">
-      <span>
         My name is ReduxFlakes, I am an open source Android app developer & web
-        developer and <em>designer</em>.</span>
-    </div>
-    <nav class="cloud" style="padding-top:0;">
-      {% for navItem in social.navItems %}
-        <a rel="me" target="_blank" href="{{ navItem.url }}">{{ navItem.title }}</a>
-      {% endfor %}
-    </nav>
+        developer and <em>designer</em>.</h3>
   </div>
-  <div class="pod">
-    <span class="pod_title">Support
-    </span>
-    <div class="article">
-      Like eversoul? Support us on the platforms below or add our button into your website to show us your love!
-      <div class="button_wrap">
-        <img style="padding-bottom:0;"
-        src="/assets/buttons/eversoul.png"
-        alt="eversoul 88x31 button"/>
-        <textarea readonly>
-&lt;a href="http://eversoul.neocities.org/"&gt;&lt;img style="padding-bottom:0;" src="http://eversoul.neocities.org/assets/buttons/eversoul.png"alt="eversoul 88x31 button"/&gt;&lt;/a&gt;</textarea>
+  <nav class="cloud" style="padding-top:0;">
+    {% for navItem in social.navItems %}
+      <a rel="me" target="_blank" href="{{ navItem.url }}">{{ navItem.title }}</a>
+    {% endfor %}
+  </nav>
+</div>
+
+<div class="pod">
+  <h3 class="pod_title">Webrings</h3>
+  <div class="article">
+    <div class="webring_wrap">
+      <h4>Hotline Webring</h4>
+      <div>
+        <a href="https://hotlinewebring.club/eversoul/previous">Previous</a>
+        <a href="https://hotlinewebring.club/eversoul/next">Next</a>
       </div>
     </div>
-    <nav>
-      <ul style="padding-top:0;">
-        {% for navItem in support_nav.navItems %}
-          <li>
-            <a href="{{ navItem.url }}">{{ navItem.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
+
   </div>
-  <div class="pod">
-    <span class="pod_title">Settings
-    </span>
-    <div class="article">
-      <select id="theme-selector">
-        <option value="default">Default</option>
-        <option value="dark_green">Nature</option>
-      </select>
+</div>
+
+<div class="pod">
+  <h3 class="pod_title">Support</h3>
+  <div class="article">
+      Like eversoul? Support us on the platforms below or add our button into your website to show us your love!
+      <div class="button_wrap">
+      <img style="padding-bottom:0;"
+        src="/assets/buttons/eversoul.png"
+        alt="eversoul 88x31 button"/>
+      <textarea readonly>
+&lt;a href="http://eversoul.neocities.org/"&gt;&lt;img src="http://eversoul.neocities.org/assets/buttons/eversoul.png" alt="eversoul 88x31 button"/&gt;&lt;/a&gt;</textarea>
     </div>
   </div>
+  <nav>
+    <ul style="padding-top:0;">
+      {% for navItem in support_nav.navItems %}
+        <li>
+          <a href="{{ navItem.url }}">{{ navItem.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
+
+<div class="pod">
+  <h3 class="pod_title">Settings</h3>
+  <div class="article">
+    <select id="theme-selector">
+      <option value="default">Default</option>
+      <option value="dark_green">Nature</option>
+    </select>
+  </div>
+</div>
 
 </aside>

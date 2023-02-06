@@ -5,7 +5,7 @@ title: About
 
 <div class="pod">
 
-About eversoul {.pod_title}
+## About eversoul {.pod_title}
 
 <div class="article">
 
@@ -19,6 +19,7 @@ The design of the website was inspired by these sites:
 [OpenBooks](https://openbooks.neocities.org/)
 
 <a class="button" href="https://github.com/ReduxFlakes/eversoul">Source Code</a>
+<a class="button" href="/credits.txt">Credits</a>
 
 </div>
 
@@ -26,7 +27,7 @@ The design of the website was inspired by these sites:
 
 <div class="pod">
 
-About me (The Webmaster) {.pod_title}
+## About me (The Webmaster) {.pod_title}
 
 <div class="article">
 
