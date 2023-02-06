@@ -1,0 +1,29 @@
+{
+    "buttonsItems": [
+      {
+        "img": "https://sadgrl.online/assets/images/buttons/sadgrlonline.gif",
+        "url": "https://sadgrl.online/"
+      },
+      {
+        "img": "https://dimden.dev/services/images/88x31.gif",
+        "url": "https://dimden.dev/"
+      },
+      {
+        "img": "https://openbooks.neocities.org/img/88x31.gif",
+        "url": "https://openbooks.neocities.org/"
+      },
+      {
+        "img": "/assets/buttons/yesterweb.gif",
+        "url": "https://yesterweb.org/"
+      },
+      {
+        "img": "/assets/buttons/yesterlinks.png",
+        "url": "https://links.yesterweb.org/"
+      },
+      {
+        "img": "/assets/buttons/districts.png",
+        "url": "https://districts.neocities.org/"
+      }
+    ]
+  }
+  

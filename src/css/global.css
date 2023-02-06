@@ -11,7 +11,7 @@
   --color-text: #f1e5ff;
   --text-shd: 0px 0px 5px rgba(0, 0, 0, 0.7);
   --container-shd: 0px 0px 5px rgba(0, 0, 0, 0.25);
-  --rounded: 6px;
+  --rounded: 4px;
   --body-bg: url(/assets/images/main-bg.jpg);
   --header-bg: url(/assets/images/header-bg.png);
   --font-sans: "Asap", sans-serif;
@@ -24,8 +24,8 @@
   --bgOnAccent: #1e2729;
   --container-bg: #1d34329e;
   --container-accent: #45df88;
-  --container-border: rgba(32, 43, 40, 0.604);
-  --accent-gradient: linear-gradient(180deg, #17a171 0%, #1a98c2 100%);
+  --container-border: rgba(23, 34, 33, 0.5);
+  --accent-gradient: linear-gradient(180deg, #17a171 0%, #1aa6c2 100%);
   --color-text: #e5fffa;
   --body-bg: url(/assets/images/main_green_bg.png);
   --header-bg: url(/assets/images/header_green_bg.png);
@@ -97,6 +97,41 @@ a:active {
   color: var(--container-accent);
   text-decoration: none;
   animation: color-change 1s linear infinite;
+}
+
+:focus {
+  --rounded: 2px;
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--rounded);
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+select {
+  width: 75%;
+  border: 0;
+  padding: 0.25rem;
+  border: 1px solid var(--container-border);
+  border-radius: var(--rounded);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background: var(--container-bg);
+  border-radius: var(--rounded);
+  border: 1px solid var(--accent);
+  box-shadow: var(--container-shd);
+  transition: 200ms all ease-in;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--accent);
+  color: var(--bgOnAccent);
 }
 
 #wrapper {
@@ -272,7 +307,10 @@ main .content .pod .article ul.blog_post_list {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  gap: 0.5rem;
   font-family: var(--font-mono);
   padding: 0.5rem;
   background: var(--accent-gradient) !important;
@@ -281,6 +319,16 @@ footer {
 
 footer a {
   color: var(--onAccent);
+}
+
+footer .buttons {
+  display: grid;
+  place-items: center;
+}
+
+footer .buttons * {
+  margin: 0;
+  padding: 0;
 }
 
 nav.cloud {

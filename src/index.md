@@ -46,3 +46,19 @@ What's New <a class="button" href="/updates">Updates</a> {.pod_title}
 </div>
 
 </div>
+
+<div class="pod">
+
+Buttons {.pod_title}
+
+<div class="article">
+
+A list of sites that I like and feel inspired by.
+
+<ul style="padding:0;display:flex;gap:0.5rem;  flex-wrap:wrap;"role="list">{% for buttonsItem in buttons.buttonsItems %}
+<li><a href="{{ buttonsItem.url }}"><img src="{{ buttonsItem.img }}"/></a></li>
+{% endfor %}</ul>
+
+</div>
+
+</div>

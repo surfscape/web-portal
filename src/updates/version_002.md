@@ -15,6 +15,7 @@ If you like to know all the changes the full changes are listed down below.
 - **Settings Widget** - I've added a settings where you can change some site settings.
 - **About** - I've finally created an About page talking about the history and motivation behind the creation of eversoul!
 - **Official button** - We now have an official 88x31 button for peeple that want to share their love about eversoul but also support us!
+- **Buttons Section** - I've added a buttons section of website that I like.
 
 ## Improvements
 

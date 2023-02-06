@@ -8,11 +8,16 @@ This page is dedicated to listing almost everything that is currently being adde
 
 ## In the works
 
-- **About** - About page talking about the meaning of the website
 - **Hubs** - A place to find great and friendly internet communities.
 - **Directory** - A list of curated websites around the web.
+- **Community**
 - **Manifesto**
 
 ## Ideas
 
 - **Music** - A page dedicated to indie artists that I like.
+
+## Implemented
+
+- **About** - About page talking about the meaning of the website.
+- **Buttons Section** - A lit of sites that I like
