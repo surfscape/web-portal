@@ -4,7 +4,7 @@ title: Roadmap
 permalink: "updates/roadmap/"
 ---
 
-This page is dedicated to listing almost everything that is currently being added to the website or simply ideas for the website.
+This page is dedicated to listing _everything_ that is currently being added to the website or simply ideas for the website.
 
 ## In the works
 
@@ -13,11 +13,8 @@ This page is dedicated to listing almost everything that is currently being adde
 - **Community**
 - **Manifesto**
 
-## Ideas
-
-- **Music** - A page dedicated to indie artists that I like.
-
 ## Implemented
 
 - **About** - About page talking about the meaning of the website.
-- **Buttons Section** - A lit of sites that I like
+- **Buttons Section** - A lit of sites that I like.
+- **Music** - A page dedicated to indie artists that I like.

@@ -6,11 +6,11 @@
       },
       {
         "title": "Discord",
-        "url": "/"
+        "url": "https://discordapp.com/users/827031832155521030"
       },
       {
         "title": "Telegram",
-        "url": "/"
+        "url": "https://t.me/ReduxFlakes"
       },
       {
         "title": "Mastodon",
@@ -19,6 +19,10 @@
       {
         "title": "YouTube",
         "url": "https://www.youtube.com/@reduxflakes"
+      },
+      {
+        "title": "Last.fm",
+        "url": "https://www.last.fm/user/ReduxFlakes"
       }
     ]
   }

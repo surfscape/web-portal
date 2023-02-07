@@ -1,8 +1,12 @@
 {
-    "buttonsItems": [
+    "neobuttonsItems": [
       {
         "img": "https://sadgrl.online/assets/images/buttons/sadgrlonline.gif",
         "url": "https://sadgrl.online/"
+      },
+      {
+        "img": "/assets/buttons/dannarchy.gif",
+        "url": "https://dannarchy.com/"
       },
       {
         "img": "https://dimden.dev/services/images/88x31.gif",
@@ -23,6 +27,52 @@
       {
         "img": "/assets/buttons/districts.png",
         "url": "https://districts.neocities.org/"
+      },
+      {
+        "img": "/assets/buttons/noweb3.gif",
+        "url": "https://yesterweb.org/no-to-web3/"
+      }
+    ],
+    "otherbuttonsItems": [
+      {
+        "img": "/assets/buttons/site/neocities.gif",
+        "url": "https://neocities.org"
+      },
+      {
+        "img": "/assets/buttons/site/anythingbut.gif"
+      },
+      {
+        "img": "/assets/buttons/site/firefox.gif",
+        "url": "https://www.mozilla.org/en-US/firefox/new/"
+      },
+      {
+        "img": "/assets/buttons/site/archlinux.gif",
+        "url": "https://archlinux.org/"
+      },
+      {
+        "img": "/assets/buttons/site/modarchive.gif",
+        "url": "https://modarchive.org/"
+      },
+      {
+        "img": "/assets/buttons/site/masto.gif",
+        "url": "https://joinmastodon.org/"
+      },
+      {
+        "img": "/assets/buttons/site/scp.gif",
+        "url": "https://scp-wiki.wikidot.com/"
+      },
+      {
+        "img": "/assets/buttons/site/kmeleon.gif",
+        "url": "http://kmeleonbrowser.org/"
+      },
+      {
+        "img": "/assets/buttons/site/sameshit.gif"
+      },
+      {
+        "img": "/assets/buttons/site/itoddler.gif"
+      },
+      {
+        "img": "/assets/buttons/site/windows.gif"
       }
     ]
   }

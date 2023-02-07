@@ -55,9 +55,14 @@ Since it's also my personal website you can find a lot about me especially my pr
 
 A list of sites that I like and feel inspired by.
 
-<ul style="padding:0;display:flex;gap:0.5rem;  flex-wrap:wrap;"role="list">{% for buttonsItem in buttons.buttonsItems %}
-<li><a href="{{ buttonsItem.url }}"><img src="{{ buttonsItem.img }}"/></a></li>
+<ul style="padding:0;display:flex;gap:0.5rem;  flex-wrap:wrap;"role="list">{% for neobuttonsItem in buttons.neobuttonsItems %}
+<li><a href="{{ neobuttonsItem.url }}"><img src="{{ neobuttonsItem.img }}"/></a></li>
 {% endfor %}</ul>
+
+Other fun and serious buttons (some with links).
+
+<ul style="padding:0;display:flex;gap:0.5rem;flex-wrap:wrap;"role="list">{% for otherbuttonsItem in buttons.otherbuttonsItems %}
+<li>{% if otherbuttonsItem.url %}<a href="{{ otherbuttonsItem.url }}"><img src="{{ otherbuttonsItem.img }}"/></a>{% else %}<img src="{{ otherbuttonsItem.img }}"/>{% endif %}</li>{% endfor %}</ul>
 
 </div>
 
