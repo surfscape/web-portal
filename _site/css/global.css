@@ -201,13 +201,6 @@ code {
   font-family: var(--font-mono);
 }
 
-.button_wrap {
-  display: flex;
-  gap: 0.5rem;
-  flex-direction: column;
-  width: calc(225px - 1rem);
-}
-
 textarea {
   max-width: 100%;
   color: inherit;
@@ -470,6 +463,14 @@ ul.cards_list li img {
   height: 75px;
 }
 
+.button_wrap {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  width: calc(225px - 1rem);
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 750px) {
   .content_grid {
     display: grid;
@@ -482,6 +483,21 @@ ul.cards_list li img {
   }
   aside.sidebar nav.navigation ul li a {
     font-size: 1.05rem;
+  }
+  .button_wrap {
+    width: calc(300px - 1rem);
+  }
+  aside.sidebar .article.settings {
+    display: flex;
+  }
+  aside.sidebar .article.settings #theme-selector {
+    width: calc(80% - 1rem);
+    margin: 0 auto;
+  }
+  main .content,
+  aside.sidebar_left {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--container-accent);
   }
 }
 
