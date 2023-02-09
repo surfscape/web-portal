@@ -5,18 +5,6 @@ title: Home
 
 <div class="pod">
 
-## In Construction {.pod_title}
-
-<div class="article">
-
-Before getting ahead of ourselfs be aware that eversoul is in construction meaning that most pages, services and other content are not complete, most giving 404.
-
-</div>
-
-</div>
-
-<div class="pod">
-
 ## Welcome {.pod_title}
 
 <div class="article">

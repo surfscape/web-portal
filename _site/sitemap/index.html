@@ -14,13 +14,22 @@
   rel="stylesheet"
 />
   </head>
-  <body>
+  <body class="scanlines">
     <div id="wrapper">
       <header>
-  <h1>
-    <span class="header_site_title">eversoul</span></h1>
-  <span>The web portal for people that like all things related to the 2000&#39;s web and tech!</span>
-  <em>created by: reduxflakes</em>
+  <div class="toolbar">
+    <p>last updated: 09 Feb, 2023</p>
+    <details class="dropdown security">
+      <summary>This domain is trusted!</summary>
+      <div class="content">This domain is part of the eversoul services and projects collective.</div>
+    </details>
+  </div>
+  <div class="header_main">
+    <h1>
+      <span class="header_site_title">eversoul</span></h1>
+    <span>The web portal for people that like all things related to the 2000&#39;s web and tech!</span>
+    <em>created by: reduxflakes</em>
+  </div>
 </header>
       <main class="content_grid">
         <aside class="sidebar sidebar_left">
@@ -69,9 +78,11 @@
   <h3 class="pod_title">Last.fm Status</h3>
   <div class="article">
     <div id="lastfm-widget">
-      <span id="playing-status"></span>
-      <img id="album-cover" src="" alt="Album cover art"/>
-      <article>
+      <div>
+        <span id="playing-status"></span>
+        <img id="album-cover" src="" alt="Album cover art"/>
+      </div>
+      <article id="lastfm_meta">
         <a id="music-link" target="_blank" href="#">
           <span id="music-title"></span></a>
         <p>Artist: <span id="artist-name"></span></p>
@@ -108,10 +119,16 @@
 <div class="pod">
   <h3 class="pod_title">Settings</h3>
   <div class="article settings">
+    <label for="remove-before">Theme:</label>
     <select id="theme-selector">
       <option value="default">Default</option>
       <option value="dark_green">Nature</option>
+      <option value="xp">Luna</option>
     </select>
+    <div class="checkbox_group">
+      <input type="checkbox" id="remove-before">
+      <label for="remove-before">Disable scanlines</label>
+    </div>
   </div>
 </div>
 
@@ -128,6 +145,7 @@
 <li><a href="/updates/version_001/">Version 0.0.1</a></li>
 <li><a href="/updates/version_002/">Version 0.0.2</a></li>
 <li><a href="/updates/version_003/">Version 0.0.3</a></li>
+<li><a href="/updates/version_004/">Version 0.0.4</a></li>
 <li><a href="/">Home</a></li>
 <li><a href="/blog/">Blog</a></li>
 <li><a href="/updates/">Updates</a></li>
@@ -244,7 +262,7 @@
       <footer class="pod">
   <div>
   &copy; 2023 ReduxFlakes / <em>eversoul</em>
-    <a href="/updates">v0.0.3</a> / <a href="/sitemap">Sitemap</a> - <a href="/security/privacy-policy">Privacy Policy</a> - <a href="https://raw.githubusercontent.com/ReduxFlakes/eversoul/main/LICENSE">License</a>
+    <a href="/updates">v0.0.4</a> / <a href="/sitemap">Sitemap</a> - <a href="/security/privacy-policy">Privacy Policy</a> - <a href="https://raw.githubusercontent.com/ReduxFlakes/eversoul/main/LICENSE">License</a>
   </div>
   <div class="buttons">
     <p>

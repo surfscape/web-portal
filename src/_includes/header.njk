@@ -1,6 +1,15 @@
 <header>
-  <h1>
-    <span class="header_site_title">{{ site.title }}</span></h1>
-  <span>{{ site.description }}</span>
-  <em>created by: {{ site.author }}</em>
+  <div class="toolbar">
+    <p>last updated: {{ site.content_date }}</p>
+    <details class="dropdown security">
+      <summary>This domain is trusted!</summary>
+      <div class="content">This domain is part of the eversoul services and projects collective.</div>
+    </details>
+  </div>
+  <div class="header_main">
+    <h1>
+      <span class="header_site_title">{{ site.title }}</span></h1>
+    <span>{{ site.description }}</span>
+    <em>created by: {{ site.author }}</em>
+  </div>
 </header>

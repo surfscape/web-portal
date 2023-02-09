@@ -34,9 +34,11 @@
   <h3 class="pod_title">Last.fm Status</h3>
   <div class="article">
     <div id="lastfm-widget">
-      <span id="playing-status"></span>
-      <img id="album-cover" src="" alt="Album cover art"/>
-      <article>
+      <div>
+        <span id="playing-status"></span>
+        <img id="album-cover" src="" alt="Album cover art"/>
+      </div>
+      <article id="lastfm_meta">
         <a id="music-link" target="_blank" href="#">
           <span id="music-title"></span></a>
         <p>Artist: <span id="artist-name"></span></p>
@@ -73,10 +75,16 @@
 <div class="pod">
   <h3 class="pod_title">Settings</h3>
   <div class="article settings">
+    <label for="remove-before">Theme:</label>
     <select id="theme-selector">
       <option value="default">Default</option>
       <option value="dark_green">Nature</option>
+      <option value="xp">Luna</option>
     </select>
+    <div class="checkbox_group">
+      <input type="checkbox" id="remove-before">
+      <label for="remove-before">Disable scanlines</label>
+    </div>
   </div>
 </div>
 
