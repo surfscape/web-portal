@@ -461,8 +461,8 @@ footer a {
 }
 
 footer .buttons {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer .buttons * {

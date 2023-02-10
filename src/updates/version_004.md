@@ -8,6 +8,8 @@ This is an even smaller update than the last one but that's because we are now f
 
 ## Additions
 
+**dinhe webring** - eversoul is now on dinhe webring!
+
 - **Header Toolbar** - Additional header section for additional info about the site.
 - **Domain Trust & Safety check** - This a security and verifcation check that is on every **official** site and domain related to the eversoul name, portal and project.
 - **Luna Theme** - New theme based around the fabulous default Windows XP theme called Luna!
@@ -16,11 +18,9 @@ This is an even smaller update than the last one but that's because we are now f
 
 ## Improvements
 
-- **Cohesive design** - Improved
+- **Cohesive design** - Improved the design for better accesibility and more consistency!
 - **Stylesheet** - Simplified the main stylesheet for faster performance.
-- **Social Cloud** - Added more links.
-- **Design** - Small changes to the overall design.
-- **Neocities Buttons** - Added x new site to the list.
+- **Neocities Buttons** - Added new buttons.
 
 ## Removed
 

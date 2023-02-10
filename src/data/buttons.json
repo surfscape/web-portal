@@ -38,12 +38,30 @@
         "img": "/assets/buttons/site/neocities.gif",
         "url": "https://neocities.org"
       },
+
+      {
+        "img": "/assets/buttons/site/1080p.gif"
+      },
+      {
+        "img": "/assets/buttons/site/2001.gif"
+      },
+      {
+        "img": "/assets/buttons/site/antinazi.gif"
+      },
+      {
+        "img": "/assets/buttons/site/bitwarden.gif",
+        "url": "https://bitwarden.com"
+      },
       {
         "img": "/assets/buttons/site/anythingbut.gif"
       },
       {
         "img": "/assets/buttons/site/firefox.gif",
         "url": "https://www.mozilla.org/en-US/firefox/new/"
+      },
+      {
+        "img": "/assets/buttons/site/armorgames.gif",
+        "url": "https://armorgames.com/"
       },
       {
         "img": "/assets/buttons/site/archlinux.gif",
@@ -54,6 +72,9 @@
         "url": "https://modarchive.org/"
       },
       {
+        "img": "/assets/buttons/site/3dot5mmfc-button.gif"
+      },
+      {
         "img": "/assets/buttons/site/masto.gif",
         "url": "https://joinmastodon.org/"
       },
@@ -62,17 +83,23 @@
         "url": "https://scp-wiki.wikidot.com/"
       },
       {
+        "img": "/assets/buttons/site/bestdesktop.gif"
+      },
+      {
         "img": "/assets/buttons/site/kmeleon.gif",
         "url": "http://kmeleonbrowser.org/"
       },
       {
-        "img": "/assets/buttons/site/sameshit.gif"
+        "img": "/assets/buttons/site/apple_fatal_error.gif"
       },
       {
         "img": "/assets/buttons/site/itoddler.gif"
       },
       {
         "img": "/assets/buttons/site/windows.gif"
+      },
+      {
+        "img": "/assets/buttons/site/asus.gif"
       }
     ]
   }
