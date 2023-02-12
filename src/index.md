@@ -32,5 +32,5 @@ If you like my website you can always add my 88x31 button to your website so mor
 
 ![eversoul 88x31 button](/assets/buttons/eversoul.png)
 
-<textarea readonly>
+<textarea readonly="copy-only">
 &lt;a href="http://eversoul.neocities.org/"&gt;&lt;img src="http://eversoul.neocities.org/assets/buttons/eversoul.png" alt="eversoul 88x31 button"/&gt;&lt;/a&gt;</textarea>
