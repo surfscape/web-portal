@@ -3,10 +3,9 @@
   "url": "https://eversoul.neocities.org",
   "lang": "en",
   "locale": "en",
-  "description": "The web portal for people that like all things related to the 2000's web and tech!",
+  "description": "ReduxFlakes little web portal",
   "author": "reduxflakes",
   "version": "v0.0.4",
-  "description": "ReduxFlakes little web portal",
-  "updated": "12 Jan, 2023",
-  "author": "reduxflakes"
+  "updated": "12 Feb, 2023",
+  "changes": "Changed to mobile first, fixed grammar, improved mobile layout, new What's New section on the home page, added a Music Player, changed site accent color."
 }

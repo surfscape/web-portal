@@ -6,7 +6,7 @@
   <ul role="list">
     {% for navItem in nav.navItems %}
       <li>
-        <a href="{{ navItem.url }}" {% if page.url == navItem.url %}aria-current="page"{% endif %}>{{ navItem.title }}</a>
+        <a href="{{ navItem.url }}" {% if (navItem.url != "/" and page.url.startsWith(navItem.url)) or page.url == navItem.url %}aria-current="page"{% endif %}>{{ navItem.title }}</a>
       </li>
     {% endfor %}
   </ul>

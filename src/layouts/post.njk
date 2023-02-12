@@ -2,7 +2,16 @@
 layout: base.njk
 ---
 
-<article>
-  <h2>{{ title }} - {{ date | asPostDate }}</h2>
-  {{ content | safe }}
-</article>
+{% if date %}
+  <article class="post__meta">
+    <h2>{{ title }}</h2>
+    <em>{{ date | asPostDate }}</em>
+    <em>{{ update }}</em>
+  </article>
+{% else %}
+  <h2>{{ title }}</h2>
+{% endif %}
+
+{{ content | safe }}
+
+<em>last updated: {{ update }}</em>

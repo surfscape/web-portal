@@ -1,0 +1,85 @@
+{
+  "Search": [
+    {
+      "name": "Google",
+      "url": "https://google.com",
+      "privacy": false
+    },
+    {
+      "name": "Bing",
+      "url": "https://www.bing.com/",
+      "privacy": false
+    },
+    {
+      "name": "DuckDuckGo",
+      "url": "https://duckduckgo.com/",
+      "privacy": true
+    },
+    {
+      "name": "Startpage",
+      "url": "https://www.startpage.com/",
+      "privacy": true
+    }
+  ],
+  "Mail": [
+    {
+      "name": "Gmail",
+      "url": "https://mail.google.com/",
+      "privacy": false
+    },
+    {
+      "name": "Outlook",
+      "url": "https://outlook.live.com/",
+      "privacy": false
+    },
+    {
+      "name": "Proton Mail",
+      "url": "https://proton.me/mail",
+      "privacy": true
+    },
+    {
+      "name": "Courvix Network",
+      "url": "https://courvix.com/",
+      "privacy": true
+    }
+  ],
+  "Video": [
+    {
+      "name": "YouTube",
+      "url": "https://www.youtube.com/",
+      "privacy": false
+    },
+    {
+      "name": "Vimeo",
+      "url": "https://vimeo.com/",
+      "privacy": false
+    },
+    {
+      "name": "Odysee",
+      "url": "https://odysee.com/",
+      "privacy": true
+    }
+  ],
+  "Social Media": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/",
+      "privacy": false
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/",
+      "privacy": false
+    },
+    {
+      "name": "Reddit",
+      "url": "https://www.reddit.com/",
+      "privacy": false
+    },
+    {
+      "name": "Mastodon",
+      "url": "https://joinmastodon.org/",
+      "privacy": true
+    }
+  ]
+}

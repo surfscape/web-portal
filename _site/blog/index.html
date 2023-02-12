@@ -13,6 +13,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
 <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+<script src="/assets/scripts/main.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -28,11 +29,23 @@
       </li>
     
       <li>
+        <a href="/guides/" >Guides</a>
+      </li>
+    
+      <li>
         <a href="/blog/" aria-current="page">Blog</a>
       </li>
     
       <li>
+        <a href="/directory/" >Directory</a>
+      </li>
+    
+      <li>
         <a href="/music/" >Music</a>
+      </li>
+    
+      <li>
+        <a href="/resources/" >Resources</a>
       </li>
     
       <li>
@@ -42,9 +55,9 @@
   </ul>
 </nav>
       <main>
-        <section class="content"><h1 id="blog" tabindex="-1">Blog</h1>
-<p>Welcome to my writings and ramblings page!</p>
-<p>Random posts mostly related to my life, programming or any topic to be honest.</p>
+        <section class="content"><h2 id="blog" tabindex="-1">Blog</h2>
+<p>Welcome to my &quot;writings and ramblings&quot; page!</p>
+<p>Random posts mostly related to my life, programming, or any topic, to be honest.</p>
 <ul class="collection__list" role="list">
 <li><a href="/blog/hello-world/"><b>Hello World!</b></a> - Feb 02 2023</li>
 </ul>
@@ -107,6 +120,30 @@
       </nav>
     </div>
   </article>
+
+  <article>
+    <h3>Music Player</h3>
+    <div class="audio--wrapper">
+      <audio controls id="player" onended="playNext()">
+        <source src="/assets/music/theme_1.mp3" type="audio/mpeg">
+      </audio>
+      <button onclick="playNext()">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+      <script>
+        var currentTrack = 0;
+        var tracks = ["/assets/music/theme_1.mp3", "/assets/music/theme_2.mp3", "/assets/music/theme_3.mp3", "/assets/music/theme_4.mp3"];
+
+        function playNext() {
+          var audio = document.getElementById("player");
+          currentTrack = (currentTrack + 1) % tracks.length;
+          audio.src = tracks[currentTrack];
+          audio.play();
+        }
+      </script>
+    </div>
+    <a href="https://home96.bandcamp.com/album/resting-state">Full album</a>
+  </article>
 </aside>
       </main>
       <footer>
@@ -114,9 +151,11 @@
 <br/>
   <a href="/sitemap.xml">Sitemap</a> - <a href="https://raw.githubusercontent.com/ReduxFlakes/eversoul/main/LICENSE">Site License</a>
   <br/>
-  <em>last updated: 12 Jan, 2023
+  <em>last updated: 12 Feb, 2023
   </div>
 </footer>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

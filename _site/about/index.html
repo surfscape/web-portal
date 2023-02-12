@@ -13,6 +13,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
 <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+<script src="/assets/scripts/main.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -28,11 +29,23 @@
       </li>
     
       <li>
+        <a href="/guides/" >Guides</a>
+      </li>
+    
+      <li>
         <a href="/blog/" >Blog</a>
       </li>
     
       <li>
+        <a href="/directory/" >Directory</a>
+      </li>
+    
+      <li>
         <a href="/music/" >Music</a>
+      </li>
+    
+      <li>
+        <a href="/resources/" >Resources</a>
       </li>
     
       <li>
@@ -43,18 +56,18 @@
 </nav>
       <main>
         <section class="content"><h2 id="about-eversoul" tabindex="-1">About eversoul</h2>
-<p>eversoul is my personal website with the main objective of being my internet portal to share my interests, things that I love, my social media and other stuff to the world.</p>
+<p>eversoul is my personal website with the main objective of being my internet portal to share my interests, things that I love, my social media, and other stuff with the world.</p>
 <p>Created in eleventy, hosted in neocities and open source on GitHub!</p>
 <h2 id="about-me" tabindex="-1">About me</h2>
-<p>My name is ReduxFlakes, I am an open source Android app developer &amp; web developer and <em>designer</em> from Portugal and I'm currently studying computer science.</p>
+<p>My name is ReduxFlakes; I am an open-source Android app developer, web developer, and designer from Portugal, and I'm currently studying computer science.</p>
 <p><strong>Quick Facts:</strong></p>
 <ul>
-<li>I love music especially synthwave, heavy metal, rock, <em>nostaligc</em> pop, chiptune and anything from the 80's.</li>
-<li>I love messing around with tech like homebrew and modding (I have a homebrewed PSP 3004 and my primary Android device running custom software).</li>
-<li>I love the old tech and the old web.</li>
-<li>I love open source software.</li>
+<li>I love music, especially synthwave, heavy metal, rock, &quot;nostalgic&quot; pop, chiptune, and anything from the 80s.</li>
+<li>I enjoy tinkering with technology, such as homebrew and modding (I have a homebrewed PSP 3004 and my primary Android device runs custom software).</li>
+<li>I adore vintage technology and the internet.</li>
+<li>I love open-source software.</li>
 <li>I hate most modern music (excluding synthwave and chiptune).</li>
-<li>I hate modern software (let's be honest Windows 11 sucks).</li>
+<li>I hate modern software (let's be honest, Windows 11 stinks).</li>
 </ul>
 </section>
         <aside class="sidebar">
@@ -115,6 +128,30 @@
       </nav>
     </div>
   </article>
+
+  <article>
+    <h3>Music Player</h3>
+    <div class="audio--wrapper">
+      <audio controls id="player" onended="playNext()">
+        <source src="/assets/music/theme_1.mp3" type="audio/mpeg">
+      </audio>
+      <button onclick="playNext()">
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+      </button>
+      <script>
+        var currentTrack = 0;
+        var tracks = ["/assets/music/theme_1.mp3", "/assets/music/theme_2.mp3", "/assets/music/theme_3.mp3", "/assets/music/theme_4.mp3"];
+
+        function playNext() {
+          var audio = document.getElementById("player");
+          currentTrack = (currentTrack + 1) % tracks.length;
+          audio.src = tracks[currentTrack];
+          audio.play();
+        }
+      </script>
+    </div>
+    <a href="https://home96.bandcamp.com/album/resting-state">Full album</a>
+  </article>
 </aside>
       </main>
       <footer>
@@ -122,9 +159,11 @@
 <br/>
   <a href="/sitemap.xml">Sitemap</a> - <a href="https://raw.githubusercontent.com/ReduxFlakes/eversoul/main/LICENSE">Site License</a>
   <br/>
-  <em>last updated: 12 Jan, 2023
+  <em>last updated: 12 Feb, 2023
   </div>
 </footer>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

@@ -5,12 +5,24 @@
       "url": "/"
     },
     {
+      "title": "Guides",
+      "url": "/guides/"
+    },
+    {
       "title": "Blog",
       "url": "/blog/"
     },
     {
+      "title": "Directory",
+      "url": "/directory/"
+    },
+    {
       "title": "Music",
       "url": "/music/"
+    },
+    {
+      "title": "Resources",
+      "url": "/resources/"
     },
     {
       "title": "About Me",
