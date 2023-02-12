@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "common-tags": "^1.8.2",
     "eleventy-plugin-date": "^1.0.0",
     "luxon": "^3.2.1"
@@ -21,6 +21,7 @@
     "js-yaml": "^4.1.0",
     "kramdown": "^0.0.0",
     "markdown-it": "^13.0.1",
+    "markdown-it-anchor": "^8.6.6",
     "markdown-it-attrs": "^4.1.6",
     "yaml": "^2.2.1"
   }

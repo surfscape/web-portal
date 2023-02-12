@@ -1,4 +1,5 @@
 <header>
+<<<<<<< Updated upstream
   <div class="toolbar">
     <p>last updated: {{ site.content_date }}</p>
     <details class="dropdown security">
@@ -13,3 +14,17 @@
     <em>created by: {{ site.author }}</em>
   </div>
 </header>
+=======
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+</header>
+<nav class="main--nav">
+  <ul role="list">
+    {% for navItem in nav.navItems %}
+      <li>
+        <a href="{{ navItem.url }}" {% if page.url == navItem.url %}aria-current="page"{% endif %}>{{ navItem.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+>>>>>>> Stashed changes

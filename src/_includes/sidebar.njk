@@ -1,0 +1,39 @@
+<aside class="sidebar">
+
+  <article>
+    <h3>Webmaster</h3>
+        My name is ReduxFlakes, I am an open source Android app developer, web
+        developer, app translator, and <em>designer</em>.
+        <a href="/about">More about me</a>
+    <h4>Social Cloud</h4>
+    <nav class="nav__cloud">
+      <ul role="list">
+        {% for navItem in social.navItems %}
+          <li>
+            <a rel="me" target="_blank" href="{{ navItem.url }}">{{ navItem.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </article>
+
+  <article>
+    <h3>Webrings</h3>
+    <div class="webrings">
+      <h4>Hotline Webring</h4>
+      <nav>
+        <a href="https://hotlinewebring.club/eversoul/previous">Previous</a>
+        <a href="https://hotlinewebring.club/eversoul/next">Next</a>
+      </nav>
+      <h4>null webring</h4>
+      <nav>
+        <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+      </nav>
+      <h4>dinhe webring</h4>
+      <nav>
+        <a href='https://webring.dinhe.net/prev/https://eversoul.neocities.org'>Previous</a>
+        <a href='https://webring.dinhe.net/next/https://eversoul.neocities.org'>Next</a>
+      </nav>
+    </div>
+  </article>
+</aside>

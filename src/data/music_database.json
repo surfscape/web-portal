@@ -1,77 +1,76 @@
 {
-    "artistsItems": [
-      {
-        "img": "https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/cc/62/0c/cc620ccb-c10d-c538-ce73-06cf185b3303/mzl.ynbraxen.jpg/375x375bb.jpg",
-        "name": "Men At Work",
-        "spotify": "https://open.spotify.com/artist/0f3EsoviYnRKTkmayI3cux?si=dIHXusvNSzmuZa-lOoh1Iw"
-      },
-      {
-        "img": "https://i.scdn.co/image/ab6761610000e5eb4bdaa8c5e65b64f50549c393",
-        "name": "Dire Straits",
-        "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T?si=y2Ye7er3RrWtObOQFPdGmg"
-      },
-      {
-        "img": "https://seeklogo.com/images/I/Iron_Maiden-logo-57E237D49F-seeklogo.com.png",
-        "name": "Iron Maiden",
-        "spotify": "https://open.spotify.com/artist/6mdiAmATAx73kdxrNrnlao?si=OEiUGoMQTs2VKkge_bAosg"
-      },
-      {
-        "img": "https://yt3.googleusercontent.com/ytc/AL5GRJX8JiOcerjUO8sRczK-9PcaZSJS9l6-Y8se3cyu=s900-c-k-c0x00ffffff-no-rj",
-        "name": "The Smiths",
-        "spotify": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8?si=84yGOeteTR2F2QyvVS1w3w"
-      },
-      {
-        "img": "https://upload.wikimedia.org/wikipedia/commons/d/de/Scorpions_in_Melbourne%2C_Australia_17.10.2016.jpg",
-        "name": "Scorpions",
-        "spotify": "https://open.spotify.com/artist/27T030eWyCQRmDyuvr1kxY?si=4jGSTN1uRLSOUVFhDpdbQQ"
-      },
-      {
-        "img": "https://akamai.sscdn.co/uploadfile/letras/fotos/0/9/3/b/093b9f9e35281efb9d86a1e33790947a.jpg",
-        "name": "Pink Floyd",
-        "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9?si=-krwn2DLTue6ECQcIrUAvQ"
-      },
-      {
-        "img": "https://www.noticiasdeviseu.com/wp-content/uploads/2019/05/xp.jpg",
-        "name": "Xutos & Pontapés",
-        "spotify": "https://open.spotify.com/artist/1lQnDEcvFAWaUjbyZiHKih?si=vhWOXRwsRPSFfjN-P2VSwA"
-      },
-      {
-        "img": "https://i.scdn.co/image/ab6761610000e5eb1761eb5fdbb5d5cbad65cf09",
-        "name": "Gunship",
-        "spotify": "https://open.spotify.com/artist/3PALZKWkpwjRvBsRmhlVSS?si=hOR5jb_DTKanDdGea61EDQ"
-      },
-      {
-        "img": "https://iscale.iheart.com/v3/surl/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL292ZXJyaWRlLzc0NDg4MF9lNDljMDliYy0xNjgyLTRhNzUtOTFlZC02MWM0MDIxYjc1ODAuanBn?sn=eGtleWJhc2UyMDIxMTExMDqaOO9ti14qRrQG45vxsvuH2jxhSVf7zBuevlgExvt0uA%3D%3D&surrogate=1cOXl179JY-syhxYSCX6Q1a_Mcu6UO8d-F4oJzpZf1hcUbJr4aIiwNUBGUf7jx4DdNBxDnMO3tLCBCByBjOEKPobikss7KWv_EUeUYZfzwS9fMwoDFojXoy14LYqtRhlVvpqbz17-WxlkViE3RbqmIFOtuVTSUhxiWZlFevgue9pGyvTsqeB9NuFLcku7jgWw2b9QeITcSFUWmLWbS74JEUl0FR5FHSPNtzpMyyTSc3XUZ1Y3T1HrpACG3vezN_v10E%3D",
-        "name": "The Weeknd",
-        "spotify": "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ?si=u0OzE5rbRt2GUsqTea79Zw"
-      },
-      {
-        "img": "https://i.scdn.co/image/ab6761610000e5eb0168ba8148c07c2cdeb7d067",
-        "name": "a-ha",
-        "spotify": "https://open.spotify.com/artist/2jzc5TC5TVFLXQlBNiIUzE?si=QtXHuYJdQMOzzq4WB29THg"
-      },
-      {
-        "img": "https://i.scdn.co/image/908abeee7856e7821c86c05173202c4bdba37454",
-        "name": "Shirobon",
-        "spotify": "https://open.spotify.com/artist/2OgP0RGmDrXN9kOWRNfEuE?si=Xsx-af4tTtWoVRjrsPxz0Q"
-      },
-      {
-        "img": "https://media.tenor.com/7tufRKOZmaQAAAAC/kubbi-chiptune.gif",
-        "name": "Kubbi",
-        "spotify": "https://open.spotify.com/artist/38dW24ZxoRfXGe1lJXXFNg?si=KoGuIfpMTLG0P_IuRQwfqg"
-      },
-      
-      {
-        "img": "https://i.scdn.co/image/ab67616d0000b273769ea2878e1d960de4bd601c",
-        "name": "Sétima Legião",
-        "spotify": "https://open.spotify.com/artist/13DulgdvfJaeXyxAqGzfb4?si=Q5Xo8leMS0-pxbA91Omfew"
-      },
+  "artistsItems": [
+    {
+      "img": "https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/cc/62/0c/cc620ccb-c10d-c538-ce73-06cf185b3303/mzl.ynbraxen.jpg/375x375bb.jpg",
+      "name": "Men At Work",
+      "spotify": "https://open.spotify.com/artist/0f3EsoviYnRKTkmayI3cux?si=dIHXusvNSzmuZa-lOoh1Iw"
+    },
+    {
+      "img": "https://i.scdn.co/image/ab6761610000e5eb4bdaa8c5e65b64f50549c393",
+      "name": "Dire Straits",
+      "spotify": "https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T?si=y2Ye7er3RrWtObOQFPdGmg"
+    },
+    {
+      "img": "https://seeklogo.com/images/I/Iron_Maiden-logo-57E237D49F-seeklogo.com.png",
+      "name": "Iron Maiden",
+      "spotify": "https://open.spotify.com/artist/6mdiAmATAx73kdxrNrnlao?si=OEiUGoMQTs2VKkge_bAosg"
+    },
+    {
+      "img": "https://yt3.googleusercontent.com/ytc/AL5GRJX8JiOcerjUO8sRczK-9PcaZSJS9l6-Y8se3cyu=s900-c-k-c0x00ffffff-no-rj",
+      "name": "The Smiths",
+      "spotify": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8?si=84yGOeteTR2F2QyvVS1w3w"
+    },
+    {
+      "img": "https://i.scdn.co/image/ab6761610000e5eb7440170c0628c2945da819c3",
+      "name": "Scorpions",
+      "spotify": "https://open.spotify.com/artist/27T030eWyCQRmDyuvr1kxY?si=4jGSTN1uRLSOUVFhDpdbQQ"
+    },
+    {
+      "img": "https://akamai.sscdn.co/uploadfile/letras/fotos/0/9/3/b/093b9f9e35281efb9d86a1e33790947a.jpg",
+      "name": "Pink Floyd",
+      "spotify": "https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9?si=-krwn2DLTue6ECQcIrUAvQ"
+    },
+    {
+      "img": "https://www.noticiasdeviseu.com/wp-content/uploads/2019/05/xp.jpg",
+      "name": "Xutos & Pontapés",
+      "spotify": "https://open.spotify.com/artist/1lQnDEcvFAWaUjbyZiHKih?si=vhWOXRwsRPSFfjN-P2VSwA"
+    },
+    {
+      "img": "https://i.scdn.co/image/ab6761610000e5eb1761eb5fdbb5d5cbad65cf09",
+      "name": "Gunship",
+      "spotify": "https://open.spotify.com/artist/3PALZKWkpwjRvBsRmhlVSS?si=hOR5jb_DTKanDdGea61EDQ"
+    },
+    {
+      "img": "https://iscale.iheart.com/v3/surl/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL292ZXJyaWRlLzc0NDg4MF9lNDljMDliYy0xNjgyLTRhNzUtOTFlZC02MWM0MDIxYjc1ODAuanBn?sn=eGtleWJhc2UyMDIxMTExMDqaOO9ti14qRrQG45vxsvuH2jxhSVf7zBuevlgExvt0uA%3D%3D&surrogate=1cOXl179JY-syhxYSCX6Q1a_Mcu6UO8d-F4oJzpZf1hcUbJr4aIiwNUBGUf7jx4DdNBxDnMO3tLCBCByBjOEKPobikss7KWv_EUeUYZfzwS9fMwoDFojXoy14LYqtRhlVvpqbz17-WxlkViE3RbqmIFOtuVTSUhxiWZlFevgue9pGyvTsqeB9NuFLcku7jgWw2b9QeITcSFUWmLWbS74JEUl0FR5FHSPNtzpMyyTSc3XUZ1Y3T1HrpACG3vezN_v10E%3D",
+      "name": "The Weeknd",
+      "spotify": "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ?si=u0OzE5rbRt2GUsqTea79Zw"
+    },
+    {
+      "img": "https://i.scdn.co/image/ab6761610000e5eb0168ba8148c07c2cdeb7d067",
+      "name": "a-ha",
+      "spotify": "https://open.spotify.com/artist/2jzc5TC5TVFLXQlBNiIUzE?si=QtXHuYJdQMOzzq4WB29THg"
+    },
+    {
+      "img": "https://i.scdn.co/image/908abeee7856e7821c86c05173202c4bdba37454",
+      "name": "Shirobon",
+      "spotify": "https://open.spotify.com/artist/2OgP0RGmDrXN9kOWRNfEuE?si=Xsx-af4tTtWoVRjrsPxz0Q"
+    },
+    {
+      "img": "https://media.tenor.com/7tufRKOZmaQAAAAC/kubbi-chiptune.gif",
+      "name": "Kubbi",
+      "spotify": "https://open.spotify.com/artist/38dW24ZxoRfXGe1lJXXFNg?si=KoGuIfpMTLG0P_IuRQwfqg"
+    },
 
-      {
-        "img": "https://imgs.smoothradio.com/images/10093?width=2009&crop=1_1&signature=FLZj7LmXlZPJWr7dhLskiDYeY7Q=",
-        "name": "Duran Duran",
-        "spotify": "https://open.spotify.com/artist/0lZoBs4Pzo7R89JM9lxwoT?si=CwG01AtdTwqNMAxGSF2cpQ"
-      }
-    ]
-  }
-  
+    {
+      "img": "https://i.scdn.co/image/ab67616d0000b273769ea2878e1d960de4bd601c",
+      "name": "Sétima Legião",
+      "spotify": "https://open.spotify.com/artist/13DulgdvfJaeXyxAqGzfb4?si=Q5Xo8leMS0-pxbA91Omfew"
+    },
+
+    {
+      "img": "https://imgs.smoothradio.com/images/10093?width=2009&crop=1_1&signature=FLZj7LmXlZPJWr7dhLskiDYeY7Q=",
+      "name": "Duran Duran",
+      "spotify": "https://open.spotify.com/artist/0lZoBs4Pzo7R89JM9lxwoT?si=CwG01AtdTwqNMAxGSF2cpQ"
+    }
+  ]
+}

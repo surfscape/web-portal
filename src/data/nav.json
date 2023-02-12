@@ -1,65 +1,20 @@
 {
-    "navItems": [
-      {
-        "title": "Home",
-        "url": "/"
-      },
-      {
-        "title": "Blog",
-        "url": "/blog/"
-      },
-      {
-        "title": "Music",
-        "url": "/music/"
-      },
-      {
-        "title": "About",
-        "url": "/about/"
-      },
-      {
-        "title": "Updates",
-        "url": "/updates/",
-        "subNav": [
-          {
-            "title": "Roadmap",
-            "url": "/updates/roadmap/"
-          }
-        ]
-      }
-    ],
-    "cyberItems": [
-      {
-        "title": "Manifesto",
-        "url": "/manifesto/"
-      },
-      {
-        "title": "Hubs",
-        "url": "/hubs/"
-      },
-      {
-        "title": "Directory",
-        "url": "/directory/"
-      }
-    ],
-    "ircItems": [
-      {
-        "title": "About",
-        "url": "/community/"
-      },
-      {
-        "title": "How to join",
-        "url": "/community/join"
-      },
-      {
-        "title": "Guidelines",
-        "url": "/community/guidelines/"
-      }
-    ],
-    "projectsItems": [
+  "navItems": [
     {
-        "title": "OTR SC",
-        "url": "https://github.com/OTR-Speed-Calculator"
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "title": "Music",
+      "url": "/music/"
+    },
+    {
+      "title": "About Me",
+      "url": "/about/"
     }
-    ]
-  }
-  
+  ]
+}

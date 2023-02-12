@@ -3,43 +3,15 @@ layout: base.njk
 title: Home
 ---
 
-<div class="pod">
+## Welcome
 
-## Welcome {.pod_title}
+Hi, my name is ReduxFlakes and this is my little home on the internet and a tribute to the old personal web.
 
-<div class="article">
+On this portal you can a lot of stuff related to old tech and music. This is also a place where I talk [about me](/about) and share guides and resources for people in the same realm.
 
-Hi, my name is ReduxFlakes and this is my little home on the internet and a tribute to the old web.
+If you ended up liking my web portal, head to the [Support](#support) section to learn how to support my work, thank you! - ReduxFlakes
 
-Here you can find a lot of stuff related to old tech from games to homebrew or tutorials and guides and obviously, a blog.
-
-Since it's also my personal website you can find a lot about me especially my projects and social media.
-
-</div>
-
-</div>
-
-<div class="pod">
-
-## What's New <a class="button" href="/updates">Updates</a> {.pod_title}
-
-<div class="article">
-
-<div class="box">
-{% for post in collections.update | reverse %}
-<a href="{{post.url}}"><b>{{ post.data.title }} / {{ post.data.date | asPostDate }}</b></a> - {{ post.data.description }}
-{% endfor %}
-</div>
-
-</div>
-
-</div>
-
-<div class="pod">
-
-## Buttons {.pod_title}
-
-<div class="article">
+## Buttons
 
 A list of sites that I like and feel inspired by.
 
@@ -47,11 +19,18 @@ A list of sites that I like and feel inspired by.
 <li><a href="{{ neobuttonsItem.url }}"><img src="{{ neobuttonsItem.img }}"/></a></li>
 {% endfor %}</ul>
 
-Other fun and serious buttons (some with links).
+Other button mostly related to software and other sites.
 
 <ul style="padding:0;display:flex;gap:0.5rem;flex-wrap:wrap;"role="list">{% for otherbuttonsItem in buttons.otherbuttonsItems %}
 <li>{% if otherbuttonsItem.url %}<a href="{{ otherbuttonsItem.url }}"><img src="{{ otherbuttonsItem.img }}"/></a>{% else %}<img src="{{ otherbuttonsItem.img }}"/>{% endif %}</li>{% endfor %}</ul>
 
-</div>
+## Support
 
-</div>
+If you like my website you can always add my 88x31 button to your website so more people can enjoy my content!
+
+> Btw, you can hotlink if you want 😊
+
+![eversoul 88x31 button](/assets/buttons/eversoul.png)
+
+<textarea readonly>
+&lt;a href="http://eversoul.neocities.org/"&gt;&lt;img src="http://eversoul.neocities.org/assets/buttons/eversoul.png" alt="eversoul 88x31 button"/&gt;&lt;/a&gt;</textarea>

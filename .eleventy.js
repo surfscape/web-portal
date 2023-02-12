@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownItAnc = require("markdown-it-anchor");
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
@@ -10,6 +11,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("src/css");
   const md = markdownIt({ html: true, linkify: true });
   md.use(markdownItAttrs);
+  md.use(markdownItAnc);
   eleventyConfig.setLibrary("md", md);
   eleventyConfig.addFilter("asPostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("LLL dd yyyy");

@@ -2,12 +2,7 @@
 layout: base.njk
 ---
 
-<div class="pod">
-
-  <h2 class="pod_title">{{ title }} - {{ date | asPostDate }}</h2>
-
-  <div class="article">
-    {{ content | safe }}
-  </div>
-
-</div>
+<article>
+  <h2>{{ title }} - {{ date | asPostDate }}</h2>
+  {{ content | safe }}
+</article>

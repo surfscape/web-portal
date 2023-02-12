@@ -3,13 +3,12 @@
   <head>
     {% include "basehead.njk" %}
   </head>
-  <body class="scanlines">
-    <div id="wrapper">
+  <body>
+    <div class="wrapper">
       {% include "header.njk" %}
-      <main class="content_grid">
-        {% include "sidebar_left.njk" %}
-        <div class="content">{{ content | safe }}</div>
-        {% include "sidebar_nav.njk" %}
+      <main>
+        <section class="content">{{ content | safe }}</section>
+        {% include "sidebar.njk" %}
       </main>
       {% include "footer.njk" %}
     </div>

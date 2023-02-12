@@ -1,100 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
-       
-        <url>
-            <loc>https://eversoul.neocities.org/blog/hello-world/</loc>
-            <lastmod>2022-02-02T00:00:00.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
+        
+            <url>
+                <loc>https://eversoul.neocities.org/blog/hello-world/</loc>
+                <lastmod>2023-02-02T00:00:00.000Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
         
     
-       
-        <url>
-            <loc>https://eversoul.neocities.org/updates/version_001/</loc>
-            <lastmod>2022-02-02T00:00:00.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
+        
+            <url>
+                <loc>https://eversoul.neocities.org/about/</loc>
+                <lastmod>2023-02-11T16:59:11.798Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
         
     
-       
-        <url>
-            <loc>https://eversoul.neocities.org/updates/version_002/</loc>
-            <lastmod>2022-02-05T00:00:00.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
+        
+            <url>
+                <loc>https://eversoul.neocities.org/blog/</loc>
+                <lastmod>2023-02-11T16:59:11.816Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
         
     
-       
-        <url>
-            <loc>https://eversoul.neocities.org/updates/version_003/</loc>
-            <lastmod>2022-02-07T00:00:00.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
+        
+            <url>
+                <loc>https://eversoul.neocities.org/</loc>
+                <lastmod>2023-02-11T16:59:11.821Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
         
     
-       
-        <url>
-            <loc>https://eversoul.neocities.org/updates/version_004/</loc>
-            <lastmod>2022-02-09T00:00:00.000Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
         
-    
-       
-        <url>
-            <loc>https://eversoul.neocities.org/</loc>
-            <lastmod>2023-01-28T21:06:23.701Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-       
-        <url>
-            <loc>https://eversoul.neocities.org/blog/</loc>
-            <lastmod>2023-01-31T19:27:23.458Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-       
-        <url>
-            <loc>https://eversoul.neocities.org/updates/</loc>
-            <lastmod>2023-02-02T19:18:25.624Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-       
-        <url>
-            <loc>https://eversoul.neocities.org/updates/roadmap/</loc>
-            <lastmod>2023-02-02T19:22:48.197Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-       
-        <url>
-            <loc>https://eversoul.neocities.org/security/privacy-policy/</loc>
-            <lastmod>2023-02-02T21:39:36.727Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-       
-        <url>
-            <loc>https://eversoul.neocities.org/about/</loc>
-            <lastmod>2023-02-05T17:52:14.690Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
-        
-    
-       
-        <url>
-            <loc>https://eversoul.neocities.org/music/</loc>
-            <lastmod>2023-02-06T22:57:04.275Z</lastmod>
-            <changefreq>monthly</changefreq>
-        </url>
+            <url>
+                <loc>https://eversoul.neocities.org/music/</loc>
+                <lastmod>2023-02-11T16:59:11.823Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
         
     
 </urlset>
