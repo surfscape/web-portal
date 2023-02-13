@@ -125,14 +125,14 @@
     <h3>Music Player</h3>
     <div class="audio--wrapper">
       <audio controls id="player" onended="playNext()">
-        <source src="/assets/music/theme_1.mp3" type="audio/mpeg">
+        <source src="https://files.catbox.moe/itkr7a.mp3" type="audio/mpeg">
       </audio>
       <button onclick="playNext()">
         <ion-icon name="arrow-forward-outline"></ion-icon>
       </button>
       <script>
         var currentTrack = 0;
-        var tracks = ["/assets/music/theme_1.mp3", "/assets/music/theme_2.mp3", "/assets/music/theme_3.mp3", "/assets/music/theme_4.mp3"];
+        var tracks = ["https://files.catbox.moe/itkr7a.mp3", "https://files.catbox.moe/q2cq6l.mp3", "https://files.catbox.moe/1g9zjq.mp3", "https://files.catbox.moe/at78d0.mp3"];
 
         function playNext() {
           var audio = document.getElementById("player");
