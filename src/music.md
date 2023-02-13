@@ -5,7 +5,9 @@ title: The Music Database
 
 ## {{ title }} {.pod_title}
 
-Welcome to my music database! A full blown directory with all of my favorite songs, artists, and albums!
+Welcome to the eversoul music database, handpicked by ReduxFlakes.
+
+_All the links go to spotify.com which means you are accepting their Terms of Service and Privacy policy._
 
 ## Artists & Bands ({{ music_database.artistsItems.length }}) {.pod_title}
 

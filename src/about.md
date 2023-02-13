@@ -5,13 +5,17 @@ title: About
 
 ## About eversoul
 
-eversoul is my personal website with the main objective of being my internet portal to share my interests, things that I love, my social media, and other stuff with the world.
+Eversoul at first was going to be a personal site for me (ReduxFlakes), and it would actually become true for a week, but nothing lasts forever, and I had bigger ideas, so Eversoul became a web portal for Neocities.
 
-Created in eleventy, hosted in neocities and open source on GitHub!
+At the moment (Feb. 13, 2023, to be exact), the site is very much bare bones, with a lot of issues related to layout, responsiveness, and lack of content, but in the next few weeks that will change.
+
+To make Eversoul more connected to the community around it, its [source code](https://github.com/ReduxFlakes/eversoul) is public on GitHub!
 
 ## About me
 
 My name is ReduxFlakes; I am an open-source Android app developer, web developer, and designer from Portugal, and I'm currently studying computer science.
+
+I'm the creator of eversoul.
 
 **Quick Facts:**
 

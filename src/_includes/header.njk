@@ -1,13 +1,24 @@
 <header>
-  <h1>{{ site.title }}</h1>
-  <p>{{ site.description }}</p>
+  <article>
+    <h1>{{ site.title }}
+      <em class="heading__small">beta</em>
+    </h1>
+    <p>{{ site.description }}</p>
+  </article>
+  <div class="search">
+    <form>
+      <label>Search with DuckDuckGo!</label>
+      <input type="text" id="searchInput">
+      <button type="submit" onclick="searchValue()">Search</button>
+    </form>
+  </div>
+  <script>
+    function searchValue() {
+      const searchInput = document
+        .getElementById("searchInput")
+        .value;
+      window.open(`https://duckduckgo.com/?q=${searchInput}`, "_blank");
+    }
+  </script>
+
 </header>
-<nav class="main--nav">
-  <ul role="list">
-    {% for navItem in nav.navItems %}
-      <li>
-        <a href="{{ navItem.url }}" {% if (navItem.url != "/" and page.url.startsWith(navItem.url)) or page.url == navItem.url %}aria-current="page"{% endif %}>{{ navItem.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>

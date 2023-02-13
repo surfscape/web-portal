@@ -1,0 +1,19 @@
+<aside class="sidebar">
+
+  <article>
+    <h3>The Creator</h3>
+        My name is ReduxFlakes and I'm the founder of eversoul. 
+        I'm an open source Android app developer, web
+        developer, app translator, and <em>designer</em>.
+    <h4>Social Cloud</h4>
+    <nav class="nav__cloud">
+      <ul role="list">
+        {% for navItem in social.navItems %}
+          <li>
+            <a rel="me" target="_blank" href="{{ navItem.url }}">{{ navItem.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </article>
+</aside>

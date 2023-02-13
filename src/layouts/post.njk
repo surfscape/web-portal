@@ -14,4 +14,6 @@ layout: base.njk
 
 {{ content | safe }}
 
-<em>last updated: {{ update }}</em>
+{% if update %}
+  <em>last updated: {{ update }}</em>
+{% endif %}

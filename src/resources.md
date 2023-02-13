@@ -4,14 +4,14 @@ title: Resources
 update: 12 Feb, 2023
 ---
 
-Welcome to the resources page, here you can find all kinds of documents related to tech and programming that I like and want to share with the world.
+Welcome to the resources page, here you can find all kinds of documents related to tech and programming.
 
-Some are written by me and others are external. External resources are marked with a star (\*).
+Some are written by the eversoul team and others are external. External resources are marked with a star (\*).
 
 <ul class="link__list">
 <li>
 <a href="https://www.privacyguides.org/">Privacy Guides</a>
-<p>Great resource for privacy advocate people (like me) *</p>
+<p>Great resource for privacy advocate people. *</p>
 </li>
 <li>
 <a href="https://idlewords.com/talks/website_obesity.htm">The Website Obesity Crisis</a>

@@ -4,7 +4,7 @@ title: Directory [Beta]
 update: 12 Feb, 2023
 ---
 
-I've noticed a lot of directory websites on neocities so I think it's time to make my own so here it is!
+Welcome to the eversoul directory!
 
 <div class="link--cards">
     {% for category, items in directory %}
@@ -15,7 +15,9 @@ I've noticed a lot of directory websites on neocities so I think it's time to ma
                     <li>
                         <a href="{{ item.url }}">{{ item.name }}</a>
                         {% if item.privacy != false %}
-                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <i title="Respect's user privacy">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                            </i>
                         {% endif %}
                     </li>
                 {% endfor %}

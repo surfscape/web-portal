@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Blog | eversoul</title>
-<meta name="description" content="ReduxFlakes little web portal"/>
+<meta name="description" content="Your friendly neocities web portal"/>
 <link rel="stylesheet" href="/css/reset.min.css"/>
 <link rel="stylesheet" href="/css/font.css"/>
 <link rel="stylesheet" href="/css/global.css"/>
@@ -14,47 +14,103 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
 <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
 <script src="/assets/scripts/main.js"></script>
+<script data-goatcounter="https://eversoul.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
   </head>
   <body>
     <div class="wrapper">
+      <div class="top--toolbar">
+    <nav>
+        &#8739;
+        <a href="/sitemap.xml">Site Map</a>
+    </nav>
+</div>
       <header>
-  <h1>eversoul</h1>
-  <p>ReduxFlakes little web portal</p>
+  <article>
+    <h1>eversoul
+      <em class="heading__small">beta</em>
+    </h1>
+    <p>Your friendly neocities web portal</p>
+  </article>
+  <div class="search">
+    <form>
+      <label>Search with DuckDuckGo!</label>
+      <input type="text" id="searchInput">
+      <button type="submit" onclick="searchValue()">Search</button>
+    </form>
+  </div>
+  <script>
+    function searchValue() {
+      const searchInput = document
+        .getElementById("searchInput")
+        .value;
+      window.open(`https://duckduckgo.com/?q=${searchInput}`, "_blank");
+    }
+  </script>
+
 </header>
-<nav class="main--nav">
-  <ul role="list">
-    
-      <li>
-        <a href="/" >Home</a>
-      </li>
-    
-      <li>
-        <a href="/guides/" >Guides</a>
-      </li>
-    
-      <li>
-        <a href="/blog/" aria-current="page">Blog</a>
-      </li>
-    
-      <li>
-        <a href="/directory/" >Directory</a>
-      </li>
-    
-      <li>
-        <a href="/music/" >Music</a>
-      </li>
-    
-      <li>
-        <a href="/resources/" >Resources</a>
-      </li>
-    
-      <li>
-        <a href="/about/" >About Me</a>
-      </li>
-    
-  </ul>
+      <nav class="main--nav">
+    <ul role="list">
+        
+            <li>
+                <a href="/" >Home</a>
+            </li>
+        
+            <li>
+                <a href="/guides/" >Guides</a>
+            </li>
+        
+            <li>
+                <a href="/blog/" aria-current="page">Personal Blog</a>
+            </li>
+        
+            <li>
+                <a href="/directory/" >Directory</a>
+            </li>
+        
+            <li>
+                <a href="/music/" >Music</a>
+            </li>
+        
+            <li>
+                <a href="/resources/" >Resources</a>
+            </li>
+        
+            <li>
+                <a href="/about/" >About</a>
+            </li>
+        
+    </ul>
 </nav>
-      <main>
+      <main class="main--grid--layout">
+        <aside class="sidebar">
+
+  <article>
+    <h3>About eversoul</h3>
+Eversoul is your friendly Neocities web portal, inspired by old web portals from the 2000s like MSN, AOL, Yahoo, and others.
+  </article>
+
+  <article>
+    <h3>Webrings</h3>
+    <div class="webrings">
+      <h4>Hotline Webring</h4>
+      <nav>
+        <a href="https://hotlinewebring.club/eversoul/previous">Previous</a>
+        <a href="https://hotlinewebring.club/eversoul/next">Next</a>
+      </nav>
+      <h4>null webring</h4>
+      <nav>
+        <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+      </nav>
+      <h4>dinhe webring</h4>
+      <nav>
+        <a href='https://webring.dinhe.net/prev/https://eversoul.neocities.org'>Previous</a>
+        <a href='https://webring.dinhe.net/next/https://eversoul.neocities.org'>Next</a>
+      </nav>
+    </div>
+  </article>
+
+</aside>
         <section class="content"><h2 id="blog" tabindex="-1">Blog</h2>
 <p>Welcome to my &quot;writings and ramblings&quot; page!</p>
 <p>Random posts mostly related to my life, programming, or any topic, to be honest.</p>
@@ -65,10 +121,10 @@
         <aside class="sidebar">
 
   <article>
-    <h3>Webmaster</h3>
-        My name is ReduxFlakes, I am an open source Android app developer, web
+    <h3>The Creator</h3>
+        My name is ReduxFlakes and I'm the founder of eversoul. 
+        I'm an open source Android app developer, web
         developer, app translator, and <em>designer</em>.
-        <a href="/about">More about me</a>
     <h4>Social Cloud</h4>
     <nav class="nav__cloud">
       <ul role="list">
@@ -100,59 +156,10 @@
       </ul>
     </nav>
   </article>
-
-  <article>
-    <h3>Webrings</h3>
-    <div class="webrings">
-      <h4>Hotline Webring</h4>
-      <nav>
-        <a href="https://hotlinewebring.club/eversoul/previous">Previous</a>
-        <a href="https://hotlinewebring.club/eversoul/next">Next</a>
-      </nav>
-      <h4>null webring</h4>
-      <nav>
-        <script src="https://nuthead.neocities.org/ring/ring.js"></script>
-      </nav>
-      <h4>dinhe webring</h4>
-      <nav>
-        <a href='https://webring.dinhe.net/prev/https://eversoul.neocities.org'>Previous</a>
-        <a href='https://webring.dinhe.net/next/https://eversoul.neocities.org'>Next</a>
-      </nav>
-    </div>
-  </article>
-
-  <article>
-    <h3>Music Player</h3>
-    <div class="audio--wrapper">
-      <audio controls id="player" onended="playNext()">
-        <source src="https://files.catbox.moe/itkr7a.mp3" type="audio/mpeg">
-      </audio>
-      <button onclick="playNext()">
-        <ion-icon name="arrow-forward-outline"></ion-icon>
-      </button>
-      <script>
-        var currentTrack = 0;
-        var tracks = ["https://files.catbox.moe/itkr7a.mp3", "https://files.catbox.moe/q2cq6l.mp3", "https://files.catbox.moe/1g9zjq.mp3", "https://files.catbox.moe/at78d0.mp3"];
-
-        function playNext() {
-          var audio = document.getElementById("player");
-          currentTrack = (currentTrack + 1) % tracks.length;
-          audio.src = tracks[currentTrack];
-          audio.play();
-        }
-      </script>
-    </div>
-    <a href="https://home96.bandcamp.com/album/resting-state">Full album</a>
-  </article>
 </aside>
       </main>
       <footer>
-2023 ReduxFlakes - Most content is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons CC BY-ND 4.0</a> unless especified.
-<br/>
-  <a href="/sitemap.xml">Sitemap</a> - <a href="https://raw.githubusercontent.com/ReduxFlakes/eversoul/main/LICENSE">Site License</a>
-  <br/>
-  <em>last updated: 12 Feb, 2023
-  </div>
+eversould was created by ReduxFlakes - Most content is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons CC BY-ND 4.0</a> unless especified.
 </footer>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

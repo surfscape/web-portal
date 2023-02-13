@@ -3,9 +3,8 @@
   "url": "https://eversoul.neocities.org",
   "lang": "en",
   "locale": "en",
-  "description": "ReduxFlakes little web portal",
+  "description": "Your friendly neocities web portal",
   "author": "reduxflakes",
-  "version": "v0.0.4",
-  "updated": "12 Feb, 2023",
-  "changes": "Changed to mobile first, fixed grammar, improved mobile layout, new What's New section on the home page, added a Music Player, changed site accent color."
+  "updated": "13 Feb, 2023",
+  "changes": "Now eversoul is a neocities web portal instead of just a personal site"
 }

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>The Music Database | eversoul</title>
-<meta name="description" content="ReduxFlakes little web portal"/>
+<meta name="description" content="Your friendly neocities web portal"/>
 <link rel="stylesheet" href="/css/reset.min.css"/>
 <link rel="stylesheet" href="/css/font.css"/>
 <link rel="stylesheet" href="/css/global.css"/>
@@ -14,49 +14,106 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
 <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
 <script src="/assets/scripts/main.js"></script>
+<script data-goatcounter="https://eversoul.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
   </head>
   <body>
     <div class="wrapper">
+      <div class="top--toolbar">
+    <nav>
+        &#8739;
+        <a href="/sitemap.xml">Site Map</a>
+    </nav>
+</div>
       <header>
-  <h1>eversoul</h1>
-  <p>ReduxFlakes little web portal</p>
+  <article>
+    <h1>eversoul
+      <em class="heading__small">beta</em>
+    </h1>
+    <p>Your friendly neocities web portal</p>
+  </article>
+  <div class="search">
+    <form>
+      <label>Search with DuckDuckGo!</label>
+      <input type="text" id="searchInput">
+      <button type="submit" onclick="searchValue()">Search</button>
+    </form>
+  </div>
+  <script>
+    function searchValue() {
+      const searchInput = document
+        .getElementById("searchInput")
+        .value;
+      window.open(`https://duckduckgo.com/?q=${searchInput}`, "_blank");
+    }
+  </script>
+
 </header>
-<nav class="main--nav">
-  <ul role="list">
-    
-      <li>
-        <a href="/" >Home</a>
-      </li>
-    
-      <li>
-        <a href="/guides/" >Guides</a>
-      </li>
-    
-      <li>
-        <a href="/blog/" >Blog</a>
-      </li>
-    
-      <li>
-        <a href="/directory/" >Directory</a>
-      </li>
-    
-      <li>
-        <a href="/music/" aria-current="page">Music</a>
-      </li>
-    
-      <li>
-        <a href="/resources/" >Resources</a>
-      </li>
-    
-      <li>
-        <a href="/about/" >About Me</a>
-      </li>
-    
-  </ul>
+      <nav class="main--nav">
+    <ul role="list">
+        
+            <li>
+                <a href="/" >Home</a>
+            </li>
+        
+            <li>
+                <a href="/guides/" >Guides</a>
+            </li>
+        
+            <li>
+                <a href="/blog/" >Personal Blog</a>
+            </li>
+        
+            <li>
+                <a href="/directory/" >Directory</a>
+            </li>
+        
+            <li>
+                <a href="/music/" aria-current="page">Music</a>
+            </li>
+        
+            <li>
+                <a href="/resources/" >Resources</a>
+            </li>
+        
+            <li>
+                <a href="/about/" >About</a>
+            </li>
+        
+    </ul>
 </nav>
-      <main>
+      <main class="main--grid--layout">
+        <aside class="sidebar">
+
+  <article>
+    <h3>About eversoul</h3>
+Eversoul is your friendly Neocities web portal, inspired by old web portals from the 2000s like MSN, AOL, Yahoo, and others.
+  </article>
+
+  <article>
+    <h3>Webrings</h3>
+    <div class="webrings">
+      <h4>Hotline Webring</h4>
+      <nav>
+        <a href="https://hotlinewebring.club/eversoul/previous">Previous</a>
+        <a href="https://hotlinewebring.club/eversoul/next">Next</a>
+      </nav>
+      <h4>null webring</h4>
+      <nav>
+        <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+      </nav>
+      <h4>dinhe webring</h4>
+      <nav>
+        <a href='https://webring.dinhe.net/prev/https://eversoul.neocities.org'>Previous</a>
+        <a href='https://webring.dinhe.net/next/https://eversoul.neocities.org'>Next</a>
+      </nav>
+    </div>
+  </article>
+
+</aside>
         <section class="content"><h2 class="pod_title" id="the-music-database" tabindex="-1">The Music Database</h2>
-<p>Welcome to my music database! A full blown directory with all of my favorite songs, artists, and albums!</p>
+<p>Welcome to the eversoul music database, handpicked by ReduxFlakes.</p>
+<p><em>All the links go to <a href="http://spotify.com">spotify.com</a> which means you are accepting their Terms of Service and Privacy policy.</em></p>
 <h2 class="pod_title" id="artists-%26-bands-(18)" tabindex="-1">Artists &amp; Bands (18)</h2>
 <ul class="cards" role="list"><li class="card"><a href="https://open.spotify.com/artist/0f3EsoviYnRKTkmayI3cux?si=dIHXusvNSzmuZa-lOoh1Iw"><img src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/cc/62/0c/cc620ccb-c10d-c538-ce73-06cf185b3303/mzl.ynbraxen.jpg/375x375bb.jpg"/><article><h3>Men At Work</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/0WwSkZ7LtFUFjGjMZBMt6T?si=y2Ye7er3RrWtObOQFPdGmg"><img src="https://i.scdn.co/image/ab6761610000e5eb4bdaa8c5e65b64f50549c393"/><article><h3>Dire Straits</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/6mdiAmATAx73kdxrNrnlao?si=OEiUGoMQTs2VKkge_bAosg"><img src="https://seeklogo.com/images/I/Iron_Maiden-logo-57E237D49F-seeklogo.com.png"/><article><h3>Iron Maiden</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8?si=84yGOeteTR2F2QyvVS1w3w"><img src="https://yt3.googleusercontent.com/ytc/AL5GRJX8JiOcerjUO8sRczK-9PcaZSJS9l6-Y8se3cyu=s900-c-k-c0x00ffffff-no-rj"/><article><h3>The Smiths</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi?si=t_u5sXU0Q1u4CpOw3XZBgA"><img src="https://media.pitchfork.com/photos/6033c6098b8835d37316a598/1:1/w_1800,h_1800,c_limit/Daft-Punk.jpg"/><article><h3>Daft Punk</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ?si=-cOS_4nAQ6uA-M0qqW43_g"><img src="https://yt3.googleusercontent.com/ytc/AL5GRJUf0uymKr2S8Mujztje-lHtoX8Sa22x-uO-D0TuYw=s900-c-k-c0x00ffffff-no-rj"/><article><h3>U2</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/27T030eWyCQRmDyuvr1kxY?si=4jGSTN1uRLSOUVFhDpdbQQ"><img src="https://i.scdn.co/image/ab6761610000e5eb7440170c0628c2945da819c3"/><article><h3>Scorpions</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9?si=-krwn2DLTue6ECQcIrUAvQ"><img src="https://akamai.sscdn.co/uploadfile/letras/fotos/0/9/3/b/093b9f9e35281efb9d86a1e33790947a.jpg"/><article><h3>Pink Floyd</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/1lQnDEcvFAWaUjbyZiHKih?si=vhWOXRwsRPSFfjN-P2VSwA"><img src="https://www.noticiasdeviseu.com/wp-content/uploads/2019/05/xp.jpg"/><article><h3>Xutos &amp; Pontapés</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/3PALZKWkpwjRvBsRmhlVSS?si=hOR5jb_DTKanDdGea61EDQ"><img src="https://i.scdn.co/image/ab6761610000e5eb1761eb5fdbb5d5cbad65cf09"/><article><h3>Gunship</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/5fgtcrHICBqlrkHtSWWu0F?si=dHzEfXYmTquViotlF6ayhQ"><img src="https://www.musica-portuguesa.com/wp-content/uploads/2014/03/antonio-variacoes-1.jpg"/><article><h3>António Variações</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/2exebQUDoIoT0dXA8BcN1P?si=LVNT2DtWRTCXHOzI6i7H9Q"><img src="https://www.retro-synthwave.com/wp-content/uploads/2018/01/HOME-5.jpg"/><article><h3>HOME</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ?si=u0OzE5rbRt2GUsqTea79Zw"><img src="https://iscale.iheart.com/v3/surl/aHR0cDovL2ltYWdlLmloZWFydC5jb20vaW1hZ2VzL292ZXJyaWRlLzc0NDg4MF9lNDljMDliYy0xNjgyLTRhNzUtOTFlZC02MWM0MDIxYjc1ODAuanBn?sn=eGtleWJhc2UyMDIxMTExMDqaOO9ti14qRrQG45vxsvuH2jxhSVf7zBuevlgExvt0uA%3D%3D&amp;surrogate=1cOXl179JY-syhxYSCX6Q1a_Mcu6UO8d-F4oJzpZf1hcUbJr4aIiwNUBGUf7jx4DdNBxDnMO3tLCBCByBjOEKPobikss7KWv_EUeUYZfzwS9fMwoDFojXoy14LYqtRhlVvpqbz17-WxlkViE3RbqmIFOtuVTSUhxiWZlFevgue9pGyvTsqeB9NuFLcku7jgWw2b9QeITcSFUWmLWbS74JEUl0FR5FHSPNtzpMyyTSc3XUZ1Y3T1HrpACG3vezN_v10E%3D"/><article><h3>The Weeknd</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/2jzc5TC5TVFLXQlBNiIUzE?si=QtXHuYJdQMOzzq4WB29THg"><img src="https://i.scdn.co/image/ab6761610000e5eb0168ba8148c07c2cdeb7d067"/><article><h3>a-ha</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/2OgP0RGmDrXN9kOWRNfEuE?si=Xsx-af4tTtWoVRjrsPxz0Q"><img src="https://i.scdn.co/image/908abeee7856e7821c86c05173202c4bdba37454"/><article><h3>Shirobon</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/38dW24ZxoRfXGe1lJXXFNg?si=KoGuIfpMTLG0P_IuRQwfqg"><img src="https://i.scdn.co/image/ab6761610000e5eb4aa97583e8ccd16ce3c79242"/><article><h3>Kubbi</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/13DulgdvfJaeXyxAqGzfb4?si=Q5Xo8leMS0-pxbA91Omfew"><img src="https://i.scdn.co/image/ab67616d0000b273769ea2878e1d960de4bd601c"/><article><h3>Sétima Legião</h3></article></a></li><li class="card"><a href="https://open.spotify.com/artist/0lZoBs4Pzo7R89JM9lxwoT?si=CwG01AtdTwqNMAxGSF2cpQ"><img src="https://imgs.smoothradio.com/images/10093?width=2009&amp;crop=1_1&amp;signature=FLZj7LmXlZPJWr7dhLskiDYeY7Q="/><article><h3>Duran Duran</h3></article></a></li></ul>
 <h2 class="pod_title" id="albums-(4)" tabindex="-1">Albums (4)</h2>
@@ -65,10 +122,10 @@
         <aside class="sidebar">
 
   <article>
-    <h3>Webmaster</h3>
-        My name is ReduxFlakes, I am an open source Android app developer, web
+    <h3>The Creator</h3>
+        My name is ReduxFlakes and I'm the founder of eversoul. 
+        I'm an open source Android app developer, web
         developer, app translator, and <em>designer</em>.
-        <a href="/about">More about me</a>
     <h4>Social Cloud</h4>
     <nav class="nav__cloud">
       <ul role="list">
@@ -100,59 +157,10 @@
       </ul>
     </nav>
   </article>
-
-  <article>
-    <h3>Webrings</h3>
-    <div class="webrings">
-      <h4>Hotline Webring</h4>
-      <nav>
-        <a href="https://hotlinewebring.club/eversoul/previous">Previous</a>
-        <a href="https://hotlinewebring.club/eversoul/next">Next</a>
-      </nav>
-      <h4>null webring</h4>
-      <nav>
-        <script src="https://nuthead.neocities.org/ring/ring.js"></script>
-      </nav>
-      <h4>dinhe webring</h4>
-      <nav>
-        <a href='https://webring.dinhe.net/prev/https://eversoul.neocities.org'>Previous</a>
-        <a href='https://webring.dinhe.net/next/https://eversoul.neocities.org'>Next</a>
-      </nav>
-    </div>
-  </article>
-
-  <article>
-    <h3>Music Player</h3>
-    <div class="audio--wrapper">
-      <audio controls id="player" onended="playNext()">
-        <source src="https://files.catbox.moe/itkr7a.mp3" type="audio/mpeg">
-      </audio>
-      <button onclick="playNext()">
-        <ion-icon name="arrow-forward-outline"></ion-icon>
-      </button>
-      <script>
-        var currentTrack = 0;
-        var tracks = ["https://files.catbox.moe/itkr7a.mp3", "https://files.catbox.moe/q2cq6l.mp3", "https://files.catbox.moe/1g9zjq.mp3", "https://files.catbox.moe/at78d0.mp3"];
-
-        function playNext() {
-          var audio = document.getElementById("player");
-          currentTrack = (currentTrack + 1) % tracks.length;
-          audio.src = tracks[currentTrack];
-          audio.play();
-        }
-      </script>
-    </div>
-    <a href="https://home96.bandcamp.com/album/resting-state">Full album</a>
-  </article>
 </aside>
       </main>
       <footer>
-2023 ReduxFlakes - Most content is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons CC BY-ND 4.0</a> unless especified.
-<br/>
-  <a href="/sitemap.xml">Sitemap</a> - <a href="https://raw.githubusercontent.com/ReduxFlakes/eversoul/main/LICENSE">Site License</a>
-  <br/>
-  <em>last updated: 12 Feb, 2023
-  </div>
+eversould was created by ReduxFlakes - Most content is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons CC BY-ND 4.0</a> unless especified.
 </footer>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

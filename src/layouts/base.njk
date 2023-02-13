@@ -5,10 +5,13 @@
   </head>
   <body>
     <div class="wrapper">
+      {% include "toolbar.njk" %}
       {% include "header.njk" %}
-      <main>
+      {% include "navigation.njk" %}
+      <main class="main--grid--layout">
+        {% include "aside_posts.njk" %}
         <section class="content">{{ content | safe }}</section>
-        {% include "sidebar.njk" %}
+        {% include "aside_news.njk" %}
       </main>
       {% include "footer.njk" %}
     </div>
