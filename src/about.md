@@ -1,27 +1,18 @@
 ---
-layout: base.njk
+layout: page.njk
 title: About
 ---
 
-## About eversoul
+Welcome to Eversoul, your one-stop web portal for all your favorite content and communities, inspired by the web portals of the 2000s like MSN, AOL and Newgrounds. At Eversoul, we're passionate about creating a hub that brings the Neocitie community together, fosters creativity, and provides an escape from the chaos that we call the modern web.
 
-Eversoul at first was going to be a personal site for me (ReduxFlakes), and it would actually become true for a week, but nothing lasts forever, and I had bigger ideas, so Eversoul became a web portal for Neocities.
+Our vision for Eversoul is to be more than just another web portal. We want to create a community that's inclusive, supportive, and driven by our shared love of all things of the old/indie web. Whether you're a fan of games, entertainment, music, or just browsing the latest updates, Eversoul is the place for you.
 
-At the moment (Feb. 13, 2023, to be exact), the site is very much bare bones, with a lot of issues related to layout, responsiveness, and lack of content, but in the next few weeks that will change.
+## Origin
 
-To make Eversoul more connected to the community around it, its [source code](https://github.com/ReduxFlakes/eversoul) is public on GitHub!
+The idea for Eversoul started as a personal website, but as our ambitions grew, we realized we needed something bigger to bring our vision to life. That's when we started brainstorming ideas for a web portal that could provide a home for diverse communities, all under one roof. That's when Eversoul was born.
 
-## About me
+## Closing
 
-My name is ReduxFlakes; I am an open-source Android app developer, web developer, and designer from Portugal, and I'm currently studying computer science.
+At Eversoul, we're a team of passionate internet enthusiasts who come from all walks of life. We're developers who are united by our love of the internet and our desire to create a space that's both fun and safe. Whether you're interested in coding, design, or just exploring new content, we're here to help you get the most out of the web.
 
-I'm the creator of eversoul.
-
-**Quick Facts:**
-
-- I love music, especially synthwave, heavy metal, rock, "nostalgic" pop, chiptune, and anything from the 80s.
-- I enjoy tinkering with technology, such as homebrew and modding (I have a homebrewed PSP 3004 and my primary Android device runs custom software).
-- I adore vintage technology and the internet.
-- I love open-source software.
-- I hate most modern music (excluding synthwave and chiptune).
-- I hate modern software (let's be honest, Windows 11 stinks).
+So come on in, explore our portal, and join our community. We can't wait to see what you'll discover at Eversoul!

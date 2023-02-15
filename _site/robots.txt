@@ -1,4 +1,0 @@
-Sitemap: https://eversoul.neocities.org/sitemap.xml
-
-User-agent: *
-Disallow:

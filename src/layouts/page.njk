@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+
+<main class="main--sidebar--layout page--only--layout">
+    {% include "aside_posts.njk" %}
+    <section>
+        <h2>{{title}}</h2>
+        {{ content | safe }}
+    </section>
+</main>

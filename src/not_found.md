@@ -1,13 +1,13 @@
 ---
-layout: base.njk
+layout: page.njk
 title: Page not found
 permalink: not_found.html
 eleventyExcludeFromCollections: true
 ---
 
-## 404 Not Found 😔
+The url: <code id="url"></code> doesn't seem to exist in the server.
 
-Looks like <code id="url"></code> doesn't exist.
+[Go back home](/)
 
 <script>
   var x = document.URL;

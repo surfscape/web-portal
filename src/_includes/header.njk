@@ -1,24 +1,23 @@
-<header>
-  <article>
-    <h1>{{ site.title }}
-      <em class="heading__small">beta</em>
+<header class="main--header">
+  <article class="main__header__meta">
+    <h1 class="main__header__heading">{{ site.title }}
+      <em class="main__header__small">beta</em>
     </h1>
-    <p>{{ site.description }}</p>
+    <p>{{ site.slogan }}</p>
   </article>
-  <div class="search">
+  <div>
     <form>
       <label>Search with DuckDuckGo!</label>
-      <input type="text" id="searchInput">
+      <input type="text" class="search__input">
       <button type="submit" onclick="searchValue()">Search</button>
     </form>
   </div>
   <script>
     function searchValue() {
       const searchInput = document
-        .getElementById("searchInput")
+        .getElementsByClassName("search__input")
         .value;
       window.open(`https://duckduckgo.com/?q=${searchInput}`, "_blank");
     }
   </script>
-
 </header>

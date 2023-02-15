@@ -5,12 +5,17 @@
       "url": "/"
     },
     {
-      "title": "Guides",
-      "url": "/guides/"
-    },
-    {
-      "title": "Personal Blog",
-      "url": "/blog/"
+      "title": "Community [SOON]",
+      "subLinks": [
+        {
+          "title": "Guidelines",
+          "url": "/community/guidelines"
+        },
+        {
+          "title": "Community Blog",
+          "url": "/community/blog"
+        }
+      ]
     },
     {
       "title": "Directory",

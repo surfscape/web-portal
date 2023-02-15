@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Blog
+draft: true
 ---
 
 ## Blog

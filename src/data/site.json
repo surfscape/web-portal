@@ -1,10 +1,11 @@
 {
-  "title": "eversoul",
+  "title": "Eversoul",
   "url": "https://eversoul.neocities.org",
   "lang": "en",
   "locale": "en",
-  "description": "Your friendly neocities web portal",
-  "author": "reduxflakes",
-  "updated": "13 Feb, 2023",
-  "changes": "Now eversoul is a neocities web portal instead of just a personal site"
+  "description": "Your one-stop friendly Neocities web portal for all your favorite content and communities, inspired by the web portals of the 2000s. Support the old/indie web!",
+  "slogan": "Your friendly Neocities web portal!",
+  "author": "ReduxFlakes",
+  "updated": "14 Feb, 2023",
+  "changes": "We made some changes to the site layout, making it more user-friendly and streamlined. We also added new features, like dropdown menus and content-only layouts, to make it easier for users to find what they're looking for."
 }
