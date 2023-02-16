@@ -3,11 +3,9 @@ layout: base.njk
 ---
 
 <main class="main--sidebar--layout">
-    {% include "aside_posts.njk" %}
-    <div class="content--container main--content--container">
-        <section>
-            {{ content | safe }}
-        </section>
-        {% include "aside_news.njk" %}
-    </div>
+    {% include "main_sidebar.njk" %}
+    <section class="content--container main--content--container">
+        {{ content | safe }}
+    </section>
+    {% include "inner_sidebar.njk" %}
 </main>

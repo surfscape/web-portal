@@ -1,6 +1,9 @@
 ---
 layout: page.njk
 title: About
+updated: 14 Feb, 2023
+crumbs:
+  - title: About
 ---
 
 Welcome to Eversoul, your one-stop web portal for all your favorite content and communities, inspired by the web portals of the 2000s like MSN, AOL and Newgrounds. At Eversoul, we're passionate about creating a hub that brings the Neocitie community together, fosters creativity, and provides an escape from the chaos that we call the modern web.

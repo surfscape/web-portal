@@ -1,7 +1,9 @@
 ---
 layout: page.njk
 title: Help Center
-update: 12 Feb, 2023
+updated: 12 Feb, 2023
+crumbs:
+  - title: Help Center
 ---
 
 Welcome to the Eversoul help center page! Here you can find useful information and answers to common questions about Eversoul.

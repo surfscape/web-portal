@@ -1,7 +1,9 @@
 ---
 layout: page.njk
 title: Resources
-update: 12 Feb, 2023
+updated: 12 Feb, 2023
+crumbs:
+  - title: Resources
 ---
 
 Welcome to the resources page, here you can find all kinds of documents related to tech and programming.

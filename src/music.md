@@ -1,6 +1,8 @@
 ---
 layout: page.njk
 title: The Music Database
+crumbs:
+  - title: The Music Database
 ---
 
 This page is being reworked!

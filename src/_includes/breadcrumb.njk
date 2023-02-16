@@ -1,0 +1,12 @@
+<nav aria-label="breadcrumb">
+    <a href="/">Home</a> > 
+            {% if crumbs %}
+        {% for crumb in crumbs %}
+            {% if crumb.title and crumb.url %}
+                <a href="{{crumb.url}}">{{crumb.title}}</a> >
+            {% else %}
+                <span aria-current="page">{{crumb.title}}</span>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</nav>

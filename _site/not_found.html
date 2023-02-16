@@ -137,7 +137,7 @@
     </ul>
 </nav>
       
-<main class="main--sidebar--layout page--only--layout">
+<main class="main--sidebar--layout">
     <aside class="main--sidebar sidebar--left">
 
   <article class="main--sidebar--content-box content--container">
@@ -167,9 +167,20 @@
   </article>
 
 </aside>
-    <section>
-        <h2>Page not found</h2>
-        <p>The url: <code id="url"></code> doesn't seem to exist in the server.</p>
+    <section class="content--container main--content--container">
+        
+<nav aria-label="breadcrumb">
+    <a href="/">Home</a> > 
+            
+        
+            
+                <span aria-current="page">Page not found</span>
+            
+        
+    
+</nav>
+<h2>Page not found</h2>
+<p>The url: <code id="url"></code> doesn't seem to exist in the server.</p>
 <p><a href="/">Go back home</a></p>
 <script>
   var x = document.URL;
@@ -178,7 +189,14 @@
     .innerHTML = x;
 </script>
 
+<hr/>
+
     </section>
+    <aside class="main--sidebar sidebar--inner">
+  
+
+  
+</aside>
 </main>
       <footer class="accent--container">
     Eversoul was created by ReduxFlakes - Most content is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons CC BY-ND 4.0</a> unless especified.

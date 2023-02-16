@@ -5,7 +5,7 @@ title: Home
 
 <article class="notice__box info__box no--mar--pad content--container">
 
-**Improved design - {{ site.updated }}**
+**Enhanced experience! - {{ site.updated }}**
 
 {{ site.changes }}
 

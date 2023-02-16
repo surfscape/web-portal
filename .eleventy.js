@@ -1,9 +1,11 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItAnc = require("markdown-it-anchor");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPassthroughCopy("src/assets/");
   eleventyConfig.addPassthroughCopy("src/css/");
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "/robots.txt" });
@@ -16,6 +18,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("asPostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("LLL dd yyyy");
   });
+  eleventyConfig.addFilter("split", function (value, separator) {
+    return value.split(separator);
+  });
   return {
     dir: {
       input: "src",
@@ -27,6 +32,6 @@ module.exports = function (eleventyConfig) {
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
+    dataTemplateEngine: ["njk"],
   };
 };

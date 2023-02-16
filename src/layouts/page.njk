@@ -1,11 +1,11 @@
 ---
-layout: base.njk
+layout: home.njk
 ---
 
-<main class="main--sidebar--layout page--only--layout">
-    {% include "aside_posts.njk" %}
-    <section>
-        <h2>{{title}}</h2>
-        {{ content | safe }}
-    </section>
-</main>
+{% include "breadcrumb.njk" %}
+<h2>{{title}}</h2>
+{{ content | safe }}
+<hr/>
+{% if updated %}
+    <span>last updated: <em>{{updated}}</em>
+    {% endif %}

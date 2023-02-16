@@ -3,6 +3,8 @@ layout: page.njk
 title: Page not found
 permalink: not_found.html
 eleventyExcludeFromCollections: true
+crumbs:
+  - title: Page not found
 ---
 
 The url: <code id="url"></code> doesn't seem to exist in the server.
