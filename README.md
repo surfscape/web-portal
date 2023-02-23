@@ -1,4 +1,4 @@
-# [eversoul](https://eversoul.neocities.org)
+# [NetFind](https://eversoul.neocities.org)
 
 Your friendly Neocities web portal!
 
