@@ -1,10 +1,11 @@
-# [NetFind](https://eversoul.neocities.org)
+# Web Portal
 
-Your friendly Neocities web portal!
+The main hub of NetFind for news, updates and services! [check it out!](https://netfind.neocities.org)
 
-[neocties's site page](https://neocities.org/site/eversoul)
+[neocties's site page](https://neocities.org/site/netfind)
 
-## Credits:
+## Software
 
 - SSG: 11ty
+- Languages: HTML, CSS, JS
 - Host: neocities
