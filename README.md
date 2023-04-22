@@ -1,6 +1,6 @@
 # Web Portal
 
-The source code of the main hub of NetFind for news, updates and services! [check it out!](https://netfind.neocities.org)
+The source code for the web portal (news, updates, services & applications info, status) - [check it out!](https://netfind.neocities.org)!
 
 [neocties's site page](https://neocities.org/site/netfind)
 
