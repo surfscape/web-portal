@@ -1,0 +1,146 @@
+{
+  "menuNav": [
+    {
+      "title": "Home",
+      "url": "/"
+    },
+    {
+      "title": "Services",
+      "url": "/services/"
+    },
+    {
+      "title": "Applications",
+      "url": "/applications/"
+    },
+    {
+      "title": "Community",
+      "url": "/community/"
+    },
+    {
+      "title": "News",
+      "url": "/news/"
+    },
+    {
+      "title": "About",
+      "url": "/info/about/"
+    }
+  ],
+  "selectMenu": [
+    {
+      "services": [
+        {
+          "title": "AdZone",
+          "url": "https://surfscape.github.io/advertising/adzone"
+        },
+        {
+          "title": "Google Drive",
+          "url": "/services/google-drive"
+        }
+      ],
+      "help": [
+        {
+          "title": "FAQ",
+          "url": "/help/faq"
+        },
+        {
+          "title": "Contact Us",
+          "url": "/help/contact-us"
+        },
+        {
+          "title": "Support Center",
+          "url": "/help/support-center"
+        }
+      ],
+      "data": [
+        {
+          "title": "Sitemap",
+          "url": "/sitemap.xml"
+        }
+      ]
+    }
+  ],
+  "servicesCard": [
+    {
+      "icon": "adzone.png",
+      "title": "AdZone",
+      "url": "https://surfscape.github.io/advertising/adzone"
+    },
+    {
+      "icon": "gamevortex.png",
+      "title": "GameVortex",
+      "url": "https://surfscape.github.io/gamevortex"
+    }
+  ],
+  "infoLinks": [
+    {
+      "title": "About Us",
+      "url": "/info/about/"
+    },
+    {
+      "title": "History",
+      "url": "/info/history/"
+    },
+    {
+      "title": "Team",
+      "url": "/info/team/"
+    }
+  ],
+  "supportLinks": [
+    {
+      "title": "Help Center",
+      "url": "/support/help"
+    },
+    {
+      "title": "Contact Us",
+      "url": "/support/contact"
+    },
+    {
+      "title": "Imprint",
+      "url": "/support/imprint"
+    }
+  ],
+  "depLinks": [
+    {
+      "title": "Get Involved",
+      "url": "/dev/join"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/net-find"
+    }
+  ],
+  "projectsLinks": [
+    {
+      "title": "Advertising",
+      "url": "/projects/advertising"
+    },
+    {
+      "title": "SurfScape Ideas",
+      "url": "/projects/ideas"
+    }
+  ],
+  "devServices": [
+    {
+      "title": "Get Involved",
+      "url": "/dev/join"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/net-find"
+    }
+  ],
+  "footerLinks": [
+    {
+      "title": "Terms of Service",
+      "url": "/site/tos"
+    },
+    {
+      "title": "Privacy Policy",
+      "url": "/site/privacy"
+    },
+    {
+      "title": "Mastodon",
+      "url": "https://fosstodon.org/@SurfScape"
+    }
+  ]
+}

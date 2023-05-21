@@ -1,0 +1,20 @@
+{
+  "servicesDir": [
+    {
+      "title": "Introduction",
+      "url": "/services/"
+    },
+    {
+      "title": "AdZone",
+      "url": "/services/about/adzone"
+    },
+    {
+      "title": "Directory",
+      "url": "/services/about/directory"
+    },
+    {
+      "title": "Y2K Crawler",
+      "url": "/services/about/y2k-crawler"
+    }
+  ]
+}

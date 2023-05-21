@@ -1,0 +1,33 @@
+<aside class="sidebar--left">
+{%- from "components/components.njk" import component -%}
+
+{% if '/services' in page.url %}
+<span class="sidebar__title">
+  Services
+</span>
+<nav class="link--list">
+  {% for servicesDir in related.servicesDir %}
+    <a href="{{ servicesDir.url }}">{{ servicesDir.title }}</a>
+
+  {% endfor %}
+</nav>
+<hr />
+{% endif %}
+
+    <span class="sidebar__title">
+        Sites we like
+    </span>
+    <nav class="link--list">
+        {% for sitesWeLike in sites.sitesWeLike %}
+            <a href="{{sitesWeLike.url}}">{{sitesWeLike.title}}</a>
+        {% endfor %}
+    </nav>
+    <span class="sidebar__title">
+        Friends
+    </span>
+    <nav class="link--list">
+        {% for neoFriends in sites.neoFriends %}
+            <a href="{{neoFriends.url}}">{{neoFriends.title}}</a>
+        {% endfor %}
+    </nav>
+</aside>

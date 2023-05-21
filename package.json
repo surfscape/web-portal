@@ -1,6 +1,6 @@
 {
-  "name": "11ty-test",
-  "version": "1.0.0",
+  "name": "surfscape",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,17 +13,17 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-navigation": "^0.3.5",
     "common-tags": "^1.8.2",
+    "eleventy": "^1.0.6",
     "eleventy-plugin-date": "^1.0.0",
-    "luxon": "^3.2.1"
+    "luxon": "^3.3.0",
+    "markdown-it-attrs": "^4.1.6"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
     "kramdown": "^0.0.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.6",
-    "markdown-it-attrs": "^4.1.6",
     "yaml": "^2.2.1"
   }
 }

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include "basehead.njk" %}
+  </head>
+  <script data-goatcounter="https://net-find.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <body>
+    <div class="page--wrapper">
+      {% include "header.njk" %}
+      {% block content %}{% endblock %}
+      {% include "footer.njk" %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+    <div class="page__subheader">
+        {% if banner %}
+            <img class="page__banner" src="{{ banner }}">
+        {% endif %}
+
+        <h1>{{title}}</h1>
+    </div>
+    <main class="one--grid--layout">
+        {% include "sidebar-left.njk" %}
+        <div class="main--content">
+            {{ content | safe }}
+        </div>
+    </main>
+{% endblock %}

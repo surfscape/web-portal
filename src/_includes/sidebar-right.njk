@@ -1,0 +1,53 @@
+<aside class="sidebar--right flex flex--column">
+    <div class="flex flex--column">
+        <span class="subtle">
+        Advertisement
+        </span>
+        <iframe width="240" height="200" style="border:none" src="https://googol.neocities.org/neolink/embed.html" name="neolink"></iframe>
+    </div>
+    <div class="pod">
+        <span class="pod__title">
+            <a href="/services">Services</a>
+            <img src="/assets/icon/new.png" alt="NEW" title="New"></span>
+        <nav class="pod__content pod__services">
+            {% for servicesCard in nav.servicesCard %}
+                <a href="{{servicesCard.url}}"><img src="/assets/icon/{{servicesCard.icon}}" alt="{{servicesCard.title}}">{{servicesCard.title}}</a>
+            {% endfor %}
+        </nav>
+    </div>
+    <div class="pod">
+        <span class="pod__title">
+            <a href="/applications">Applications</a>
+            <img src="/assets/icon/tubes.png" alt="Tubes" title="Beta"></span>
+        <nav class="pod__content pod__services">
+            Coming Soon
+        </nav>
+    </div>
+    <hr/>
+    <div class="pod">
+        <span class="pod__title">Quotes</span>
+        <nav class="pod__content">
+            <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+            <blockquote id="quote"></blockquote>
+            <button id="new-quote">New Quote</button>
+            <script>
+                const quote = document.getElementById("quote");
+                const newQuoteButton = document.getElementById("new-quote");
+
+                async function fetchQuote() {
+                    try {
+                        const response = await axios.get("https://api.quotable.io/random");
+                        const {content, author} = response.data;
+                        quote.innerHTML = `"${content}"<br>- ${author}`;
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+
+                fetchQuote();
+
+                newQuoteButton.addEventListener("click", fetchQuote);
+            </script>
+        </nav>
+    </div>
+</aside>

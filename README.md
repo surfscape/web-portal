@@ -1,4 +1,4 @@
-# [NetFind](https://eversoul.neocities.org)
+# [SurfScape](https://eversoul.neocities.org)
 
 Your friendly Neocities web portal!
 

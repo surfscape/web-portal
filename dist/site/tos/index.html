@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Terms of Service | SurfScape</title>
+<meta name="description" content="Your friendly Neocities web portal!"/>
+<link rel="canonical" href="https://SurfScape.neocities.org">
+<link rel="stylesheet" href="/css/reset.min.css"/>
+<link rel="stylesheet" href="/css/global.css"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+  </head>
+  <script data-goatcounter="https://net-find.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <body>
+    <div class="page--wrapper">
+      <header class="main--header flex">
+  <div class="flex flex--center flex--justify">
+    <h1 class="main__header__title" title="SurfScape Home">
+      <a href="/">SurfScape</a>
+      <em class="main__header__subtitle subtitle">preview</em>
+    </h1>
+  </div>
+  <hr class="glass--hr"/>
+  <div class="main--header--nav flex flex--column center">
+    Welcome!
+    <span>Today is:</span>
+    <span id="currentDate"></span>
+
+    <script>
+      var now = new Date();
+      document
+        .getElementById("currentDate")
+        .innerHTML = now.toLocaleDateString();
+    </script>
+  </div>
+</header>
+<div class="global--action--bar flex">
+    <form class="action--bar--form flex flex--center gap--xsm">
+        <img src="/assets/icon/searchbar.png" alt="Search Logo">
+        <label>Search the web! </label>
+        <input type="text" class="search__input">
+        <button class="fancy--button--subtle" type="submit" onclick="searchValue()">Search &#187;</button>
+    </form>
+    <div class="mobile action--bar--section flex flex--center">
+        <select class="select--links" id="links" onchange="goToLink()">
+            <option value="0">Go to...</option>
+            
+                <optgroup class="select--links__option__heading" label="Services">
+                    
+                        <option value="https://surfscape.github.io/advertising/adzone">AdZone</option>
+                    
+                        <option value="/services/google-drive">Google Drive</option>
+                    
+                </optgroup>
+            
+                <optgroup class="select--links__option__heading" label="Help">
+                    
+                        <option value="/help/faq">FAQ</option>
+                    
+                        <option value="/help/contact-us">Contact Us</option>
+                    
+                        <option value="/help/support-center">Support Center</option>
+                    
+                </optgroup>
+            
+                <optgroup class="select--links__option__heading" label="Data">
+                    
+                        <option value="/sitemap.xml">Sitemap</option>
+                    
+                </optgroup>
+            
+        </select>
+    </div>
+</div>
+
+<script>
+    function searchValue() {
+        const searchInput = document
+            .getElementsByClassName("search__input")[0]
+            .value;
+        window.open(`https://duckduckgo.com/?q=${searchInput}`, "_blank");
+    }
+    function goToLink() {
+        const selectElement = document.getElementById("links");
+        const selectedValue = selectElement.value;
+        if (selectedValue !== "") {
+            window.location.href = selectedValue;
+        }
+    }
+</script>
+<nav class="header--nav flex flex--justify--breath">
+  
+    <a href="/">Home</a>
+  
+    <a href="/services/">Services</a>
+  
+    <a href="/applications/">Applications</a>
+  
+    <a href="/community/">Community</a>
+  
+    <a href="/news/">News</a>
+  
+    <a href="/info/about/">About</a>
+  
+</nav>
+      
+    <div class="page__subheader">
+        
+            <img class="page__banner" src="/assets/images/banners/security.png">
+        
+
+        <h1>Terms of Service</h1>
+    </div>
+    <main class="one--grid--layout">
+        <aside class="sidebar--left">
+
+    <span class="sidebar__title">
+        Sites we like
+    </span>
+    <nav class="link--list">
+        
+            <a href="https://sadgrl.online/">sadgrl.online</a>
+        
+            <a href="https://modarchive.org/">Mod Archive</a>
+        
+            <a href="https://www.pouet.net/">pouët.net</a>
+        
+            <a href="https://openbooks.neocities.org/">OpenBooks</a>
+        
+            <a href="https://hotlinecafe.com/">Hotline Cafe</a>
+        
+    </nav>
+    <span class="sidebar__title">
+        Friends
+    </span>
+    <nav class="link--list">
+        
+            <a href="https://dannarchy.com/">Dannarchy</a>
+        
+            <a href="https://bret.io">bret.io</a>
+        
+            <a href="https://billsworld.neocities.org/">Bill&#39;s World</a>
+        
+            <a href="https://neocities.org/site/divergentrays">Divergent Rays</a>
+        
+            <a href="https://mine-css.neocities.org">mine.css</a>
+        
+            <a href="https://max-online.neocities.org">Max&#39;s website</a>
+        
+            <a href="https://empeethree.neocities.org">Suzanne&#39;s Electronic Fun Yard</a>
+        
+    </nav>
+</aside>
+        <div class="main--content">
+            
+        </div>
+    </main>
+
+      <div class="global--action--bar flex">
+    <form class="action--bar--form flex flex--center gap--xsm">
+        <img src="/assets/icon/searchbar.png" alt="Search Logo">
+        <label>Search the web! </label>
+        <input type="text" class="search__input">
+        <button class="fancy--button--subtle" type="submit" onclick="searchValue()">Search &#187;</button>
+    </form>
+    <div class="mobile action--bar--section flex flex--center">
+        <select class="select--links" id="links" onchange="goToLink()">
+            <option value="0">Go to...</option>
+            
+                <optgroup class="select--links__option__heading" label="Services">
+                    
+                        <option value="https://surfscape.github.io/advertising/adzone">AdZone</option>
+                    
+                        <option value="/services/google-drive">Google Drive</option>
+                    
+                </optgroup>
+            
+                <optgroup class="select--links__option__heading" label="Help">
+                    
+                        <option value="/help/faq">FAQ</option>
+                    
+                        <option value="/help/contact-us">Contact Us</option>
+                    
+                        <option value="/help/support-center">Support Center</option>
+                    
+                </optgroup>
+            
+                <optgroup class="select--links__option__heading" label="Data">
+                    
+                        <option value="/sitemap.xml">Sitemap</option>
+                    
+                </optgroup>
+            
+        </select>
+    </div>
+</div>
+
+<script>
+    function searchValue() {
+        const searchInput = document
+            .getElementsByClassName("search__input")[0]
+            .value;
+        window.open(`https://duckduckgo.com/?q=${searchInput}`, "_blank");
+    }
+    function goToLink() {
+        const selectElement = document.getElementById("links");
+        const selectedValue = selectElement.value;
+        if (selectedValue !== "") {
+            window.location.href = selectedValue;
+        }
+    }
+</script>
+<footer class="gap--xxsm">
+    <div class="footer--links--grid">
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>SurfScape</strong> Info</span>
+            <ul>
+                
+                    <li>
+                        <a href="/info/about/">About Us</a>
+                    </li>
+                
+                    <li>
+                        <a href="/info/history/">History</a>
+                    </li>
+                
+                    <li>
+                        <a href="/info/team/">Team</a>
+                    </li>
+                
+            </ul>
+
+        </div>
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>SurfScape</strong> Support</span>
+            <ul>
+                
+                    <li>
+                        <a href="/support/help">Help Center</a>
+                    </li>
+                
+                    <li>
+                        <a href="/support/contact">Contact Us</a>
+                    </li>
+                
+                    <li>
+                        <a href="/support/imprint">Imprint</a>
+                    </li>
+                
+            </ul>
+        </div>
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>SurfScape</strong> Departments</span>
+            <ul>
+                
+                    <li>
+                        <a href="/dev/join">Get Involved</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/net-find">GitHub</a>
+                    </li>
+                
+            </ul>
+
+        </div>
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>SurfScape</strong> Projects
+        </span>
+            <ul>
+                
+                    <li>
+                        <a href="/projects/advertising">Advertising</a>
+                    </li>
+                
+                    <li>
+                        <a href="/projects/ideas">SurfScape Ideas</a>
+                    </li>
+                
+            </ul>
+        </div>
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>Developer</strong> Services
+        </span>
+            <ul>
+                
+                    <li>
+                        <a href="/dev/join">Get Involved</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/net-find">GitHub</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="footer--links flex">
+    &copy; 2022 - 2023 SurfScape Project 
+    <ul>
+            
+                <li>
+                    <a href="/site/tos">Terms of Service</a>
+                </li>
+            
+                <li>
+                    <a href="/site/privacy">Privacy Policy</a>
+                </li>
+            
+                <li>
+                    <a href="https://fosstodon.org/@SurfScape">Mastodon</a>
+                </li>
+            
+        </ul>
+    </div>
+</footer>
+    </div>
+  </body>
+</html>

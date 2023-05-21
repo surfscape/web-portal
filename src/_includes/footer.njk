@@ -1,3 +1,74 @@
-<footer class="accent--container">
-    {{site.title}} was created by ReduxFlakes - Most content is licensed under <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons CC BY-ND 4.0</a> unless especified.
+{% include "searchbar.njk" %}
+<footer class="gap--xxsm">
+    <div class="footer--links--grid">
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>SurfScape</strong> Info</span>
+            <ul>
+                {% for infoLinks in nav.infoLinks %}
+                    <li>
+                        <a href="{{infoLinks.url}}">{{infoLinks.title}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>SurfScape</strong> Support</span>
+            <ul>
+                {% for supportLinks in nav.supportLinks %}
+                    <li>
+                        <a href="{{supportLinks.url}}">{{supportLinks.title}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>SurfScape</strong> Departments</span>
+            <ul>
+                {% for depLinks in nav.depLinks %}
+                    <li>
+                        <a href="{{depLinks.url}}">{{depLinks.title}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>SurfScape</strong> Projects
+        </span>
+            <ul>
+                {% for projectsLinks in nav.projectsLinks %}
+                    <li>
+                        <a href="{{projectsLinks.url}}">{{projectsLinks.title}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="footer--box">
+            <span class="footer--box__title">
+                <strong>Developer</strong> Services
+        </span>
+            <ul>
+                {% for devServices in nav.devServices %}
+                    <li>
+                        <a href="{{devServices.url}}">{{devServices.title}}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="footer--links flex">
+    &copy; 2022 - 2023 SurfScape Project 
+    <ul>
+            {% for footerLinks in nav.footerLinks %}
+                <li>
+                    <a href="{{footerLinks.url}}">{{footerLinks.title}}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </footer>
