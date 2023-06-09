@@ -1,0 +1,5 @@
+{
+  "layout": "page.njk",
+  "permalink": "/news/{{title|slugify}}/",
+  "author": "SurfScape Team"
+}

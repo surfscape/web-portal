@@ -1,0 +1,22 @@
+<aside class="sidebar flex">
+    <div class="pod">
+        <span class="pod--title">Services <img src="/assets/icon/32x32/new.png" alt="New"></span>
+        <nav class="pod--content pod--navbar">
+            {% for services in nav.services %}
+                <a class="pod--links" href="{{services.url}}"><img src="/assets/icon/16x16/{{services.icon}}" alt="{{services.title}}">{{services.title}}</a>
+            {% endfor %}
+            <a class="pod--more" href="/services">All Services</a>
+        </nav>
+    </div>
+    <div class="pod">
+        <span class="pod--title">News</span>
+        <ul class="pod--list--small">
+            {% for new in collections.news %}
+                <li class="pod--li li--tlevel">
+                    <a href="{{new.url}}">{{new.data.title}}</a>
+                    <span>{{new.data.description}}<br/>{{new.data.date | PostDate}}</span>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</aside>

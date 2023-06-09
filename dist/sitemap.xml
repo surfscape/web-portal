@@ -11,14 +11,6 @@
     
         
             <url>
-                <loc>https://surfscape.neocities.org/applications/</loc>
-                <lastmod>2023-04-20T20:27:47.417Z</lastmod>
-                <changefreq>monthly</changefreq>
-            </url>
-        
-    
-        
-            <url>
                 <loc>https://surfscape.neocities.org/info/about/</loc>
                 <lastmod>2023-04-20T20:27:48.134Z</lastmod>
                 <changefreq>monthly</changefreq>
@@ -43,32 +35,8 @@
     
         
             <url>
-                <loc>https://surfscape.neocities.org/services/about/adzone/</loc>
-                <lastmod>2023-04-20T20:27:48.168Z</lastmod>
-                <changefreq>monthly</changefreq>
-            </url>
-        
-    
-        
-            <url>
                 <loc>https://surfscape.neocities.org/services/</loc>
                 <lastmod>2023-04-20T20:27:48.168Z</lastmod>
-                <changefreq>monthly</changefreq>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://surfscape.neocities.org/services/about/directory/</loc>
-                <lastmod>2023-04-22T16:27:13.574Z</lastmod>
-                <changefreq>monthly</changefreq>
-            </url>
-        
-    
-        
-            <url>
-                <loc>https://surfscape.neocities.org/services/about/y2k-crawler/</loc>
-                <lastmod>2023-04-22T16:27:24.434Z</lastmod>
                 <changefreq>monthly</changefreq>
             </url>
         
@@ -85,6 +53,30 @@
             <url>
                 <loc>https://surfscape.neocities.org/site/privacy/</loc>
                 <lastmod>2023-04-23T22:28:51.180Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://surfscape.neocities.org/news/</loc>
+                <lastmod>2023-06-04T22:38:18.908Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://surfscape.neocities.org/news/public-release/</loc>
+                <lastmod>2023-06-05T16:23:45.678Z</lastmod>
+                <changefreq>monthly</changefreq>
+            </url>
+        
+    
+        
+            <url>
+                <loc>https://surfscape.neocities.org/community/</loc>
+                <lastmod>2023-06-05T17:05:50.629Z</lastmod>
                 <changefreq>monthly</changefreq>
             </url>
         

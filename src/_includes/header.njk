@@ -1,27 +1,8 @@
-<header class="main--header flex">
-  <div class="flex flex--center flex--justify">
-    <h1 class="main__header__title" title="SurfScape Home">
-      <a href="/">{{ site.title }}</a>
-      <em class="main__header__subtitle subtitle">preview</em>
-    </h1>
-  </div>
-  <hr class="glass--hr"/>
-  <div class="main--header--nav flex flex--column center">
-    Welcome!
-    <span>Today is:</span>
-    <span id="currentDate"></span>
-
-    <script>
-      var now = new Date();
-      document
-        .getElementById("currentDate")
-        .innerHTML = now.toLocaleDateString();
-    </script>
-  </div>
+<header class="flex container">
+  <span class="header--site--title">{{site.title}}</span>
+  <nav class="header--nav flex">
+    {% for menuNav in nav.menuNav %}
+      <a class="container" href="{{menuNav.url}}">{{menuNav.title}}</a>
+    {% endfor %}
+  </nav>
 </header>
-{% include "searchbar.njk" %}
-<nav class="header--nav flex flex--justify--breath">
-  {% for menuNav in nav.menuNav %}
-    <a href="{{menuNav.url}}">{{menuNav.title}}</a>
-  {% endfor %}
-</nav>

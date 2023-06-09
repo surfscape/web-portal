@@ -1,5 +1,3 @@
 {
-    "layout": "page.njk",
-    "banner": "/assets/images/banners/info.png"
-  }
-  
+  "layout": "page.njk"
+}

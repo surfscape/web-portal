@@ -1,11 +1,7 @@
 ---
-layout: base.njk
 title: Privacy Policy
 updated: 15 Feb, 2023
-crumbs:
-  - title: About
-    url: /about/
-  - title: Privacy Policy
+banner: security
 ---
 
 At Eversoul, we understand the importance of privacy and are committed to protecting our users' personal information. This Privacy Policy outlines our approach to safeguarding your privacy when using our web portal.

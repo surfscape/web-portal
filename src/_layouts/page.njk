@@ -1,17 +1,19 @@
 {% extends "./base.njk" %}
 
 {% block content %}
-    <div class="page__subheader">
+    <section class="page--content">
         {% if banner %}
-            <img class="page__banner" src="{{ banner }}">
+            <img src="/assets/images/banners/{{banner}}.png" alt="{{title}} Banner" class="banner">
         {% endif %}
-
-        <h1>{{title}}</h1>
-    </div>
-    <main class="one--grid--layout">
-        {% include "sidebar-left.njk" %}
-        <div class="main--content">
-            {{ content | safe }}
-        </div>
-    </main>
+        <h1 {% if date %}style="margin-bottom:0;"{% endif %}>{{title}}</h1>
+        {% if date %}
+            <div class="post--meta">
+                <span>Written by: {{author}} - Posted on: {{date | PostDate}}</span>
+            </div>
+        {% endif %}
+        {{ content | safe }}
+        {% if update %}
+            <span>Updated in: {{update}}</span>
+        {% endif %}
+    </section>
 {% endblock %}

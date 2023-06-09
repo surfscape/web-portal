@@ -11,12 +11,17 @@ module.exports = function (eleventyConfig) {
   const md = markdownIt({ html: true });
   md.use(markdownItAttrs);
   eleventyConfig.setLibrary("md", md);
+  eleventyConfig.addFilter("PostDate", function (date) {
+    return DateTime.fromJSDate(date).toFormat("dd LLL yyyy");
+  });
+  /* collections */
+  eleventyConfig.addCollection("news", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/news/posts/*.md");
+  });
   eleventyConfig.addFilter("asPostDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("LLL dd yyyy");
   });
-  eleventyConfig.addFilter("split", function (value, separator) {
-    return value.split(separator);
-  });
+
   return {
     dir: {
       input: "src",

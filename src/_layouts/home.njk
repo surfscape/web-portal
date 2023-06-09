@@ -1,11 +1,10 @@
 {% extends "./base.njk" %}
 
 {% block content %}
-    <main class="two--grid--layout">
-        {% include "sidebar-left.njk" %}
-        <div class="main--content">
+    <div class="grid--page">
+        {% include "sidebar.njk" %}
+        <section>
             {{ content | safe }}
-        </div>
-        {% include "sidebar-right.njk" %}
-    </main>
+        </section>
+    </div>
 {% endblock %}

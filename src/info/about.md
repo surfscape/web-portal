@@ -1,5 +1,6 @@
 ---
 title: About
+banner: about
 ---
 
 ## Welcome

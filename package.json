@@ -1,6 +1,6 @@
 {
   "name": "surfscape",
-  "version": "0.0.2",
+  "version": "1.0.0-rc01",
   "description": "",
   "main": "index.js",
   "scripts": {
