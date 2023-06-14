@@ -23,14 +23,14 @@
   ],
   "services": [
     {
-      "title": "AdZone",
-      "url": "https://surfscape.github.io/advertising/adzone",
-      "icon": "adzone.png"
-    },
-    {
       "title": "GameVortex",
       "url": "https://surfscape.github.io/gamevortex",
       "icon": "gamevortex.png"
+    },
+    {
+      "title": "AdZone",
+      "url": "https://surfscape.github.io/advertising/adzone",
+      "icon": "adzone.png"
     }
   ]
 }

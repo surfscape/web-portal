@@ -8,6 +8,7 @@ title: Home
 Welcome to the new SurfScape, **your friendly Neocities web portal** inspired by the aesthetics and values of the old/indie web. We believe in a web that's free, creative, open, and community-driven, and we're passionate about preserving the spirit of the early internet.
 
 At SurfScape, you'll find a wide range of services, resources, and a friendly community! We aim to showcase the best of what the old/indie web had and still has to offer, while also embracing new technologies and emerging trends in web design.
+[Learn more about us!](/info/about)
 
 ---
 
@@ -21,8 +22,6 @@ At SurfScape, you'll find a wide range of services, resources, and a friendly co
 
 We embrace open source. Our source code is publicly available for anyone to explore and contribute to.
 We believe in the principles of transparency and collaboration, allowing newcomers to learn from our work and enabling those who may have doubts to inspect and verify our codebase.
-
-[Learn more about us!](/info/about)
 
 </article>
 

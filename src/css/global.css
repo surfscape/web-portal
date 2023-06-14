@@ -74,9 +74,9 @@ hr {
 /* Header & Navbar */
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
   gap: var(--spacing);
   padding: var(--spacing-sm);
 }
@@ -88,13 +88,14 @@ header {
 
 .header--nav {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-between;
   gap: var(--spacing);
 }
 
 .header--nav a {
   display: inline-block;
   padding: var(--spacing-xxsm) var(--spacing-sm);
+  width: 100%;
   font-size: 1.05em;
   transition-duration: 100ms;
 }
@@ -206,6 +207,8 @@ main .page--content {
 }
 
 .pod--list--small {
+  display: grid;
+  gap: var(--spacing-xsm);
   margin: 0 var(--spacing-md);
   padding: var(--spacing-xsm);
 }
