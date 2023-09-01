@@ -2,11 +2,11 @@
 layout: home.njk
 title: Home
 mainad_link: /news/opening-new-horizons/
-mainad_image: open_beta_advert
+mainad_image: open_beta_banner
 mainad_title: Open Beta Announcement
 altad_link: /directory
 altad_title: SurfScape Directory
-altad_image: directory_advert
+altad_image: directory_avert
 ---
 
 ## Begin your jorney!
