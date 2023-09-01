@@ -1,0 +1,5 @@
+{
+  "layout": "blog.njk",
+  "permalink": "/blog/{{title|slugify}}/",
+  "author": "SurfScape Team"
+}

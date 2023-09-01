@@ -36,6 +36,11 @@
           "title": "News",
           "url": "/news",
           "icon": "newspaper"
+        },
+        {
+          "title": "Blog",
+          "url": "/blog",
+          "icon": "book"
         }
       ]
     },
@@ -46,6 +51,11 @@
           "title": "About us",
           "url": "/about",
           "icon": "information-circle"
+        },
+        {
+          "title": "Updates",
+          "url": "/updates",
+          "icon": "reload-circle"
         },
         {
           "title": "Help Center",
