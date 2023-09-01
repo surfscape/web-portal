@@ -1,36 +1,85 @@
 {
   "menuNav": [
     {
-      "title": "Home",
-      "url": "/"
+      "title": "Services",
+      "url": "/services"
     },
     {
-      "title": "Services",
-      "url": "/services/"
+      "title": "Design",
+      "links": [
+        {
+          "title": "SurfKit",
+          "url": "/news/opening-new-horizons/"
+        },
+        {
+          "title": "Introduction",
+          "url": "/news/opening-new-horizons/"
+        },
+        {
+          "title": "Guidelines",
+          "url": "/news/opening-new-horizons/"
+        }
+      ]
     },
     {
       "title": "Community",
-      "url": "/community/"
+      "url": "/community"
     },
     {
-      "title": "News",
-      "url": "/news/"
+      "title": "Directory",
+      "url": "/directory"
     },
     {
-      "title": "About",
-      "url": "/info/about/"
+      "title": "Blog",
+      "links": [
+        {
+          "title": "News",
+          "url": "/news",
+          "icon": "newspaper"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "title": "About us",
+          "url": "/about",
+          "icon": "information-circle"
+        },
+        {
+          "title": "Help Center",
+          "url": "/help",
+          "icon": "help-buoy"
+        }
+      ]
     }
   ],
-  "services": [
-    {
-      "title": "GameVortex",
-      "url": "https://surfscape.github.io/gamevortex",
-      "icon": "gamevortex.png"
-    },
-    {
-      "title": "AdZone",
-      "url": "https://surfscape.github.io/advertising/adzone",
-      "icon": "adzone.png"
-    }
-  ]
+  "exploreNavBox": {
+    "recent-activity": [
+      {
+        "open": true
+      },
+      {
+        "title": "Opening New Horizons",
+        "url": "/news/opening-new-horizons/"
+      }
+    ],
+    "developer-resources": [
+      {
+        "title": "SurfScape Labs",
+        "url": "https://surfscape.github.io/labs"
+      }
+    ],
+    "others": [
+      {
+        "title": "SurfScape News",
+        "url": "/news/"
+      },
+      {
+        "title": "SurfScape Advertising",
+        "url": "https://surfscape.github.io/advertising"
+      }
+    ]
+  }
 }

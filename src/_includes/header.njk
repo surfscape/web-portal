@@ -1,8 +1,59 @@
-<header class="flex container">
-  <span class="header--site--title">{{site.title}}</span>
-  <nav class="header--nav flex">
-    {% for menuNav in nav.menuNav %}
-      <a class="container" href="{{menuNav.url}}">{{menuNav.title}}</a>
-    {% endfor %}
-  </nav>
-</header>
+<header>
+  {% if page.url != "/" %}
+    <span class="site-title">{{site.title}}</span>
+  {% else %}
+    <h1>{{site.title}}</h1>
+    {%endif%}
+    <button class="button" id="mobile-menu">Toggle Menu</button>
+    <nav class="header-nav mobile" id="main-nav">
+      <ul class="nav-list">
+        {% for menuNav in nav.menuNav %}
+          {% if menuNav.links %}
+            <li class="nav-item">
+              <details class="dropdown header-nav-dropdown">
+                <summary class="dropdown-button">{{ menuNav.title }}</summary>
+                <ul class="dropdown-content dropdown-list">
+                  {% for link in menuNav.links %}
+                    <li class="dropdown-item">
+                      <a href="{{ link.url }}">
+                        {% if link.icon %}
+                          <ion-icon name="{{link.icon}}"></ion-icon>
+                        {% endif %}
+                        {{ link.title }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a href="{{ menuNav.url }}">{{ menuNav.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <script>
+      /* Close dropdown when no focus */
+      const detailsElements = document.querySelectorAll('.header-nav-dropdown');
+      document.addEventListener('click', function (event) {
+        detailsElements.forEach(element => {
+          if (!element.contains(event.target)) {
+            element.removeAttribute('open');
+          }
+        });
+      });
+
+      /* Mobile Menu Toggle */
+      const mobileMenuButton = document.getElementById("mobile-menu");
+      const mainNavElement = document.getElementById("main-nav");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mainNavElement
+          .classList
+          .toggle("mobile");
+      });
+    </script>
+  </header>

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
-  <head>
-    {% include "basehead.njk" %}
-  </head>
+  {% include "basehead.njk" %}
   <body>
-    <main class="container brand--background">
-      {% include "header.njk" %}
-      {% block content %}{% endblock %}
+    <a class="skip-content" href="#main">Skip to Content (Press Enter)</a>
+    <div class="page-container" {% if custom_bg %}style="background-image:url(/static/images/backgrounds/{{custom_bg}}.webp);background-color:#{{bg_color}};" {% endif %}>
+      {% include "toolbar.njk" %}
+      <main>
+        {% include "header.njk" %}
+        {% block content %}{% endblock %}
+      </main>
       {% include "footer.njk" %}
-    </main>
-
+    </div>
+    <script src="/static/scripts/tabs.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

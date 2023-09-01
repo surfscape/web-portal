@@ -1,0 +1,62 @@
+{
+  "directorySites": [
+    {
+      "title": "Search",
+      "links": [
+        {
+          "title": "Brave Search",
+          "url": "https://search.brave.com"
+        },
+        {
+          "title": "DuckDuckGo",
+          "url": "https://duckduckgo.com"
+        },
+        {
+          "title": "StartPage",
+          "url": "https://startpage.com"
+        },
+        {
+          "title": "Google",
+          "url": "https://google.com"
+        },
+        {
+          "title": "Bing",
+          "url": "https://bing.com"
+        },
+        {
+          "title": "Ecosia",
+          "url": "https://ecosia.org"
+        }
+      ]
+    },
+    {
+      "title": "Email",
+      "links": [
+        {
+          "title": "Proton",
+          "url": "https://proton.com"
+        },
+        {
+          "title": "Tutanota",
+          "url": "https://tutanota.com"
+        },
+        {
+          "title": "Skiff",
+          "url": "https://skiff.com"
+        },
+        {
+          "title": "Gmail",
+          "url": "https://mail.google.com"
+        },
+        {
+          "title": "Outlook",
+          "url": "https://outlook.com"
+        },
+        {
+          "title": "Disroot",
+          "url": "https://disroot.org"
+        }
+      ]
+    }
+  ]
+}

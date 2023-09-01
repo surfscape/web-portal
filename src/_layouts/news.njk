@@ -1,0 +1,17 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+    <div class="layout-box-pg" >
+        <h1 class="display" style="display:flex;flex-direction:column;">
+            <a href="/news" style="font-size: 0.5em;color:inherit;opacity:0.8;">SurfScape News</a>
+            {{ title }}</h1>
+        <article id="main">
+            <span>From: {{author}} - Posted on: {{date | PostDate}}
+                {% if update %}- Updated in: {{update}}
+                {% endif %}
+            </span>
+            {{ content | safe }}
+        </article>
+        {% include "sidebar.njk" %}
+    </div>
+{% endblock %}

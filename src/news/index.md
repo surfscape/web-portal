@@ -4,13 +4,10 @@ layout: page.njk
 banner: news
 ---
 
-<div class="pod pod--content--only">
-        <ul class="pod--list">
-            {%- for new in collections.news | reverse -%}
-                <li class="pod--li li--tlevel">
-                    <a href="{{new.url}}">{{new.data.title}}</a>
-                    <span>{{new.data.description}}<br/>{{new.data.date | PostDate}}</span>
-                </li>
-            {%- endfor -%}
-        </ul>
-    </div>
+<dl>
+    {%- for new in collections.news | reverse -%}
+        <dt><a href="{{new.url}}">{{new.data.title}}</a></dt>
+        <dd>{{new.data.description}}<time datetime="2023-07-07T12:12:30.000Z"><br/>{{new.data.date | PostDate}}</time>
+        </dd>
+    {%- endfor -%}
+</dl>
