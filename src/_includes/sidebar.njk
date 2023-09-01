@@ -29,7 +29,7 @@
         <nav-box>
             <span class="nav-box-title"><img src="/static/icons/16x16/newspaper.png" alt="Newspaper Icon">Latest News</span>
             <nav-box-content>
-                {%- for new in collections.news -%}
+                {%- for new in collections.news | reverse -%}
                     {% if loop.index0 < 1 %}
                         <a href="{{new.url}}">{{new.data.title}}</a><br/>
                         <span>{{new.data.description}}
