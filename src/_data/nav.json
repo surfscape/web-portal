@@ -53,6 +53,11 @@
           "icon": "information-circle"
         },
         {
+          "title": "Manifest",
+          "url": "/manifest",
+          "icon": "people"
+        },
+        {
           "title": "Updates",
           "url": "/updates",
           "icon": "reload-circle"
@@ -73,6 +78,10 @@
       {
         "title": "Opening New Horizons",
         "url": "/news/opening-new-horizons/"
+      },
+      {
+        "title": "Manifest",
+        "url": "/manifest"
       }
     ],
     "developer-resources": [

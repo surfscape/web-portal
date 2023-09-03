@@ -1,30 +1,17 @@
 {% extends "./base.njk" %}
 
 {% block content %}
-    <div class="layout-box-pg" >
-        {% if title %}
-            {% if custom_title != true %}
-                <h1 class="display">{{ title }}</h1>
-            {% endif %}
-        {% endif %}
-        <article id="main">
-            {{ content | safe }}
-        </article>
-        {% include "sidebar.njk" %}
-    </div>
-    {# <section class="" id="main">
-        {% if banner %}
-            <img src="/static/images/banners/{{banner}}.png" alt="{{title}} Banner" class="banner">
-        {% endif %}
-        <h1 {% if date %}style="margin-bottom:0;"{% endif %}>{{title}}</h1>
-        {% if date %}
-            <div class="post--meta">
-                <span>Written by: {{author}} - Posted on: {{date | PostDate}}</span>
-            </div>
-        {% endif %}
-        {{ content | safe }}
-        {% if update %}
-            <span>Updated in: {{update}}</span>
-        {% endif %}
-    </section> #}
+<div class="layout-box-pg">
+  {% if title %}
+  {% if custom_title != true %}
+  <h1 class="display">{{ title }}</h1>
+  {% endif %}
+  {% endif %}
+  <article id="main">
+    {% block custom %}
+    {{ content | safe }}
+    {% endblock %}
+  </article>
+  {% include "sidebar.njk" %}
+</div>
 {% endblock %}

@@ -44,7 +44,7 @@
   font-style: italic;
   font-weight: 600;
   src: url("/static/fonts/public-sans-v14-latin-600italic.woff2")
-    format("woff2");
+  format("woff2");
 }
 
 /* Normalize */
@@ -53,9 +53,9 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
-    "Android Emoji", "EmojiOne Color", "Twemoji";
+  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+  "Android Emoji", "EmojiOne Color", "Twemoji";
 }
 
 body {
@@ -163,15 +163,13 @@ a.skip-content:focus {
 /* Container for the website */
 .page-container {
   max-width: var(--page-breakpoint);
-  margin: 0 auto;
+  margin: var(--spacing-xsm) auto;
   background-color: var(--clr-content-bg);
   background-image: url(/static/images/backgrounds/aero_brand.webp);
   background-repeat: no-repeat;
   background-size: var(--page-breakpoint);
   background-position-x: center;
-  background-attachment: fixed;
-  border-left: 1px solid var(--clr-border);
-  border-right: 1px solid var(--clr-border);
+  border: 1px solid var(--clr-border);
   box-shadow: 0px 0px 8px 0px hsla(0, 0%, 0%, 0.5);
 }
 
@@ -384,9 +382,9 @@ tab-container[data-type="vertical"] .tab-button[aria-checked="true"] {
   font-weight: 500;
   color: var(--clr-system-text);
   background: linear-gradient(
-    to left,
-    hsl(0, 0%, 98%) 0%,
-    rgba(255, 255, 255, 0) 90%
+  to left,
+  hsl(0, 0%, 98%) 0%,
+  rgba(255, 255, 255, 0) 90%
   );
 }
 
@@ -399,9 +397,9 @@ tab-container[data-type="vertical"] .tab-button[aria-checked="true"]::before {
   top: -1px;
   left: 0;
   background: linear-gradient(
-    to left,
-    var(--clr-border) 0%,
-    rgba(15, 255, 223, 0.5) 100%
+  to left,
+  var(--clr-border) 0%,
+  rgba(15, 255, 223, 0.5) 100%
   );
 }
 
@@ -454,11 +452,11 @@ nav-box a:hover {
   padding: calc(var(--spacing-xxsm) - 0.12rem) var(--spacing-sm);
   gap: var(--spacing-xxsm);
   background: linear-gradient(
-    to bottom,
-    hsl(210, 15%, 95%) 0%,
-    hsl(210, 15%, 85%) 50%,
-    hsl(210, 15%, 70%) 51%,
-    hsl(210, 15%, 75%) 100%
+  to bottom,
+  hsl(210, 15%, 95%) 0%,
+  hsl(210, 15%, 85%) 50%,
+  hsl(210, 15%, 70%) 51%,
+  hsl(210, 15%, 75%) 100%
   );
   border-bottom: 1px solid var(--clr-stroke);
   user-select: none;
@@ -489,9 +487,9 @@ nav-box-links :last-child.nav-box-linkker summary {
   color: var(--clr-system-text);
   padding: calc(var(--spacing-xxsm) - 0.1rem) var(--spacing-xsm);
   background: linear-gradient(
-    to bottom,
-    hsl(216, 20%, 100%) 0%,
-    hsl(216, 15%, 80%) 100%
+  to bottom,
+  hsl(216, 20%, 100%) 0%,
+  hsl(216, 15%, 80%) 100%
   );
   border-bottom: 1px solid var(--clr-stroke);
 }
@@ -525,21 +523,21 @@ nav-box-links :last-child.nav-box-linkker summary {
 
 .nav-box-nav a:hover {
   background: linear-gradient(
-    to bottom,
-    hsl(192, 100%, 98%) 0%,
-    hsl(192, 75%, 88%) 50%,
-    hsl(192, 75%, 88%) 51%,
-    hsl(192, 100%, 98%) 100%
+  to bottom,
+  hsl(192, 100%, 98%) 0%,
+  hsl(192, 75%, 88%) 50%,
+  hsl(192, 75%, 88%) 51%,
+  hsl(192, 100%, 98%) 100%
   );
 }
 
 .nav-box-nav a[aria-current="page"] {
   background: linear-gradient(
-    to bottom,
-    hsl(210, 100%, 95%) 0%,
-    hsl(210, 75%, 85%) 50%,
-    hsl(210, 75%, 85%) 51%,
-    hsl(210, 100%, 95%) 100%
+  to bottom,
+  hsl(210, 100%, 95%) 0%,
+  hsl(210, 75%, 85%) 50%,
+  hsl(210, 75%, 85%) 51%,
+  hsl(210, 100%, 95%) 100%
   );
 }
 
@@ -613,6 +611,10 @@ nav-box-links :last-child.nav-box-linkker summary {
 .links-grid h2 {
   font-weight: 300;
   margin-bottom: 0;
+}
+
+.links-grid > ul {
+  margin-top: var(--spacing);
 }
 
 /* styling utils */

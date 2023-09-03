@@ -58,5 +58,11 @@
         }
       ]
     }
-  ]
+  ],
+  "neocitiesDir": [
+    {
+    "title": "Neonriser",
+    "url": "https://neonriser.neocities.org"
+    }
+    ]
 }
