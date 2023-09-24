@@ -1,7 +1,7 @@
 ---
 layout: page.njk
 title: Page not found
-permalink: 404.html
+permalink: not_found.html
 eleventyExcludeFromCollections: true
 crumbs:
   - title: Page not found

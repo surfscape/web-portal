@@ -1,8 +1,12 @@
 <header>
   {% if page.url != "/" %}
-    <span class="site-title">{{site.title}}</span>
+    <span class="site-title">
+      <a style="color:inherit;" href="/">{{site.title}}</a>
+    </span>
   {% else %}
-    <h1>{{site.title}}</h1>
+    <h1>
+      <a style="color:inherit;"href="/">{{site.title}}</a>
+    </h1>
     {%endif%}
     <button class="button" id="mobile-menu">Toggle Menu</button>
     <nav class="header-nav mobile" id="main-nav">

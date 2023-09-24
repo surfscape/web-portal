@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
-updated: 14 June, 2023
-banner: security
+update: 2023-09-23T20:10:00.000Z
+layout: "page.njk"
 ---
 
 At SurfScape, we understand the importance of privacy and are committed to protecting our users' personal information. This Privacy Policy outlines our approach to safeguarding your privacy when using our web portal.

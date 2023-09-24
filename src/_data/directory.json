@@ -16,16 +16,16 @@
           "url": "https://startpage.com"
         },
         {
+          "title": "Ecosia",
+          "url": "https://ecosia.org"
+        },
+        {
           "title": "Google",
           "url": "https://google.com"
         },
         {
           "title": "Bing",
           "url": "https://bing.com"
-        },
-        {
-          "title": "Ecosia",
-          "url": "https://ecosia.org"
         }
       ]
     },
@@ -33,36 +33,65 @@
       "title": "Email",
       "links": [
         {
-          "title": "Proton",
-          "url": "https://proton.com"
+          "title": "Proton Mail",
+          "url": "https://proton.me/mail"
         },
         {
           "title": "Tutanota",
           "url": "https://tutanota.com"
         },
         {
-          "title": "Skiff",
-          "url": "https://skiff.com"
+          "title": "Skiff Mail",
+          "url": "https://skiff.com/mail"
         },
         {
-          "title": "Gmail",
-          "url": "https://mail.google.com"
+          "title": "Disroot",
+          "url": "https://disroot.org"
         },
         {
           "title": "Outlook",
           "url": "https://outlook.com"
         },
         {
-          "title": "Disroot",
-          "url": "https://disroot.org"
+          "title": "Gmail",
+          "url": "https://mail.google.com"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Storage",
+      "links": [
+        {
+          "title": "Mega",
+          "url": "https://mega.nz"
+        },
+        {
+          "title": "Proton Drive",
+          "url": "https://proton.me/drive"
+        },
+        {
+          "title": "Tresorit",
+          "url": "https://tresorit.com/"
+        },
+        {
+          "title": "Skiff Drive",
+          "url": "https://skiff.com/drive"
+        },
+        {
+          "title": "Dropbox",
+          "url": "https://www.dropbox.com/"
+        },
+        {
+          "title": "Google Drive",
+          "url": "https://drive.google.com"
         }
       ]
     }
   ],
   "neocitiesDir": [
     {
-    "title": "Neonriser",
-    "url": "https://neonriser.neocities.org"
+      "title": "Neonriser",
+      "url": "https://neonriser.neocities.org"
     }
-    ]
+  ]
 }

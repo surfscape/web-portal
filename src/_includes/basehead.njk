@@ -5,16 +5,13 @@
     <title>{{ title }} | {{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="https://surfscape.neocities.org">
+    <link rel="author" href="/humans.txt">
     <link rel="stylesheet" href="/css/reset.min.css">
     {% if process.env.NODE_ENV === 'production' %}
-    <link rel="stylesheet" href="/css/global.min.css">
+        <link rel="stylesheet" href="/css/global.min.css">
     {% else %}
-    <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="/css/global.css">
     {% endif %}
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
     <script data-goatcounter="https://surfscape.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </head>

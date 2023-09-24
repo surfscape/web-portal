@@ -1,17 +1,20 @@
 {% extends "./base.njk" %}
 
 {% block content %}
-<div class="layout-box-pg">
-  {% if title %}
-  {% if custom_title != true %}
-  <h1 class="display">{{ title }}</h1>
-  {% endif %}
-  {% endif %}
-  <article id="main">
-    {% block custom %}
-    {{ content | safe }}
-    {% endblock %}
-  </article>
-  {% include "sidebar.njk" %}
-</div>
+  <div class="layout-box-pg">
+    {% if title %}
+      {% if custom_title != true %}
+        <h1 class="display">{{ title }}</h1>
+      {% endif %}
+    {% endif %}
+    <article id="main">
+      {% block custom %}
+        {{ content | safe }}
+      {% endblock %}
+      {% if update %}
+        Last update: <time datetime="{{update}}">{{update | EuDate}}</time>
+      {% endif %}
+    </article>
+    {% include "sidebar.njk" %}
+  </div>
 {% endblock %}

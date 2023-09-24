@@ -1,7 +1,6 @@
 ---
 title: Terms of Service
 update: 14 June, 2023
-banner: security
 ---
 
 ## User-Generated Content

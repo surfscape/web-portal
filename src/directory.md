@@ -32,7 +32,7 @@ bg_color: 274F77
         {%- for neocitiesDir in directory.neocitiesDir -%}
         <li><a href="{{neocitiesDir.url}}" target=_blank>{{neocitiesDir.title}}</a></li>
         {%- endfor -%}
-        <li><a href"/community">Add your site here!</a></li>
+        <li><a href="/community">Add your site here!</a></li>
       </ul>
       </div>
       </tab-content-container>
