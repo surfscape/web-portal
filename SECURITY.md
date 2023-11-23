@@ -4,7 +4,8 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
-| Open Beta 3   | :white_check_mark: |
+| Open Beta 4   | :white_check_mark: |
+| Open Beta 3   | :x: |
 | Open Beta 2   | :x:                |
 | Open Beta 1   | :x:                |
 
