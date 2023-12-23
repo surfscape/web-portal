@@ -1,11 +1,12 @@
 # Web Portal
 
-The source code for the web portal (news, updates, services & applications info, status) - [check it out!](https://surfscape.neocities.org)!
+The source code for the SurfScape web portal (project frontpage, news, updates, content, access to other services, and more).
 
-[neocties's site page](https://neocities.org/site/surfscape)
+- [The website](https://surfscape.neocities.org)
+- [NeoCities site page](https://neocities.org/site/surfscape)
 
-## Software
+## Framework, pipeline, and stack
 
-- SSG: 11ty
-- Languages: HTML, CSS, JS
-- Host: neocities
+- Framework (SSG): [11ty](https://www.11ty.dev/)
+- Languages: Nunjucks, HTML, CSS, JSON, JS, Node
+- UI Framework: SurfKit (internal as of now)
