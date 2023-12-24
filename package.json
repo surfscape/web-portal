@@ -1,6 +1,6 @@
 {
   "name": "surfscape",
-  "version": "1.0 Open Beta 4",
+  "version": "0.0.1",
   "codename": "Horizon",
   "description": "Your friendly Neocities web portal!",
   "main": "index.js",
