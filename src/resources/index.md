@@ -1,7 +1,7 @@
 ---
-title: Projects
+title: Resources
 layout: page.njk
-banner: projects.png
+banner: resources.png
 ---
 
 ## Coming soon
