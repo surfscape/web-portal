@@ -1,0 +1,54 @@
+{% extends "./page.njk" %}
+{% block sk_panel %}
+  <header class="sk-panel-header">
+    <h2 class="sk-panel-header-title" id="{{ title | slugify }}">
+      <a href="/{{ post_type | slugify }}">{{ post_type }}</a>
+    </h2>
+    <div class="sk-panel-options">
+      <button class="sk-panel-button" onclick="copyShare()">
+        <img src="/static/icons/32/share.png" alt="Open share icon"/>Share
+    </button>
+    </div>
+  </header>
+{% endblock sk_panel %}
+{% block main_content %}
+  <header class="post--header">
+    <h1 class="post--header__title">
+      {{ title }}
+      <time class="post--header__date" datetime="{{ date }}">{{
+      date | PostDate
+    }}</time>
+    </h1>
+    <span class="post--header__description">{{ description }}</span>
+  </header>
+  <article id="main">
+    {{ content | safe }}
+  </article>
+  <style>
+    .post--header {
+      display: grid;
+      gap: var(--spacing-xxsm);
+      max-width: 86ch;
+      margin: 0 auto;
+      padding: var(--spacing);
+      border-bottom: 1px solid var(--clr-container-border);
+    }
+
+    .post--header * {
+      margin: 0;
+    }
+    .post--header__title {
+      text-align: center;
+    }
+    .post--header__date {
+      display: block;
+      font-weight: normal;
+      font-size: 0.5em;
+    }
+    .post--header__description {
+      text-align: center;
+      font-size: 1.05em;
+      color: rgba(0, 0, 0, 0.75);
+    }
+  </style>
+{% endblock main_content %}

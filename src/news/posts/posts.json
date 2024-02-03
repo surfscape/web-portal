@@ -1,5 +1,6 @@
 {
-  "layout": "news.njk",
+  "layout": "post.njk",
   "permalink": "/news/{{title|slugify}}/",
-  "author": "SurfScape Team"
+  "author": "SurfScape Team",
+  "post_type": "News"
 }

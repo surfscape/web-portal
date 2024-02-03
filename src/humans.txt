@@ -1,7 +1,7 @@
 SURFSCAPE
-- version: 1.0 Open Beta 4
-- codenamed "Horizon"
-- copyright 2022-2023
+- version: 0.0.1
+- codenamed "Ceremony"
+- copyright 2021-2024
 
 github: https://github.com/surfscape
 source code: https://github.com/surfscape/web-portal
@@ -12,12 +12,11 @@ mastodon: https://fosstodon.org/@surfscape
 Founder and main developer: ReduxFlakes
 Site: reduxflakes.neocities.org
 Mastodon: redux@fosstodon.org
-Location: Portugal
 					
 ~^ Thanks to: ^~
 
     professor4pizza - Co-founder of Retro Space
-    Madebotix - Co-founder of the old NaviNet web portal and art design
+    Madebotix - Co-founder of the old NaviNet web portal
     msterfanact - Admin of Retro Space and support
     Ivox - Testing, ideas (and mental support)
     Ultra - Mobile testing

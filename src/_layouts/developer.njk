@@ -1,0 +1,48 @@
+{% extends "./base.njk" %}
+
+{% block surfkit_base_layout %}
+    <div class="sk-page-frame">
+        <header class="sk-header">
+            <span class="sk-header_title">Developer Portal</span>
+            <nav class="sk-header-nav">
+                <a href="/developer/">Home</a>
+                <a href="/developer/news">News</a>
+                <a href="/developer/design">Design</a>
+                <a href="/developer/support">Support</a>
+            </nav>
+        </header>
+        <div class="sk-panel {% if complex_layout %}sk-panel-complex-layout{% else %}sk-panel-simple-layout{% endif %}">
+            <header class="sk-panel-header">
+                <h2 class="sk-panel-header-title" id="{{ title | slugify }}">{{title}}</h2>
+                <div class="sk-panel-options">
+                    <button class="sk-panel-button" onclick="copyShare()"><img src="/static/icons/32/share.png" alt="Open share icon">Share</button>
+                </div>
+            </header>
+            <div class="sk-panel-content">
+                {% if banner %}
+                    <picture class="site--banner">
+                        <img src="/static/images/banners/{{banner}}" alt="{{title}} banner">
+                    </picture>
+                {% endif %}
+                <article id="main">
+                    {{ content | safe }}
+                </article>
+            </div>
+
+            {% if complex_layout and layout_sidebar %}
+                <aside class="sk-panel-aside"></aside>
+            {% endif %}
+        </div>
+        <script>
+            function copyShare() {
+                var pageLink = "{{ site.url }}{{ page.url}}";
+
+                navigator
+                    .clipboard
+                    .writeText(pageLink);
+
+                alert("Copied the link: " + pageLink + " succesfully");
+            }
+        </script>
+    </div>
+{% endblock %}

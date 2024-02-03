@@ -1,0 +1,305 @@
+---
+layout: base.njk
+title: Home
+---
+
+<div class="sk-layoututil-home">
+  <div class="home--hero">
+    <picture>
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 560 250"
+      >
+        <image
+          width="560"
+          height="250"
+          xlink:href="/static/images/promotions/2023_begin_your_journey.png"
+        ></image>
+        <a xlink:href="/services">
+          <rect x="228" y="210" opacity="0" width="88" height="24"></rect>
+        </a>
+        <a xlink:href="/community">
+          <rect x="335" y="210" opacity="0" width="121" height="24"></rect>
+        </a>
+        <a xlink:href="/about">
+          <rect x="470" y="210" opacity="0" width="70" height="24"></rect>
+        </a>
+      </svg>
+    </picture>
+
+    <div class="home--recent--grid">
+      <section>
+        <h2>
+          <img
+            src="/static/icons/64/megaphone.png"
+            alt="Megaphone icon"
+            class="icon"
+/>Feedback
+        </h2>
+        <p>
+          We've redesigned SurfScape from scratch, do you like the changes, or
+          have a suggestion? Contact us!
+        </p>
+        <a
+          href="/uservoice/new-homepage-feedback"
+          class="sk-button sk-button-sunset"
+          >Learn more</a
+        >
+      </section>
+      <section>
+        <h2>
+          <img
+            src="/static/icons/64/download.png"
+            alt="Megaphone icon"
+            class="icon"
+/>Latest Release
+        </h2>
+        <p>Check the latest changes with the new updates page!</p>
+        <a href="/updates" class="sk-button sk-button-ocean">Learn more</a>
+      </section>
+    </div>
+  </div>
+  <article id="main">
+    <h2 id="begin-your-journey">Begin your journey!</h2>
+    <p>
+      Welcome to SurfScape, <em>your friendly Neocities web portal</em>,
+      inspired by the aesthetics and values of the early web era. Our mission is
+      to <strong>revive</strong> the spirit of a web that is free, creative,
+      open, and community-driven. <a href="/about">Learn more about us!</a>
+    </p>
+    <h2 id="explore-surfscape">Explore SurfScape</h2>
+    <tab-container data-type="vertical">
+      <menu class="tab-buttons">
+        <li>
+          <button class="tab-button" data-tab="tab1" aria-checked="true">
+            Latest release
+          </button>
+        </li>
+        <li>
+          <button class="tab-button" data-tab="tab2" aria-checked="false">
+            Support us
+          </button>
+        </li>
+        <li>
+          <button class="tab-button" data-tab="tab3" aria-checked="false">
+            Add us
+          </button>
+        </li>
+        <li>
+          <button class="tab-button" data-tab="tab4" aria-checked="false">
+            Experimental
+          </button>
+        </li>
+      </menu>
+      <tab-content-container>
+        <section class="tab-content" id="tab1" aria-hidden="false">
+          <h2>
+            Latest release<img
+              src="/static/icons/32/new.png"
+              alt="NEW badge icon"
+              class="icon"
+/>
+          </h2>
+          <p>
+            We've recently released the first beta version of the new SurfScape
+            web portal. It includes a bunch of UX and UI improvements, with a
+            new streamlined workflow for content, and additional features!
+          </p>
+          <p>Explore the latest release trough our preview page.</p>
+          <a href="/preview/abouthomepage" class="sk-button sk-button-ocean"
+            >Learn more</a
+          >
+        </section>
+        <section class="tab-content" id="tab2" aria-hidden="true">
+          <h2>Support SurfScape development</h2>
+          <p>
+            If you like what we do, you can support us by improving SurfScape
+            with patches, suggestions, feedback, and/or testing.
+          </p>
+          <p>
+            This is possible since most parts of SurfScape like the web portal,
+            UI framework, design system, branding kit, and more, are available
+            to the public on GitHub.
+          </p>
+          <p>
+            The only requirements is that you understand the basics of HTML,
+            CSS, Eleventy, Nunjucks templating, and basic English.
+          </p>
+          <a
+            href="https://github.com/surfscape"
+            class="sk-button sk-button-ocean"
+            >Access our Github</a
+          >
+        </section>
+        <section class="tab-content" id="tab3" aria-hidden="true">
+          <h2>Add SurfScape to your website</h2>
+          <p>
+            Do you like SurfScape? Do you want to link us on your own website?
+            Use our 88x31 button!
+          </p>
+          <pre><code>&lt;a href="https://surfscape.neocities.org"&gt;
+  &lt;img src="https://yourwebsite.com/images/btn_surfscape.png" alt="SurfScape button"&gt;
+&lt;/a&gt;
+</code></pre>
+          <a href="https://surfscape.neocities.org"
+            ><img
+              src="/static/images/buttons/btn_surfscape.png"
+              alt="SurfScape Button"
+/></a>
+          <p>
+            Make sure to not hotlink the button. Instead, download the image and
+            save it on your own website to save our bandwidth!
+          </p>
+        </section>
+        <section class="tab-content" id="tab4" aria-hidden="true">
+          <h2>SurfScape Labs</h2>
+          <p>
+            If you like to go beyond barriers, explore our experiments portal
+            called SurfScape labs. It's a website designed to demonstrate new
+            stuff that is being developed, considered, and tested so that it can
+            be released.
+          </p>
+          <p>
+            We recommend the use of a desktop to access and explore the portal
+            since it's experimental projects and not yet optimized for mobile.
+          </p>
+          <a
+            href="https://surfscape.github.io/labs/"
+            class="sk-button sk-button-fire"
+            >Access SurfScape Labs</a
+          >
+        </section>
+      </tab-content-container>
+    </tab-container>
+  </article>
+  <aside class="home--sidebar">
+    <section class="home--sidebar--box">
+      <h3 class="home--sidebar--box--title">Did you know?</h3>
+      <div class="home--sidebar--box--content">
+        <span>SurfScape started back in 2021 as a flash games portal called NaviNet.</span>
+      </div>
+    </section>
+    <section class="home--sidebar--box">
+      <h3 class="home--sidebar--box--title">Friends</h3>
+      <div class="home--sidebar--box--content" style="display:grid;">
+        <a href="https://openbooks.neocities.org/">OpenBooks</a>
+        <a href="https://neonriser.neocities.org/">Neonriser</a>
+      </div>
+    </section>
+    <section class="home--sidebar--box">
+      <h3 class="home--sidebar--box--title">Services Updates</h3>
+      <div class="home--sidebar--box--content">
+        <span
+          ><img
+            src="/static/icons/32/s_warning.png"
+            alt="Warning sign"
+            class="icon"
+            style="
+              width: 15px;
+              height: 15px;
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 0.25rem;
+            "
+/>This service can't be reached.</span
+        >
+      </div>
+    </section>
+    <section class="home--sidebar--box">
+      <h3 class="home--sidebar--box--title">Patch Notes</h3>
+      <div class="home--sidebar--box--content">
+        <span
+          ><img
+            src="/static/icons/32/s_warning.png"
+            alt="Warning sign"
+            class="icon"
+            style="
+              width: 15px;
+              height: 15px;
+              display: inline-block;
+              vertical-align: middle;
+              margin-right: 0.25rem;
+            "
+/>This service can't be reached.</span
+        >
+      </div>
+    </section>
+  </aside>
+</div>
+<style>
+  .sk-layoututil-home {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 15rem;
+    grid-template-areas: "hero hero" "content aside";
+    gap: var(--spacing);
+    padding: var(--spacing);
+  }
+
+  .sk-layoututil-home * {
+    min-width: 0;
+  }
+
+  .home--hero {
+    display: grid;
+    gap: var(--spacing-xsm);
+    grid-area: hero;
+    max-width: 72ch;
+  }
+
+  .home--hero > picture > svg {
+    display: block;
+    border-radius: var(--radius);
+    box-shadow: var(--sh-container);
+  }
+
+  .home--recent--grid {
+    display: grid;
+    align-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xsm);
+    background: hsl(206, 70%, 22%) url("/static/backgrounds/overview_blue.png") no-repeat;
+    background-size: contain;
+    text-shadow: var(--sh-smooth-text);
+    border: 1px solid var(--clr-container-border);
+    border-radius: var(--radius);
+    box-shadow: var(--sh-container);
+    padding: var(--spacing-xsm) var(--spacing-xsm) var(--spacing);
+    color: hsl(206, 80%, 90%);
+  }
+
+  .home--recent--grid h2 {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    gap: var(--spacing-xsm);
+    margin-bottom: var(--spacing-xxsm);
+    padding-bottom: var(--spacing-xsm);
+    border-bottom: 1px solid rgba(131, 216, 255, 0.5);
+  }
+
+  .home--recent--grid h2 .icon {
+    width: 32px;
+  }
+
+  .home--recent--grid section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home--recent--grid section .sk-button {
+    margin-top: auto;
+  }
+
+  article#main {
+    padding-left: var(--spacing);
+    grid-area: content;
+  }
+
+  .home--sidebar {
+    padding-right: var(--spacing);
+    grid-area: aside;
+  }
+</style>

@@ -1,0 +1,13 @@
+{
+  "layout": "page.njk",
+  "navigation": [
+    {
+      "title": "Overview",
+      "url": "/uservoice/"
+    },
+    {
+      "title": "New Homepage Feedback",
+      "url": "/uservoice/new-homepage-feedback/"
+    }
+  ]
+}

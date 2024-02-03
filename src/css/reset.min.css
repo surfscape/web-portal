@@ -3,14 +3,11 @@
 ::before {
   box-sizing: border-box;
 }
-ol[role="list"],
-ul[role="list"] {
-  list-style: none;
-}
 html:focus-within {
   scroll-behavior: smooth;
 }
 body {
+  margin: 0;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -21,6 +18,9 @@ img,
 picture {
   display: block;
   max-width: 100%;
+}
+button {
+  cursor: pointer;
 }
 button,
 input,

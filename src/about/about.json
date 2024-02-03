@@ -1,0 +1,21 @@
+{
+  "layout": "page.njk",
+  "navigation": [
+    {
+      "title": "About SurfScape",
+      "url": "/about/"
+    },
+    {
+      "title": "Imprint",
+      "url": "/about/imprint/"
+    },
+    {
+      "title": "Contact",
+      "url": "/about/contact/"
+    },
+    {
+      "title": "Departments",
+      "url": "/about/departments/"
+    }
+  ]
+}

@@ -2,17 +2,21 @@
 <html lang="{{ site.lang }}">
   {% include "basehead.njk" %}
   <body>
-    <a class="skip-content" href="#main">Skip to Content (Press Enter)</a>
-    <div class="page-container" {% if custom_bg %}style="background-image:url(/static/images/backgrounds/{{custom_bg}}.webp);background-color:#{{bg_color}};" {% endif %}>
+    <div class="site--container">
       {% include "toolbar.njk" %}
-      <main>
+      <div class="page--container">
         {% include "header.njk" %}
-        {% block content %}{% endblock %}
-      </main>
-      {% include "footer.njk" %}
+        {% include "nav.njk" %}
+        <main>
+          {% block surfkit_base_layout %}
+            {{ content | safe }}
+          {% endblock %}
+        </main>
+        {% include "footer.njk" %}
+      </div>
     </div>
     <script src="/static/scripts/tabs.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script data-goatcounter="https://surfscape.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>

@@ -1,78 +1,59 @@
 {
-  "menuNav": [
+  "mainNav": [
     {
-      "title": "Services",
-      "url": "/services"
-    },
-    {
-      "title": "Design",
-      "links": [
-        {
-          "title": "SurfKit",
-          "url": "/news/opening-new-horizons/"
-        },
-        {
-          "title": "Introduction",
-          "url": "/news/opening-new-horizons/"
-        },
-        {
-          "title": "Guidelines",
-          "url": "/news/opening-new-horizons/"
-        }
-      ]
+      "title": "Home",
+      "url": "/",
+      "icon": "house"
     },
     {
       "title": "Community",
-      "url": "/community"
+      "url": "/community",
+      "icon": "comment"
+    },
+    {
+      "title": "News",
+      "url": "/news",
+      "icon": "newspaper"
+    },
+    {
+      "title": "Services",
+      "url": "/services",
+      "icon": "add-on"
     },
     {
       "title": "Directory",
-      "url": "/directory"
-    },
-    {
-      "title": "Blog",
-      "links": [
-        {
-          "title": "News",
-          "url": "/news",
-          "icon": "newspaper"
-        },
-        {
-          "title": "Blog",
-          "url": "/blog",
-          "icon": "book"
-        }
-      ]
+      "url": "/directory",
+      "icon": "bookshelf"
     },
     {
       "title": "Resources",
-      "links": [
-        {
-          "title": "About us",
-          "url": "/about",
-          "icon": "information-circle"
-        },
-        {
-          "title": "Manifesto",
-          "url": "/manifesto",
-          "icon": "people"
-        },
-        {
-          "title": "Updates",
-          "url": "/updates",
-          "icon": "reload-circle"
-        },
-        {
-          "title": "Privacy Portal",
-          "url": "/privacy-portal",
-          "icon": "finger-print"
-        },
-        {
-          "title": "Help Center",
-          "url": "/help",
-          "icon": "help-buoy"
-        }
-      ]
+      "url": "/resources",
+      "icon": "bookmark"
+    },
+    {
+      "title": "Developer",
+      "url": "/developer",
+      "icon": "page_code"
+    },
+    {
+      "title": "Projects",
+      "url": "/projects",
+      "icon": "blueprint"
+    },
+    {
+      "title": "Updates",
+      "url": "/updates",
+      "icon": "update"
+    },
+    {
+      "title": "Archive",
+      "url": "/archive",
+      "icon": "diskette"
+    },
+    {
+      "title": "About",
+      "url": "/about",
+      "icon": "information"
     }
   ],
   "exploreNavBox": {

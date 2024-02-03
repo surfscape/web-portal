@@ -1,12 +1,13 @@
 ---
 title: News
 layout: page.njk
+banner: news.png
 ---
 
-<dl>
+{% import "components/postCard.njk" as postCard %}
+
+<ul class="posts--list">
     {%- for new in collections.news | reverse -%}
-        <dt><a href="{{new.url}}">{{new.data.title}}</a></dt>
-        <dd>{{new.data.description}}<time datetime="{{post.data.date}}"><br/>{{new.data.date | PostDate}}</time>
-        </dd>
+        {{ postCard.postCard(new.data.title, new.data.date, new.data.description, new.url) }}
     {%- endfor -%}
-</dl>
+</ul>

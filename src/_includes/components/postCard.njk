@@ -1,0 +1,9 @@
+{%- macro postCard(title, date, description, url) -%}
+    <li class="post--card">
+        <div class="post--card--meta">
+            <time class="post--card__time" datetime="{{ date }}">{{ date | PostDate }}</time>
+            <a class="post--card__title" href="{{ url }}">{{ title }}</a>
+        </div>
+        <p class="post--card__description">{{ description }}</p>
+    </li>
+{%- endmacro -%}

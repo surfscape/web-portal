@@ -1,6 +1,6 @@
 ---
 title: Privacy Portal
-layout: page.njk
+layout: base.njk
 ---
 
 Welcome to the SurfScape Privacy Portal! Find out how we handle and collect data and how you can control it.
