@@ -21,7 +21,7 @@ Here you can understand the underlying code that powers SurfScape. {style="text-
 <img src="/static/icons/other/key.png" alt="Key chain icon" class="sk-link-card__icon"/>
 <section class="sk-link-card-content">
 <h3>Developer Program</h3>
-<p>Join to be part of the SurfScape dev team!</p>
+<p>Become a part of the SurfScape dev team!</p>
 </section>
 </a>
 </div>
