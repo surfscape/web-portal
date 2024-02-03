@@ -4,7 +4,7 @@ title: About
 
 ## Your favorite Neocities web portal
 
-SurfScape is an [open source]() web portal for Neocitiies. It was created as a way to offer services, content, and resources for Neocities users, while still respecting their privacy and for free.
+SurfScape is an [open source]() web portal for Neocities. It was created as a way to offer services, content, and resources for Neocities users, while still respecting their privacy and doing so for free.
 
 ## Instance Information
 
