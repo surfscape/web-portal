@@ -41,7 +41,7 @@ content_class: directory-container
     <div class="tab-content" id="submission" aria-hidden="true">
       <section>
         <h2 id="submit-a-website">Submit a website</h2>
-        <p>Did you found a awesome web service that you want to share, or want to promote your personal website? Contact us trough our email, and send us a submission!</p>
+        <p>Did you find an awesome web service that you want to share, or want to promote your personal website? Contact us through our email, and send us a submission!</p>
         <a href="/about/contact" class="sk-button sk-button-ocean">Contact Info</a>
       </section>
     </div>
