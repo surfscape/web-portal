@@ -1,6 +1,6 @@
 {
   "name": "surfscape",
-  "version": "0.0.2-alpha",
+  "version": "0.0.3-alpha",
   "codename": "Ceremony",
   "description": "Your friendly Neocities web portal!",
   "main": "index.js",
