@@ -3,7 +3,7 @@
 The source code for the SurfScape web portal (project frontpage, news, updates, content, access to other services, and more).
 
 - [The website](https://surfscape.neocities.org)
-- [NeoCities site page](https://neocities.org/site/surfscape)
+- [Neocities site page](https://neocities.org/site/surfscape)
 
 ## Framework, pipeline, and stack
 
