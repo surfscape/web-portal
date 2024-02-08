@@ -1,8 +1,8 @@
 :root {
   font-size: 14.5px;
-  --clr-bg: hsl(205, 70%, 12%);
+  --clr-bg: hsl(205, 70%, 15%);
   /* used on homepage and branding pages */
-  --clr-container-bg: hsl(205, 50%, 20%);
+  --clr-container-bg: hsla(205, 25%, 25%, 0.75);
   --clr-container-text: hsl(0, 0%, 95%);
   --clr-container-border: hsla(0, 0%, 0%, 0.35);
   --clr-subtle: hsla(0, 0%, 100%, 0.75);
@@ -98,31 +98,13 @@ tab-container[data-type="toggle"] .tab-buttons {
 .site--container {
   max-width: var(--page-breakpoint);
   margin: 0 auto var(--spacing) auto;
-  padding: 0 var(--spacing);
 }
 
 .page--container {
   position: relative;
-  border-radius: var(--radius-sm);
+  outline: 1px solid rgba(255, 255, 255, 0.5);
   background: var(--clr-container-bg);
-  box-shadow: var(--sh-container);
-  border: 1px solid rgb(0, 0, 0);
   overflow: hidden;
-}
-
-.page--container::before {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: var(--radius-sm);
-  box-shadow: inset 0px 1px rgba(255, 255, 255, 0.3),
-    inset -1px 0 rgba(255, 255, 255, 0.3), inset 0px -1px hsla(0, 0%, 100%, 0.3),
-    inset 1px 0 hsla(0, 0%, 100%, 0.3);
-  z-index: 999;
 }
 
 /* utils for dropdowns */
@@ -213,22 +195,17 @@ tab-container[data-type="toggle"] .tab-buttons {
   display: inline-flex !important;
   white-space: nowrap;
   flex-wrap: nowrap;
-  font-size: 1.025em;
+  font-size: 1.015em;
   color: inherit;
   padding: var(--spacing-xxsm) var(--spacing-xsm);
   border: 1px solid rgb(0, 0, 0);
   box-shadow: inset 0px 1px var(--_aero-outline),
     inset -1px 0 var(--_aero-outline), inset 0px -1px var(--_aero-outline),
     inset 1px 0 var(--_aero-outline);
-  border-radius: var(--radius);
+  border-radius: var(--radius-sm);
   min-width: fit-content;
   flex-basis: auto;
   text-decoration: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0) 25%
-  );
   transition: all 125ms ease-in-out;
 }
 
@@ -580,7 +557,6 @@ tab-container[data-type="vertical"] .tab-content :last-child {
 /* footer */
 .site--footer {
   display: grid;
-  justify-items: end;
   position: relative;
   padding: var(--spacing);
 }
@@ -603,11 +579,8 @@ tab-container[data-type="vertical"] .tab-content :last-child {
 .footer--links {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: var(--spacing-xsm);
-}
-
-.footer--links img {
-  margin: 0 var(--spacing);
 }
 
 .brand--copy {
@@ -628,6 +601,37 @@ tab-container[data-type="vertical"] .tab-content :last-child {
 
 .links-grid > ul {
   margin-top: var(--spacing);
+}
+
+/* mobile */
+
+@media (min-width: 675px) {
+  .sk-layoututil-home {
+    grid-template-columns: 1fr 15rem;
+    grid-template-areas:
+      "hero    hero "
+      "content aside" !important;
+  }
+  .site--footer {
+    justify-content: end;
+  }
+  .site--container {
+    padding: 0 var(--spacing);
+  }
+}
+
+@media (max-width: 565px) {
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    padding: 0;
+  }
+  .toolbar--nav {
+    display: none;
+  }
 }
 
 /* styling utils */
