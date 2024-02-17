@@ -1,5 +1,5 @@
 SURFSCAPE
-- version: 0.0.1
+- version: 0.0.4-alpha
 - codenamed "Ceremony"
 - copyright 2021-2024
 
