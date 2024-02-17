@@ -2,6 +2,12 @@
 title: Release Notes
 ---
 
+## **0.0.4-alpha** February 17, 2024
+
+- Kickstarted accessibility page;
+- Cleaned hero design a bit;
+- Assets cleanup.
+
 ## **0.0.3-alpha** February 08, 2024
 
 - Minor design changes (main section and navbar);
