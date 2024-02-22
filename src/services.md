@@ -22,7 +22,15 @@ Services is an iniciative of SurfScape to build services that are open, free, an
 <h3><img src="/static/icons/32/site-info.png" alt="Site info icon" class="icon"><em>Eversoul</em></h3>
 <p>Our web design portal that has templates, layouts, designs, and resources for webmasters alike.</p>
 <button-group>
-<a href="https://github.com/surfscape/eversoul" class="sk-button">Source Code</a>
+<a href="https://github.com/surfscape/eversoul" class="sk-button">Source Code <sup><small>Private</small></sup></a>
+</button-group>
+</section>
+
+<section class="sk-card">
+<h3><img src="/static/icons/32/site-info.png" alt="Site info icon" class="icon">AdZone</h3>
+<p>Our advertising service made to promote other personal sites trough our network.</p>
+<button-group>
+<a href="https://github.com/surfscape/adzone" class="sk-button">Source Code</a>
 </button-group>
 </section>
 
