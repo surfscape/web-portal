@@ -2,6 +2,14 @@
 title: Release Notes
 ---
 
+## **0.0.5-alpha** February 22, 2024
+
+- New promotional banner for the upcoming stable release;
+- Kickstarted the SurfScape Network project page;
+- Added new upcoming service AdZone to the services page and footer;
+- Updated the privacy portal with the new design;
+- Updated the footer links.
+
 ## **0.0.4-alpha** February 17, 2024
 
 - Kickstarted accessibility page;
