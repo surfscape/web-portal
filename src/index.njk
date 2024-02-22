@@ -12,12 +12,16 @@ title: Home
         xmlns:xlink="http://www.w3.org/1999/xlink"
         viewBox="0 0 560 250"
       >
-        <image
+
+        <a xlink:href="preview/abouthomepage/">
+          <image
           width="560"
           height="250"
-          xlink:href="/static/images/promotions/2023_begin_your_journey.png"
+          xlink:href="/static/images/promotions/2024_ceremony_coming_soon.png"
         ></image>
-        <a xlink:href="/services">
+        </a>
+
+        {# <a xlink:href="/services">
           <rect x="228" y="210" opacity="0" width="88" height="24"></rect>
         </a>
         <a xlink:href="/community">
@@ -25,7 +29,7 @@ title: Home
         </a>
         <a xlink:href="/about">
           <rect x="470" y="210" opacity="0" width="70" height="24"></rect>
-        </a>
+        </a> #}
       </svg>
     </picture>
 
@@ -250,6 +254,7 @@ title: Home
 
   .home--hero > picture > svg {
     display: block;
+    border: 1px solid #ffffff60;
     border-radius: var(--radius-sm);
     box-shadow: var(--sh-container);
   }
