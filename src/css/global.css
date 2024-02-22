@@ -79,6 +79,7 @@ h3:has(img.icon) img.icon {
 }
 
 :focus {
+  border-radius: 0;
   outline-offset: 1px;
   outline: 2px solid rgba(255, 255, 255, 0.75);
 }
@@ -102,7 +103,7 @@ tab-container[data-type="toggle"] .tab-buttons {
 
 .page--container {
   position: relative;
-  outline: 1px solid rgba(255, 255, 255, 0.5);
+  outline: 1px solid hsla(204, 100%, 78%, 0.5);
   background: var(--clr-container-bg);
   overflow: hidden;
 }
@@ -584,6 +585,7 @@ tab-container[data-type="vertical"] .tab-content :last-child {
 }
 
 .brand--copy {
+  margin-left: auto;
   color: rgba(255, 255, 255, 0.75);
   font-size: 0.78em;
 }
