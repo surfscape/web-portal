@@ -1,8 +1,16 @@
 ---
 title: Privacy Portal
-layout: base.njk
+layout: page.njk
 ---
 
-Welcome to the SurfScape Privacy Portal! Find out how we handle and collect your data and how you can control it.
+Welcome to the SurfScape Privacy Portal! <br> Find out how we handle and collect your data and how you can control it. {style="text-align:center;margin-top:0;" .sk-display .sk-display--4}
 
-- [Privacy Policy](/privacy-portal/policy) - Learn how we use your data.
+<div class="sk-cards">
+<a href="/privacy-portal/policy" class="sk-link-card">
+<img src="/static/icons/other/actions_edit.png" alt="Empty paper with a pencil" class="sk-link-card__icon"/>
+<section class="sk-link-card-content">
+<h3>Privacy Policy</h3>
+<p>Document detailing how we handle user data (non-PII and PII)</p>
+</section>
+</a>
+</div>
