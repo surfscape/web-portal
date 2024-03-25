@@ -41,58 +41,9 @@
       "icon": "blueprint"
     },
     {
-      "title": "Updates",
-      "url": "/updates",
-      "icon": "update"
-    },
-    {
-      "title": "Archive",
-      "url": "/archive",
-      "icon": "diskette"
-    },
-    {
       "title": "About",
       "url": "/about",
       "icon": "information"
     }
-  ],
-  "exploreNavBox": {
-    "recent-activity": [
-      {
-        "open": true
-      },
-      {
-        "title": "Create a blog now!",
-        "url": "/blog/create-a-blog-now/"
-      },
-      {
-        "title": "humans.txt",
-        "url": "/humans.txt"
-      },
-      {
-        "title": "Manifesto",
-        "url": "/manifesto"
-      },
-      {
-        "title": "Opening New Horizons",
-        "url": "/news/opening-new-horizons/"
-      }
-    ],
-    "developer-resources": [
-      {
-        "title": "SurfScape Labs",
-        "url": "https://surfscape.github.io/labs"
-      }
-    ],
-    "others": [
-      {
-        "title": "SurfScape News",
-        "url": "/news/"
-      },
-      {
-        "title": "SurfScape Advertising",
-        "url": "https://surfscape.github.io/advertising"
-      }
-    ]
-  }
+  ]
 }

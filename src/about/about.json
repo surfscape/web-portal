@@ -6,6 +6,10 @@
       "url": "/about/"
     },
     {
+      "title": "Updates",
+      "url": "/about/release-notes/"
+    },
+    {
       "title": "Contact",
       "url": "/about/contact/"
     },

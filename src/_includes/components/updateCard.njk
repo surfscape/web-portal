@@ -1,7 +1,0 @@
-{%- macro updateCard(title, date, description) -%}
-    <section class="release--update--card">
-        <h2>
-            <time datetime="{{ date }}">{{ date | safe }}</time>{{title}}</h2>
-        <p>{{ description }}</p>
-    </section>
-{%- endmacro -%}
