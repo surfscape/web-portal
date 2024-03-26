@@ -3,7 +3,9 @@ title: Privacy Portal
 layout: page.njk
 ---
 
-Welcome to the SurfScape Privacy Portal! <br> Find out how we handle and collect your data and how you can control it. {style="text-align:center;margin-top:0;" .sk-display .sk-display--4}
+## Welcome to the SurfScape Privacy Portal! {style="text-align:center;margin-bottom:0;" .sk-display .sk-display--2}
+
+Find out how we handle and collect your data and how you can control it. {style="text-align:center;margin-top:0;" .sk-display .sk-display--4}
 
 <div class="sk-cards">
 <a href="/privacy-portal/policy" class="sk-link-card">

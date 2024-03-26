@@ -1,6 +1,6 @@
 {
   "layout": "post.njk",
   "permalink": "/news/{{title|slugify}}/",
-  "author": "SurfScape Team",
+  "author": "ReduxFlakes",
   "post_type": "News"
 }

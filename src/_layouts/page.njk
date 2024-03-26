@@ -22,7 +22,7 @@ Page.njk layout guide
     <div class="sk-panel {% if complex_layout %}sk-panel-complex-layout{% else %}sk-panel-simple-layout{% endif %}">
       {% block sk_panel %}
         <header class="sk-panel-header">
-          <h2 class="sk-panel-header-title" id="{{ title | slugify }}">{{title}}</h2>
+          <h1 class="sk-panel-header__title" id="{{ title | slugify }}">{{title}}</h1>
           <div class="sk-panel-options">
             <button class="sk-panel-button" onclick="copyShare()"><img src="/static/icons/32/share.png" alt="Open share icon">Share</button>
           </div>
@@ -30,11 +30,9 @@ Page.njk layout guide
       {% endblock sk_panel %}
       <div class="sk-panel-content {% if banner and complex_layout %}sk-panel-content_complex{% endif %}">
         {% if banner %}
-          <div class="site--banner--wrapper">
-            <picture class="site--banner">
-              <img src="/static/images/banners/{{banner}}" alt="{{title}} banner">
-            </picture>
-          </div>
+          <picture class="site-banner">
+            <img src="/static/images/banners/{{banner}}" alt="{{title}} banner">
+          </picture>
         {% endif %}
         {# conten_class is used to change the content class to a specified one from the template, meaning if a page needs a different content class that, for examples, changes the width of the container, it should use it's own clas set in the page frontmatter #}
         {% block main_content %}

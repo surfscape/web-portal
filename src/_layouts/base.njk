@@ -2,20 +2,21 @@
 <html lang="{{ site.lang }}">
   {% include "basehead.njk" %}
   <body>
-    <div class="site--container">
+    <div class="site-container">
       {% include "toolbar.njk" %}
-      <div class="page--container">
+      <div class="site-topbar">
         {% include "header.njk" %}
         {% include "nav.njk" %}
-        <main>
-          {% block surfkit_base_layout %}
-            {{ content | safe }}
-          {% endblock %}
-        </main>
-        {% include "footer.njk" %}
       </div>
+      <main class="page-container">
+        {% block surfkit_base_layout %}
+          {{ content | safe }}
+        {% endblock %}
+        {% include "footer.njk" %}
+      </main>
     </div>
     <script src="/static/scripts/tabs.min.js"></script>
+    <script src="/static/scripts/modal.js"></script>
     <script data-goatcounter="https://surfscape.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   </body>

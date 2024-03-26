@@ -1,9 +1,9 @@
 {% extends "./page.njk" %}
 {% block sk_panel %}
   <header class="sk-panel-header">
-    <h2 class="sk-panel-header-title" id="{{ title | slugify }}">
-      <a href="/{{ post_type | slugify }}">{{ post_type }}</a>
-    </h2>
+    <h1 class="sk-panel-header__title" id="{{ title | slugify }}">
+      <a href="/{{ post_type | slugify }}">&#8592; {{ post_type }}</a>
+    </h1>
     <div class="sk-panel-options">
       <button class="sk-panel-button" onclick="copyShare()">
         <img src="/static/icons/32/share.png" alt="Open share icon"/>Share
@@ -12,43 +12,31 @@
   </header>
 {% endblock sk_panel %}
 {% block main_content %}
-  <header class="post--header">
-    <h1 class="post--header__title">
+  <header class="post-header">
+    <h1 class="post-header__title">
       {{ title }}
-      <time class="post--header__date" datetime="{{ date }}">{{
-      date | PostDate
-    }}</time>
     </h1>
-    <span class="post--header__description">{{ description }}</span>
+    <p class="post-header__description"><time class="post-header__date" datetime="{{ date }}">{{
+      date | PostDate
+    }}</time> &#x2758; {{ description }}</p>
   </header>
   <article id="main">
     {{ content | safe }}
   </article>
   <style>
-    .post--header {
-      display: grid;
-      gap: var(--spacing-xxsm);
-      max-width: 86ch;
+    .post-header {
+      max-width: 84ch;
       margin: 0 auto;
       padding: var(--spacing);
-      border-bottom: 1px solid var(--clr-container-border);
     }
-
-    .post--header * {
-      margin: 0;
+    .post-header__date {
+      color: rgb(255, 255, 255);
+      font-style: italic;
     }
-    .post--header__title {
-      text-align: center;
-    }
-    .post--header__date {
-      display: block;
-      font-weight: normal;
-      font-size: 0.5em;
-    }
-    .post--header__description {
-      text-align: center;
+    .post-header__description {
+      margin-top: 1em;
       font-size: 1.05em;
-      color: rgba(0, 0, 0, 0.75);
+      color: rgba(255, 255, 255, 0.8);
     }
   </style>
 {% endblock main_content %}

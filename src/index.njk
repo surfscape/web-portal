@@ -4,68 +4,43 @@ title: Home
 ---
 
 <div class="sk-layoututil-home">
-  <div class="home--hero">
-    <picture>
-      <svg
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 0 560 250"
-      >
-
-        <a xlink:href="preview/abouthomepage/">
-          <image
-          width="560"
-          height="250"
-          xlink:href="/static/images/promotions/2024_ceremony_coming_soon.png"
-        ></image>
-        </a>
-
-        {# <a xlink:href="/services">
-          <rect x="228" y="210" opacity="0" width="88" height="24"></rect>
-        </a>
-        <a xlink:href="/community">
-          <rect x="335" y="210" opacity="0" width="121" height="24"></rect>
-        </a>
-        <a xlink:href="/about">
-          <rect x="470" y="210" opacity="0" width="70" height="24"></rect>
-        </a> #}
-      </svg>
-    </picture>
-
-    <div class="home--recent--grid">
-      <section>
-        <h2>
-          <img
-            src="/static/icons/64/megaphone.png"
-            alt="Megaphone icon"
-            class="icon"
-/>Feedback
-        </h2>
-        <p>
-          We've redesigned SurfScape from scratch, do you like the changes, or
-          have a suggestion? Contact us!
-        </p>
-        <a
-          href="/uservoice/new-homepage-feedback"
-          class="sk-button sk-button-sunset"
-          >Learn more</a
-        >
-      </section>
-      <section>
-        <h2>
-          <img
-            src="/static/icons/64/download.png"
-            alt="Megaphone icon"
-            class="icon"
-/>Latest Release
-        </h2>
-        <p>Check the latest changes with the new updates page!</p>
-        <a href="/updates" class="sk-button sk-button-ocean">Learn more</a>
-      </section>
+  <a href="/news/" class="frontpage-banner">
+    <img
+      src="/static/images/promotions/2024_ceremony_coming_soon.png"
+      alt="SurfScape codename Ceremony coming soon"
+      class="frontpage-banner"
+    />
+  </a>
+  <section class="frontpage-showcase sk-pod">
+    <h3 class="sk-pod-header">
+      <img src="/static/icons/32/new.png" alt="New" class="icon" />Site Showcase
+    </h3>
+    <div class="sk-pod-content frontpage-showcase-grid">
+      <a href="https://aristasia.guide/">
+        <img
+          src="/static/images/buttons/aristasiabutton.gif"
+          alt="Aristasian
+        Reminiscense"
+        />Aristasian Reminiscense
+      </a>
+      <a href="https://neonriser.neocities.org/">
+        <img src="/static/images/buttons/neonriser.png" alt="Neonriser" />
+        Neonriser
+      </a>
+      <a href="https://aristasia.guide/">
+        <img
+          src="/static/images/buttons/houdininokiabutton.gif"
+          alt="Erik Houdini"
+        />Erik Houdini
+      </a>
     </div>
-  </div>
+  </section>
   <article id="main">
+    <span class="ua-strip">
+      <a href="https://u24.gov.ua/"
+        >Support Ukraine with the Russian invasion!</a
+      >
+    </span>
     <h2 id="begin-your-journey">Begin your journey!</h2>
     <p>
       Welcome to SurfScape, <em>your friendly Neocities web portal</em>,
@@ -74,70 +49,30 @@ title: Home
       open, and community-driven. <a href="/about">Learn more about us!</a>
     </p>
     <h2 id="explore-surfscape">Explore SurfScape</h2>
-    <tab-container data-type="vertical">
-      <menu class="tab-buttons">
+    <sk-tab-container>
+      <menu class="sk-tab-buttons">
         <li>
-          <button class="tab-button" data-tab="tab1" aria-checked="true">
-            Latest release
+          <button class="sk-tab-button" data-tab="tab1" aria-checked="true">
+            Highlights
           </button>
         </li>
         <li>
-          <button class="tab-button" data-tab="tab2" aria-checked="false">
-            Support us
-          </button>
-        </li>
-        <li>
-          <button class="tab-button" data-tab="tab3" aria-checked="false">
-            Add us
-          </button>
-        </li>
-        <li>
-          <button class="tab-button" data-tab="tab4" aria-checked="false">
-            Experimental
+          <button class="sk-tab-button" data-tab="tab2" aria-checked="false">
+            Add our button
           </button>
         </li>
       </menu>
-      <tab-content-container>
-        <section class="tab-content" id="tab1" aria-hidden="false">
-          <h2>
-            Latest release<img
-              src="/static/icons/32/new.png"
-              alt="NEW badge icon"
-              class="icon"
-/>
-          </h2>
-          <p>
-            We've recently released the first beta version of the new SurfScape
-            web portal. It includes a bunch of UX and UI improvements, with a
-            new streamlined workflow for content, and additional features!
-          </p>
-          <p>Explore the latest release trough our preview page.</p>
-          <a href="/preview/abouthomepage" class="sk-button sk-button-ocean"
-            >Learn more</a
-          >
+      <sk-tab-content-container>
+        <section class="sk-tab-content" id="tab1" aria-hidden="false">
+          <h2>Highlights</h2>
+          <dl class="sk-cards sk-cards--2">
+            <dt>
+              <a href="/about/release-notes/">Release 0.1.0</a>
+            </dt>
+            <dd>Check the latest changes of v0.1.0</dd>
+          </dl>
         </section>
-        <section class="tab-content" id="tab2" aria-hidden="true">
-          <h2>Support SurfScape development</h2>
-          <p>
-            If you like what we do, you can support us by improving SurfScape
-            with patches, suggestions, feedback, and/or testing.
-          </p>
-          <p>
-            This is possible since most parts of SurfScape like the web portal,
-            UI framework, design system, branding kit, and more, are available
-            to the public on GitHub.
-          </p>
-          <p>
-            The only requirements is that you understand the basics of HTML,
-            CSS, Eleventy, Nunjucks templating, and basic English.
-          </p>
-          <a
-            href="https://github.com/surfscape"
-            class="sk-button sk-button-ocean"
-            >Access our Github</a
-          >
-        </section>
-        <section class="tab-content" id="tab3" aria-hidden="true">
+        <section class="sk-tab-content" id="tab2" aria-hidden="true">
           <h2>Add SurfScape to your website</h2>
           <p>
             Do you like SurfScape? Do you want to link us on your own website?
@@ -151,50 +86,35 @@ title: Home
             ><img
               src="/static/images/buttons/btn_surfscape.png"
               alt="SurfScape Button"
-/></a>
+          /></a>
           <p>
             Make sure to not hotlink the button. Instead, download the image and
             save it on your own website to save our bandwidth!
           </p>
         </section>
-        <section class="tab-content" id="tab4" aria-hidden="true">
-          <h2>SurfScape Labs</h2>
-          <p>
-            If you like to go beyond barriers, explore our experiments portal
-            called SurfScape labs. It's a website designed to demonstrate new
-            stuff that is being developed, considered, and tested so that it can
-            be released.
-          </p>
-          <p>
-            We recommend the use of a desktop to access and explore the portal
-            since it's experimental projects and not yet optimized for mobile.
-          </p>
-          <a
-            href="https://surfscape.github.io/labs/"
-            class="sk-button sk-button-fire"
-            >Access SurfScape Labs</a
-          >
-        </section>
-      </tab-content-container>
-    </tab-container>
+      </sk-tab-content-container>
+    </sk-tab-container>
   </article>
-  <aside class="home--sidebar">
-    <section class="home--sidebar--box">
-      <h3 class="home--sidebar--box--title">Did you know?</h3>
-      <div class="home--sidebar--box--content">
-        <span>SurfScape started back in 2021 as a flash games portal called NaviNet.</span>
+  <aside class="home-sidebar">
+    <section class="sk-pod-box">
+      <h3 class="sk-pod-box__title">Did you know?</h3>
+      <div class="sk-pod-box-content">
+        <span
+          >SurfScape started back in 2021 as a flash games portal called
+          NaviNet.</span
+        >
       </div>
     </section>
-    <section class="home--sidebar--box">
-      <h3 class="home--sidebar--box--title">Friends</h3>
-      <div class="home--sidebar--box--content" style="display:grid;">
+    <section class="sk-pod-box">
+      <h3 class="sk-pod-box__title">Friends</h3>
+      <div class="sk-pod-box-content" style="display: grid">
         <a href="https://openbooks.neocities.org/">OpenBooks</a>
         <a href="https://neonriser.neocities.org/">Neonriser</a>
       </div>
     </section>
-    <section class="home--sidebar--box">
-      <h3 class="home--sidebar--box--title">Services Updates</h3>
-      <div class="home--sidebar--box--content">
+    <section class="sk-pod-box">
+      <h3 class="sk-pod-box__title">Services Updates</h3>
+      <div class="sk-pod-box-content">
         <span
           ><img
             src="/static/icons/32/s_warning.png"
@@ -207,13 +127,13 @@ title: Home
               vertical-align: middle;
               margin-right: 0.25rem;
             "
-/>This service can't be reached.</span
+          />This service can't be reached.</span
         >
       </div>
     </section>
-    <section class="home--sidebar--box">
-      <h3 class="home--sidebar--box--title">Patch Notes</h3>
-      <div class="home--sidebar--box--content">
+    <section class="sk-pod-box">
+      <h3 class="sk-pod-box__title">Patch Notes</h3>
+      <div class="sk-pod-box-content">
         <span
           ><img
             src="/static/icons/32/s_warning.png"
@@ -226,84 +146,101 @@ title: Home
               vertical-align: middle;
               margin-right: 0.25rem;
             "
-/>This service can't be reached.</span
+          />This service can't be reached.</span
         >
       </div>
     </section>
   </aside>
 </div>
+
 <style>
   .sk-layoututil-home {
     display: grid;
-    gap: var(--spacing);
+    gap: var(--spacing-sm);
     padding: var(--spacing);
-    justify-items: center;
-    grid-template-areas: "hero" "content" "aside";
   }
 
   .sk-layoututil-home * {
     min-width: 0;
   }
 
-  .home--hero {
-    display: grid;
-    gap: var(--spacing-xsm);
-    grid-area: hero;
-    max-width: 72ch;
+  .frontpage-banner {
+    max-width: 77ch;
+    margin: 0 auto;
   }
 
-  .home--hero > picture > svg {
-    display: block;
-    border: 1px solid #ffffff60;
-    border-radius: var(--radius-sm);
+  .frontpage-banner {
+    width: 100%;
     box-shadow: var(--sh-container);
+    border-radius: var(--radius);
+    overflow: hidden;
   }
 
-  .home--recent--grid {
-    display: grid;
-    align-content: space-between;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--spacing-xsm);
-    background: hsl(206, 70%, 22%) url("/static/backgrounds/overview_blue.png") no-repeat;
-    background-size: contain;
-    text-shadow: var(--sh-smooth-text);
-    border: 1px solid #ffffff40;
-    border-radius: var(--radius-sm);
-    box-shadow: var(--sh-container);
-    padding: var(--spacing-xsm) var(--spacing-xsm) var(--spacing);
-    color: hsl(206, 85%, 90%);
-  }
-
-  .home--recent--grid h2 {
+  .frontpage-showcase-grid {
     display: flex;
     align-items: center;
-    font-style: italic;
-    gap: var(--spacing-xsm);
-    margin-bottom: var(--spacing-xxsm);
-    padding-bottom: var(--spacing-xsm);
-    border-bottom: 1px solid rgba(131, 216, 255, 0.25);
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: var(--spacing);
   }
-
-  .home--recent--grid h2 .icon {
-    width: 28px;
-  }
-
-  .home--recent--grid section {
+  .frontpage-showcase-grid a {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xxsm);
   }
 
-  .home--recent--grid section .sk-button {
-    margin-top: auto;
+  .frontpage-showcase-grid a img {
+    width: 105.6px;
+    height: 39.6px;
   }
 
-  article#main {
-    padding-left: var(--spacing);
-    grid-area: content;
+  .home-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xsm);
+    padding-top: var(--spacing-xsm);
+    border-top: 1px solid var(--clr-stroke);
+    box-shadow: inset 0px 1px hsla(0, 0%, 0%, 0.5);
+  }
+  .ua-strip {
+    display: block;
+    text-align: center;
+    padding: var(--spacing-xxsm) 0;
+    background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
+    border-radius: var(--radius-sm);
+  }
+  .ua-strip a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.5);
+    padding: var(--spacing-xxsm) var(--spacing-xsm);
   }
 
-  .home--sidebar {
-    padding-right: var(--spacing);
-    grid-area: aside;
+  @media (min-width: 650px) {
+    .sk-layoututil-home {
+      grid-template-columns: 1fr 15rem;
+      grid-template-rows: 1fr auto;
+    }
+    .frontpage-banner {
+      grid-column: 1/3;
+    }
+    .frontpage-showcase {
+      grid-column: 1/3;
+    }
+
+    article#main {
+      grid-column: 1/2;
+    }
+
+    .home-sidebar {
+      grid-column: 2 /3;
+      padding-left: var(--spacing-xsm);
+      border-top: none;
+      padding-top: 0;
+      border-left: 1px solid var(--clr-stroke);
+      box-shadow: inset 1px 0 hsla(0, 0%, 0%, 0.5);
+    }
   }
 </style>

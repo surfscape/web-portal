@@ -41,9 +41,6 @@ To make this post short, I've decided to make a list of the new pages (+ some th
 
 Another thing you might find new, are the new links at the top of the header, more importantly the UserVoice page, that is a project that has been planned out for a long time, probably at the start of the development 3 months ago. The idea behind UserVoice is, well, get feedback from users about new features, issues, or request of new content. In there, you can find an active form related to this Alpha release, that was made to gather feedback of new and past users so I can get a view on what should be worked out more and what should be brought back to the drawing table.
 
-If you want to help please do fill the form, we don't ask a lot of questions and you don't need an account to do so.
-
-<a href="/uservoice/new-homepage-feedback/" class="sk-button sk-button-ocean">Fill out form</a>
 
 ## Missing/Incomplete
 
@@ -59,4 +56,4 @@ One of the main goals of SurfScape is to offer services that are free, open, and
 
 ## Closing
 
-So, that's it, this is the new SurfScape that we hope will stay alive and helpful to newcommers on NeoCities. Thanks for reading!
+So, that's it, this is the new SurfScape that we hope will stay alive and helpful to newcommers on Neocities. Thanks for reading!

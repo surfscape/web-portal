@@ -4,20 +4,35 @@ update: 2023-09-23T20:10:00.000Z
 layout: "page.njk"
 ---
 
-At SurfScape, we understand the importance of privacy and are committed to protecting our users' personal information. This Privacy Policy outlines our approach to safeguarding your privacy when using our web portal.
+This document details our usage of non-personal and personal data. This also includes our methods of collecting data, our partners, and 3rd party services we use.
 
-## Collection of Information
+## Usage of data
 
-We do not collect any personal information from our users, such as names, addresses, or email addresses. We do not track user activity or gather any analytics data.
+Most of data collected are used for the necessary execution of a service, API, or basic telemetry.
 
-## Use of Information
+This is more detailed on the [data collection](#collected-information) section
 
-Since we do not collect any personal information or track user activity, we do not use any information for statistical purposes or for any other purposes.
+## Collected Information
 
-## Security
+We _only_ collect telemetry data. Personal data might be given when filling forms or sending e-maills, which is something that is still not available at the moment.
 
-We prioritize the security of our users' information and have implemented appropriate measures to protect against unauthorized access, alteration, disclosure, or destruction of personal information. However, as we do not collect personal information, there is no user-specific data to secure.
+### 1st Party Providers
+
+| Service provider | Service provided | Country of Operation | Required? | Privacy Policy                                         |
+| ---------------- | ---------------- | -------------------- | --------- | ------------------------------------------------------ |
+| Neocities        | Hosting          | USA                  | Yes       | [neocities.org/privacy](https://neocities.org/privacy) |
+
+### 3rd Party Providers
+
+These are services that offer additional services that are not needed for basic functionality.
+
+| Service provider | Service provided | Required? | Privacy Policy                                                       |
+| ---------------- | ---------------- | --------- | -------------------------------------------------------------------- |
+| GoatCounter      | Telemetry        | No        | [goatcounter.com/help/privacy](https://goatcounter.com/help/privacy) |
+| coolLabs Fonts   | Web Fonts        | No        | [docs.coollabs.io/fonts/](https://docs.coollabs.io/fonts/)           |
 
 ## Changes to Privacy Policy
 
-As SurfScape does not provide any services that involve collecting personal information, this Privacy Policy is not applicable. We do not collect, use, or disclose any personal information.
+We have the permission to alter this policy, whatever we want, with or without warning. Older policies can be found on archived versions of SurfScape trough [archive.org](https://archive.org).
+
+_Last update:_ March, 17, 2024
