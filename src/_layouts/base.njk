@@ -15,6 +15,11 @@
         {% include "footer.njk" %}
       </main>
     </div>
+        {% if style_slot %}
+        {% renderTemplate 'njk,md', slots %}
+            {{ style_slot | safe }}
+        {% endrenderTemplate %}
+    {% endif %}
     <script src="/static/scripts/tabs.min.js"></script>
     <script src="/static/scripts/modal.js"></script>
     <script data-goatcounter="https://surfscape.goatcounter.com/count"

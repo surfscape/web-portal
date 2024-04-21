@@ -57,7 +57,6 @@ section * {
 article > * + *,
 section:not(.sk-pod) > * + * {
   margin-top: 1em;
-  text-align: justify;
 }
 iframe {
   border: 0;
@@ -87,10 +86,10 @@ img:not([alt]) {
 
 :root {
   --font-size: clamp(0.9rem, 0.9rem + 0.390625vw, 1.05rem);
-  --clr-bg: hsl(0, 0%, 5%);
+  --clr-bg: hsl(0, 0%, 8%);
   --clr-frame-bg: hsl(0, 0%, 15%);
   --clr-stroke: hsl(0, 0%, 30%);
-  --clr-text: hsl(0, 100%, 96%);
+  --clr-text: hsl(0, 0%, 95%);
 
   --sh-subtle: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   --sh-container: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
@@ -215,31 +214,34 @@ hr {
 .main-nav {
   display: flex;
   flex-wrap: nowrap;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm);
+  padding: 0 var(--spacing-sm);
   background: var(--clr-brand-primary-dark);
   overflow: auto;
 }
 
 .main-nav__link {
+  letter-spacing: 0px;
   display: flex;
   align-items: center;
   white-space: nowrap;
   flex-wrap: nowrap;
   gap: var(--spacing-xxsm);
   color: rgba(255, 255, 255, 0.8);
-  padding: var(--spacing-xsm);
-  border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: var(--spacing) var(--spacing-xsm);
   min-width: fit-content;
   text-decoration: none;
-  transition: all 125ms ease-in-out;
+  border-left: 1px solid rgba(0, 0, 0, 0);
+  border-right: 1px solid rgba(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
 }
 
 .main-nav__link:hover {
-  color: white;
-  border-color: rgba(255, 255, 255, 0.5);
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.09) inset;
 }
 
 /* content styles and layout stuff */

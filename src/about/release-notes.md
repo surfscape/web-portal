@@ -4,6 +4,16 @@ title: Release Notes
 
 ## Branch: Ceremony
 
+### **0.1.1-alpha** April 19, 2024
+
+- Created the [accessibility](/accessbility) page;
+- Launched a [guestbook](/about/guestbook)!
+- Improved navbar design;
+- Fixed various Markup issues (Now passes Ntml Checker!);
+- Fixed typo on the homepage;
+- Fixed light redish text color;
+- Added favicon.
+
 ### **0.1.0-alpha** March 26, 2024
 
 > This update comes with an all-new dark design with improvements on consistency and accessibility, and SurfKit is now being used for all the components.

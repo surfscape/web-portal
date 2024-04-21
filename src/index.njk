@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Home
+style_slot: true
 ---
 
 <div class="sk-layoututil-home">
@@ -12,9 +13,9 @@ title: Home
     />
   </a>
   <section class="frontpage-showcase sk-pod">
-    <h3 class="sk-pod-header">
+    <h2 class="sk-pod-header">
       <img src="/static/icons/32/new.png" alt="New" class="icon" />Site Showcase
-    </h3>
+    </h2>
     <div class="sk-pod-content frontpage-showcase-grid">
       <a href="https://aristasia.guide/">
         <img
@@ -38,7 +39,7 @@ title: Home
   <article id="main">
     <span class="ua-strip">
       <a href="https://u24.gov.ua/"
-        >Support Ukraine with the Russian invasion!</a
+        >Save Ukraine from the Russian Invasion!</a
       >
     </span>
     <h2 id="begin-your-journey">Begin your journey!</h2>
@@ -52,7 +53,7 @@ title: Home
     <sk-tab-container>
       <menu class="sk-tab-buttons">
         <li>
-          <button class="sk-tab-button" data-tab="tab1" aria-checked="true">
+          <button class="sk-tab-button" data-tab="tab1" aria-checked="true" type="button">
             Highlights
           </button>
         </li>
@@ -63,13 +64,17 @@ title: Home
         </li>
       </menu>
       <sk-tab-content-container>
-        <section class="sk-tab-content" id="tab1" aria-hidden="false">
+        <section class="sk-tab-content" id="tab1" aria-hidden="false" type="button">
           <h2>Highlights</h2>
           <dl class="sk-cards sk-cards--2">
-            <dt>
-              <a href="/about/release-notes/">Release 0.1.0</a>
+                      <dt>
+              <a href="/about/guestbook">Guestbook</a>
             </dt>
-            <dd>Check the latest changes of v0.1.0</dd>
+            <dd>We now have a guestbook, go sign it!</dd>
+                      <dt>
+              <a href="/about/release-notes/">Release 0.1.1</a>
+            </dt>
+            <dd>Check the latest changes of v0.1.1</dd>
           </dl>
         </section>
         <section class="sk-tab-content" id="tab2" aria-hidden="true">
@@ -153,6 +158,7 @@ title: Home
   </aside>
 </div>
 
+{% slot 'style_slot' %}
 <style>
   .sk-layoututil-home {
     display: grid;
@@ -244,3 +250,4 @@ title: Home
     }
   }
 </style>
+{% endslot %}
