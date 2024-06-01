@@ -1,6 +1,12 @@
-<header class="brand-header">
-  <h1 class="brand-header__title" title="SurfScape">
-    <a href="/"><img src="/static/branding/top_header_logo.svg" alt="SurfScape Text Logo" style="height:48px"></a>
-  </h1>
-  <span class="top-header__slogan">{{site.description}}</span>
+<header class="site-header">
+  <a class="site-header__title" href="/"><img src="/static/images/branding/everything_logo_0.5x.png" alt="SurfScape 'Everything' logo" width="42px" height="42px"></a>
+  <nav class="site-navbar">
+    {% for mainNav in nav.mainNav %}
+      <a class="site-navbar__link" href="{{mainNav.url}}">{{mainNav.title}}</a>
+    {% endfor %}
+  </nav>
+  <button class="sk-button-icon" id="openExtensions">
+    <ion-icon name="bulb"></ion-icon>
+  </button>
+  {% include "settingsModal.njk" %}
 </header>

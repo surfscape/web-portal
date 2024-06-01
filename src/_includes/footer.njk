@@ -1,14 +1,18 @@
-<footer class="site-footer">
-    <nav class="footer-nav">
-        <a href="/about/">About Us</a> | 
-        <a href="/info/tos/">Terms of Use</a> | 
-        <a href="/privacy-portal/">Privacy Portal</a> | 
-        <a href="/services/adzone/">Advertise</a> | 
-        <a href="/projects/">Projects</a> | 
-        <a href="/projects/network/">SurfScape Network</a> | 
-        <a href="/about/contact/">Contact Us</a>
-    </nav>
-    <span class="footer__copy">
-        &copy; 2021 - 2024 SurfScape
-    </span>
+<footer class="site-footer content">
+    <h2>Navigation</h2>
+    <div class="footer-nav">
+        {% for sitemapNav in nav.sitemapNav %}
+            <details open class="footer-nav-section sk-accordion-nav">
+                <summary class="sk-accordion-nav__title">{{sitemapNav.title}}</summary>
+                <nav class="footer-nav-section-navbar">
+                    {% for link in sitemapNav.links %}
+                        <a class="footer-nav-section-navbar__link" href="{{link.url}}">{{link.title}}</a>
+                    {% endfor %}
+                </nav>
+            </details>
+        {% endfor %}
+    </div>
+    <p class="site-footer__copy">
+         2021 - 2024 SurfScape | Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 DEED</a>
+    </p>
 </footer>

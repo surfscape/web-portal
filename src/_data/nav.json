@@ -1,49 +1,178 @@
 {
   "mainNav": [
     {
-      "title": "Home",
-      "url": "/",
-      "icon": "house"
-    },
-    {
       "title": "Community",
-      "url": "/community",
-      "icon": "comment"
-    },
-    {
-      "title": "News",
-      "url": "/news",
-      "icon": "newspaper"
-    },
-    {
-      "title": "Services",
-      "url": "/services",
-      "icon": "add-on"
+      "url": "/community"
     },
     {
       "title": "Directory",
-      "url": "/directory",
-      "icon": "bookshelf"
+      "url": "/directory"
     },
     {
       "title": "Resources",
-      "url": "/resources",
-      "icon": "bookmark"
+      "url": "/resources"
     },
     {
-      "title": "Developer",
-      "url": "/developer",
-      "icon": "page_code"
-    },
-    {
-      "title": "Projects",
-      "url": "/projects",
-      "icon": "blueprint"
+      "title": "News",
+      "url": "/news"
     },
     {
       "title": "About",
-      "url": "/about",
-      "icon": "information"
+      "url": "/about"
+    }
+  ],
+  "sitemapNav": [
+    {
+      "title": "Web Portal",
+      "links": [
+        {
+          "title": "Home",
+          "url": "/"
+        },
+        {
+          "title": "Roadmap",
+          "url": "/about/roadmap"
+        },
+        {
+          "title": "Updates",
+          "url": "/about/release-notes"
+        },
+        {
+          "title": "About",
+          "url": "/about"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "links": [
+        {
+          "title": "Blog",
+          "url": "/blog"
+        },
+        {
+          "title": "News",
+          "url": "/news"
+        },
+        {
+          "title": "Bookmarks",
+          "url": "/bookmarks"
+        },
+        {
+          "title": "Links",
+          "url": "/links"
+        }
+      ]
+    },
+    {
+      "title": "Services",
+      "links": [
+        {
+          "title": "GameVortex",
+          "url": "/services/games"
+        },
+        {
+          "title": "NeoFrame",
+          "url": "/services/neoframe"
+        },
+        {
+          "title": "AdZone",
+          "url": "/services/adzone"
+        },
+        {
+          "title": "Theme Creator",
+          "url": "/services/theme"
+        },
+        {
+          "title": "88x31 Builder",
+          "url": "/services/88x31"
+        }
+      ]
+    },
+    {
+      "title": "Directory",
+      "links": [
+        {
+          "title": "Index",
+          "url": "/directory"
+        },
+        {
+          "title": "Submit",
+          "url": "/directory/submit"
+        },
+        {
+          "title": "Guidelines",
+          "url": "/directory/guidelines"
+        }
+      ]
+    },
+    {
+      "title": "Initiatives",
+      "links": [
+        {
+          "title": "FPD",
+          "url": "/pro/fpd"
+        },
+        {
+          "title": "FPD Directory",
+          "url": "/pro/fpd-dir"
+        },
+        {
+          "title": "Hubs",
+          "url": "/pro/hubs"
+        },
+        {
+          "title": "SurfScape Labs",
+          "url": "/pro/labs"
+        },
+
+        {
+          "title": "Partnerships",
+          "url": "/pro/partnership"
+        },
+        {
+          "title": "Open Web Advocacy",
+          "url": "/pro/openweb"
+        }
+      ]
+    },
+    {
+      "title": "Developers",
+      "links": [
+        {
+          "title": "Design",
+          "url": "/dev/design"
+        },
+        {
+          "title": "SurfKit",
+          "url": "/dev/surfkit"
+        },
+        {
+          "title": "Community Projects",
+          "url": "/dev/com-projects"
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        {
+          "title": "Terms of Service",
+          "url": "/tos"
+        },
+        {
+          "title": "Privacy Portal",
+          "url": "/privacy-portal"
+        },
+        {
+          "title": "Accessibility Statement",
+          "url": "/accessibility"
+        },
+        {
+          "title": "Imprint",
+          "url": "/imprint"
+        }
+      ]
     }
   ]
 }
