@@ -1,26 +1,22 @@
 {
-  "layout": "page.njk",
+  "layout": "single.njk",
+  "header_title": "About SurfScape",
   "navigation": [
     {
-      "title": "About SurfScape",
+      "title": "About",
       "url": "/about/"
-    },
-    {
-      "title": "Guestbook",
-      "url": "/about/guestbook/"
     },
     {
       "title": "Updates",
       "url": "/about/release-notes/"
     },
-
+    {
+      "title": "Roadmap",
+      "url": "/about/roadmap/"
+    },
     {
       "title": "Contact",
       "url": "/about/contact/"
-    },
-    {
-      "title": "Departments",
-      "url": "/about/departments/"
     }
   ]
 }
