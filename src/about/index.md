@@ -9,13 +9,12 @@ SurfScape is an [open source](https://github.com/surfscape/) web portal for Neoc
 ## Instance Information
 
 <section class="sk-card">
-<h3 class="sk-card__title"><img src="/static/icons/32/site-info.png" alt="Site info icon" class="icon">SurfScape <em>Alpha</em></h3>
-<p>
-<span><strong>Version:</strong> <em>{{pkg.version}}</em></span>
-<span><strong>Codename: </strong><em>{{pkg.codename}}</em></span>
-</p>
-<button-group>
-<a href="https://github.com/surfscape/web-portal" class="sk-button sk-button-ocean">Source Code</a>
-<a href="https://neocities.org/site/surfscape" class="sk-button sk-button-sunset">Neocities Page</a>
-</button-group>
+<h3 class="sk-card__title">SurfScape</h3>
+<p><strong>Version:</strong> <code>{{pkg.version}}</code></p>
+<p><strong>Codename:</strong> <code>{{pkg.codename}}</code></p>
+
+<div class="sk-button-group">
+<a href="https://github.com/surfscape/web-portal" class="sk-button sk-button__primary"><ion-icon name="logo-github"></ion-icon>Source Code</a>
+<a href="https://neocities.org/site/surfscape" class="sk-button"><img src="/static/images/others/neocities.svg" alt="">  Neocities Page</a>
+</div>
 </section>
