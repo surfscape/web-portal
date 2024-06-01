@@ -1,4 +1,4 @@
-Sitemap: https://SurfScape.neocities.org/sitemap.xml
+Sitemap: https://surfscape.neocities.org/sitemap.xml
 
 User-agent: *
 Disallow:
