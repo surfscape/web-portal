@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "title": "Web Design",
+      "description": "CSS snippets & tricks, templates.",
+      "name": "wd"
+    },
+    {
+      "title": "Images & GIFs",
+      "description": "Directories of images and GIFs.",
+      "name": "imgif"
+    },
+    {
+      "title": "Fonts",
+      "description": "100% free fonts.",
+      "name": "fnt"
+    }
+  ]
+}
