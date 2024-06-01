@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/humans.txt");
   eleventyConfig.addWatchTarget("src/css");
   eleventyConfig.addWatchTarget("src/humans.txt");
+  eleventyConfig.addWatchTarget("./src/resources/");
   /* plugins */
   const md = markdownIt({ html: true, breaks: true, linkify: true });
   md.use(markdownItAttrs);
@@ -40,8 +41,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("news", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/news/posts/*.md");
   });
-  eleventyConfig.addCollection("blog", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/blog/posts/*.md");
+  eleventyConfig.addCollection("servicesUpdates", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/services/updates/posts/*.md");
   });
   return {
     dir: {
@@ -51,7 +52,7 @@ module.exports = function (eleventyConfig) {
       data: "_data",
       output: "_site",
     },
-    templateFormats: ["md", "njk"],
+    templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
