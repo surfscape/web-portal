@@ -1,0 +1,16 @@
+/* SurfKit Default Light Theme (Snow) v1.0 */
+:root {
+  /* br : brand colors */
+  --clr-br__primary: var(--clr-accent-test);
+  --clr-br__onPrimary: hsl(0, 0%, 97%);
+  --clr-br__primaryFluent: hsla(211, 100%, 50%, 0.5);
+  /* surfaces */
+  --clr-sf__background: #fdfdfd;
+  --clr-sf__backgroundFluent: hsla(0, 0%, 100%, 0.5);
+  --clr-sf__stroke: hsl(0, 0%, 85%);
+  /* typography */
+  --clr-tp__heading: hsl(41, 97%, 15%);
+  --clr-tp__body: hsl(41, 98%, 23%);
+  --clr-tp__muted: hsl(0, 0%, 40%);
+  --clr-accent-test: hsl(240, 100%, 50%);
+}
