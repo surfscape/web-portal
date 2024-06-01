@@ -1,64 +1,24 @@
 {% extends "./base.njk" %}
 
-{#
-
-Page.njk layout guide
-
-1. surfkit_base_layout is used to extend the base layout container in the base.njk layout.
-2. navigation is a component that every page can use, its  recommended to be used inside directory pages (pages that have pages inside of it in the same directory). the navigation is built using the array set in the frontmatter of the page directory.
-3. complex_layout is a layout modifier, it is used for pages that need to use the sidebar layout. the sidebar is configures trought the special shortcode block called aside_content which should be in the page file.
-
-#}
-
 {% block surfkit_base_layout %}
-  <div class="sk-page-frame">
-    {% if navigation %}
+  {% if navigation %}
+    <header class="sk-header">
+      <span class="sk-header__title">{{header_title}}</span>
       <nav class="sk-navbar">
         {%- for item in navigation -%}
-          <a href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+          <a  class="sk-navbar__link" href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
         {%- endfor -%}
       </nav>
-    {% endif %}
-    <div class="sk-panel {% if complex_layout %}sk-panel-complex-layout{% else %}sk-panel-simple-layout{% endif %}">
-      {% block sk_panel %}
-        <header class="sk-panel-header">
-          <h1 class="sk-panel-header__title" id="{{ title | slugify }}">{{title}}</h1>
-          <div class="sk-panel-options">
-            <button class="sk-panel-button" onclick="copyShare()"><img src="/static/icons/32/share.png" alt="Open share icon">Share</button>
-          </div>
-        </header>
-      {% endblock sk_panel %}
-      <div class="sk-panel-content {% if banner and complex_layout %}sk-panel-content_complex{% endif %}">
-        {% if banner %}
-          <picture class="site-banner">
-            <img src="/static/images/banners/{{banner}}" alt="{{title}} banner">
-          </picture>
-        {% endif %}
-        {# conten_class is used to change the content class to a specified one from the template, meaning if a page needs a different content class that, for examples, changes the width of the container, it should use it's own clas set in the page frontmatter #}
-        {% block main_content %}
-          <article id="main" {% if content_class %}class="{{content_class}}"{% endif %}>
-            {{ content | safe }}
-          </article>
-        {% endblock main_content %}
-        {% if complex_layout %}
-          <aside class="sk-panel-aside">
-            {% renderTemplate 'njk,md',
-            slots %}
-            {{ aside_content | safe }}
-            {% endrenderTemplate %}
-          </aside>
-        {% endif %}
-      </div>
+    </header>
+  {% endif %}
+  {% block main_content %}
+    <div class="hero">
+      <h1 class="display__2">{{hero_title}}</h1>
+      <p class="subtitle__2">{{hero_description}}</p>
+      <img src="" alt="">
     </div>
-    {# script to get the current page url that then is used for the share feature #}
-    <script>
-      function copyShare() {
-        var pageLink = "{{ site.url }}{{ page.url}}";
-        navigator
-          .clipboard
-          .writeText(pageLink);
-        alert("Copied the link: " + pageLink + " succesfully");
-      }
-    </script>
-  </div>
+    <article class="sk-layout--content">
+      {{ content | safe }}
+    </article>
+  {% endblock main_content %}
 {% endblock %}
