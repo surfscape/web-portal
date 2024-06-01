@@ -1,253 +1,30 @@
 ---
+title: Home
 layout: base.njk
 title: Home
 style_slot: true
 ---
 
-<div class="sk-layoututil-home">
-  <a href="/news/" class="frontpage-banner">
-    <img
-      src="/static/images/promotions/2024_ceremony_coming_soon.png"
-      alt="SurfScape codename Ceremony coming soon"
-      class="frontpage-banner"
-    />
-  </a>
-  <section class="frontpage-showcase sk-pod">
-    <h2 class="sk-pod-header">
-      <img src="/static/icons/32/new.png" alt="New" class="icon" />Site Showcase
-    </h2>
-    <div class="sk-pod-content frontpage-showcase-grid">
-      <a href="https://aristasia.guide/">
-        <img
-          src="/static/images/buttons/aristasiabutton.gif"
-          alt="Aristasian
-        Reminiscense"
-        />Aristasian Reminiscense
-      </a>
-      <a href="https://neonriser.neocities.org/">
-        <img src="/static/images/buttons/neonriser.png" alt="Neonriser" />
-        Neonriser
-      </a>
-      <a href="https://aristasia.guide/">
-        <img
-          src="/static/images/buttons/houdininokiabutton.gif"
-          alt="Erik Houdini"
-        />Erik Houdini
-      </a>
-    </div>
-  </section>
-  <article id="main">
-    <span class="ua-strip">
-      <a href="https://u24.gov.ua/"
-        >Save Ukraine from the Russian Invasion!</a
-      >
-    </span>
-    <h2 id="begin-your-journey">Begin your journey!</h2>
-    <p>
-      Welcome to SurfScape, <em>your friendly Neocities web portal</em>,
-      inspired by the aesthetics and values of the early web era. Our mission is
-      to <strong>revive</strong> the spirit of a web that is free, creative,
-      open, and community-driven. <a href="/about">Learn more about us!</a>
-    </p>
-    <h2 id="explore-surfscape">Explore SurfScape</h2>
-    <sk-tab-container>
-      <menu class="sk-tab-buttons">
-        <li>
-          <button class="sk-tab-button" data-tab="tab1" aria-checked="true" type="button">
-            Highlights
-          </button>
-        </li>
-        <li>
-          <button class="sk-tab-button" data-tab="tab2" aria-checked="false">
-            Add our button
-          </button>
-        </li>
-      </menu>
-      <sk-tab-content-container>
-        <section class="sk-tab-content" id="tab1" aria-hidden="false" type="button">
-          <h2>Highlights</h2>
-          <dl class="sk-cards sk-cards--2">
-                      <dt>
-              <a href="/about/guestbook">Guestbook</a>
-            </dt>
-            <dd>We now have a guestbook, go sign it!</dd>
-                      <dt>
-              <a href="/about/release-notes/">Release 0.1.1</a>
-            </dt>
-            <dd>Check the latest changes of v0.1.1</dd>
-          </dl>
+<section class="hero">
+  <h1 class="display__1">Your Web, <mark>Your Way</mark>
+  </h1>
+  <p class="subtitle__1 m-bottom__s">
+    Find resources on privacy, web building, Neocities, and more about the
+    interwebs!
+  </p>
+  <img src="/static/images/branding/everything_logo.png" alt=""/>
         </section>
-        <section class="sk-tab-content" id="tab2" aria-hidden="true">
-          <h2>Add SurfScape to your website</h2>
-          <p>
-            Do you like SurfScape? Do you want to link us on your own website?
-            Use our 88x31 button!
-          </p>
-          <pre><code>&lt;a href="https://surfscape.neocities.org"&gt;
-  &lt;img src="https://yourwebsite.com/images/btn_surfscape.png" alt="SurfScape button"&gt;
-&lt;/a&gt;
-</code></pre>
-          <a href="https://surfscape.neocities.org"
-            ><img
-              src="/static/images/buttons/btn_surfscape.png"
-              alt="SurfScape Button"
-          /></a>
-          <p>
-            Make sure to not hotlink the button. Instead, download the image and
-            save it on your own website to save our bandwidth!
-          </p>
-        </section>
-      </sk-tab-content-container>
-    </sk-tab-container>
-  </article>
-  <aside class="home-sidebar">
-    <section class="sk-pod-box">
-      <h3 class="sk-pod-box__title">Did you know?</h3>
-      <div class="sk-pod-box-content">
-        <span
-          >SurfScape started back in 2021 as a flash games portal called
-          NaviNet.</span
-        >
-      </div>
+
+<a href="/" class="sk-button sk-button__primary">Button test</a>
+
+<section style="padding: var(--spacing)">
+  <h2 class="display__2">What we do</h2>
     </section>
-    <section class="sk-pod-box">
-      <h3 class="sk-pod-box__title">Friends</h3>
-      <div class="sk-pod-box-content" style="display: grid">
-        <a href="https://openbooks.neocities.org/">OpenBooks</a>
-        <a href="https://neonriser.neocities.org/">Neonriser</a>
-      </div>
-    </section>
-    <section class="sk-pod-box">
-      <h3 class="sk-pod-box__title">Services Updates</h3>
-      <div class="sk-pod-box-content">
-        <span
-          ><img
-            src="/static/icons/32/s_warning.png"
-            alt="Warning sign"
-            class="icon"
-            style="
-              width: 15px;
-              height: 15px;
-              display: inline-block;
-              vertical-align: middle;
-              margin-right: 0.25rem;
-            "
-          />This service can't be reached.</span
-        >
-      </div>
-    </section>
-    <section class="sk-pod-box">
-      <h3 class="sk-pod-box__title">Patch Notes</h3>
-      <div class="sk-pod-box-content">
-        <span
-          ><img
-            src="/static/icons/32/s_warning.png"
-            alt="Warning sign"
-            class="icon"
-            style="
-              width: 15px;
-              height: 15px;
-              display: inline-block;
-              vertical-align: middle;
-              margin-right: 0.25rem;
-            "
-          />This service can't be reached.</span
-        >
-      </div>
-    </section>
-  </aside>
-</div>
 
 {% slot 'style_slot' %}
 <style>
-  .sk-layoututil-home {
-    display: grid;
-    gap: var(--spacing-sm);
-    padding: var(--spacing);
-  }
-
-  .sk-layoututil-home * {
-    min-width: 0;
-  }
-
-  .frontpage-banner {
-    max-width: 77ch;
-    margin: 0 auto;
-  }
-
-  .frontpage-banner {
-    width: 100%;
-    box-shadow: var(--sh-container);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-
-  .frontpage-showcase-grid {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: auto;
-    gap: var(--spacing);
-  }
-  .frontpage-showcase-grid a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-xxsm);
-  }
-
-  .frontpage-showcase-grid a img {
-    width: 105.6px;
-    height: 39.6px;
-  }
-
-  .home-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-xsm);
-    padding-top: var(--spacing-xsm);
-    border-top: 1px solid var(--clr-stroke);
-    box-shadow: inset 0px 1px hsla(0, 0%, 0%, 0.5);
-  }
-  .ua-strip {
-    display: block;
-    text-align: center;
-    padding: var(--spacing-xxsm) 0;
-    background: linear-gradient(to bottom, #0057b8 50%, #ffd700 50%);
-    border-radius: var(--radius-sm);
-  }
-  .ua-strip a {
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    background: rgba(0, 0, 0, 0.5);
-    padding: var(--spacing-xxsm) var(--spacing-xsm);
-  }
-
-  @media (min-width: 650px) {
-    .sk-layoututil-home {
-      grid-template-columns: 1fr 15rem;
-      grid-template-rows: 1fr auto;
-    }
-    .frontpage-banner {
-      grid-column: 1/3;
-    }
-    .frontpage-showcase {
-      grid-column: 1/3;
-    }
-
-    article#main {
-      grid-column: 1/2;
-    }
-
-    .home-sidebar {
-      grid-column: 2 /3;
-      padding-left: var(--spacing-xsm);
-      border-top: none;
-      padding-top: 0;
-      border-left: 1px solid var(--clr-stroke);
-      box-shadow: inset 1px 0 hsla(0, 0%, 0%, 0.5);
-    }
+  .page-container {
+    margin: 0;
   }
 </style>
 {% endslot %}

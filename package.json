@@ -1,14 +1,14 @@
 {
   "name": "surfscape",
-  "version": "0.1.1-alpha",
+  "version": "1.0.0",
   "codename": "Ceremony",
   "description": "Your friendly Neocities web portal!",
   "main": "index.js",
   "scripts": {
     "start": "npx eleventy --serve",
     "build": "npx eleventy",
-    "build:production": "cross-env NODE_ENV=production && npm run minify-css && npx eleventy",
-    "minify-css": "cleancss -o src/css/global.min.css src/css/global.css"
+    "minify-css": "cleancss -o src/css/global.min.css src/css/global.css && cleancss -o src/css/fonts.min.css src/css/fonts.css",
+    "build:production": "npm run minify-css && cross-env NODE_ENV=production npx @11ty/eleventy"
   },
   "author": "SurfScape Team",
   "license": "GPL-2.0",
