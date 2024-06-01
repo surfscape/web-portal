@@ -1,0 +1,23 @@
+{# content only pages #}
+{% extends "./base.njk" %}
+
+{% block surfkit_base_layout %}
+    {% if navigation %}
+        <header class="sk-header">
+            <span class="sk-header__title">{{header_title}}</span>
+            <nav class="sk-navbar">
+                {%- for item in navigation -%}
+                    <a  class="sk-navbar__link" href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+                {%- endfor -%}
+            </nav>
+        </header>
+    {% endif %}
+    <header class="page-header">
+        <h1>{{title}}</h1>
+        <p>Last update: <time datetime="{{date}}">{{ date | PostDate }}</time>
+        </p>
+    </header>
+    <article class="sk-layout--content">
+        {{ content | safe }}
+    </article>
+{% endblock %}

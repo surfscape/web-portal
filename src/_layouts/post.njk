@@ -2,7 +2,7 @@
 {% block sk_panel %}
   <header class="sk-panel-header">
     <h1 class="sk-panel-header__title" id="{{ title | slugify }}">
-      <a href="/{{ post_type | slugify }}">&#8592; {{ post_type }}</a>
+      {{post_type}} - {{title}}
     </h1>
     <div class="sk-panel-options">
       <button class="sk-panel-button" onclick="copyShare()">
@@ -16,7 +16,8 @@
     <h1 class="post-header__title">
       {{ title }}
     </h1>
-    <p class="post-header__description"><time class="post-header__date" datetime="{{ date }}">{{
+    <p class="post-header__description">
+      <time class="post-header__date" datetime="{{ date }}">{{
       date | PostDate
     }}</time> &#x2758; {{ description }}</p>
   </header>
