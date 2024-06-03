@@ -221,6 +221,7 @@ mark {
   .site-container {
     border-left: 1px solid var(--clr-sf__stroke);
     border-right: 1px solid var(--clr-sf__stroke);
+    border-bottom: 1px solid var(--clr-sf__stroke);
   }
 }
 
