@@ -85,7 +85,7 @@ body {
 }
 
 :root {
-  --font-size: clamp(0.95rem, 0.95rem + 0.390625vw, 1.015rem);
+  --font-size: clamp(0.95rem, 0.95rem + 0.390625vw, 1rem);
   --spacing-xxsm: clamp(0.18rem, 0.18rem + 0.390625vw, 0.25rem);
   --spacing-xsm: clamp(0.3rem, 0.3rem + 0.390625vw, 0.5rem);
   --spacing-sm: clamp(0.5rem, 0.5rem + 0.390625vw, 0.75rem);
@@ -108,8 +108,7 @@ a:hover {
 .site-container {
   max-width: var(--page-breakpoint);
   margin: 0 auto;
-  border-left: 1px solid var(--clr-sf__stroke);
-  border-right: 1px solid var(--clr-sf__stroke);
+  background: var(--clr-sf__foreground);
 }
 
 /* header (title and slogan)*/
@@ -118,10 +117,9 @@ a:hover {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 1px solid var(--clr-sf__strokeLight);
   gap: var(--spacing-xsm);
   padding: var(--spacing-xsm) var(--spacing);
-  background: hsl(0, 0%, 98%);
-  border-bottom: 1px solid var(--clr-sf__stroke);
 }
 
 .site-header__title {
@@ -142,6 +140,7 @@ a:hover {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
+  padding: var(--spacing-xsm) 0;
 }
 
 .site-navbar__link {
@@ -152,6 +151,12 @@ a:hover {
   font-weight: 500;
   padding: var(--spacing-xxsm) var(--spacing-sm);
   transition: 175ms ease-in-out all;
+  color: var(--clr-tp__heading);
+  text-decoration: none;
+}
+
+.site-navbar__link[aria-current="page"] {
+  color: red;
 }
 
 .site-navbar__link:hover {
@@ -205,4 +210,22 @@ summary {
 }
 strong {
   font-weight: 800;
+}
+
+mark {
+  background: hsla(224, 100%, 64%, 0.3);
+  color: inherit;
+}
+
+@media (min-width: 860px) {
+  .site-container {
+    border-left: 1px solid var(--clr-sf__stroke);
+    border-right: 1px solid var(--clr-sf__stroke);
+  }
+}
+
+@media (max-width: 610px) {
+  .site-header {
+    justify-content: center;
+  }
 }
