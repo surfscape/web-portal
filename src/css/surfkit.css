@@ -114,7 +114,6 @@ h3 {
 }
 
 .sk-navbar__link[aria-current="page"] {
-  font-style: italic;
   color: var(--clr-tp__muted);
   text-decoration: none;
 }
