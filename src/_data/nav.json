@@ -17,6 +17,10 @@
       "url": "/news"
     },
     {
+      "title": "Initiatives",
+      "url": "/initiatives"
+    },
+    {
       "title": "About",
       "url": "/about"
     }
