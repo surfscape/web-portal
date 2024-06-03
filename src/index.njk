@@ -1,30 +1,35 @@
 ---
 title: Home
 layout: base.njk
-title: Home
 style_slot: true
 ---
 
-<section class="hero">
-  <h1 class="display__1">Your Web, <mark>Your Way</mark>
-  </h1>
-  <p class="subtitle__1 m-bottom__s">
+<div class="homepage-layout">
+  <section class="hero">
+    <h1 class="display__1">Your Web, <mark>Your Way</mark>
+    </h1>
+    <p class="subtitle__1 m-bottom__s">
     Find resources on privacy, web building, Neocities, and more about the
     interwebs!
   </p>
-  <img src="/static/images/branding/everything_logo.png" alt=""/>
-</section>
+    <img src="/static/images/branding/everything_logo.png" alt=""/>
+  </section>
 
-<a href="/" class="sk-button sk-button__primary">Button test</a>
+  <a href="/" class="sk-button sk-button__primary">Button test</a>
 
-<section style="padding: var(--spacing)">
-  <h2 class="display__2">What we do</h2>
-</section>
+  <section style="padding: var(--spacing)">
+    <h2 class="display__2">What we do</h2>
+  </section>
+
+</div>
 
 {% slot 'style_slot' %}
 <style>
   .page-container {
     margin: 0;
+  }
+  .homepage-layout {
+    padding: 0 1em;
   }
 </style>
 {% endslot %}
