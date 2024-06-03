@@ -2,11 +2,11 @@
   <a class="site-header__title" href="/"><img src="/static/images/branding/everything_logo_0.5x.png" alt="SurfScape 'Everything' logo" width="42px" height="42px"></a>
   <nav class="site-navbar">
     {% for mainNav in nav.mainNav %}
-      <a class="site-navbar__link" href="{{mainNav.url}}">{{mainNav.title}}</a>
+      <a class="site-navbar__link" href="{{mainNav.url}}" {% if page.url == mainNav.url %}aria-current="page"{% endif %}>{{mainNav.title}}</a>
     {% endfor %}
   </nav>
-  <button class="sk-button-icon" id="openExtensions">
+  {# <button class="sk-button-icon" id="openExtensions">
     <ion-icon name="bulb"></ion-icon>
   </button>
-  {% include "settingsModal.njk" %}
+  {% include "settingsModal.njk" %} #}
 </header>
