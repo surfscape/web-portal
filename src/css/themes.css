@@ -3,6 +3,7 @@
   /* br : brand colors */
   --clr-br__primary: var(--clr-accent-test);
   --clr-br__onPrimary: hsl(0, 0%, 97%);
+  --clr-br__primaryMuted: #2a2ddf;
   --clr-br__primaryFluent: hsla(211, 100%, 50%, 0.5);
   /* surfaces */
   --clr-sf__background: hsl(0, 0%, 92%);
