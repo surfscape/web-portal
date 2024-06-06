@@ -11,8 +11,8 @@
   --clr-sf__stroke: hsl(0, 0%, 83%);
   --clr-sf__strokeLight: hsl(0, 0%, 89%);
   /* typography */
-  --clr-tp__heading: #26275d;
-  --clr-tp__body: hsl(0, 0%, 20%);
+  --clr-tp__heading: hsl(0, 0%, 10%);
+  --clr-tp__body: hsl(0, 0%, 25%);
   --clr-tp__muted: hsl(0, 0%, 40%);
-  --clr-accent-test: hsl(239, 65%, 50%);
+  --clr-accent-test: #1c1fff;
 }
