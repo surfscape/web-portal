@@ -1,8 +1,12 @@
 <header class="site-header">
   <a class="site-header__title" href="/"><img src="/static/images/branding/everything_logo_0.5x.png" alt="SurfScape 'Everything' logo" width="42px" height="42px"></a>
   <nav class="site-navbar">
-    {% for mainNav in nav.mainNav %}
-      <a class="site-navbar__link" href="{{mainNav.url}}" {% if page.url == mainNav.url %}aria-current="page"{% endif %}>{{mainNav.title}}</a>
+    {% for nav in nav.mainNav %}
+      <a class="site-navbar__link" 
+      href="{{nav.url}}" 
+   {% if page.url == nav.url %}aria-current="page"{% endif %}>
+        {{nav.title}}
+      </a>
     {% endfor %}
   </nav>
   {# <button class="sk-button-icon" id="openExtensions">
