@@ -24,11 +24,11 @@ h3 {
   justify-content: center;
   width: fit-content;
   gap: var(--spacing-sm);
-  padding: 0.3em var(--spacing);
+  padding: 0.4em var(--spacing);
   background: var(--_btn-sk-bg);
   border: 1px solid var(--_btn-sk-border);
   color: var(--_btn-sk-color);
-  border-radius: 0.4em;
+  border-radius: 0.5em;
   text-decoration: none;
   cursor: pointer;
   transition: 175ms all ease-in-out;
@@ -198,8 +198,9 @@ sk-tab-content-container {
 /* typography */
 .display__1 {
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2.8rem;
   line-height: 1.13em;
+  letter-spacing: -0.02em;
   color: var(--clr-tp__heading);
 }
 
@@ -209,10 +210,14 @@ sk-tab-content-container {
   line-height: 1.272em;
   color: var(--clr-tp__heading);
 }
+.subtitle__1 {
+  color: var(--clr-tp__muted);
+  font-size: 1.28rem;
+}
 
 .subtitle__2 {
   color: var(--clr-tp__muted);
-  font-size: 1.2rem;
+  font-size: 1.175rem;
 }
 
 .label {
@@ -271,6 +276,11 @@ sk-tab-content-container {
   background: rgba(255, 255, 255, 0.315);
   backdrop-filter: blur(20px) saturate(1.8);
   padding: var(--spacing-sm);
+}
+
+.sk--banner {
+  border-radius: 1em;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .close {
