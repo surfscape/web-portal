@@ -13,9 +13,9 @@
   {% endif %}
   {% block main_content %}
     <section class="hero">
-      <h1 class="display__2">{{hero_title}}</h1>
-      <p class="subtitle__2">{{hero_description}}</p>
-      <img src="/static/images/banners/{{hero_banner}}" alt="{{hero_banner_description}}">
+      <h1 class="hero--title display__2">{{hero_title}}</h1>
+      <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
+      <img class="sk--banner hero--banner" src="/static/images/banners/{{hero_banner}}" alt="{{hero_banner_description}}">
     </section>
     <article class="sk-layout--content">
       {{ content | safe }}
