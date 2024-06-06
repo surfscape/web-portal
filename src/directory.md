@@ -3,6 +3,8 @@ title: Directory - Beta
 layout: page.njk
 banner: directory.png
 content_class: directory-container
+hero_title: SurfScape Directory
+hero_description: Browse trough various personal websites & projects and find alternative web services.
 ---
 
 <tab-container>
