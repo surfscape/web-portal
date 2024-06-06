@@ -43,8 +43,7 @@ svg {
   vertical-align: middle;
 }
 
-article *,
-section * {
+article * :not(.sk-button) {
   line-height: 1.5;
 }
 
@@ -196,9 +195,21 @@ a:hover {
   display: grid;
   text-align: center;
   justify-items: center;
+  gap: 0.7em;
   padding: calc(var(--spacing) + var(--spacing));
   margin: 0 auto;
-  max-width: 52ch;
+}
+
+.hero--title {
+  max-width: 45ch;
+}
+
+.hero--subtitle {
+  max-width: 48ch;
+}
+
+.hero--banner {
+  max-width: 65ch;
 }
 
 .page-header {
@@ -216,8 +227,8 @@ strong {
 }
 
 mark {
-  background: hsla(224, 100%, 64%, 0.3);
-  color: inherit;
+  color: var(--clr-br__primaryMuted);
+  background: hsla(224, 100%, 64%, 0.25);
 }
 
 @media (min-width: 860px) {
