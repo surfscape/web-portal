@@ -140,6 +140,7 @@ a:hover {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
+  gap: var(--spacing-xxsm);
   padding: var(--spacing-xsm) 0;
 }
 
@@ -148,20 +149,22 @@ a:hover {
   flex-wrap: nowrap;
   min-width: fit-content;
   white-space: nowrap;
-  font-weight: 500;
   padding: var(--spacing-xxsm) var(--spacing-sm);
   transition: 175ms ease-in-out all;
-  color: var(--clr-tp__heading);
+  color: var(--clr-tp__muted);
+  border: 1px solid transparent;
   text-decoration: none;
 }
 
 .site-navbar__link[aria-current="page"] {
-  color: red;
+  color: var(--clr-tp__heading);
+  border: 1px solid var(--clr-sf__stroke);
 }
 
 .site-navbar__link:hover {
-  border-radius: 0.5em;
-  color: var(--clr-br__onSecondaryContainer);
+  border-radius: 0.6em;
+  color: var(--clr-tp__body);
+  border-color: var(--clr-sf__stroke);
 }
 
 /* footer */
@@ -209,7 +212,7 @@ summary {
   cursor: pointer;
 }
 strong {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 mark {
