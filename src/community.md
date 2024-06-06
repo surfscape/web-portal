@@ -1,13 +1,15 @@
 ---
-title: Community - Retro Space
+title: Community
+hero_title: Retro Space
+hero_description: Official SurfScape Discord server partner.
+hero_banner: retro_space_earth_banner.png
+hero_banner_description: A photo of earth with the sun rising behind, with Y2K style letters saying RS as an acronym for Retro Space.
 layout: page.njk
-banner: retro_space_earth_banner.png
 ---
 
-Retro Space is our Discord community that pre-dates SurfScape. It's our second place of communication for updates and announcements but also a place to gather our community together.
+Retro Space is an official SurfScape partner Discord server. It's our second place of communication for updates and announcements and also a place to gather the community together.
 
-There's only one requirement to join, which is to follow our guidelines/rules of community conduct which can be found below.
-When you're ready, join the server from the iframe below, happy chatting!
+The only requirement to join is to follow our guidelines/rules. When you're ready, join the server from the widget below, happy chatting!
 
 ## Guidelines
 
@@ -21,3 +23,7 @@ When you're ready, join the server from the iframe below, happy chatting!
 <div style="display:flex;justify-content:center;">
 <iframe src="https://discord.com/widget?id=891329789238063104&theme=dark"  height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </div>
+
+If the widget does not load, or you currently have scripts blocked, below is a direct invite link.
+
+<button class="sk-button sk-button__primary" style="margin:0 auto">Join the Server</button>
