@@ -1,15 +1,13 @@
 ---
-layout: page.njk
 title: Page not found
 permalink: /not_found.html
 eleventyExcludeFromCollections: true
-crumbs:
-  - title: Page not found
+layout: page.njk
 ---
 
 The url: <code id="url"></code> doesn't seem to exist in the server.
 
-[Go back home](/)
+<a href="/" class="sk-button">Go back home</a>
 
 <script>
   var x = document.URL;
