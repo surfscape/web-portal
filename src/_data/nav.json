@@ -2,27 +2,27 @@
   "mainNav": [
     {
       "title": "Community",
-      "url": "/community"
+      "url": "/community/"
     },
     {
       "title": "Directory",
-      "url": "/directory"
+      "url": "/directory/"
     },
     {
       "title": "Resources",
-      "url": "/resources"
+      "url": "/resources/"
     },
     {
       "title": "News",
-      "url": "/news"
+      "url": "/news/"
     },
     {
       "title": "Initiatives",
-      "url": "/initiatives"
+      "url": "/initiatives/"
     },
     {
       "title": "About",
-      "url": "/about"
+      "url": "/about/"
     }
   ],
   "sitemapNav": [
@@ -42,7 +42,15 @@
           "url": "/about/release-notes"
         },
         {
+          "title": "Ethics",
+          "url": "/ethics"
+        },
+        {
           "title": "About",
+          "url": "/about"
+        },
+        {
+          "title": "Contact",
           "url": "/about"
         }
       ]
@@ -50,6 +58,10 @@
     {
       "title": "Resources",
       "links": [
+        {
+          "title": "Directory",
+          "url": "/directory"
+        },
         {
           "title": "Blog",
           "url": "/blog"
@@ -84,29 +96,16 @@
           "url": "/services/adzone"
         },
         {
-          "title": "Theme Creator",
+          "title": "SurfKit Designer",
           "url": "/services/theme"
         },
         {
-          "title": "88x31 Builder",
+          "title": "88x31 Button Maker",
           "url": "/services/88x31"
-        }
-      ]
-    },
-    {
-      "title": "Directory",
-      "links": [
-        {
-          "title": "Index",
-          "url": "/directory"
         },
         {
-          "title": "Submit",
-          "url": "/directory/submit"
-        },
-        {
-          "title": "Guidelines",
-          "url": "/directory/guidelines"
+          "title": "About Services",
+          "url": "/services/"
         }
       ]
     },
@@ -115,34 +114,34 @@
       "links": [
         {
           "title": "FPD",
-          "url": "/pro/fpd"
-        },
-        {
-          "title": "FPD Directory",
-          "url": "/pro/fpd-dir"
+          "url": "/initiatives/fpd"
         },
         {
           "title": "Hubs",
-          "url": "/pro/hubs"
+          "url": "/initiatives/hubs"
         },
         {
-          "title": "SurfScape Labs",
-          "url": "/pro/labs"
+          "title": "Labs",
+          "url": "/initiatives/labs"
         },
 
         {
           "title": "Partnerships",
-          "url": "/pro/partnership"
+          "url": "/initiatives/partnership"
         },
         {
           "title": "Open Web Advocacy",
-          "url": "/pro/openweb"
+          "url": "/initiatives/openweb"
         }
       ]
     },
     {
       "title": "Developers",
       "links": [
+        {
+          "title": "Developer Portal",
+          "url": "/developer"
+        },
         {
           "title": "Design",
           "url": "/dev/design"
@@ -171,10 +170,6 @@
         {
           "title": "Accessibility Statement",
           "url": "/accessibility"
-        },
-        {
-          "title": "Imprint",
-          "url": "/imprint"
         }
       ]
     }
