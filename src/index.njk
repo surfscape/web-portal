@@ -6,34 +6,53 @@ style_slot: true
 
 <div class="homepage-layout">
   <section class="hero">
-    <h1 class="display__1">Your Web, <span style="color: #9901F7;background: #0066FF;
+    <a href="/about/release-notes#version-1-0" class="sk-label">Release v1.0 out now!</a>
+    <h1 class="hero--title display__1">Your Web, <span style="color: #9901F7;background: #0066FF;
 background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 ">Your Way</span>
     </h1>
-    <p class="subtitle__1 m-bottom__s">
-    Find resources on privacy, web building, Neocities, and more about the
-    interwebs!
-  </p>
-    <img src="/static/images/branding/everything_logo.png" alt=""/>
+    <p class="hero--subtitle subtitle__1 m-bottom__s">
+      Find resources on privacy, web building, Neocities, and more about the
+      interwebs!
+    </p>
+    <sk-button-group>
+      <a href="#explore" class="sk-button sk-button__primary">
+        <ion-icon name="arrow-down-circle"></ion-icon>Explore</a>
+      <a href="/about" class="sk-button">What is SurfScape?</a>
+    </sk-button-group>
+    <img src="/static/images/branding/everything_logo.png" alt="" />
   </section>
-
-  <a href="/" class="sk-button sk-button__primary">Button test</a>
-
-  <section style="padding: var(--spacing)">
-    <h2 class="display__2">What we do</h2>
-  </section>
-
+  <div class="homepage-grid">
+    <section id="explore">
+      <h2 class="display__2">What we do</h2>
+    </section>
+  </div>
 </div>
 
 {% slot 'style_slot' %}
 <style>
+  .hero {
+    background: linear-gradient(to bottom, #e3e7fb, transparent);
+    border-bottom: 1px solid var(--clr-sf__strokeLight);
+  }
+
+  .hero--title {
+    transition: 500ms all ease-in-out;
+  }
+
+  .hero--title:hover {
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
+
   .page-container {
     margin: 0;
   }
-  .homepage-layout {
-    padding: 0 1em;
+
+  .homepage-grid {
+    padding: var(--spacing);
   }
 </style>
 {% endslot %}
