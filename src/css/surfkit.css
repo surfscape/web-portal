@@ -28,10 +28,10 @@ h3 {
   background: var(--_btn-sk-bg);
   border: 1px solid var(--_btn-sk-border);
   color: var(--_btn-sk-color);
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   text-decoration: none;
   cursor: pointer;
-  transition: 175ms all ease-in-out;
+  transition: 150ms all ease-in-out;
 }
 
 .sk-button:hover {
@@ -46,8 +46,8 @@ h3 {
 
 .sk-button:active {
   scale: 0.95;
-  opacity: 0.8;
-  border-radius: 0.75em;
+  opacity: 0.9;
+  border-radius: 0.5em;
 }
 
 .sk-button:focus-within {
@@ -63,7 +63,7 @@ h3 {
   --btn-sk-border-hover: var(--clr-br__primary);
 }
 
-.sk-button-group {
+sk-button-group {
   display: flex;
   gap: var(--spacing-xsm);
 }
@@ -143,6 +143,20 @@ h3 {
 
 .sk-accordion-nav[open] .sk-accordion-nav__title {
   margin-bottom: 0.5em;
+}
+
+.sk-label {
+  color: var(--clr-tp__muted);
+  border-radius: 0.5em;
+  border: 1px solid var(--clr-br__primary);
+  padding: 0.3em 0.5em;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: 150ms all ease-in-out;
+}
+
+.sk-label:hover {
+  color: var(--clr-br__primary);
 }
 
 /* TODO: Redesign */
