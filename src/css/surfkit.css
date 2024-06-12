@@ -209,6 +209,16 @@ sk-tab-content-container {
   border-radius: 0.75rem;
 }
 
+/* cards*/
+.sk-card {
+  background: var(--clr-sf__surface_1);
+  padding: var(--spacing);
+}
+
+.sk-card__bento {
+  border-radius: 1.5rem;
+}
+
 /* typography */
 .display__1 {
   font-weight: 500;
