@@ -13,7 +13,7 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
 -webkit-text-fill-color: transparent;
 ">Your Way</span>
     </h1>
-    <p class="hero--subtitle subtitle__1 m-bottom__s">
+    <p class="hero--subtitle subtitle__1">
       Find resources on privacy, web building, Neocities, and more about the
       interwebs!
     </p>
@@ -22,13 +22,15 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
         <ion-icon name="arrow-down-circle"></ion-icon>Explore</a>
       <a href="/about" class="sk-button">What is SurfScape?</a>
     </sk-button-group>
-    <img src="/static/images/branding/everything_logo.png" alt="" />
+    <img src="/static/images/branding/everything_logo.png" alt=""/>
   </section>
-  <div class="homepage-grid">
-    <section id="explore">
-      <h2 class="display__2">What we do</h2>
+  <article class="homepage-grid" id="explore">
+    <h2 class="display__2" style="grid-column: 1/4;">Explore</h2>
+    <section class="sk-card sk-card__bento" >
+      <h3>Site Showcase</h3>
+
     </section>
-  </div>
+  </article>
 </div>
 
 {% slot 'style_slot' %}
@@ -52,6 +54,8 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
   }
 
   .homepage-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: var(--spacing);
   }
 </style>
