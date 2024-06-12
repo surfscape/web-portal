@@ -9,6 +9,7 @@
   --clr-sf__background: hsl(0, 0%, 92%);
   --clr-sf__foreground: hsl(239, 20%, 96%);
   --clr-sf__backgroundFluent: hsla(0, 0%, 100%, 0.5);
+  --clr-sf__surface_1: hsl(0, 0%, 90%);
   --clr-sf__stroke: hsl(0, 0%, 83%);
   --clr-sf__strokeLight: hsl(0, 0%, 89%);
   /* typography */
