@@ -220,11 +220,6 @@ strong {
   font-weight: 700;
 }
 
-mark {
-  color: var(--clr-br__primaryMuted);
-  background: hsla(224, 100%, 64%, 0.25);
-}
-
 @media (min-width: 860px) {
   .site-container {
     border-left: 1px solid var(--clr-sf__stroke);
