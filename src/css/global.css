@@ -77,14 +77,8 @@ img:not([alt]) {
   }
 }
 
-body {
-  font: var(--font-size) var(--font-stack);
-  background: var(--clr-sf__background);
-  color: var(--clr-tp__body);
-}
-
 :root {
-  --font-size: clamp(0.95rem, 0.95rem + 0.390625vw, 1rem);
+  --font-size: clamp(0.96rem, 0.96rem + 0.390625vw, 1rem);
   --spacing-xxsm: clamp(0.18rem, 0.18rem + 0.390625vw, 0.25rem);
   --spacing-xsm: clamp(0.3rem, 0.3rem + 0.390625vw, 0.5rem);
   --spacing-sm: clamp(0.5rem, 0.5rem + 0.390625vw, 0.75rem);
