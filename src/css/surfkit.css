@@ -26,7 +26,8 @@ button.sk-button {
   justify-content: center;
   width: fit-content;
   gap: var(--spacing-sm);
-  padding: 0.4em var(--spacing);
+  padding-inline: var(--spacing);
+  line-height: 2em;
   background: var(--_btn-sk-bg);
   border: 1px solid var(--_btn-sk-border);
   color: var(--_btn-sk-color);
@@ -233,7 +234,6 @@ sk-tab-content-container {
 .display__2 {
   font-weight: 500;
   font-size: 2.4rem;
-  line-height: 1.272em;
   color: var(--clr-tp__heading);
 }
 .subtitle__1 {
@@ -257,6 +257,10 @@ sk-tab-content-container {
   padding: var(--spacing);
   max-width: 60ch;
   margin: 0 auto;
+}
+
+.sk-layout--content * {
+  line-height: 1.45em;
 }
 
 /* modal component - DO NOT USE IN PRODUCTION, it's not valid in surfkit guidelines and does not fit SurfScape design language
