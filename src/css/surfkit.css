@@ -34,7 +34,7 @@ button.sk-button {
   border-radius: 0.3em;
   text-decoration: none;
   cursor: pointer;
-  transition: 150ms all ease-in-out;
+  transition: var(--an-global-fade);
 }
 
 .sk-button:hover {
