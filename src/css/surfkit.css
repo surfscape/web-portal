@@ -15,7 +15,9 @@ h3 {
 }
 
 /* TODO: Replace colors for the default sk-button and create other variants */
-.sk-button {
+.sk-button,
+a.sk-button,
+button.sk-button {
   --_btn-sk-bg: var(--btn-sk-bg, hsl(0, 0%, 15%));
   --_btn-sk-border: var(--btn-sk-border, transparent);
   --_btn-sk-color: var(--btn-sk-color, rgb(240, 240, 240));
