@@ -48,9 +48,7 @@ button.sk-button {
 }
 
 .sk-button:active {
-  scale: 0.95;
   opacity: 0.9;
-  border-radius: 0.5em;
 }
 
 .sk-button:focus-within {
@@ -219,15 +217,14 @@ sk-tab-content-container {
 }
 
 .sk-card__bento {
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 }
 
 /* typography */
 .display__1 {
   font-weight: 500;
   font-size: 2.8rem;
-  line-height: 1.13em;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   color: var(--clr-tp__heading);
 }
 
