@@ -8,8 +8,8 @@
         {% block surfkit_base_layout %}
           {{ content | safe }}
         {% endblock %}
-        {% include "footer.njk" %}
       </main>
+      {% include "footer.njk" %}
     </div>
     {% if style_slot %}
       {% renderTemplate 'njk,md',
