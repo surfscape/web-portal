@@ -43,7 +43,7 @@ svg {
   vertical-align: middle;
 }
 
-article * :not(.sk-button) {
+article * {
   line-height: 1.5;
 }
 
