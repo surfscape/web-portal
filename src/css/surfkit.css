@@ -1,10 +1,8 @@
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
+h4 {
+  font-weight: 600;
   letter-spacing: -0.03em;
 }
 
@@ -82,6 +80,7 @@ sk-button-group {
   color: var(--clr-br__onPrimaryContainer);
 }
 
+/* page headers (with navigation) */
 .sk-header {
   position: sticky;
   z-index: 10;
@@ -90,9 +89,9 @@ sk-button-group {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: var(--spacing);
+  gap: 1rem;
   backdrop-filter: blur(16px);
-  padding: var(--spacing-sm) var(--spacing);
+  padding: 0.25rem 1rem;
   background: var(--clr-sf__backgroundFluent);
   border-bottom: 1px solid var(--clr-sf__stroke);
 }
@@ -100,7 +99,7 @@ sk-button-group {
 .sk-header__title {
   color: var(--clr-tp__heading);
   font-weight: 600;
-  font-size: 1.075rem;
+  font-size: 1.075em;
 }
 
 .sk-navbar {
@@ -110,6 +109,7 @@ sk-button-group {
 }
 
 .sk-navbar__link {
+  line-height: 2.75em;
   font-size: 0.9em;
   color: var(--clr-tp__body);
 }
@@ -213,7 +213,12 @@ sk-tab-content-container {
 /* cards*/
 .sk-card {
   background: var(--clr-sf__surface_1);
-  padding: var(--spacing);
+  padding: 0.75rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.sk-card > * + * {
+  margin-top: 0.25em;
 }
 
 .sk-card__bento {
