@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownItAnc = require("markdown-it-anchor");
 const { DateTime } = require("luxon");
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
@@ -14,6 +15,9 @@ module.exports = function (eleventyConfig) {
   /* plugins */
   const md = markdownIt({ html: true, breaks: true, linkify: true });
   md.use(markdownItAttrs);
+  md.use(markdownItAnc, {
+    tabIndex: false,
+  });
   eleventyConfig.setLibrary("md", md);
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   /* a way to make slots work inside content pages: https://danburzo.ro/eleventy-slotted-content/*/
