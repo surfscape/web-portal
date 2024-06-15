@@ -6,10 +6,6 @@ layout: page.njk
 banner: resources.png
 ---
 
-## Welcome to SurfScape Resources! {style="text-align:center;margin-bottom:0;" .sk-display .sk-display--2}
-
-A directory of everything about web building, from fonts, to templates, all available to be used on your Neocities website! {style="text-align:center;margin-block: 0 1em;" .sk-display .sk-display--4}
-
 <tab-container onload="showWarningModal()">
   <menu class="sk-tab-buttons" id="tabButtons">
     <li>
