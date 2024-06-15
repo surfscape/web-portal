@@ -1,22 +1,17 @@
 {% extends "./base.njk" %}
 
 {% block surfkit_base_layout %}
-  {% if navigation %}
-    <header class="sk-header">
-      <span class="sk-header__title">{{header_title}}</span>
-      <nav class="sk-navbar">
-        {%- for item in navigation -%}
-          <a  class="sk-navbar__link" href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
-        {%- endfor -%}
-      </nav>
-    </header>
-  {% endif %}
+  {% include "pageNavigation.njk" %}
   {% block main_content %}
-    <section class="hero">
-      <h1 class="hero--title display__2">{{hero_title}}</h1>
-      <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
-      <img class="sk--banner hero--banner" src="/static/images/banners/{{hero_banner}}" alt="{{hero_banner_description}}">
-    </section>
+    {% if hero_title and hero_description %}
+      <section class="hero">
+        <h1 class="hero--title display__2">{{hero_title}}</h1>
+        <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
+        {% if hero_banner %}
+          <img class="sk--banner hero--banner" src="/static/images/banners/{{hero_banner}}" alt="{{hero_banner_description}}">
+        {% endif %}
+      </section>
+    {% endif %}
     <article class="sk-layout--content">
       {{ content | safe }}
     </article>
