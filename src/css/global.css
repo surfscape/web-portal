@@ -13,6 +13,7 @@ p,
 ul[class],
 ol[class],
 menu[class],
+hr,
 figure,
 blockquote,
 dl,
@@ -115,10 +116,10 @@ a:hover {
 .site-header {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
   border-bottom: 1px solid var(--clr-sf__stroke);
-  gap: 1rem;
+  gap: 0.25rem;
   padding: 0.25rem 1rem;
 }
 
@@ -197,11 +198,8 @@ a:hover {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding: 2rem;
+  padding: 2rem 2rem 1rem 2rem;
   margin: 0 auto;
-}
-
-.hero * {
 }
 
 .hero--title {
@@ -222,10 +220,9 @@ a:hover {
 }
 
 .page-header {
-  max-width: 60ch;
+  max-width: 65ch;
   margin: 0 auto;
-  padding: var(--spacing) 0;
-  border-bottom: 1px solid var(--clr-sf__stroke);
+  padding: 1em;
 }
 
 summary {
@@ -235,16 +232,15 @@ strong {
   font-weight: 700;
 }
 
+hr {
+  border: none;
+  border-bottom: 1px solid var(--clr-sf__stroke);
+}
+
 @media (min-width: 860px) {
   .site-container {
     border-left: 1px solid var(--clr-sf__stroke);
     border-right: 1px solid var(--clr-sf__stroke);
     border-bottom: 1px solid var(--clr-sf__stroke);
-  }
-}
-
-@media (max-width: 610px) {
-  .site-header {
-    justify-content: center;
   }
 }
