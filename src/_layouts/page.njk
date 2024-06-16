@@ -8,7 +8,7 @@
         <h1 class="hero--title display__2">{{hero_title}}</h1>
         <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
         {% if hero_banner %}
-          <img class="sk--banner hero--banner" src="/static/images/banners/{{hero_banner}}" alt="{{hero_banner_description}}">
+          <img class="{%- if hero_banner_classic -%}sk--banner{% endif %} hero--banner" src="/static/images/banners/{{hero_banner}}" alt="{{hero_banner_description | safe }}">
         {% endif %}
       </section>
     {% endif %}
