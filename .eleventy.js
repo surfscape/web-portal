@@ -9,12 +9,17 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css/");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/humans.txt");
+  eleventyConfig.addPassthroughCopy("src/**/*.md");
   eleventyConfig.addWatchTarget("src/css");
   eleventyConfig.addWatchTarget("src/humans.txt");
   eleventyConfig.addWatchTarget("./src/resources/");
+  eleventyConfig.addWatchTarget("/src/**/*.md");
   /* plugins */
   const md = markdownIt({ html: true, breaks: true, linkify: true });
-  md.use(markdownItAttrs);
+  md.use(markdownItAttrs, {
+    leftDelimiter: "[-",
+    rightDelimiter: "-]",
+  });
   md.use(markdownItAnc, {
     tabIndex: false,
   });
