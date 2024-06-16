@@ -34,49 +34,38 @@
           "url": "/"
         },
         {
-          "title": "Roadmap",
-          "url": "/about/roadmap"
+          "title": "About",
+          "url": "/about"
         },
+
         {
           "title": "Updates",
           "url": "/about/release-notes"
         },
         {
-          "title": "Ethics",
-          "url": "/ethics"
-        },
-        {
-          "title": "About",
-          "url": "/about"
+          "title": "Roadmap",
+          "url": "/about/roadmap"
         },
         {
           "title": "Contact",
-          "url": "/about"
+          "url": "/about/contact"
         }
       ]
     },
     {
-      "title": "Resources",
+      "title": "Library",
       "links": [
         {
           "title": "Directory",
           "url": "/directory"
         },
         {
-          "title": "Blog",
-          "url": "/blog"
-        },
-        {
           "title": "News",
           "url": "/news"
         },
         {
-          "title": "Bookmarks",
-          "url": "/bookmarks"
-        },
-        {
-          "title": "Links",
-          "url": "/links"
+          "title": "Resources",
+          "url": "/resources"
         }
       ]
     },
@@ -92,18 +81,6 @@
           "url": "/services/neoframe"
         },
         {
-          "title": "AdZone",
-          "url": "/services/adzone"
-        },
-        {
-          "title": "SurfKit Designer",
-          "url": "/services/theme"
-        },
-        {
-          "title": "88x31 Button Maker",
-          "url": "/services/88x31"
-        },
-        {
           "title": "About Services",
           "url": "/services/"
         }
@@ -113,25 +90,8 @@
       "title": "Initiatives",
       "links": [
         {
-          "title": "FPD",
-          "url": "/initiatives/fpd"
-        },
-        {
-          "title": "Hubs",
-          "url": "/initiatives/hubs"
-        },
-        {
           "title": "Labs",
           "url": "/initiatives/labs"
-        },
-
-        {
-          "title": "Partnerships",
-          "url": "/initiatives/partnership"
-        },
-        {
-          "title": "Open Web Advocacy",
-          "url": "/initiatives/openweb"
         }
       ]
     },
@@ -139,20 +99,12 @@
       "title": "Developers",
       "links": [
         {
-          "title": "Developer Portal",
-          "url": "/developer"
-        },
-        {
-          "title": "Design",
-          "url": "/dev/design"
+          "title": "GitHub",
+          "url": "https://github.com/surfscape"
         },
         {
           "title": "SurfKit",
           "url": "/dev/surfkit"
-        },
-        {
-          "title": "Community Projects",
-          "url": "/dev/com-projects"
         }
       ]
     },
@@ -164,12 +116,12 @@
           "url": "/tos"
         },
         {
-          "title": "Privacy Portal",
-          "url": "/privacy-portal"
+          "title": "Privacy Policy",
+          "url": "/privacy-policy"
         },
         {
           "title": "Accessibility Statement",
-          "url": "/accessibility"
+          "url": "/about/accessibility/"
         }
       ]
     }
