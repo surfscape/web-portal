@@ -2,19 +2,12 @@
 
 {% block surfkit_base_layout %}
   {% include "pageNavigation.njk" %}
-  {% block main_content %}
-    <header class="sk-panel-header">
-      <h1 class="sk-panel-header__title" id="{{ title | slugify }}">
-        {{post_type}} - {{title}}
-      </h1>
-      <div class="sk-panel-options">
-        <button class="sk-panel-button" onclick="copyShare()">
-          <img src="/static/icons/32/share.png" alt="Open share icon"/>Share
-    </button>
-      </div>
-    </header>
-    <article class="sk-layout--content">
-      {{ content | safe }}
-    </article>
-  {% endblock main_content %}
+  <header class="page-header page-header--post">
+    <h1 class="display__1">{{title}}</h1>
+    <p class="subtitle__1">{{description}}</p>
+    <time datetime="{{date}}">{{ date | PostDate }}</time>
+  </header>
+  <article class="sk-layout--content">
+    {{ content | safe }}
+  </article>
 {% endblock %}
