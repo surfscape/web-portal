@@ -89,7 +89,6 @@ sk-button-group {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
   backdrop-filter: blur(16px);
   padding: 0.25rem 1rem;
   background: var(--clr-sf__backgroundFluent);
@@ -100,16 +99,17 @@ sk-button-group {
   color: var(--clr-tp__heading);
   font-weight: 600;
   font-size: 1.075em;
+  line-height: 2em;
 }
 
 .sk-navbar {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-sm);
+  gap: 0.5em;
 }
 
 .sk-navbar__link {
-  line-height: 2.75em;
+  line-height: 2em;
   font-size: 0.9em;
   color: var(--clr-tp__body);
 }
@@ -225,6 +225,11 @@ sk-tab-content-container {
   border-radius: 1rem;
 }
 
+.sk-card__outline {
+  background: transparent;
+  border: 1px solid var(--clr-sf__strokeContrast);
+}
+
 /* typography */
 .display__1 {
   font-weight: 500;
@@ -249,10 +254,11 @@ sk-tab-content-container {
 }
 
 .label {
-  font-weight: 500;
-  color: var(--clr-tp__heading);
-  font-size: 1.15rem;
-  border-bottom: 1px solid var(--clr-misc__outline);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: monospace;
+  color: var(--clr-tp__muted);
+  font-size: 1rem;
 }
 
 .sk-layout--content {
@@ -265,66 +271,15 @@ sk-tab-content-container {
   line-height: 1.45em;
 }
 
-/* modal component - DO NOT USE IN PRODUCTION, it's not valid in surfkit guidelines and does not fit SurfScape design language
-  TODO: Redesign
-*/
-.sk-window {
-  display: none;
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
-  inset: 0;
-  width: 100%; /* Full width */
-  height: 100%;
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-  margin: 0;
+.sk-infobox {
+  padding: 0.5em 0.75em;
+  border-radius: 0.5em;
+  background: var(--clr-sf__surface_1);
+  border: 1px solid var(--clr-sf__strokeContrast);
 }
 
-.sk-modal {
-  margin: 10% auto;
-  border: 1px solid var(--clr-misc__outline);
-  border-radius: 0.75rem;
-  overflow: hidden;
-  width: 48ch;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
-}
-
-.sk-headerbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(4px);
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.355);
-  padding: var(--spacing-xxsm) var(--spacing-sm);
-}
-
-.sk-headerbar__title {
-  font-size: 1.3rem;
-  color: var(--clr-tp__body);
-}
-
-.sk-modal-content {
-  background: rgba(255, 255, 255, 0.315);
-  backdrop-filter: blur(20px) saturate(1.8);
-  padding: var(--spacing-sm);
-}
-
-.sk--banner {
-  border-radius: 1em;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
-}
-
-.close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--clr-tp__muted);
-  padding: 0.25rem;
-  border-radius: 100rem;
-  color: var(--clr-tp__heading);
-}
-
-.close:hover {
-  opacity: 0.75;
+.sk-infobox--warning {
+  border-color: var(--clr-cs__warningStroke);
+  background: var(--clr-cs__warningBackground);
+  color: var(--clr-cs__warningForeground);
 }

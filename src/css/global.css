@@ -39,9 +39,9 @@ canvas,
 img,
 picture,
 svg {
+  display: block;
   max-width: 100%;
   font-style: italic;
-  vertical-align: middle;
 }
 
 article * {
@@ -198,8 +198,8 @@ a:hover {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding: 2rem 2rem 1rem 2rem;
-  margin: 0 auto;
+  padding: 2rem 1rem 1rem 1rem;
+  max-width: 100%;
 }
 
 .hero--title {
@@ -209,14 +209,13 @@ a:hover {
 
 .hero--subtitle {
   max-width: 48ch;
+  flex-basis: 0;
+  flex-grow: 0;
 }
 
 .hero--banner {
-  max-width: 65ch;
-}
-
-.hero--cover {
-  max-width: 50ch;
+  width: 100%;
+  max-width: 34rem;
 }
 
 .posts-list {
@@ -254,6 +253,7 @@ a:hover {
 
 .post-card-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 0.25em;
   transition: var(--an-global-fade);
