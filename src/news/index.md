@@ -1,7 +1,6 @@
 ---
 title: News
 layout: page.njk
-banner: news.png
 ---
 
 {% import "components/postCard.njk" as postCard %}

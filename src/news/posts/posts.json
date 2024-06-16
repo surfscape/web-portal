@@ -1,6 +1,4 @@
 {
   "layout": "post.njk",
-  "permalink": "/news/{{title|slugify}}/",
-  "author": "ReduxFlakes",
-  "post_type": "News"
+  "permalink": "/news/{{title|slugify}}/"
 }
