@@ -27,4 +27,4 @@ The only requirement to join is to follow our guidelines/rules. When you're read
 
 If the widget does not load, or you currently have scripts blocked, below is a direct invite link.
 
-<button class="sk-button sk-button__primary" style="margin:0 auto">Join the Server</button>
+<a href="https://discord.gg/6ekzg4m4tc" class="sk-button sk-button__primary" style="margin:0 auto">Join the Server</a>
