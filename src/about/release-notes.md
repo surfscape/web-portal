@@ -3,7 +3,7 @@ title: Release Notes
 layout: single.njk
 ---
 
-## Liberty {.sk-lable}
+## Liberty [- .label -]
 
 ### **1.0.0 Release Candidate 1** - May 15, 2024
 
