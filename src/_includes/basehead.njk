@@ -3,7 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} | {{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{% if description %}{{description}}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="https://surfscape.neocities.org">
     <link rel="shortcut icon" href="/static/images/branding/everything_logo_0.5x.png" type="image/x-icon">
     <link rel="author" href="/humans.txt">
