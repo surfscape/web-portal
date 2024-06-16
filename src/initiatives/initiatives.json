@@ -1,3 +1,13 @@
 {
-  "layout": "page.njk"
+  "header_title": "Initiatives",
+  "navigation": [
+    {
+      "title": "Introduction",
+      "url": "/initiatives/"
+    },
+    {
+      "title": "Labs",
+      "url": "/initiatives/labs/"
+    }
+  ]
 }
