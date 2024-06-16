@@ -1,19 +1,19 @@
 {% extends "./base.njk" %}
 
 {% block surfkit_base_layout %}
-  {% include "pageNavigation.njk" %}
-  {% block main_content %}
-    {% if hero_title and hero_description %}
-      <section class="hero">
-        <h1 class="hero--title display__2">{{hero_title}}</h1>
-        <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
-        {% if hero_banner %}
-          <img class="{%- if hero_banner_classic -%}sk--banner{% endif %} hero--banner" src="/static/images/banners/{{hero_banner}}" alt="{{hero_banner_description | safe }}">
-        {% endif %}
-      </section>
-    {% endif %}
+  {% if hero_title and hero_description %}
+    <section class="hero" {% if no_content == true %}style="padding: 1rem 2rem;"{% endif %}>
+      <h1 class="hero--title display__2">{{hero_title}}</h1>
+      <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
+      {% if hero_banner %}
+        <img src="/static/images/banners/{{hero_banner}}" class="hero--banner" alt="{{hero_banner_description }}"/>
+      {% endif %}
+    </section>
+  {% endif %}
+  {% if no_content == true %}
+  {% else %}
     <article class="sk-layout--content">
       {{ content | safe }}
     </article>
-  {% endblock main_content %}
+  {% endif %}
 {% endblock %}
