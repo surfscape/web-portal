@@ -74,7 +74,7 @@
       "links": [
         {
           "title": "GameVortex",
-          "url": "/services/games"
+          "url": "/services/gamevortex"
         },
         {
           "title": "NeoFrame",
@@ -92,6 +92,10 @@
         {
           "title": "Labs",
           "url": "/initiatives/labs"
+        },
+        {
+          "title": "About Initiatives",
+          "url": "/initiatives/"
         }
       ]
     },
@@ -104,7 +108,7 @@
         },
         {
           "title": "SurfKit",
-          "url": "/dev/surfkit"
+          "url": "https://github.com/surfscape/surfkit"
         }
       ]
     },
