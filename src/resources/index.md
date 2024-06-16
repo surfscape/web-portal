@@ -1,10 +1,11 @@
 ---
 title: Resources
+layout: page.njk
 hero_title: SurfScape Resources
 hero_description: A directory of everything about web building, from fonts, to templates, all available to be used on your Neocities website!
-layout: page.njk
-banner: resources.png
 ---
+
+<p class="sk-infobox sk-infobox--warning" style="margin-bottom: 1em;">SurfScape Resources currently does not work since it's implementation was buggy and thus removed. Submissions are still open.</p>
 
 <tab-container onload="showWarningModal()">
   <menu class="sk-tab-buttons" id="tabButtons">
@@ -29,16 +30,12 @@ banner: resources.png
       </dl>
       </div>
     <div class="sk-tab-content" id="submission" aria-hidden="true">
-      <section>
+      <section class="content">
         <h2 id="submit-a-website">Submit a resource</h2>
         <p>If you have found an interesting resource (a gif directory, or a well-written guide about CSS transitions) you can send us the link and category, and we will review it for addition.</p>
-        <p>Please contact us trough mail with the following subject: "SurfScape Resource Addition"</p>
+        <p>Please contact us trough mail with the following subject: "[SurfScape Resource Addition]"</p>
         <a href="/about/contact" class="sk-button sk-button-ocean">Contact Info</a>
       </section>
     </div>
   </tab-content-container>
 </tab-container>
-
-<style>
-    
-    </style>
