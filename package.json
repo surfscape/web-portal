@@ -1,6 +1,6 @@
 {
   "name": "surfscape",
-  "version": "1.0.0rc1",
+  "version": "1.0.0-rc1",
   "codename": "Liberty",
   "description": "Your friendly Neocities web portal!",
   "main": "index.js",
