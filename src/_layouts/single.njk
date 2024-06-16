@@ -6,9 +6,12 @@
     <header class="page-header">
         <h1>{{title}}</h1>
         {% if date %}
-            <p>Last update: <time datetime="{{date}}">{{ date | PostDate }}</time>
+            <p>Last update: <time datetime="{{date}}">{{ date | PostDate }}</time> | 
+                {% if revision %}Revision: {{revision}}
+                {% endif %}
             </p>
         {% endif %}
+
     </header>
     <hr>
     <article class="sk-layout--content">
