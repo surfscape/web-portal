@@ -1,16 +1,12 @@
 ---
 title: Roadmap
-date: 2024-05-26T00:21:48.000Z
+description:
+date: 2024-06-16T11:49:48.000Z
 ---
 
-## Branch: Ceremony
+## **1.0.0-rc02 (Iteration 2)**
 
-### **0.1.1-alpha** April 19, 2024
-
-- Created the [accessibility](/accessbility) page;
-- Launched a [guestbook](/about/guestbook)!
-- Improved navbar design;
-- Fixed various Markup issues (Now passes Ntml Checker!);
-- Fixed typo on the homepage;
-- Fixed light redish text color;
-- Added favicon.
+- Blog
+- GitHub Wiki
+- Ethics page
+- Resources pages for **links** and **bookmarks**
