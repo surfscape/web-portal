@@ -2,7 +2,7 @@
 title: Terms of Service
 date: 2024-06-16T12:29:48.000Z
 revision: 1
-permalink: /tos
+permalink: "/tos/"
 redirectFrom: ["/terms-of-service/", "/info/tos/"]
 ---
 

@@ -3,7 +3,7 @@ title: Privacy Policy
 date: 2024-06-16T16:18:48.000Z
 revision: 2
 permalink: "/privacy-policy/"
-redirectFrom: ["/info/privacy-policy", "/privacy-portal/"]
+redirectFrom: ["/info/privacy-policy/", "/privacy-portal/"]
 ---
 
 This document details our usage of non-personal and personal data. This also includes our methods of collecting data, our partners, and 3rd party services we use.
