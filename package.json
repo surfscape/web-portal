@@ -2,13 +2,13 @@
   "name": "surfscape",
   "version": "1.0.0-rc1",
   "codename": "Liberty",
-  "description": "Your friendly Neocities web portal!",
+  "description": "Your Web, Your Way. Your friendly Neocities Web Portal",
   "main": "index.js",
   "scripts": {
-    "start": "npx eleventy --serve",
-    "build": "npx eleventy",
-    "minify-css": "cleancss -o src/css/global.min.css src/css/global.css && cleancss -o src/css/fonts.min.css src/css/fonts.css",
-    "build:production": "npm run minify-css && cross-env NODE_ENV=production npx @11ty/eleventy"
+    "start": "bunx eleventy --serve",
+    "build": "bunx eleventy",
+    "minify-css": "cleancss -o src/css/global.min.css src/css/global.css",
+    "build:production": "bunx run minify-css && cross-env NODE_ENV=production bunx @11ty/eleventy"
   },
   "author": "SurfScape Team",
   "license": "GPL-2.0",
