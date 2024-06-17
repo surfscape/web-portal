@@ -9,7 +9,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css/");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/humans.txt");
-  eleventyConfig.addPassthroughCopy("src/**/*.md");
   eleventyConfig.addWatchTarget("src/css");
   eleventyConfig.addWatchTarget("src/humans.txt");
   eleventyConfig.addWatchTarget("./src/resources/");
