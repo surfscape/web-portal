@@ -6,13 +6,10 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static/");
-  eleventyConfig.addPassthroughCopy("src/css/");
-  eleventyConfig.addPassthroughCopy("src/robots.txt");
-  eleventyConfig.addPassthroughCopy("src/humans.txt");
+  eleventyConfig.addPassthroughCopy("src/styles/");
   eleventyConfig.addWatchTarget("src/css");
-  eleventyConfig.addWatchTarget("src/humans.txt");
-  eleventyConfig.addWatchTarget("./src/resources/");
-  eleventyConfig.addWatchTarget("/src/**/*.md");
+  eleventyConfig.addWatchTarget("./src/pages/");
+  eleventyConfig.addWatchTarget("/src/pages/**/*.md");
   /* plugins */
   const md = markdownIt({ html: true, breaks: true, linkify: true });
   md.use(markdownItAttrs, {
