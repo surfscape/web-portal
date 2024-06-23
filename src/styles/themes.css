@@ -6,7 +6,7 @@
   --clr-br__primaryMuted: #2a2ddf;
   --clr-br__primaryFluent: hsla(211, 100%, 50%, 0.5);
   /* surfaces */
-  --clr-sf__background: hsl(0, 0%, 92%);
+  --clr-sf__background: hsl(211, 25%, 92%);
   --clr-sf__foreground: hsl(239, 20%, 96%);
   --clr-sf__backgroundFluent: hsla(0, 0%, 100%, 0.5);
   --clr-sf__surface_1: hsl(0, 0%, 92%);

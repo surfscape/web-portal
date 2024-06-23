@@ -78,6 +78,13 @@ img:not([alt]) {
   }
 }
 
+@font-face {
+  font-family: "Geist";
+  src: url("/static/fonts/geist.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 :root {
   --font-size: clamp(0.96rem, 0.96rem + 0.390625vw, 1rem);
   --spacing-xxsm: clamp(0.18rem, 0.18rem + 0.390625vw, 0.25rem);
@@ -91,7 +98,7 @@ img:not([alt]) {
 
 body {
   font: var(--font-size) var(--font-stack);
-  background: #f7f7f8;
+  background: var(--clr-sf__background);
   color: var(--clr-tp__body);
   line-height: 1.4;
 }
