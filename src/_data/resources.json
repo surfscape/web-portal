@@ -2,8 +2,8 @@
   "categories": [
     {
       "title": "Web Building",
-      "description": "Guides on HTML, tips on designing websites, and more.",
-      "name": "web-design"
+      "description": "Guides and tutorials on how to build websites, code snippets, and more!",
+      "name": "web-building"
     },
     {
       "title": "Minimalism",
@@ -19,6 +19,48 @@
       "title": "Fonts",
       "description": "Directories of free fonts",
       "name": "fonts"
+    }
+  ],
+  "webbuilding": [
+    {
+      "title": "MDN Web Docs",
+      "description": "The best place to understand how HTML, CSS, and JS works with examples!",
+      "url": "https://developer.mozilla.org/en-US/"
+    },
+    {
+      "title": "A Beginner's Guide to HTML and CSS",
+      "description": "A simple guide on creating a website from scratch using HTML and CSS.",
+      "url": "https://webguide.neocities.org/"
+    },
+    {
+      "title": "sadgrl",
+      "description": "Huge library of resources on web building, design, and more!",
+      "url": "https://goblin-heart.net/sadgrl/"
+    },
+    {
+      "title": "The HTML Hobbyist",
+      "description": "Learning HTML to build your website, fanzine, or personal site.",
+      "url": "https://htmlhobbyist.neocities.org/"
+    },
+    {
+      "title": "EGGRAMEN CSS Test Pages",
+      "description": "Directory of various CSS templates.",
+      "url": "https://eggramen.neocities.org/code/css_testpages"
+    },
+    {
+      "title": "TEMPLATERR",
+      "description": "Navigation tools and simple layouts for starting out with neocities.",
+      "url": "https://templaterr.neocities.org/"
+    },
+    {
+      "title": "John Doe's Page",
+      "description": "A single-page website templated only using a single HTML file and a bit of CSS.",
+      "url": "https://john-doe.neocities.org/"
+    },
+    {
+      "title": "The Perfect Website ",
+      "description": "No need for description...",
+      "url": "https://perfectsite.neocities.org/"
     }
   ]
 }
