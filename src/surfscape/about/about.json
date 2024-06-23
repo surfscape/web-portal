@@ -1,0 +1,23 @@
+{
+  "layout": "single.njk",
+  "header_title": "About SurfScape",
+  "permalink": "/about/{{title | slugify}}/",
+  "navigation": [
+    {
+      "title": "About",
+      "url": "/about/"
+    },
+    {
+      "title": "Updates",
+      "url": "/about/release-notes/"
+    },
+    {
+      "title": "Roadmap",
+      "url": "/about/roadmap/"
+    },
+    {
+      "title": "Contact",
+      "url": "/about/contact/"
+    }
+  ]
+}
