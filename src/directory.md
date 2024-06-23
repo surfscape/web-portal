@@ -1,5 +1,5 @@
 ---
-title: Directory - Beta
+title: Directory
 layout: page.njk
 hero_title: SurfScape Directory
 hero_description: Browse trough various personal websites & projects and find alternative web services.

@@ -4,24 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} | {{ site.title }}</title>
     <meta name="description" content="{% if description %}{{description}}{% else %}{{ site.description }}{% endif %}">
-    <link rel="canonical" href="https://surfscape.neocities.org">
+    <link rel="canonical" href="{{site.url}}">
     <link rel="shortcut icon" href="/static/images/branding/everything_logo_0.5x.png" type="image/x-icon">
     <link rel="author" href="/humans.txt">
-    {% if process.env.NODE_ENV === 'production' %}
-        <link rel="stylesheet" href="/css/fonts.min.css">
-        <link rel="stylesheet" href="/css/global.min.css">
-    {% else %}
-        <link rel="stylesheet" href="/css/fonts.min.css">
-        <link rel="stylesheet" href="/css/global.css">
-    {% endif %}
-    <link rel="stylesheet" href="/css/themes.css">
-    <link rel="stylesheet" href="/css/surfkit.css">
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/themes.css">
+    <link rel="stylesheet" href="/styles/surfkit.css">
     <meta name="generator" content="{{ eleventy.generator }}">
-    <link
-	rel="preload"
-	href="/static/fonts/inter-v13-latin-regular.woff2"
-	as="font"
-	type="font/woff2"
-	crossOrigin="anonymous"
-/>
 </head>

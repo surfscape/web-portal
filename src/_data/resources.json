@@ -1,19 +1,24 @@
 {
   "categories": [
     {
-      "title": "Web Design",
-      "description": "CSS snippets & tricks, templates.",
-      "name": "wd"
+      "title": "Web Building",
+      "description": "Guides on HTML, tips on designing websites, and more.",
+      "name": "web-design"
     },
     {
-      "title": "Images & GIFs",
-      "description": "Directories of images and GIFs.",
-      "name": "imgif"
+      "title": "Minimalism",
+      "description": "Mininimalism on product design, digitally, or in real life.",
+      "name": "minimalism"
+    },
+    {
+      "title": "Assets",
+      "description": "Free images and GIFs ready to be added on your projects!",
+      "name": "assets"
     },
     {
       "title": "Fonts",
-      "description": "100% free fonts.",
-      "name": "fnt"
+      "description": "Directories of free fonts",
+      "name": "fonts"
     }
   ]
 }
