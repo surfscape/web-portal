@@ -1,0 +1,10 @@
+{
+  "layout": "page.njk",
+  "header_title": "Resources",
+  "navigation": [
+    {
+      "title": "Resources",
+      "url": "/resources/"
+    }
+  ]
+}
