@@ -7,9 +7,7 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static/");
   eleventyConfig.addPassthroughCopy("src/styles/");
-  eleventyConfig.addWatchTarget("src/css");
-  eleventyConfig.addWatchTarget("./src/pages/");
-  eleventyConfig.addWatchTarget("/src/pages/**/*.md");
+  eleventyConfig.addWatchTarget("src/");
   /* plugins */
   const md = markdownIt({ html: true, breaks: true, linkify: true });
   md.use(markdownItAttrs, {
@@ -45,9 +43,6 @@ module.exports = function (eleventyConfig) {
   /* collections */
   eleventyConfig.addCollection("news", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/news/posts/*.md");
-  });
-  eleventyConfig.addCollection("servicesUpdates", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/services/updates/posts/*.md");
   });
   return {
     dir: {
