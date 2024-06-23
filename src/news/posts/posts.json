@@ -1,4 +1,4 @@
 {
   "layout": "post.njk",
-  "permalink": "/news/{{title|slugify}}/"
+  "permalink": "/news/{{ title | slugify }}/"
 }
