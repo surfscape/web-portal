@@ -1,6 +1,6 @@
 ---
 title: About
-permalink: "/about/index.html"
+permalink: "/about/"
 ---
 
 ## Your favorite Neocities web portal
@@ -14,8 +14,8 @@ SurfScape is an [open source](https://github.com/surfscape/) web portal for Neoc
 <p><strong>Version:</strong> <code>{{pkg.version}}</code></p>
 <p><strong>Codename:</strong> <code>{{pkg.codename}}</code></p>
 
-<sk-button-group>
-<a href="https://github.com/surfscape/web-portal" class="sk-button sk-button__primary"><ion-icon name="logo-github"></ion-icon>Source Code</a>
+<sk-button-container>
+<a href="https://github.com/surfscape/web-portal" class="sk-button sk-button--primary"><ion-icon name="logo-github"></ion-icon>Source Code</a>
 <a href="https://neocities.org/site/surfscape" class="sk-button"><img src="/static/images/others/neocities.svg" alt="">  Neocities Page</a>
-</sk-button-group>
+</sk-button-container>
 </section>
