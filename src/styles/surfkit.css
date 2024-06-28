@@ -1,71 +1,4 @@
-/* the following components have been updates and pushed to SurfKit - DO NOT MODIFY */
-.sk-button,
-a.sk-button,
-button.sk-button {
-  --_btn-sk-bg: var(--btn-sk-bg, hsl(0, 0%, 15%));
-  --_btn-sk-border: var(--btn-sk-border, transparent);
-  --_btn-sk-color: var(--btn-sk-color, rgb(240, 240, 240));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  gap: var(--spacing-sm);
-  padding: 0.35em var(--spacing);
-  background: var(--_btn-sk-bg);
-  border: 1px solid var(--_btn-sk-border);
-  color: var(--_btn-sk-color);
-  border-radius: 0.3em;
-  text-decoration: none;
-  cursor: pointer;
-  transition: var(--an-global-fade);
-}
-
-.sk-button:hover {
-  --_btn-sk-bg-hover: var(--btn-sk-bg-hover, hsl(0, 0%, 95%));
-  background: var(--_btn-sk-bg-hover);
-  --_btn-sk-border-hover: var(--btn-sk-border-hover, rgba(31, 31, 31, 0.25));
-  border-color: var(--_btn-sk-border-hover);
-  --_btn-sk-color-hover: var(--btn-sk-color-hover, rgb(0, 0, 0));
-  color: var(--_btn-sk-color-hover);
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
-}
-
-.sk-button:active {
-  opacity: 0.9;
-}
-
-.sk-button:focus-within {
-  outline: 4px solid var(--clr-br__primaryFluent);
-}
-
-.sk-button__primary {
-  --btn-sk-bg: var(--clr-br__primary);
-  --btn-sk-color: var(--clr-br__onPrimary);
-  --btn-sk-border: var(--clr-br__primary);
-  --btn-sk-bg-hover: var(--clr-br__onPrimary);
-  --btn-sk-color-hover: var(--clr-br__primary);
-  --btn-sk-border-hover: var(--clr-br__primary);
-}
-
-sk-button-group {
-  display: flex;
-  gap: var(--spacing-xsm);
-}
-
-.sk-infobox {
-  padding: 0.5em 0.75em;
-  border-radius: 0.5em;
-  background: var(--clr-sf__surface_1);
-  border: 1px solid var(--clr-sf__strokeContrast);
-}
-
-.sk-infobox--warning {
-  border-color: var(--clr-cs__warningStroke);
-  background: var(--clr-cs__warningBackground);
-  color: var(--clr-cs__warningForeground);
-}
-
-/* the following components have not been ported to SurfKit */
+@import "surfkit.bundle.css";
 
 /* page headers (with navigation) */
 .sk-header {
@@ -134,19 +67,25 @@ sk-button-group {
 }
 
 .sk-label {
-  background: #cbdcff;
-  color: #0035a0;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: #d8e5ff;
+  color: #003192;
   font-weight: 500;
   border-radius: 2em;
   border: 1px solid var(--clr-br__primary);
   padding: 0.3em 0.75em;
-  font-size: 0.85rem;
+  font-size: 0.875em;
   text-decoration: none;
-  transition: 150ms all ease-in-out;
 }
 
 .sk-label:hover {
   color: var(--clr-br__primary);
+}
+
+.sk-label ion-icon {
+  font-size: 1.25rem;
 }
 
 /* TODO: Redesign */

@@ -1,4 +1,3 @@
-/* SurfKit Default Light Theme (Snow) v1.0 */
 :root {
   /* br : brand colors */
   --clr-br__primary: var(--clr-accent-test);
@@ -20,7 +19,7 @@
   --clr-accent-test: #1c1fff;
 
   /* colors */
-  --clr-cs__warningStroke: rgb(227, 148, 0);
+  --clr-cs__warningStroke: hsl(39, 100%, 45%);
   --clr-cs__warningBackground: rgb(255, 240, 212);
   --clr-cs__warningForeground: rgb(146, 95, 0);
 

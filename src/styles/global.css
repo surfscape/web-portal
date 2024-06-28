@@ -1,3 +1,5 @@
+@import "";
+
 *,
 *::before,
 *::after {
@@ -161,7 +163,6 @@ a:hover {
   color: var(--clr-tp__muted);
   border: 1px solid transparent;
   text-decoration: none;
-  transition: var(--an-global-fade);
 }
 
 .site-navbar__link[aria-current="page"] {
@@ -170,9 +171,7 @@ a:hover {
 }
 
 .site-navbar__link:hover {
-  border-radius: 0.5em;
   color: var(--clr-tp__body);
-  border-color: var(--clr-sf__stroke);
 }
 
 /* footer */

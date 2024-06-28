@@ -6,6 +6,9 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static/");
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/surfkit/dist/surfkit.min.css": "styles/surfkit.bundle.css",
+  });
   eleventyConfig.addPassthroughCopy("src/styles/");
   eleventyConfig.addWatchTarget("src/");
   /* plugins */

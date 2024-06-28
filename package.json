@@ -1,6 +1,6 @@
 {
   "name": "surfscape",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0-rc2",
   "codename": "Liberty",
   "description": "Your Web, Your Way. Your friendly Neocities Web Portal",
   "main": "index.js",
@@ -14,14 +14,17 @@
   "license": "GPL-2.0",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "clean-css-cli": "^5.6.2",
+    "clean-css-cli": "^5.6.3",
     "common-tags": "^1.8.2",
     "cross-env": "^7.0.3",
     "eleventy-plugin-date": "^1.0.0",
     "kramdown": "^0.0.0",
-    "luxon": "^3.4.3",
-    "markdown-it": "^14.0.0",
+    "luxon": "^3.4.4",
+    "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.0.1",
     "markdown-it-attrs": "^4.1.6"
+  },
+  "dependencies": {
+    "surfkit": "^0.0.2"
   }
 }
