@@ -8,7 +8,12 @@ style_slot: true
 
 <div class="homepage-layout">
   <section class="hero">
-    <a href="/news/welcome-the-new-surfscape/" class="sk-label">Welcome the new SurfScape</a>
+    <div class="sk-infobox sk-infobox--warning sk-infobox--extras" style="max-width: 60ch;margin-inline: auto;">
+      <ion-icon name="document"></ion-icon>
+      <p>We've recently updated our <a href="/privacy-policy">privacy policy</a> to include a new service provider. The new changes <strong>will take effect in 30/06/2024</strong>.</p>
+    </div>
+    <a href="/news/welcome-the-new-surfscape/" class="sk-label">
+      <ion-icon name="newspaper-outline"></ion-icon>Welcome the new SurfScape</a>
     <h1 class="hero--title display__1">Your Web, <span style="color: #9901F7;background: #0066FF;
 background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
 -webkit-background-clip: text;
@@ -22,11 +27,11 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
     <img src="/static/images/banners/hero_values.png"
       alt="Grid with the value of SurfScape. Content: resources, services, foss, games, neocities, coding, bookmarks, web design"
       class="hero--banner">
-    <sk-button-group>
-      <a href="#explore" class="sk-button sk-button__primary">
+    <sk-button-container>
+      <a href="#explore" class="sk-button sk-button--primary">
         <ion-icon name="arrow-down-circle"></ion-icon>Explore</a>
       <a href="/about" class="sk-button">About the Project</a>
-    </sk-button-group>
+    </sk-button-container>
   </section>
   <section class="homepage-grid" id="explore">
     <h2 class="display__2" style="grid-column: 1 / -1;">Explore</h2>
