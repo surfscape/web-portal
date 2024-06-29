@@ -1,11 +1,3 @@
-@import "";
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body,
 h1,
 h2,
@@ -94,24 +86,25 @@ img:not([alt]) {
   --spacing-sm: clamp(0.5rem, 0.5rem + 0.390625vw, 0.75rem);
   --spacing: clamp(0.8rem, 0.8rem + 0.390625vw, 1rem);
   --page-breakpoint: 860px;
-  --font-stack: "Geist", system-ui, sans-serif;
   color-scheme: light;
 }
 
 body {
-  font: var(--font-size) var(--font-stack);
   background: var(--clr-sf__background);
   color: var(--clr-tp__body);
-  line-height: 1.4;
 }
 
 a {
   color: var(--clr-br__primary);
-  text-decoration: underline;
 }
 
-a:hover {
-  text-decoration: none;
+h1:has(ion-icon),
+h2:has(ion-icon),
+h3:has(ion-icon),
+h4:has(ion-icon) {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
 }
 
 /* Container for the website */
