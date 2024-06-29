@@ -1,5 +1,6 @@
 ---
 title: News
+description: Press releases, announcementes, and other updates.
 layout: page.njk
 ---
 
