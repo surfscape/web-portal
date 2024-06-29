@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-date: 2024-06-16T16:18:48.000Z
+date: 2024-06-29T01:02:48.000Z
 revision: 2
 permalink: "/privacy-policy/"
 redirectFrom: ["/info/privacy-policy/", "/privacy-portal/"]
@@ -34,10 +34,13 @@ Below is a detailed overview of our providers and what data is collected trough 
 
 These are services that offer additional services that are not needed for basic functionality.
 
-| Service provider | Service provided | Required? | Privacy Policy                                                       |
-| ---------------- | ---------------- | --------- | -------------------------------------------------------------------- |
-| GoatCounter      | Telemetry        | No        | [goatcounter.com/help/privacy](https://goatcounter.com/help/privacy) |
+| Service provider | Service provided | Required?                               | Privacy Policy                                                       |
+| ---------------- | ---------------- | --------------------------------------- | -------------------------------------------------------------------- |
+| GoatCounter      | Telemetry        | No                                      | [goatcounter.com/help/privacy](https://goatcounter.com/help/privacy) |
+| Tally            | Form Service     | Yes <small><sup>[[1]](#1)</sup></small> | [tally.so/help/privacy-policy](https://tally.so/help/privacy-policy) |
 
 ## Changes to Privacy Policy
 
 We have the permission to alter this policy. A notice is announced a week prior before the change takes effect. Older revisions can be found here: <a href="/arc/privacy-policy">Privacy Policy archive</a>.
+
+- <a href="#1" id="1">[1]</a> - Tally is currently only used on the [Resources](/resources) page for submissions, if you don't fill the form or enter the resources page, the following does not apply.
