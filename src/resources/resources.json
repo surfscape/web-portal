@@ -5,6 +5,14 @@
     {
       "title": "Resources",
       "url": "/resources/"
+    },
+    {
+      "title": "Links",
+      "url": "/resources/links"
+    },
+    {
+      "title": "Bookmarks",
+      "url": "/resources/bookmarks"
     }
   ]
 }
