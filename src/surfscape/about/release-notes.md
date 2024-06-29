@@ -10,12 +10,13 @@ layout: single.njk
 <p><small>New</small></p>
 
 - [Resources](/resources) is now up and running!
-- The resources pages [Links](/resources/links), and [Bookmarks](/resources/bookmakrs) are now available!
+- The resources pages ([Links](/resources/links)and [Bookmarks](/resources/bookmakrs)) are now available!
 - We've launched a [blog](/interwebs) (content coming soon)!
 - Created [ethics](/about/ethics) page to showcase our values.
 
 <p><small>Other changes</small></p>
 
+- Begun migration process to [SurfKit](https://github.com/surfscape/surfkit)
 - Updated our [privacy policy](/privacy-policy) to include our form service ([Tally](https://tally.so/)).
 
 <p><small>Fixes</small></p>
