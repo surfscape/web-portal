@@ -2,7 +2,7 @@
   "name": "surfscape",
   "version": "1.0.0-rc2",
   "codename": "Liberty",
-  "description": "Your Web, Your Way. Your friendly Neocities Web Portal",
+  "description": "Your Web, Your Way | Your friendly Neocities Web Portal",
   "main": "index.js",
   "scripts": {
     "start": "bunx eleventy --serve",
