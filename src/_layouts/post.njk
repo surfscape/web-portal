@@ -6,7 +6,7 @@
     <p class="subtitle__1">{{description}}</p>
     <time datetime="{{date}}">{{ date | PostDate }}</time>
   </header>
-  <article class="sk-layout--content content">
+  <article class="sk-content sk-content--modified">
     {{ content | safe }}
   </article>
 {% endblock %}

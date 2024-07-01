@@ -12,11 +12,11 @@
   backdrop-filter: blur(16px);
   padding: 0.25rem 1rem;
   background: var(--clr-sf__backgroundFluent);
-  border-bottom: 1px solid var(--clr-sf__stroke);
+  border-bottom: 1px solid var(--sk-color-outline-variant);
 }
 
 .sk-header__title {
-  color: var(--clr-tp__heading);
+  color: var(--sk-color-tp-heading);
   font-weight: 600;
   font-size: 1.075em;
   line-height: 2em;
@@ -31,7 +31,7 @@
 .sk-navbar__link {
   line-height: 2em;
   font-size: 0.9em;
-  color: var(--clr-tp__body);
+  color: var(--sk-color-tp-body);
 }
 
 .sk-navbar__link[aria-current="page"] {
@@ -70,22 +70,22 @@
   display: flex;
   align-items: center;
   gap: 0.5em;
-  background: #d8e5ff;
-  color: #003192;
+  background: var(--sk-color-primary-container);
+  color: var(--sk-color-on-primary-container);
   font-weight: 500;
   border-radius: 2em;
   border: 1px solid var(--clr-br__primary);
-  padding: 0.3em 0.75em;
+  padding: 0.3em 1em;
   font-size: 0.875em;
   text-decoration: none;
 }
 
 .sk-label:hover {
-  color: var(--clr-br__primary);
+  color: var(--sk-color-primary);
 }
 
 .sk-label ion-icon {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 /* TODO: Redesign */
@@ -103,7 +103,7 @@ menu.sk-tab-buttons {
   width: fit-content;
   padding: 0.25em;
   border-radius: 0.3em;
-  gap: var(--spacing-xsm);
+  gap: 0.5em;
   background: hsl(240, 5%, 94%);
 }
 
@@ -121,20 +121,20 @@ menu.sk-tab-buttons {
 }
 
 .sk-tab-button:hover {
-  color: var(--clr-tp__body);
+  color: var(--sk-color-tp-body);
 }
 
 .sk-tab-button[aria-checked="true"] {
   background: white;
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
-  color: var(--clr-tp__heading);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  color: var(--sk-color-tp-heading);
 }
 
 sk-tab-content-container {
   display: block;
-  padding: var(--spacing);
+  padding: 1rem;
   margin-top: 1rem;
-  border: 1px solid var(--clr-sf__stroke);
+  border: 1px solid var(--sk-color-outline-variant);
   border-radius: 0.75rem;
 }
 
@@ -156,7 +156,7 @@ sk-tab-content-container {
 
 .sk-card__outline {
   background: transparent;
-  border: 1px solid var(--clr-sf__strokeContrast);
+  border: 1px solid var(--sk-color-outline-variant);
 }
 
 /* typography */
@@ -164,13 +164,13 @@ sk-tab-content-container {
   font-weight: 500;
   font-size: 2.8rem;
   letter-spacing: -0.025em;
-  color: var(--clr-tp__heading);
+  color: var(--sk-color-tp-heading);
 }
 
 .display__2 {
   font-weight: 500;
   font-size: 2.4rem;
-  color: var(--clr-tp__heading);
+  color: var(--sk-color-tp-heading);
 }
 .subtitle__1 {
   color: var(--clr-tp__muted);
@@ -190,12 +190,8 @@ sk-tab-content-container {
   font-size: 1rem;
 }
 
-.sk-layout--content {
-  padding: var(--spacing);
-  max-width: 60ch;
+.sk-content--modified {
+  max-width: 62ch;
   margin: 0 auto;
-}
-
-.sk-layout--content * {
-  line-height: 1.45em;
+  padding: 1rem;
 }

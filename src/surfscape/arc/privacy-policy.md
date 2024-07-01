@@ -5,7 +5,7 @@ layout: single.njk
 permalink: "/arc/privacy-policy/"
 ---
 
-<details class="content">
+<details class="sk-content">
 <summary>Revision 2</summary>
 This document details our usage of non-personal and personal data. This also includes our methods of collecting data, our partners, and 3rd party services we use.
 
@@ -45,7 +45,7 @@ We have the permission to alter this policy. A notice is announced a week prior 
 
 </details>
 
-<details class="content">
+<details class="sk-content">
 <summary>Revision 1</summary>
 
 This document details our usage of non-personal and personal data. This also includes our methods of collecting data, our partners, and 3rd party services we use.

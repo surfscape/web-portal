@@ -1,117 +1,5 @@
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-menu[class],
-hr,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-ul[class],
-ol[class],
-menu[class] {
-  padding: 0;
-  list-style: none;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
-
-canvas,
-img,
-picture,
-svg {
-  display: block;
-  max-width: 100%;
-  font-style: italic;
-}
-
-article * {
-  line-height: 1.5;
-}
-
-article > * + *,
-.content > * + * {
-  margin-top: 1em;
-}
-iframe {
-  border: 0;
-}
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-button {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
 img:not([alt]) {
   filter: blur(10px);
-}
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-@font-face {
-  font-family: "Geist";
-  src: url("/static/fonts/geist.woff2") format("woff2-variations");
-  font-weight: 100 900;
-  font-style: normal;
-}
-
-:root {
-  --font-size: clamp(0.96rem, 0.96rem + 0.390625vw, 1rem);
-  --spacing-xxsm: clamp(0.18rem, 0.18rem + 0.390625vw, 0.25rem);
-  --spacing-xsm: clamp(0.3rem, 0.3rem + 0.390625vw, 0.5rem);
-  --spacing-sm: clamp(0.5rem, 0.5rem + 0.390625vw, 0.75rem);
-  --spacing: clamp(0.8rem, 0.8rem + 0.390625vw, 1rem);
-  --page-breakpoint: 860px;
-  color-scheme: light;
-}
-
-body {
-  background: var(--clr-sf__background);
-  color: var(--clr-tp__body);
-}
-
-a {
-  color: var(--clr-br__primary);
-}
-
-h1:has(ion-icon),
-h2:has(ion-icon),
-h3:has(ion-icon),
-h4:has(ion-icon) {
-  display: flex;
-  align-items: center;
-  gap: 0.3em;
-}
-
-/* Container for the website */
-.site-container {
-  max-width: var(--page-breakpoint);
-  margin: 0 auto;
-  background: var(--clr-sf__foreground);
 }
 
 /* header (title and slogan)*/
@@ -122,15 +10,15 @@ h4:has(ion-icon) {
   flex-wrap: wrap;
   border-bottom: 1px solid var(--clr-sf__stroke);
   gap: 0.25rem;
-  padding: 0.25rem 1rem;
+  padding: 0.4em 1rem;
 }
 
 .site-header__title {
-  transition: var(--an-global-fade);
+  transition: var(--an-global-ease);
 }
 
 .site-header__title:hover {
-  scale: 1.05;
+  scale: 1.04;
   filter: saturate(1.5) drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.25));
 }
 
@@ -272,55 +160,12 @@ h4:has(ion-icon) {
   color: var(--clr-tp__body);
 }
 
-summary {
-  cursor: pointer;
-}
-strong {
-  font-weight: 700;
-}
-
-hr {
-  border: none;
-  border-bottom: 1px solid var(--clr-sf__stroke);
-}
-
-blockquote {
-  padding: 0.25em 0.25em 0.25em 1em;
-  background: var(--clr-sf__surface_1);
-  border-left: 0.25em solid var(--clr-sf__strokeContrast);
-}
-
 .table-responsive {
   overflow-x: auto;
 }
 
-table {
-  border-collapse: collapse;
-  border: 1px solid var(--clr-sf__stroke);
-  overflow-x: auto;
-  font-size: 0.875em;
-  width: 100%;
-}
-
-thead,
-tfoot {
-  background-color: var(--clr-sf__surface_1);
-  color: var(--clr-tp__heading);
-}
-
-thead th {
-  border: 1px solid var(--clr-sf__strokeContrast);
-  padding: 0.5em;
-}
-
-tbody td {
-  text-align: center;
-  border: 1px solid var(--clr-sf__stroke);
-  padding: 0.25em;
-}
-
 @media (min-width: 860px) {
-  .site-container {
+  .wrapper-md {
     border-left: 1px solid var(--clr-sf__stroke);
     border-right: 1px solid var(--clr-sf__stroke);
     border-bottom: 1px solid var(--clr-sf__stroke);

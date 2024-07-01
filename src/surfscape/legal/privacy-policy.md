@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 date: 2024-06-29T01:02:48.000Z
-revision: 2
+revision: 3
 permalink: "/privacy-policy/"
 redirectFrom: ["/info/privacy-policy/", "/privacy-portal/"]
 ---
@@ -43,4 +43,4 @@ These are services that offer additional services that are not needed for basic 
 
 We have the permission to alter this policy. A notice is announced a week prior before the change takes effect. Older revisions can be found here: <a href="/arc/privacy-policy">Privacy Policy archive</a>.
 
-- <a href="#1" id="1">[1]</a> - Tally is currently only used on the [Resources](/resources) page for submissions, if you don't fill the form or enter the resources page, the following does not apply.
+> <a href="#1" id="1">[1]</a> - Tally is currently only used on the [Resources](/resources) page for submissions, if you don't fill the form or enter the resources page, the following does not apply.

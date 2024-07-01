@@ -10,7 +10,8 @@ style_slot: true
   <section class="hero">
     <div class="sk-infobox sk-infobox--warning sk-infobox--extras" style="max-width: 60ch;margin-inline: auto;">
       <ion-icon name="document"></ion-icon>
-      <p>We've recently updated our <a href="/privacy-policy">privacy policy</a> to include a new service provider. The new changes <strong>will take effect in 30/06/2024</strong>.</p>
+      <p>We've recently updated our <a href="/privacy-policy">privacy policy</a> to include a new service provider. The
+        new changes <strong>will take effect in 30/06/2024</strong>.</p>
     </div>
     <a href="/news/welcome-the-new-surfscape/" class="sk-label">
       <ion-icon name="newspaper-outline"></ion-icon>Welcome the new SurfScape</a>
@@ -39,9 +40,9 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
       <h3>Site Showcase</h3>
       <nav class="button-list">
         {% for site in cities.siteShowcase %}
-          <a href="{{site.link}}" class="button-list__link">
-            <img src="/static/images/buttons/{{site.button}}" width="88" height="31" alt="{{site.name}} button">
-            {{site.name}}</a>
+        <a href="{{site.link}}" class="button-list__link">
+          <img src="/static/images/buttons/{{site.button}}" width="88" height="31" alt="{{site.name}} button">
+          {{site.name}}</a>
         {% endfor %}
       </nav>
     </section>
@@ -49,14 +50,14 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
       <h3>Latest news</h3>
       <ul class="posts-list">
         {%- for new in collections.news | reverse -%}
-          <li>
-            <a href="{{ new.url }}" class="post-card">
-              <h1 class="post-card-header">{{ new.data.title }}
-                <time class="post-card__time" datetime="{{ new.data.date }}">{{ new.data.date | PostDate }}</time>
-              </h1>
-              <p class="post-card__description">{{ new.data.description }}</p>
-            </a>
-          </li>
+        <li>
+          <a href="{{ new.url }}" class="post-card">
+            <h1 class="post-card-header">{{ new.data.title }}
+              <time class="post-card__time" datetime="{{ new.data.date }}">{{ new.data.date | PostDate }}</time>
+            </h1>
+            <p class="post-card__description">{{ new.data.description }}</p>
+          </a>
+        </li>
         {%- endfor -%}
       </ul>
       <a href="/news" class="sk-button">See all news</a>
@@ -65,9 +66,9 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
       <h3>SurfScape Friends</h3>
       <nav class="button-list">
         {% for site in cities.friends %}
-          <a href="{{site.link}}" class="button-list__link">
-            <img src="/static/images/buttons/{{site.button}}" width="88" height="31" alt="{{site.name}} button">
-            {{site.name}}</a>
+        <a href="{{site.link}}" class="button-list__link">
+          <img src="/static/images/buttons/{{site.button}}" width="88" height="31" alt="{{site.name}} button">
+          {{site.name}}</a>
         {% endfor %}
       </nav>
     </section>
@@ -78,14 +79,14 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
 <style>
   .hero {
     background: linear-gradient(to bottom, #e3e7fb, transparent);
-    border-bottom: 1px solid var(--clr-sf__strokeLight);
+    border-bottom: 1px solid var(--sk-color-outline-variant);
   }
 
   .homepage-grid {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr));
-    padding: var(--spacing);
+    padding: 1rem;
   }
 
   .button-list {
@@ -98,11 +99,11 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
     display: flex;
     align-items: center;
     gap: 1em;
-    transition: var(--an-global-fade);
+    transition: var(--an-global-ease);
   }
 
   .button-list__link:hover {
-    scale: 0.975;
+    scale: 0.98;
   }
 
   .news {
@@ -117,7 +118,7 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
     display: grid;
     gap: 0.25em;
     text-decoration: none;
-    transition: var(--an-global-fade);
+    transition: var(--an-global-ease);
   }
 
   .post-card-header {
@@ -127,7 +128,7 @@ background: linear-gradient(to right, #0066FF 0%, #9A00F7 100%);
 
   .post-card:hover {
     outline: none;
-    scale: 0.975;
+    scale: 0.98;
   }
 </style>
 {% endslot %}

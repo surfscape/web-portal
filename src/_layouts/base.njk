@@ -2,7 +2,7 @@
 <html lang="{{ site.lang }}">
   {% include "basehead.njk" %}
   <body>
-    <div class="site-container">
+    <div class="wrapper-md">
       {% include "header.njk" %}
       <main class="page-container">
         {% include "pageNavigation.njk" %}
@@ -19,24 +19,9 @@
       {% endrenderTemplate %}
     {% endif %}
     <script src="/static/scripts/tabs.min.js"></script>
-    <script src="/static/scripts/modal.js"></script>
     <script data-goatcounter="https://surfscape.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script>
-      const modal = document.getElementById("warningModal");
-      const close = document.getElementById("closeButton");
-      const btn = document.getElementById("openExtensions");
-
-      close.onclick = function () {
-        modal.style.display = "none";
-      }
-
-      /* check if the user has agreed with the beta */
-      btn.onclick = function () {
-        modal.style.display = "block";
-      }
-    </script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

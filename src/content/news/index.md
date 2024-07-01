@@ -1,7 +1,8 @@
 ---
-title: News
-description: Press releases, announcementes, and other updates.
+title: "News"
+description: "Press releases, announcementes, and other updates."
 layout: page.njk
+permalink: "/news/"
 ---
 
 {% import "components/postCard.njk" as postCard %}

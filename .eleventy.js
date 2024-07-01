@@ -7,7 +7,7 @@ const { EleventyRenderPlugin } = require("@11ty/eleventy");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/static/");
   eleventyConfig.addPassthroughCopy({
-    "node_modules/surfkit/dist/surfkit.min.css": "styles/surfkit.bundle.css",
+    "node_modules/surfkit/dist/surfkit.bundle.css": "styles/surfkit.bundle.css",
   });
   eleventyConfig.addPassthroughCopy("src/styles/");
   eleventyConfig.addWatchTarget("src/");
@@ -45,7 +45,7 @@ module.exports = function (eleventyConfig) {
   });
   /* collections */
   eleventyConfig.addCollection("news", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/news/posts/*.md");
+    return collectionApi.getFilteredByGlob("src/content/news/posts/*.md");
   });
   return {
     dir: {
