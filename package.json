@@ -5,8 +5,10 @@
   "description": "Your Web, Your Way | Your friendly Neocities Web Portal",
   "main": "index.js",
   "scripts": {
-    "start": "bunx eleventy --serve",
-    "build": "bunx eleventy",
+    "start": "npx eleventy --serve",
+    "build": "npx eleventy",
+    "start:bun": "bunx eleventy --serve",
+    "build:bun": "bunx eleventy",
     "minify-css": "cleancss -o src/css/global.min.css src/css/global.css",
     "build:production": "bunx run minify-css && cross-env NODE_ENV=production bunx @11ty/eleventy"
   },
