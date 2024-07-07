@@ -92,9 +92,6 @@ img:not([alt]) {
   gap: 1rem;
   padding: 2rem 1rem 1rem 1rem;
   max-width: 100%;
-  margin: 1rem;
-  border-radius: 1rem;
-  border: 1px solid var(--sk-color-outline-variant);
 }
 
 .hero--title {
