@@ -1,7 +1,8 @@
 node_modules/
-.vscode
+.vscode/
 _site/
 
 bun.lockb
 yarn.lock
 package-lock.json
+.replit
