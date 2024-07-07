@@ -1,5 +1,13 @@
 @import "surfkit.bundle.css";
 
+:root {
+  --sk-color-background: #f4f5fa;
+}
+
+body {
+  background-color: var(--sk-color-background);
+}
+
 /* page headers (with navigation) */
 .sk-header {
   position: sticky;

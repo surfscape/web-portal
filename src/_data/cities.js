@@ -12,7 +12,7 @@ module.exports = function () {
         button: "aristasiabutton.gif",
       },
       {
-        name: "Coulored",
+        name: "Coloured",
         link: "https://coloured.neocities.org/",
         button: "coloured.png",
       },
