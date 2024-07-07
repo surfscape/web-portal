@@ -12,7 +12,7 @@ body {
 .sk-header {
   position: sticky;
   z-index: 10;
-  top: 0;
+  top: -1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,7 +20,7 @@ body {
   backdrop-filter: blur(16px);
   padding: 0.25rem 1rem;
   background: var(--clr-sf__backgroundFluent);
-  border-bottom: 1px solid var(--sk-color-outline-variant);
+  border: 1px solid rgba(185, 185, 185, 0.533);
 }
 
 .sk-header__title {
@@ -202,4 +202,9 @@ sk-tab-content-container {
   max-width: 62ch;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.sk-banner {
+  border-radius: 1rem;
+  border: 1px solid var(--sk-color-outline-variant);
 }
