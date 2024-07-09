@@ -34,10 +34,14 @@ Below is a detailed overview of our providers and what data is collected trough 
 
 These are services that offer additional services that are not needed for basic functionality.
 
+<div class="table-responsive">
+
 | Service provider | Service provided | Required?                               | Privacy Policy                                                       |
 | ---------------- | ---------------- | --------------------------------------- | -------------------------------------------------------------------- |
 | GoatCounter      | Telemetry        | No                                      | [goatcounter.com/help/privacy](https://goatcounter.com/help/privacy) |
 | Tally            | Form Service     | Yes <small><sup>[[1]](#1)</sup></small> | [tally.so/help/privacy-policy](https://tally.so/help/privacy-policy) |
+
+</div>
 
 ## Changes to Privacy Policy
 
