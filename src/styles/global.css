@@ -1,15 +1,16 @@
+/* TODO: Move to SurfKit */
 img:not([alt]) {
   filter: blur(10px);
 }
 
-/* header (title and slogan)*/
+/* website main header */
 .site-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid var(--sk-color-outline-variant);
+  border-bottom: 1px solid var(--sk-color-outline);
 }
 
 .site-header__title {
@@ -25,13 +26,13 @@ img:not([alt]) {
   scale: 0.99;
 }
 
-/* main site navigation */
+/* main header navigation */
 .site-navbar {
   display: flex;
   flex-wrap: nowrap;
   overflow: auto;
   gap: 0.25em;
-  padding-block: 0.5rem;
+  padding-block: 0.5em;
 }
 
 .site-navbar__link {
@@ -49,6 +50,7 @@ img:not([alt]) {
 }
 
 .site-navbar__link:hover {
+  color: var(--sk-color-tp-body);
   background: var(--sk-color-surface--state);
 }
 
@@ -57,14 +59,10 @@ img:not([alt]) {
   color: var(--clr-tp__heading);
 }
 
-.site-navbar__link:hover {
-  color: var(--clr-tp__body);
-}
-
 /* footer */
 .site-footer {
   padding: 1rem;
-  border-top: 1px solid var(--clr-sf__stroke);
+  border-top: 1px solid var(--sk-color-outline);
 }
 .footer-nav {
   display: grid;
@@ -127,21 +125,21 @@ img:not([alt]) {
 
 .page-header--post {
   text-align: center;
-  border-bottom: 1px solid var(--clr-sf__stroke);
+  border-bottom: 1px solid var(--sk-color-outline);
 }
 
 .post-card {
   display: block;
   padding: 0.5em 1em;
   border-radius: 0.5em;
-  background: var(--clr-sf__surface_1);
+  background: var(--sk-color-surface);
   text-decoration: none;
-  transition: var(--an-global-fade);
   outline: 0.2em solid transparent;
+  transition: var(--an-global-ease);
 }
 
 .post-card:hover {
-  outline: 0.2em solid var(--clr-sf__surface_1);
+  outline-color: var(--sk-color-surface);
 }
 
 .post-card-header {
@@ -149,11 +147,11 @@ img:not([alt]) {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.25em;
-  transition: var(--an-global-fade);
+  transition: var(--an-global-ease);
 }
 
 .post-card:hover .post-card-header {
-  color: var(--clr-br__primary);
+  color: var(--sk-color-primary);
 }
 
 .post-card__time {
@@ -163,7 +161,7 @@ img:not([alt]) {
 }
 
 .post-card__description {
-  color: var(--clr-tp__body);
+  color: var(--sk-color-tp-body);
 }
 
 .table-responsive {
