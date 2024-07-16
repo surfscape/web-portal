@@ -27,6 +27,6 @@
     "markdown-it-attrs": "^4.1.6"
   },
   "dependencies": {
-    "surfkit": "^0.0.3"
+    "surfkit": "^0.0.4"
   }
 }

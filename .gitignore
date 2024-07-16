@@ -4,5 +4,5 @@ _site/
 
 bun.lockb
 yarn.lock
-package-lock.json
 .replit
+.env
