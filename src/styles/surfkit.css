@@ -4,6 +4,10 @@
   --sk-color-background: #f4f5fa;
 }
 
+hr {
+  margin: 0;
+}
+
 body {
   background-color: var(--sk-color-background);
 }
@@ -12,15 +16,15 @@ body {
 .sk-header {
   position: sticky;
   z-index: 10;
-  top: -1px;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  backdrop-filter: blur(16px);
   padding: 0.25rem 1rem;
-  background: var(--clr-sf__backgroundFluent);
-  border: 1px solid rgba(185, 185, 185, 0.533);
+  background: hsla(230, 37%, 97%, 0.7);
+  backdrop-filter: saturate(180%) blur(8px);
+  border-bottom: 1px solid hsla(230, 37%, 10%, 0.15);
 }
 
 .sk-header__title {
@@ -43,7 +47,7 @@ body {
 }
 
 .sk-navbar__link[aria-current="page"] {
-  color: var(--clr-tp__muted);
+  opacity: 0.75;
   text-decoration: none;
 }
 
@@ -74,28 +78,18 @@ body {
   margin-bottom: 0.5em;
 }
 
-.sk-label {
+/* currently extending the badge component from surfkit - to be removed in a later version of surfkit */
+.sk-badge {
   display: flex;
   align-items: center;
   gap: 0.5em;
   background: var(--sk-color-primary-container);
   color: var(--sk-color-on-primary-container);
   font-weight: 500;
-  border-radius: 2em;
   border: 1px solid var(--clr-br__primary);
-  padding: 0.3em 1em;
-  font-size: 0.875em;
+  font-size: 0.9em;
   text-decoration: none;
 }
-
-.sk-label:hover {
-  color: var(--sk-color-primary);
-}
-
-.sk-label ion-icon {
-  font-size: 1.2rem;
-}
-
 /* TODO: Redesign */
 
 sk-tab-container {
@@ -148,10 +142,11 @@ sk-tab-content-container {
 
 /* cards*/
 .sk-card {
-  background: #f7f7f7;
-  border: 1px solid #e9e9e9;
+  background: transparent;
+  border: 1px solid var(--sk-color-outline);
   padding: 1em;
   border-radius: 0.5em;
+  box-shadow: none;
 }
 
 .sk-card > * + * {
@@ -159,12 +154,7 @@ sk-tab-content-container {
 }
 
 .sk-card__bento {
-  border-radius: 1rem;
-}
-
-.sk-card__outline {
-  background: transparent;
-  border: 1px solid var(--sk-color-outline-variant);
+  border-radius: 1em;
 }
 
 /* typography */
@@ -206,5 +196,5 @@ sk-tab-content-container {
 
 .sk-banner {
   border-radius: 1rem;
-  border: 1px solid var(--sk-color-outline-variant);
+  border: 1px solid var(--sk-color-outline);
 }

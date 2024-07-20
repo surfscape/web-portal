@@ -3,9 +3,11 @@ title: About
 permalink: "/about/"
 ---
 
-## Your favorite Neocities web portal
+## Your Web, Your Way / Your favorite Neocities web portal
 
-SurfScape is an [open source](https://github.com/surfscape/) web portal for Neocities. It was created as a way to offer services, content, and resources for Neocities users, while still respecting their privacy and doing so for free.
+_Creating resources about the open web and developing beautiful, minimal, services and software with privacy and security in mind._
+
+SurfScape is a [project](https://github.com/surfscape) and an [open source](https://github.com/surfscape/) web portal for Neocities. It was created as a way to offer services, content, and resources related to the open web and the Neocities community, all still being free and respecting everyone's privacy.
 
 ## Instance Information
 

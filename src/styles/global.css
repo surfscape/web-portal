@@ -167,3 +167,17 @@ img:not([alt]) {
 .table-responsive {
   overflow-x: auto;
 }
+
+figure {
+  display: flex;
+  flex-flow: column;
+  gap: 0.5em;
+}
+
+figcaption {
+  color: var(--sk-color-on-accent-container);
+  opacity: 0.8;
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+}

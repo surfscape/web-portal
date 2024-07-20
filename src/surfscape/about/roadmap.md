@@ -1,13 +1,12 @@
 ---
 title: Roadmap
-description:
-date: 2024-06-29T01:08:48.000Z
+description: List of planned features coming in the next update
+date: 2024-07-20T00:04:00.000Z
 ---
 
-## **1.0.0-rc02 (Iteration 2)**
+## **1.0.0-rc04/Stable?**
 
-- Rewritten resource page
-- Improved directory
-- Resources pages for **links** and **bookmarks**
-- Blog
-- Ethics page
+- Improved directory with additional information and submission guidelines
+- Improved resources with a better foundation
+- Addition of webrings for more activity
+- SurfScap Marketplace & Software (still in consideration)

@@ -5,6 +5,30 @@ layout: single.njk
 
 ## Liberty [- .label -]
 
+### **1.0.0 rc3** - July 20, 2024
+
+> Better late than sorry 😔 - ReduxFlakes
+
+<p><small>New</small></p>
+
+- New branding! (read our [announcement about it](/news/new-branding-and-look/))
+- New planned initiative called [SurfScape Gateway](/initiatives/gateway/).
+
+<p><small>Other Changes</small></p>
+
+- Made colors and gradients less saturated for better accessibility.
+- Increased padding on the header navbar for easier scrolling on Chromium-based browsers.
+- Cleaned up the design with better color combination and balanced borders/outlines.
+
+<p><small>Fixes</small></p>
+
+- Fixed overflow on tables when the viewport was too small
+
+<p><small>Housekeeping</small></p>
+
+- Bumped SurfKit to version 0.0.4.
+- Moved to [Eleventy](https://www.11ty.dev/) 3 alpha.
+
 ### **1.0.0 rc2** - June 30, 2024
 
 <p><small>New</small></p>
