@@ -11,24 +11,28 @@ hero_description: Browse trough various personal websites & projects and find al
       <button class="sk-tab-button" data-tab="tab1" aria-checked="true">Neocities</button>
     </li>
         <li>
-      <button class="sk-tab-button" data-tab="tab2" aria-checked="false" disabled>Web Services</button>
+      <button class="sk-tab-button" data-tab="tab2" aria-checked="false">Web Services</button>
     </li>
     <li style="margin-left:auto;">
       <button class="sk-tab-button" data-tab="submission" aria-checked="false">Submit a site</button>
     </li>
   </menu>
   <sk-tab-content-container>
-      <div class="sk-tab-content " id="tab1" aria-hidden="false">
-      <dl style="margin-left:0.25rem" class="content">
+      <div class="sk-tab-content" id="tab1" aria-hidden="false">
+      <dl style="margin-left:0.25rem" class="sk-content sk-content--sm">
         {%- for neocitiesDir in directory.neocitiesDir -%}
         <dt><a href="{{neocitiesDir.url}}" target=_blank>{{neocitiesDir.title}}</a></dt>
         <dd>{{neocitiesDir.summary}}</dd>
         {%- endfor -%}
       </dl>
     </div>
-    <!-- <div class="sk-tab-content links-grid" id="tab1" aria-hidden="false">
+    <div class="sk-tab-content " id="tab2" aria-hidden="true">
+    <div class="sk-infobox sk-infobox--warning sk-infobox--extended" style="margin-bottom: 0.75em;">
+      <ion-icon name="warning"></ion-icon>
+      <p>This directory will be deprecated in the near future since a newer web services directory is in development with guidelines and additional information. </p>
+    </div>
       {%- for directorySites in directory.directorySites -%}
-      <section>
+      <section class="sk-content sk-content--sm">
         <h2>{{directorySites.title}}</h2>
         <ul>
           {%- for link in directorySites.links -%}
@@ -37,7 +41,7 @@ hero_description: Browse trough various personal websites & projects and find al
         </ul>
       </section>
       {%- endfor -%}
-    </div> -->
+    </div>
     <div class="sk-tab-content" id="submission" aria-hidden="true">
       <section class="content">
         <h2 id="submit-a-website">Submit a website</h2>
