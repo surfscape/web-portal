@@ -39,20 +39,19 @@
         },
         {
           "title": "About",
-          "url": "/about"
+          "url": "/about/"
         },
-
         {
           "title": "Updates",
-          "url": "/about/release-notes"
+          "url": "/about/release-notes/"
         },
         {
           "title": "Roadmap",
-          "url": "/about/roadmap"
+          "url": "/about/roadmap/"
         },
         {
           "title": "Contact",
-          "url": "/about/contact"
+          "url": "/about/contact/"
         }
       ]
     },
@@ -61,15 +60,15 @@
       "links": [
         {
           "title": "Directory",
-          "url": "/directory"
+          "url": "/directory/"
         },
         {
           "title": "News",
-          "url": "/news"
+          "url": "/news/"
         },
         {
           "title": "Resources",
-          "url": "/resources"
+          "url": "/resources/"
         }
       ]
     },
@@ -78,11 +77,11 @@
       "links": [
         {
           "title": "GameVortex",
-          "url": "/services/gamevortex"
+          "url": "/services/gamevortex/"
         },
         {
           "title": "NeoFrame",
-          "url": "/services/neoframe"
+          "url": "/services/neoframe/"
         },
         {
           "title": "About Services",
@@ -95,7 +94,11 @@
       "links": [
         {
           "title": "Labs",
-          "url": "/initiatives/labs"
+          "url": "/initiatives/labs/"
+        },
+        {
+          "title": "Gateway",
+          "url": "/initiatives/gateway/"
         },
         {
           "title": "About Initiatives",
