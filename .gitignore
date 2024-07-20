@@ -2,7 +2,4 @@ node_modules/
 .vscode/
 _site/
 
-bun.lockb
-yarn.lock
-.replit
-.env
+
