@@ -1,18 +1,12 @@
-<footer class="site-footer sk-content">
-    <h2>Navigation</h2>
-    <div class="footer-nav">
-        {% for sitemapNav in nav.sitemapNav %}
-            <details open class="footer-nav-section sk-accordion-nav">
-                <summary class="sk-accordion-nav__title">{{sitemapNav.title}}</summary>
-                <nav class="footer-nav-section-navbar">
-                    {% for link in sitemapNav.links %}
-                        <a class="footer-nav-section-navbar__link" href="{{link.url}}">{{link.title}}</a>
-                    {% endfor %}
-                </nav>
-            </details>
-        {% endfor %}
-    </div>
-    <p class="site-footer__copy">
-         2021 - 2024 SurfScape | Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 DEED</a>
+{% css "modules" %}
+{% include "styles/modules/footer.css" %}
+{% endcss %}
+
+<footer class="stack">
+    <p>
+        <a href="/privacy">Privacy Statement</a> &#8226; <a href="/terms-of-service">Accessibility Statement</a>
+    </p>
+    <p>SurfScape was created and is managed by <a href="https://reduxflakes.neocities.org">ReduxFlakes</a>.</p>
+    <p>Copyright &copy; 2024 <a href="https://surfscape.neocities.org">SurfScape</a>. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 DEED</a>
     </p>
 </footer>

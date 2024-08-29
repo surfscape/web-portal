@@ -1,0 +1,31 @@
+.stack > * + * {
+  margin-top: var(--stack-space, 1em);
+}
+
+.auto-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size, 16rem), 1fr)
+  );
+  grid-gap: 0.5rem;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em 1.25em;
+  border-radius: 6px;
+  background: var(--surface--1);
+  color: var(--on-surface--1);
+}
+
+.link-card:hover {
+  background-color: hsla(210, 80%, 60%, 0.2);
+}
+
+.link-card .icon {
+  width: 1.5em;
+  height: 1.5em;
+}

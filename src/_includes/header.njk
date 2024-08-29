@@ -1,12 +1,12 @@
-<header class="site-header">
-  <a class="site-header__title" href="/"><img src="/static/images/branding/brand_icon_mesh_1x.png" alt="SurfScape 'Everything' logo" width="52px" height="52px"></a>
-  <nav class="site-navbar">
-    {% for nav in nav.mainNav %}
-      <a class="site-navbar__link" 
-      href="{{nav.url}}" 
-   {% if page.url == nav.url %}aria-current="page"{% endif %}>
-        {{nav.title}}
-      </a>
-    {% endfor %}
-  </nav>
+{% css "modules" %}
+{% include "styles/modules/header.css" %}
+{% endcss %}
+
+<header class="app-header">
+  <a class="app-header__title" href="/"><img src="/static/images/branding/surfscape_icon.svg" width="32px" height="32px">SurfScape <sup>
+      <small>
+        [<code>BETA</code>]
+      </small>
+    </sup>
+  </a>
 </header>

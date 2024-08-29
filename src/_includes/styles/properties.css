@@ -1,0 +1,12 @@
+:root {
+  --type-sm: 0.875rem;
+  --type-m: 1rem;
+  --type-xm: 1.125rem;
+  --type-xxm: 1.25rem;
+  --type-lg: 1.5rem;
+  --type-xlg: 1.8125rem;
+  --type-xxlg: 2.1875rem;
+  --type-xxxlg: 2.625rem;
+  /* colors */
+  --background: #8ab3ca;
+}

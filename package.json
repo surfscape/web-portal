@@ -1,32 +1,32 @@
 {
   "name": "surfscape",
-  "version": "1.0.0-rc3",
-  "codename": "Liberty",
-  "description": "Your Web, Your Way | Your friendly Neocities Web Portal",
-  "main": "index.js",
-  "scripts": {
-    "start": "npx eleventy --serve",
-    "build": "npx eleventy",
-    "start:bun": "bunx eleventy --serve",
-    "build:bun": "bunx eleventy",
-    "minify-css": "cleancss -o src/css/global.min.css src/css/global.css",
-    "build:production": "bunx run minify-css && cross-env NODE_ENV=production bunx @11ty/eleventy"
-  },
+  "version": "2.0.0",
+  "codename": "Black",
+  "description": "Source code for the website and web portal of the SurfScape project.",
   "author": "SurfScape Team",
-  "license": "GPL-2.0",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "clean-css-cli": "^5.6.3",
-    "common-tags": "^1.8.2",
-    "cross-env": "^7.0.3",
-    "eleventy-plugin-date": "^1.0.0",
-    "kramdown": "^0.0.0",
-    "luxon": "^3.4.4",
-    "markdown-it": "^14.1.0",
-    "markdown-it-anchor": "^9.0.1",
-    "markdown-it-attrs": "^4.1.6"
+  "license": "GPL-2.0-only",
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "dependencies": {
-    "surfkit": "^0.0.4"
+    "@11ty/eleventy": "3.0.0-beta.1",
+    "@11ty/eleventy-img": "4.0.2",
+    "@11ty/eleventy-navigation": "0.3.5",
+    "@11ty/eleventy-plugin-rss": "2.0.2",
+    "@phosphor-icons/core": "^2.1.1",
+    "autoprefixer": "^10.4.19",
+    "eleventy-plugin-icons": "^4.5.1",
+    "html-minifier-terser": "^7.2.0",
+    "luxon": "^3.4.4",
+    "markdown-it": "14.1.0",
+    "markdown-it-anchor": "^9.0.1",
+    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-footnote": "^4.0.0",
+    "postcss": "^8.4.38",
+    "postcss-import": "^16.1.0",
+    "postcss-load-config": "^6.0.1",
+    "postcss-minify": "^1.1.0"
   }
 }

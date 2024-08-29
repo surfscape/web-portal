@@ -1,0 +1,27 @@
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 17rem 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "sidebar footer";
+  }
+  main {
+    padding-block: 2em;
+    grid-area: content;
+    max-width: 84ch;
+    margin: 0 auto;
+  }
+  .app-header {
+    grid-area: header;
+  }
+  .base-sidebar {
+    grid-area: sidebar;
+    border-right: 1px solid gray;
+  }
+  footer {
+    grid-area: footer;
+  }
+}

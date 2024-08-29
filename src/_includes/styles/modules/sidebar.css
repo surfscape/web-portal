@@ -1,0 +1,17 @@
+.base-sidebar {
+  padding: 1em;
+}
+
+.sidebar-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.sidebar-navigation__item {
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background: var(--surface--1);
+  color: white;
+  text-decoration: none;
+}

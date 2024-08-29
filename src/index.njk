@@ -1,141 +1,43 @@
 ---
-title: Home
-layout: base.njk
-style_slot: true
+layout: empty.njk
+permalink: "/index.html"
 ---
+<!DOCTYPE html>
+<html lang="en">
 
-{% import "components/postCard.njk" as postCard %}
+<head>
+    <title>Station Offline</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light" />
+    <meta name="CCBot" content="nofollow">
+    <meta name="robots" content="noai, noimageai">
+    <meta name="tdm-reservation" content="1">
+    <style>
+        body {
+            background: rgb(184, 201, 216);
+            color: black;
+            font-family: monospace;
+            max-width: 700px;
+            margin: auto;
+            font-size: 13px;
+        }
+    </style>
+</head>
 
-<div class="homepage-layout">
-  <section class="hero">
-    <a href="/news/new-branding-and-look/" class="sk-badge">
-      <ion-icon name="newspaper-outline"></ion-icon>New branding and look!</a>
-    <h1 class="hero--title display__1">Your Web, <span style="color: var(--sk-color-tp-heading);background: hsl(216, 85%, 45%);
-background: linear-gradient(to right, hsl(216, 85%, 45%) 0%, hsl(277, 90%, 45%) 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-">Your Way</span>
-    </h1>
-    <p class="hero--subtitle subtitle__1">
-      Find resources on privacy, web building, Neocities, and more about the
-      interwebs!
-    </p>
-    <img src="/static/images/banners/hero_values.png"
-      alt="Grid with the value of SurfScape. Content: resources, services, foss, games, neocities, coding, bookmarks, web design"
-      class="hero--banner">
-    <sk-button-container>
-      <a href="#explore" class="sk-button sk-button--primary">
-        <ion-icon name="arrow-down-circle"></ion-icon>Explore</a>
-      <a href="/about" class="sk-button">About the Project</a>
-    </sk-button-container>
-  </section>
-  <section class="homepage-grid" id="explore">
-    <h2 class="display__2" style="grid-column: 1 / -1;">Explore</h2>
-    <section class="sk-card sk-card__bento" style="grid-column: 1 / 2;">
-      <h3>Site Showcase</h3>
-      <nav class="button-list">
-        {% for site in cities.siteShowcase %}
-          <a href="{{site.link}}" class="button-list__link">
-            <img src="/static/images/buttons/{{site.button}}" width="88" height="31" alt="{{site.name}} button">
-            {{site.name}}</a>
-        {% endfor %}
-      </nav>
-    </section>
-    <section class="sk-card sk-card__bento news" style="grid-column: span;">
-      <h3>Latest news</h3>
-      <ul class="posts-list">
-        {%- for new in collections.news | reverse -%}
-          <li>
-            <a href="{{ new.url }}" class="post-card">
-              <h1 class="post-card-header">{{ new.data.title }}
-                <time class="post-card__time" datetime="{{ new.data.date }}">{{ new.data.date | PostDate }}</time>
-              </h1>
-              <p class="post-card__description">{{ new.data.description }}</p>
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
-      <a href="/news" class="sk-button">See all news</a>
-    </section>
-    <section class="sk-card sk-card__bento">
-      <h3>SurfScape Friends</h3>
-      <nav class="button-list">
-        {% for site in cities.friends %}
-          <a href="{{site.link}}" class="button-list__link">
-            <img src="/static/images/buttons/{{site.button}}" width="88" height="31" alt="{{site.name}} button">
-            {{site.name}}</a>
-        {% endfor %}
-      </nav>
-    </section>
-    <section class="sk-card sk-card__bento" id="Webrings">
-      <h3>Webrings we are in!</h3>
-      <span style="display:flex;align-items:center;gap:0.5em;">
-        <a href='https://webri.ng/webring/freespeechwebring/previous?via=https://YOUR-URL-GOES-HERE'><img src="https://i.imgur.com/sIR6aFP.gif" width="32" height="32" alt="prev" style="image-rendering:pixelated;"></a>
-        <a href="https://town.thecozy.cat/web-revival/freespeechwebring/"><img src="https://i.imgur.com/2zm1hMn.gif' width="88" height="31" alt="webring"  style="image-rendering:pixelated;"></a>
-        <a href='https://webri.ng/webring/freespeechwebring/next?via=https://YOUR-URL-GOES-HERE'><img src="https://i.imgur.com/6ni3bTd.gif" width="32" height="32" alt="next"  style="image-rendering:pixelated;"></a>
-      </span>
-    </section>
-  </section>
-</div>
+<body>
+    <h1>In maintenance</h1>
+    <p>SurfScape is currently in construction and will be offline in the upcoming days.</p>
+    <p>Error code: </p><code>SSIE: 0x4D61696E74656E616E636520537461747573</code>
+    <hr>
+    <footer>
+        <img src="/static/images/branding/surfscape_blu_logo.png" alt="SurfScape logo in light blue and dark gray"
+            width="200px">
+        <p>&copy; 2021 - 2024 SurfScape Team</p>
+        <p>The ones called crazy sometimes might know the truth.</p>
+        <small>Deployed Build: T2N0b1ppbGxh</small>
+    </footer>
+</body>
 
-{% slot 'style_slot' %}
-<style>
-  .hero {
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
-    border: 1px solid var(--sk-color-outline-variant);
-    background: linear-gradient(to bottom, rgb(227, 232, 255), #eae6fb);
-    border-bottom: 1px solid var(--sk-color-outline-variant);
-  }
-
-  .homepage-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr));
-    padding: 1rem;
-  }
-
-  .button-list {
-    display: flex;
-    gap: 0.5em;
-    flex-direction: column;
-  }
-
-  .button-list__link {
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    transition: var(--an-global-ease);
-  }
-
-  .button-list__link:hover {
-    scale: 0.98;
-  }
-
-  .news {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .post-card {
-    all: revert;
-    display: grid;
-    gap: 0.25em;
-    text-decoration: none;
-    transition: var(--an-global-ease);
-  }
-
-  .post-card-header {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .post-card:hover {
-    outline: none;
-    scale: 0.98;
-  }
-</style>
-{% endslot %}
+</html>
