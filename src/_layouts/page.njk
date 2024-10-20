@@ -1,31 +1,29 @@
 {% extends "./base.njk" %}
 
-{% block base_layout %}
-  <main class="stack">
-    {% if hero_title and hero_description %}
-      <section class="hero" {% if no_content == true %}style="padding: 1rem 2rem;"{% endif %}>
-        <h1 class="hero--title display__2">{{hero_title}}</h1>
-        <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
-        {% if hero_banner %}
-          <img src="/static/images/banners/{{hero_banner}}" class="hero--banner" alt="{{hero_banner_description }}"/>
-        {% endif %}
-      </section>
-    {% else %}
-      {% set hero_title = title %}
-      {% set hero_description = description %}
-      <section class="hero" {% if no_content == true %}style="padding: 1rem 2rem;"{% endif %}>
-        <h1 class="hero--title display__2">{{hero_title}}</h1>
-        <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
-        {% if hero_banner %}
-          <img src="/static/images/banners/{{hero_banner}}" class="hero--banner" alt="{{hero_banner_description }}"/>
-        {% endif %}
-      </section>
-    {% endif %}
-    {% if no_content == true %}
-    {% else %}
-      <article class="stack">
-        {{ content | safe }}
-      </article>
-    {% endif %}
-  </main>
+{% block surfkit_base_layout %}
+  {% if hero_title and hero_description %}
+    <section class="hero" {% if no_content == true %}style="padding: 1rem 2rem;"{% endif %}>
+      <h1 class="hero--title display__2">{{hero_title}}</h1>
+      <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
+      {% if hero_banner %}
+        <img src="/static/images/banners/{{hero_banner}}" class="hero--banner" alt="{{hero_banner_description }}"/>
+      {% endif %}
+    </section>
+  {% else %}
+    {% set hero_title = title %}
+    {% set hero_description = description %}
+    <section class="hero" {% if no_content == true %}style="padding: 1rem 2rem;"{% endif %}>
+      <h1 class="hero--title display__2">{{hero_title}}</h1>
+      <p class="hero--subtitle subtitle__2">{{hero_description}}</p>
+      {% if hero_banner %}
+        <img src="/static/images/banners/{{hero_banner}}" class="hero--banner" alt="{{hero_banner_description }}"/>
+      {% endif %}
+    </section>
+  {% endif %}
+  {% if no_content == true %}
+  {% else %}
+    <article class="sk-content sk-content--modified">
+      {{ content | safe }}
+    </article>
+  {% endif %}
 {% endblock %}

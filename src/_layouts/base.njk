@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ meta.lang }}">
+<html lang="{{ site.lang }}">
   {% include "head.njk" %}
-  <body>
-    {% include "toolbar.njk" %}
-    {#    {% include "pageNavigation.njk" %}#}
-    {% block base_layout %}
-      <main class="stack">
-        {% include "header.njk" %}
+  <body class="wrapper">
+    {% include "header.njk" %}
+    {% include "pageNavigation.njk" %}
+    <main class="page-container">
+      {% block surfkit_base_layout %}
         {{ content | safe }}
-        {% include "footer.njk" %}
-      </main>
-    {% endblock %}
+      {% endblock %}
+    </main>
+    {% include "footer.njk" %}
     <script data-goatcounter="https://surfscape.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
   </body>

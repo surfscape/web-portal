@@ -1,7 +1,0 @@
-footer {
-  --stack-space: 0.25em;
-  padding: 0.75em;
-  text-align: right;
-  border-top: 1px solid gray;
-  font-size: var(--type-sm);
-}

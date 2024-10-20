@@ -1,12 +1,19 @@
-{% css "modules" %}
-{% include "styles/modules/footer.css" %}
-{% endcss %}
-
-<footer class="stack">
-    <p>
-        <a href="/privacy">Privacy Statement</a> &#8226; <a href="/terms-of-service">Accessibility Statement</a>
-    </p>
-    <p>SurfScape was created and is managed by <a href="https://reduxflakes.neocities.org">ReduxFlakes</a>.</p>
-    <p>Copyright &copy; 2024 <a href="https://surfscape.neocities.org">SurfScape</a>. Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 DEED</a>
+<footer class="site-footer sk-content">
+    <h2>Navigation</h2>
+    <nav class="footer-nav">
+        {% for sitemapNav in nav.sitemapNav %}
+            <nav>
+                <h3 class="footer-nav-title">{{sitemapNav.title}}</h3>
+                <ul class="footer-nav-list">
+                    {% for link in sitemapNav.links %}
+                        <li>
+                            <a class="footer-nav-list__link sk-link" href="{{link.url}}">{{link.title}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        {% endfor %}
+    </nav>
+    <p class="site-footer__copy">&copy; 2021 - 2024 SurfScape | Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 DEED</a>
     </p>
 </footer>

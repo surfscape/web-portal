@@ -23,17 +23,17 @@
     <meta name="generator" content="{{ eleventy.generator }}"/>
     {% css %}
     {% include "styles/critical.css" %}
+    {% include "styles/base.css" %}
+    {% include "styles/global.css" %}
+    {% include "styles/properties.css" %}
+    {% include "styles/themes.css" %}
     {% endcss %}
     <style>
         {% getBundle "css" %}
     </style>
     {% css "surfkit" %}
-    {% include "styles/index.css" %}
-    {% include "styles/modules/layout.css" %}
+    {% include "styles/surfkit.css" %}
     {% endcss %}
-    {% if not documentation %}
-        <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'modules'%}">
-    {% endif %}
     <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'surfkit' %}">
     {% if style_slot %}
         {% renderTemplate 'njk,md',
