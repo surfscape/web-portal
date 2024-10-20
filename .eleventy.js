@@ -28,9 +28,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection("news", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/content/news/posts/*.md");
   });
-  eleventyConfig.addCollection("blog", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/content/blog/posts/*.md");
-  });
 
   /* layout aliases */
   eleventyConfig.addLayoutAlias("base", "base.njk");

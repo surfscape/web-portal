@@ -19,7 +19,6 @@ ol[role="list"] {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
-  color: currentColor;
 }
 
 img,
@@ -55,48 +54,34 @@ summary {
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("Inter Italic"), local("Inter"),
-    url("/static/fonts/Inter-Italic.woff2") format("woff2");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter Regular"), local("Inter"),
-    url("/static/fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter SemiBold"), local("Inter"),
-    url("/static/fonts/Inter-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Inter";
-  src: local("Inter SemiBold Italic"), local("Inter"),
-    url("/static/fonts/Inter-SemiBoldItalic.woff2") format("woff2");
-  font-weight: 600;
-  font-style: italic;
+  font-family: "Geist";
+  src: local("Geist"),
+    url("/static/fonts/geist.woff2") format("woff2-variations");
+  font-weight: 100 900;
   font-display: swap;
 }
 
 :root {
-  --base-font: "Inter", "Helvetica", system-ui, "Segoe Ui", "Roboto", "Ubuntu",
-    "Cambria", "Noto Sans", "San Francisco", Arial, sans-serif;
+  --base-font: "Geist", "Inter", "Helvetica", system-ui, "Segoe Ui", "Roboto",
+    "Ubuntu", "Cambria", "Noto Sans", "San Francisco", Arial, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--on-surface--1);
+  color: var(--text);
   font: var(--type-m) / 1.5 var(--base-font);
+  letter-spacing: -0.025em;
+  background: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: 600;
+  color: var(--text-strong);
+  line-height: 1.2;
 }

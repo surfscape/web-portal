@@ -1,12 +1,22 @@
 :root {
-  --type-sm: 0.875rem;
-  --type-m: 1rem;
-  --type-xm: 1.125rem;
-  --type-xxm: 1.25rem;
-  --type-lg: 1.5rem;
-  --type-xlg: 1.8125rem;
-  --type-xxlg: 2.1875rem;
-  --type-xxxlg: 2.625rem;
+  --type-sm: 0.875rem; /* small / label */
+  --type-m: 1.02rem; /* body / heading 6 */
+  --type-xm: 1.125rem; /* heading 5 */
+  --type-xxm: 1.25rem; /* heading 4 / subtitle */
+  --type-lg: 1.5rem; /* heading 3 */
+  --type-xlg: 1.75rem; /* heading 2 */
+  --type-xxlg: 2rem; /* heading 1 */
+  --viewport: 860px;
   /* colors */
-  --background: #8ab3ca;
+
+  --primary: #0b79af;
+
+  --text: #454545;
+  --text-sublte: #777777;
+  --text-strong: #151515;
+
+  --surface-stroke: #d9d9d9;
+
+  /* transitions */
+  --tr-fast: all 100ms ease-in-out;
 }

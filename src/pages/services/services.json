@@ -1,0 +1,18 @@
+{
+  "layout": "page.njk",
+  "header_title": "SurfScape Services",
+  "navigation": [
+    {
+      "title": "About Services",
+      "url": "/services/"
+    },
+    {
+      "title": "GameVortex",
+      "url": "/services/gamevortex"
+    },
+    {
+      "title": "NeoFrame",
+      "url": "/services/neoframe"
+    }
+  ]
+}

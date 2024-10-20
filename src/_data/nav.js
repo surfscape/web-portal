@@ -1,37 +1,123 @@
 export default {
-  sidebarNav: [
+  mainNav: [
     {
-      title: "Home",
-      url: "/",
+      title: "Library",
+      url: "/library/",
     },
     {
-      title: "Resources",
-      url: "/resources/",
+      title: "Projects",
+      url: "/projects/",
     },
     {
-      title: "Directory",
-      url: "/directory/",
+      title: "News",
+      url: "/news/",
     },
     {
-      title: "Explore",
-      url: "/explore/",
+      title: "Community",
+      url: "/community/",
     },
     {
-      title: "Extras",
-      url: "/extras/",
-    },
-    {
-      title: "Roadmap",
-      url: "/roadmap/",
-    },
-    {
-      title: "About SurfScape",
+      title: "About",
       url: "/about/",
     },
   ],
-  pages: [
+  sitemapNav: [
     {
-      title: "",
+      title: "SurfScape",
+      links: [
+        {
+          title: "About",
+          url: "/about/",
+        },
+        {
+          title: "News",
+          url: "/news/",
+        },
+        {
+          title: "Brand",
+          url: "/branding/",
+        },
+        {
+          title: "Changelog",
+          url: "/changelog/",
+        },
+        {
+          title: "Values",
+          url: "/about/values/",
+        },
+      ],
+    },
+    {
+      title: "Library",
+      links: [
+        {
+          title: "Resources",
+          url: "/resources/",
+        },
+        {
+          title: "Templates",
+          url: "/templates/",
+        },
+        {
+          title: "Directory",
+          url: "/directory/",
+        },
+        {
+          title: "Showcase",
+          url: "/showcase/",
+        },
+      ],
+    },
+    {
+      title: "Projects",
+      links: [
+        {
+          title: "AdZone",
+          url: "/products/adzone/",
+        },
+        {
+          title: "GameVortex",
+          url: "/products/gamevortex/",
+        },
+        {
+          title: "Celer",
+          url: "/products/celer/",
+        },
+      ],
+    },
+    {
+      title: "Developers",
+      links: [
+        {
+          title: "Design",
+          url: "/dev/design/",
+        },
+        {
+          title: "SurfKit",
+          url: "https://github.com/surfscape/surfkit",
+        },
+        {
+          title: "GitHub",
+          url: "https://github.com/surfscape",
+        },
+      ],
+    },
+    {
+      title: "Legal",
+      links: [
+        {
+          title: "Terms of Service",
+          url: "/terms/",
+        },
+        {
+          title: "Privacy Policy",
+          url: "/privacy-policy",
+        },
+        {
+          title: "Accessibility Statement",
+          url: "/about/accessibility/",
+        },
+      ],
     },
   ],
 };

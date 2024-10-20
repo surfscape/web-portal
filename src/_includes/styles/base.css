@@ -1,8 +1,11 @@
-a {
-  color: var(--primary);
+::selection {
+  background: rgba(74, 183, 238, 0.3);
+  color: #0b79af;
 }
 
-a:visited {
+a {
+  color: var(--primary);
+  text-decoration: 1px solid inherit;
 }
 
 a:hover {
@@ -15,10 +18,30 @@ a:focus-visible {
   transition: all 125ms ease-in-out;
 }
 
-h1,
-h2,
-h3,
+h1 {
+  font-size: var(--type-xxlg);
+}
+
+h2 {
+  font-size: var(--type-xlg);
+}
+
+h3 {
+  font-size: var(--type-lg);
+}
+
 h4 {
-  letter-spacing: -0.03em;
-  line-height: 1;
+  font-size: var(--type-xxm);
+}
+
+h5 {
+  font-size: var(--type-xm);
+}
+
+h6 {
+  font-size: var(--type-m);
+}
+
+small {
+  font-size: var(--type-sm);
 }
