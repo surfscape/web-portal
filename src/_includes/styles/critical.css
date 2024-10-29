@@ -70,7 +70,7 @@ body {
   color: var(--text);
   font: var(--type-m) / 1.5 var(--base-font);
   letter-spacing: -0.025em;
-  background: white;
+  background: var(--background);
 }
 
 h1,

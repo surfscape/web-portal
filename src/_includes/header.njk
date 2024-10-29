@@ -1,6 +1,9 @@
 <header class="site-header">
   <a class="site-header__title" href="/">
-    <img src="/static/images/branding/petal_2x.png" alt="SurfScape Petal logo in dark gray" height="52px"></a>
+    <img src="/static/images/branding/petal_2x.png" alt="SurfScape Petal logo in dark gray" height="41px">
+    SurfScape{%- if sk_product -%}
+      <span class="site-header__title__product">| {{sk_product}}</span>{%- endif -%}
+  </a>
   <nav class="site-navbar">
     {% for nav in nav.mainNav %}
       <a class="site-navbar__link sk-link" 

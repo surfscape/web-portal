@@ -15,7 +15,6 @@ a:hover {
 a:focus-visible {
   box-shadow: 0 0 0 4px #5a75b4;
   outline: 2px solid #a2d1ff;
-  transition: all 125ms ease-in-out;
 }
 
 h1 {
@@ -44,4 +43,19 @@ h6 {
 
 small {
   font-size: var(--type-sm);
+}
+
+.header-anchor {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 120ms ease-in-out;
+}
+
+h2:hover > .header-anchor,
+h3:hover > .header-anchor,
+h4:hover > .header-anchor,
+h5:hover > .header-anchor,
+h6:hover > .header-anchor {
+  visibility: visible;
+  opacity: 1;
 }

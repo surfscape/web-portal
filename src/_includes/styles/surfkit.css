@@ -1,8 +1,9 @@
 /* rewritten */
-.wrapper {
+.sk-app {
   margin: 0 auto;
   max-width: var(--viewport);
-  padding-inline: 1rem;
+  border-left: 1px solid var(--stroke);
+  border-right: 1px solid var(--stroke);
 }
 
 .sk-stack > * + * {
@@ -327,9 +328,9 @@ hr {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0.25rem 1rem;
-  background: hsla(230, 37%, 97%, 0.7);
-  backdrop-filter: saturate(180%) blur(8px);
-  border-bottom: 1px solid hsla(230, 37%, 10%, 0.15);
+  background: hsla(0, 0%, 98%, 0.5);
+  backdrop-filter: saturate(180%) blur(4px);
+  border-bottom: 1px solid var(--stroke);
 }
 
 .sk-header__title {

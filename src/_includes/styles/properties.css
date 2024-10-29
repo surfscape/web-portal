@@ -9,6 +9,10 @@
   --viewport: 860px;
   /* colors */
 
+  --background: #fafafa;
+
+  --stroke: #e6e6e6;
+
   --primary: #0b79af;
 
   --text: #454545;
