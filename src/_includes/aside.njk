@@ -1,7 +1,16 @@
 <aside>
-    <section>
-        <b>News</b>
-        <time datetime=""></time>
-        <p>We've recently upgraded our system in GameVortex that includes a security fix.</p>
+    <section class="stack">
+        <h2>Quickies</h2>
+        <ul class="aside-quickies">
+            {% for item in frontpage_news.quickies %}
+                <li>
+                    <b>{{item.title}}</b>
+                    <small>
+                        <time datetime="">{{item.date}}</time>
+                    </small>
+                    <p>{{item.content | safe}}</p>
+                </li>
+            {% endfor %}
+        </ul>
     </section>
 </aside>
