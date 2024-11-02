@@ -1,14 +1,16 @@
 ---
 title: Home
 layout: base
-style_slot: true
 header_title: Begin your journey
-header_description:
 ---
 
-## Welcome
+## Welcome to SurfScape
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, provident dignissimos eveniet, maxime hic obcaecati eos perferendis molestias at quod cupiditate natus minima delectus quia possimus vel animi fuga magnam!
+SurfScape is a project focused on developing resources, services, and software to help people build their own personal space on the web, escape big corporations, and learn more about privacy and accessibility values.
+
+## Things to do
+
+As of now most of SurfScape is still in construction, however we are already offering content and services to everyone, although you should consider them in a still alpha state.
 
 <!--
 
@@ -25,9 +27,3 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, provident
           style="image-rendering:pixelated;"></a>
   </span>
 </section> -->
-
-{% slot 'style_slot' %}
-
-<style></style>
-
-{% endslot %}
