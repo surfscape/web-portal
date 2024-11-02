@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ meta.lang }}">
   {% include "head.njk" %}
   <body class="app-wrapper">
+    <a href="#main-content" class="sk-button acs-skip">Skip to main content</a>
     {% include "header.njk" %}
     {% include "pageNavigation.njk" %}
-    <main class="page-container">
+    <main class="page-container" id="main-content">
       <header>
         {% if header_title %}
           {% set hd_header = header_title %}
