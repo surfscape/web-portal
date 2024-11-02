@@ -10,7 +10,7 @@ export default {
     },
     {
       title: "Services",
-      url: "/projects/",
+      url: "/services/",
     },
     {
       title: "News",
