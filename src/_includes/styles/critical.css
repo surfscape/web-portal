@@ -13,6 +13,13 @@ html {
   font-size: 100%;
 }
 
+a:focus-visible,
+button:focus-visible,
+.sk-button:focus-visible {
+  box-shadow: 0 0 0 4px #5a75b4;
+  outline: 2px solid #a2d1ff;
+}
+
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
@@ -73,11 +80,6 @@ a:hover {
   text-decoration: none;
 }
 
-a:focus-visible {
-  box-shadow: 0 0 0 4px #5a75b4;
-  outline: 2px solid #a2d1ff;
-}
-
 h1,
 h2,
 h3,
@@ -116,7 +118,7 @@ h6 {
 }
 
 small {
-  font-size: var(--type--2);
+  font-size: var(--type--1);
 }
 
 .header-anchor {
@@ -134,4 +136,19 @@ h5:hover > .header-anchor,
 h6:hover > .header-anchor {
   visibility: visible;
   opacity: 1;
+}
+
+.acs-skip {
+  position: absolute;
+  top: -1000px;
+}
+
+.acs-skip:focus,
+.acs-skip:focus-visible,
+.acs-skip:focus-within {
+  top: 0.25em;
+}
+
+ul > li > a:has(img) {
+  display: inline-block;
 }

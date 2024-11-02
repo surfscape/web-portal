@@ -1,5 +1,4 @@
 :root {
-  --type--2: clamp(0.7901rem, 0.7243rem + 0.3292vw, 0.8889rem);
   --type--1: clamp(0.8889rem, 0.8148rem + 0.3704vw, 1rem);
   --type-0: clamp(1rem, 0.9167rem + 0.4167vw, 1.125rem);
   --type-1: clamp(1.125rem, 1.0313rem + 0.4688vw, 1.2656rem);
@@ -14,8 +13,9 @@
     "Cantarell", "Noto Sans", "San Francisco", sans-serif;
 
   --viewport: 1024px;
-  --background: #eeeeee;
-  --primary: #2a5b9b;
+  --background: hsl(0, 0%, 95%);
+  --primary: #234878;
   --type-base: #252525;
+  --type-subtle: hsl(0, 0%, 27%);
   --muted: hsl(0, 0%, 77%);
 }
