@@ -1,3 +1,18 @@
 {
-  "layout": "page"
+  "layout": "page",
+  "permalink": "/library/{{title | slugify}}/",
+  "navigation": [
+    {
+      "title": "Directory",
+      "url": "/library/directory/"
+    },
+    {
+      "title": "Resources",
+      "url": "/library/resources/"
+    },
+    {
+      "title": "Templates",
+      "url": "/library/templates/"
+    }
+  ]
 }

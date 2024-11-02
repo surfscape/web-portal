@@ -11,30 +11,31 @@
 .app-navbar {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 0.75em;
   padding-block: 0.5em;
 }
 
 .app-navbar a {
   font-size: 1.1em;
+  padding-inline: 0.25em;
   text-decoration: none;
   color: var(--type-base);
   font-family: var(--heading-font);
-  transition: 1.5s all ease-in-out;
+  transition: 150ms all ease-in-out;
 }
 
 .app-navbar a:hover {
   color: var(--primary);
-  transition-duration: 150ms;
 }
 
 .app-navbar a[aria-current="page"] {
+  outline: 1px solid var(--primary);
   color: var(--primary);
 }
 
 .page-container {
   display: grid;
-  grid-template-columns: 1fr 16rem;
+  grid-template-columns: 1fr 16em;
   grid-template-rows: auto 1fr;
   padding-block: 1em;
   gap: 1em;
@@ -52,6 +53,7 @@
 }
 
 .page-container > aside {
+  padding-left: 1em;
   grid-area: aside;
 }
 
@@ -67,4 +69,14 @@
 .stack > * + * {
   --_space: var(--spacer, 1em);
   margin-top: var(--_space);
+}
+
+.aside-quickies {
+  padding: 0;
+  list-style: none;
+}
+
+.aside-quickies li > b {
+  display: block;
+  font-size: 1.05em;
 }

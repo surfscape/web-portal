@@ -1,6 +1,5 @@
 ---
 title: Release Notes
-layout: single.njk
 ---
 
 ## Liberty [- .label -]

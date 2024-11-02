@@ -1,0 +1,18 @@
+{
+  "layout": "page",
+  "permalink": "/services/{{title | slugify}}/",
+  "navigation": [
+    {
+      "title": "GameVortex",
+      "url": "/services/gamevortex/"
+    },
+    {
+      "title": "AdZone",
+      "url": "/services/adzone/"
+    },
+    {
+      "title": "Service Updates",
+      "url": "/services/updates/"
+    }
+  ]
+}

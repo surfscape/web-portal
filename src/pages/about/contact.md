@@ -2,8 +2,6 @@
 title: Contact
 ---
 
-## Contact Us
-
 If you'd like to contact us, please use one of the social media platforms below to do so.
 
 - [Mastodon (fosstodon.org)](https://fosstodon.org/@surfscape)

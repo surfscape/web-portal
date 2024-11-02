@@ -52,6 +52,12 @@ button:active {
   outline-color: var(--type-base);
 }
 
+.sk-btnrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
 /*
 hr {
   border: none;
