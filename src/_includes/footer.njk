@@ -1,19 +1,21 @@
-<footer class="site-footer sk-content">
-    <h2>Navigation</h2>
-    <nav class="footer-nav">
-        {% for sitemapNav in nav.sitemapNav %}
-            <nav>
-                <h3 class="footer-nav-title">{{sitemapNav.title}}</h3>
-                <ul class="footer-nav-list">
-                    {% for link in sitemapNav.links %}
-                        <li>
-                            <a class="footer-nav-list__link sk-link" href="{{link.url}}">{{link.title}}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        {% endfor %}
+<footer class="app-footer">
+    <nav>
+        <a href="https://github.com/surfscape/web-portal/edit/main/{{ page.inputPath }}">
+            <b>Edit page</b> (GitHub)</a>
+|
+<a href="/about">About</a>
+|
+<a href="/about/contact">Contact</a>
+|
+<a href="/tos">Terms of Service</a>
+|
+<a href="/privacy-policy">Privacy Policy</a>
+|
+<a href="https://fosstodon.org/@surfscape" rel="me">Mastodon</a>
+|
+<a href="https://github.com/surfscape" rel="me">GitHub</a>
     </nav>
-    <p class="site-footer__copy">&copy; 2021 - 2024 SurfScape | Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 DEED</a>
-    </p>
+    <p class="site-footer__copy">&copy; 2024 SurfScape | Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 DEED</a>. Website licensed under <a href="https://raw.githubusercontent.com/surfscape/web-portal/refs/heads/main/LICENSE">GPL-2.0</a>.
+    </a>
+</p>
 </footer>

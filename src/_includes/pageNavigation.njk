@@ -1,10 +1,7 @@
 {% if navigation %}
-    <header class="sk-header">
-        <span class="sk-header__title">{{header_title}}</span>
-        <nav class="sk-navbar">
-            {%- for item in navigation -%}
-                <a  class="sk-navbar__link" href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
-            {%- endfor -%}
-        </nav>
-    </header>
+    <nav class="sk-navbar">
+        {%- for item in navigation -%}
+            <a  class="sk-navbar__link" href="{{ item.url }}" {% if page.url == item.url %}aria-current="page"{% endif %}>{{ item.title }}</a>
+        {%- endfor -%}
+    </nav>
 {% endif %}

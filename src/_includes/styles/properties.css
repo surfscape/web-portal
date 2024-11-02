@@ -1,26 +1,21 @@
 :root {
-  --type-sm: 0.875rem; /* small / label */
-  --type-m: 1.02rem; /* body / heading 6 */
-  --type-xm: 1.125rem; /* heading 5 */
-  --type-xxm: 1.25rem; /* heading 4 / subtitle */
-  --type-lg: 1.5rem; /* heading 3 */
-  --type-xlg: 1.75rem; /* heading 2 */
-  --type-xxlg: 2rem; /* heading 1 */
-  --viewport: 860px;
-  /* colors */
+  --type--2: clamp(0.7901rem, 0.7243rem + 0.3292vw, 0.8889rem);
+  --type--1: clamp(0.8889rem, 0.8148rem + 0.3704vw, 1rem);
+  --type-0: clamp(1rem, 0.9167rem + 0.4167vw, 1.125rem);
+  --type-1: clamp(1.125rem, 1.0313rem + 0.4688vw, 1.2656rem);
+  --type-2: clamp(1.2656rem, 1.1602rem + 0.5273vw, 1.4238rem);
+  --type-3: clamp(1.4238rem, 1.3052rem + 0.5933vw, 1.6018rem);
+  --type-4: clamp(1.6018rem, 1.4683rem + 0.6674vw, 1.802rem);
+  --type-5: clamp(1.802rem, 1.1371rem + 3.3244vw, 2.7994rem);
 
-  --background: #fafafa;
+  --heading-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+    serif;
+  --base-font: system-ui, "Inter", "Helvetica", "Segoe UI", "Ubuntu", "Roboto",
+    "Cantarell", "Noto Sans", "San Francisco", sans-serif;
 
-  --stroke: #e6e6e6;
-
-  --primary: #0b79af;
-
-  --text: #454545;
-  --text-sublte: #777777;
-  --text-strong: #151515;
-
-  --surface-stroke: #d9d9d9;
-
-  /* transitions */
-  --tr-fast: all 100ms ease-in-out;
+  --viewport: 1024px;
+  --background: #eeeeee;
+  --primary: #2a5b9b;
+  --type-base: #252525;
+  --muted: hsl(0, 0%, 77%);
 }

@@ -10,6 +10,7 @@ html {
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+  font-size: 100%;
 }
 
 ul[role="list"],
@@ -53,24 +54,28 @@ summary {
   }
 }
 
-@font-face {
-  font-family: "Geist";
-  src: local("Geist"),
-    url("/static/fonts/geist.woff2") format("woff2-variations");
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-:root {
-  --base-font: "Geist", "Inter", "Helvetica", system-ui, "Segoe Ui", "Roboto",
-    "Ubuntu", "Cambria", "Noto Sans", "San Francisco", Arial, sans-serif;
-}
-
 body {
-  color: var(--text);
-  font: var(--type-m) / 1.5 var(--base-font);
-  letter-spacing: -0.025em;
+  color: var(--type-base);
+  font: var(--type-0) / 1.5 var(--base-font);
   background: var(--background);
+}
+
+::selection {
+  background: rgba(74, 183, 238, 0.3);
+  color: #06608e;
+}
+
+a {
+  color: var(--primary);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus-visible {
+  box-shadow: 0 0 0 4px #5a75b4;
+  outline: 2px solid #a2d1ff;
 }
 
 h1,
@@ -78,10 +83,55 @@ h2,
 h3,
 h4,
 h5,
-h6,
-b,
-strong {
-  font-weight: 600;
+h6 {
+  font-family: var(--heading-font);
+  letter-spacing: -0.03em;
+  font-weight: normal;
   color: var(--text-strong);
-  line-height: 1.2;
+  line-height: 1em;
+}
+
+h1 {
+  font-size: var(--type-5);
+}
+
+h2 {
+  font-size: var(--type-4);
+}
+
+h3 {
+  font-size: var(--type-3);
+}
+
+h4 {
+  font-size: var(--type-2);
+}
+
+h5 {
+  font-size: var(--type-1);
+}
+
+h6 {
+  font-size: var(--type-0);
+}
+
+small {
+  font-size: var(--type--2);
+}
+
+.header-anchor {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 120ms ease-in-out;
+  font-family: var(--base-font);
+}
+
+h1:hover > .header-anchor,
+h2:hover > .header-anchor,
+h3:hover > .header-anchor,
+h4:hover > .header-anchor,
+h5:hover > .header-anchor,
+h6:hover > .header-anchor {
+  visibility: visible;
+  opacity: 1;
 }

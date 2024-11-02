@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
   {% include "head.njk" %}
-  <body class="sk-app">
+  <body class="app-wrapper">
     {% include "header.njk" %}
     {% include "pageNavigation.njk" %}
     <main class="page-container">
-      {% block surfkit_base_layout %}
+      <header>
+        {% if header_title %}
+          {% set hd_header = header_title %}
+        {% else %}
+          {% set hd_header = title %}
+        {% endif %}
+        <h1 id="{{hd_header| slugify}}" tabindex="-1">{{hd_header}}
+          <a href="#{{hd_header| slugify}}" class="header-anchor">#</a>
+        </h1>
+        <p></p>
+      </header>
+      <article class="stack">
         {{ content | safe }}
-      {% endblock %}
+      </article>
+      {% include "aside.njk" %}
     </main>
     {% include "footer.njk" %}
-    <script data-goatcounter="https://surfscape.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
   </body>
 </html>

@@ -2,6 +2,7 @@
 title: Accessibility
 layout: single.njk
 date: 2024-06-16T12:15:48.000Z
+permalink: "/accessibility/"
 ---
 
 This page details some of our features to help with accessibility as well as accessibility tests the site has passed.

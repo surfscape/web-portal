@@ -16,7 +16,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginIcons, {
     sources: [
       {
-        name: "phosphor-fill",
+        name: "phosphor",
         path: "node_modules/@phosphor-icons/core/assets/fill",
       },
     ],
