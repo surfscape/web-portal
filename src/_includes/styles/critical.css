@@ -90,7 +90,7 @@ h6 {
   letter-spacing: -0.03em;
   font-weight: normal;
   color: var(--text-strong);
-  line-height: 1em;
+  line-height: 1.15em;
 }
 
 h1 {
@@ -128,6 +128,15 @@ small {
   font-family: var(--base-font);
 }
 
+h1:target,
+h2:target,
+h3:target {
+  padding-left: 0.5em;
+  background: hsla(214, 40%, 61%, 0.3);
+  color: var(--primary);
+  transition: 150ms all ease-in-out;
+}
+
 h1:hover > .header-anchor,
 h2:hover > .header-anchor,
 h3:hover > .header-anchor,
@@ -151,4 +160,9 @@ h6:hover > .header-anchor {
 
 ul > li > a:has(img) {
   display: inline-block;
+}
+
+.stack > * + * {
+  --_space: var(--spacer, 1em);
+  margin-top: var(--_space);
 }
