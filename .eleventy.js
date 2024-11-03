@@ -8,6 +8,7 @@ import { EleventyRenderPlugin } from "@11ty/eleventy";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import pluginIcons from "eleventy-plugin-icons";
 import postcssConfig from "postcss-load-config";
+import pluginTOC from "eleventy-plugin-toc";
 import filters from "./config/filters.js";
 
 export default async function (eleventyConfig) {
@@ -21,6 +22,7 @@ export default async function (eleventyConfig) {
       },
     ],
   });
+  eleventyConfig.addPlugin(pluginTOC);
 
   eleventyConfig.addPassthroughCopy("src/static");
 
