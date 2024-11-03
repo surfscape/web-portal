@@ -5,23 +5,40 @@
     <a href="#main-content" class="sk-button acs-skip">Skip to main content</a>
     {% include "header.njk" %}
     {% include "pageNavigation.njk" %}
-    <main class="page-container" id="main-content">
-      <header>
-        {% if header_title %}
-          {% set hd_header = header_title %}
-        {% else %}
-          {% set hd_header = title %}
-        {% endif %}
-        <h1 id="{{hd_header| slugify}}" tabindex="-1">{{hd_header}}
-          <a href="#{{hd_header| slugify}}" class="header-anchor">#</a>
-        </h1>
-        <p></p>
-      </header>
-      <article class="stack">
-        {{ content | safe }}
-      </article>
-      {% include "aside.njk" %}
-    </main>
+    {% block page_layout %}
+      <main class="home-container" id="main-content">
+        <header>
+          {% if header_title %}
+            {% set hd_header = header_title %}
+          {% else %}
+            {% set hd_header = title %}
+          {% endif %}
+          <h1 id="{{hd_header| slugify}}" tabindex="-1">{{hd_header}}
+            <a href="#{{hd_header| slugify}}" class="header-anchor">#</a>
+          </h1>
+          <p></p>
+        </header>
+        <article class="stack">
+          {{ content | safe }}
+        </article>
+        <aside>
+          <section class="stack">
+            <h2>Quickies</h2>
+            <ul class="aside-quickies">
+              {% for item in frontpage_news.quickies %}
+                <li>
+                  <b>{{item.title}}</b>
+                  <small>
+                    <time datetime="">{{item.date}}</time>
+                  </small>
+                  <p>{{item.content | safe}}</p>
+                </li>
+              {% endfor %}
+            </ul>
+          </section>
+        </aside>
+      </main>
+    {% endblock page_layout %}
     {% include "footer.njk" %}
   </body>
 </html>
