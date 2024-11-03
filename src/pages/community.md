@@ -1,11 +1,6 @@
 ---
 title: Community
-layout: page.njk
-hero_title: Retro Space
-hero_description: Official SurfScape Discord server partner.
-hero_banner: retro_space_earth_banner.png
-hero_banner_description: A photo of earth with the sun rising behind, with Y2K style letters saying RS as an acronym for Retro Space.
-sk_product: Retro Space
+layout: page
 permalink: "/community/"
 ---
 
