@@ -1,5 +1,5 @@
 {
-  "layout": "single.njk",
+  "layout": "page",
   "permalink": "/about/{{title | slugify}}/",
   "navigation": [
     {
