@@ -10,7 +10,10 @@ SurfScape is a project focused on developing resources, services, and software t
 
 ## Things to do
 
-As of now most of SurfScape is still in construction, however we are already offering content and services to everyone, although you should consider them in a still alpha state.
+As of now most of SurfScape is still in construction, however there is content available, but you should consider them in a alpha state.
+
+- [Templates](/library/templates) - Various website templates to start your own website with a good base.
+- [Community](/community) - Our Discord server (more platforms in the future).
 
 <!--
 
