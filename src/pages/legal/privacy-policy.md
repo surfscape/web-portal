@@ -1,8 +1,8 @@
 ---
 title: Privacy Policy
-date: 2024-06-29T01:02:48.000Z
-revision: 3
-permalink: "/privacy-policy/"
+update: 2024-11-09T16:46:48.000Z
+revision: 4
+permalink: "/privacy/"
 ---
 
 This document details our usage of non-personal and personal data. This also includes our methods of collecting data, our partners, and 3rd party services we use.
