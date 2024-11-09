@@ -36,33 +36,8 @@
 .home-container,
 .page-container {
   display: grid;
-  grid-template-columns: 1fr 16em;
-  grid-template-rows: auto 1fr;
-  padding-block: 1em;
   gap: 1em;
-}
-
-.home-container {
-  grid-template-areas:
-    "header aside"
-    "content aside";
-}
-
-.page-container {
-  grid-template-areas:
-    "header aside"
-    "content aside"
-    "footer footer";
-}
-
-.page-container > header,
-.home-container > header {
-  grid-area: header;
-}
-
-.page-container > article,
-.home-container > article {
-  grid-area: content;
+  padding-block: 1em;
 }
 
 .page-container > article ul * + *,
@@ -75,12 +50,9 @@
 
 .page-container > aside,
 .home-container > aside {
-  padding-left: 1em;
-  grid-area: aside;
-}
-
-.page-container > footer {
-  grid-area: footer;
+  margin-block-start: 1em;
+  padding-block-start: 1em;
+  border-top: 1px dotted var(--muted);
 }
 
 .app-footer {
@@ -100,4 +72,53 @@
 .aside-quickies li > b {
   display: block;
   font-size: 1.05em;
+}
+
+.page-footer {
+  border-top: 1px dotted var(--muted);
+  padding-block-start: 1rem;
+}
+
+@media (min-width: 750px) {
+  .home-container,
+  .page-container {
+    grid-template-columns: 1fr 16em;
+    grid-template-rows: auto 1fr;
+  }
+
+  .home-container {
+    grid-template-areas:
+      "header aside"
+      "content aside";
+  }
+
+  .page-container {
+    grid-template-areas:
+      "header aside"
+      "content aside"
+      "footer footer";
+  }
+
+  .page-container > header,
+  .home-container > header {
+    grid-area: header;
+  }
+
+  .page-container > article,
+  .home-container > article {
+    grid-area: content;
+  }
+
+  .page-container > aside,
+  .home-container > aside {
+    padding-inline-start: 1em;
+    grid-area: aside;
+    align-self: start;
+    position: sticky;
+    top: 0;
+  }
+
+  .page-container > footer {
+    grid-area: footer;
+  }
 }
