@@ -17,8 +17,8 @@
       {{ content | safe }}
     </article>
     {% include "aside.njk" %}
-    <footer>
-      <p>Last update: {{date}}</p>
+    <footer class="page-footer">
+      <p>Last update: {{ update | formatLocaleDate }}</p>
     </footer>
   </main>
 {% endblock %}
