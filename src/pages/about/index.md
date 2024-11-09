@@ -7,7 +7,7 @@ permalink: "/about/"
 
 SurfScape is a project created to offer services, content, and resources related to the open web, privacy, freedom of speech, and other related themes, all still being free as in free in beer and free in speech.
 
-The main home of the SurfScape project is at [Neocities](https://neocities.org,) with a plan in the future to be hosted on more places around the web.
+Currently the home of the SurfScape project is on [Neocities]() however we have plans to expand and offer more mirrors to be more resiliant.
 
 ## Instance Information
 
