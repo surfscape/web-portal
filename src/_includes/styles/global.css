@@ -79,6 +79,11 @@
   padding-block-start: 1rem;
 }
 
+.home-container > *,
+.page-container > * {
+  min-width: 0;
+}
+
 @media (min-width: 750px) {
   .home-container,
   .page-container {

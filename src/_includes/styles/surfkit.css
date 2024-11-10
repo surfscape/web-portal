@@ -58,41 +58,15 @@ button:active {
   gap: 0.5em;
 }
 
-/*
 hr {
   border: none;
   border-bottom: 1px solid var(--sk-color-outline);
 }
 blockquote {
-  padding: 0.25em 0.25em 0.25em 1em;
-  background: var(--sk-color-surface);
-  border-left: 0.25em solid var(--sk-color-outline);
+  padding: 0.25em 1em 0.25em 1em;
+  background: rgb(221, 221, 221);
+  border-left: 0.5em solid var(--primary);
 }
 summary {
   cursor: pointer;
 }
-table {
-  border-collapse: collapse;
-  border: 1px solid var(--sk-color-outline-variant);
-  overflow-x: auto;
-  font-size: 0.875em;
-  width: 100%;
-}
-tfoot,
-thead {
-  background-color: var(--sk-color-surface);
-  color: var(--sk-color-tp-heading);
-}
-thead th {
-  border: 1px solid var(--sk-color-outline-variant);
-  padding: 0.5em;
-}
-tbody td {
-  text-align: center;
-  border: 1px solid var(--sk-color-outline-variant);
-  padding: 0.25em;
-}
-.table-responsive {
-  overflow: auto;
-}
-*/

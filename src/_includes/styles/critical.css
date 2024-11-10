@@ -166,3 +166,27 @@ ul > li > a:has(img) {
   --_space: var(--spacer, 1em);
   margin-top: var(--_space);
 }
+
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--muted);
+  font: inherit;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+th,
+td {
+  padding: 0.3em 0.75em;
+}
+
+th {
+  padding: 0.3em 0.75em;
+  background: var(--muted);
+  text-align: left;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
