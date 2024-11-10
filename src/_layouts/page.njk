@@ -17,8 +17,15 @@
       {{ content | safe }}
     </article>
     {% include "aside.njk" %}
-    <footer class="page-footer">
-      <p>Last update: {{ update | formatLocaleDate }}</p>
-    </footer>
+    {% if update or archived == true %}
+      <footer class="page-footer">
+        {% if update %}
+          <p>Last update: {{ update | formatLocaleDate }}</p>
+        {% endif %}
+        {% if archived == true %}
+          <p>See <a href="/arc{{page.url}}">archive</a> for this page</p>
+        {% endif %}
+      </footer>
+    {% endif %}
   </main>
 {% endblock %}
