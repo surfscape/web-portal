@@ -21,6 +21,6 @@ The only requirement to join is to follow our guidelines/rules. When you're read
 <iframe src="https://discord.com/widget?id=891329789238063104&theme=dark"  height="400" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </div>
 
-If the widget does not load, or you currently have scripts blocked, below is a direct invite link.
+If the widget does not load, or you currently have scripts blocked, use the direct invite link below instead.
 
 <a href="https://discord.gg/6ekzg4m4tc" class="sk-button sk-button__primary" style="margin:0 auto">Join the Server</a>

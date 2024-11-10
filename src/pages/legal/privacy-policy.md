@@ -35,15 +35,16 @@ These are services that offer additional services that are not needed for basic 
 
 <div class="table-responsive">
 
-| Service provider | Service provided | Required?                               | Privacy Policy                                                       |
-| ---------------- | ---------------- | --------------------------------------- | -------------------------------------------------------------------- |
-| GoatCounter      | Telemetry        | No                                      | [goatcounter.com/help/privacy](https://goatcounter.com/help/privacy) |
-| Tally            | Form Service     | Yes <small><sup>[[1]](#1)</sup></small> | [tally.so/help/privacy-policy](https://tally.so/help/privacy-policy) |
+| Service provider | Service provided | Country of Operation | Required?                               | Privacy Policy                                                       |
+| ---------------- | ---------------- | -------------------- | --------------------------------------- | -------------------------------------------------------------------- |
+| Tally            | Form Service     | Europe               | Yes <small><sup>[[1]](#1)</sup></small> | [tally.so/help/privacy-policy](https://tally.so/help/privacy-policy) |
 
 </div>
 
 ## Changes to Privacy Policy
 
-We have the permission to alter this policy. A notice is announced a week prior before the change takes effect. Older revisions can be found here: <a href="/arc/privacy-policy">Privacy Policy archive</a>.
+We have the permission to alter this policy. A notice is announced a week prior before the change takes effect.
+
+## Footnotes
 
 > <a href="#1" id="1">[1]</a> - Tally is currently only used on the [Resources](/resources) page for submissions, if you don't fill the form or enter the resources page, the following does not apply.

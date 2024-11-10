@@ -1,3 +1,4 @@
 ---
 title: Library
+permalink: "/library/"
 ---
