@@ -4,4 +4,4 @@ layout: page
 permalink: "/projects/"
 ---
 
-Welcome to the SurfScape projects page.
+Welcome to the SurfScape projects page
