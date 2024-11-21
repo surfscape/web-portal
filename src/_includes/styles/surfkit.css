@@ -70,3 +70,19 @@ blockquote {
 summary {
   cursor: pointer;
 }
+
+.sk-card-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sk-card-list li {
+  padding: 0.75rem;
+  border: 1px solid var(--muted);
+}
+
+.sk-card-list li h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
