@@ -1,7 +1,7 @@
 <aside>
     <section class="stack">
         <h2>Table of contents</h2>
-        {% set toc = toc | default(true) %}
+        {% set toc = mod_toc | default(true) %}
         {% if toc == true %}
             {{ content | toc | safe }}
         {% endif %}
