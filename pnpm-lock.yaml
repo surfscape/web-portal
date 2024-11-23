@@ -32,6 +32,9 @@ importers:
       eleventy-plugin-icons:
         specifier: ^4.5.1
         version: 4.5.1
+      eleventy-plugin-reading-time:
+        specifier: ^0.0.1
+        version: 0.0.1
       html-minifier-terser:
         specifier: ^7.2.0
         version: 7.2.0
@@ -555,6 +558,9 @@ packages:
   eleventy-plugin-icons@4.5.1:
     resolution: {integrity: sha512-rwvLa05i6371avfdzt19KzBiVQc/9OLV7OGaD0X0sYzMFu6h+QkhtOGDTCOibUe5FXKDQGly3DQ0Us3IQlsKuw==}
     engines: {node: '>=16.20.2'}
+
+  eleventy-plugin-reading-time@0.0.1:
+    resolution: {integrity: sha512-6MRHwrWMYm/u9lJK4/mnyS+6SyQxJSQcTfa1DqQS9fpQRPsZ9mdO9rZ/6DAhZpX2/cXxrbc6qxgcv6Qj90im1g==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1912,6 +1918,8 @@ snapshots:
       just-memoize: 2.2.0
       just-typeof: 3.2.0
       kleur: 4.1.5
+
+  eleventy-plugin-reading-time@0.0.1: {}
 
   emoji-regex@8.0.0: {}
 
