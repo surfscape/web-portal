@@ -1,0 +1,17 @@
+---
+title: News
+permalink: "/news/"
+mod_toc: false
+layout: page
+---
+
+<ul>
+    {% for post in collections.news %}
+        <li>
+            <a href="{{post.url}}">
+                <h2>{{ post.data.title }}</h2>
+                <time datetime="{{post.date}}">{{post.date | formatPostDate}}</time>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

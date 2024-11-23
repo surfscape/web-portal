@@ -1,12 +1,24 @@
 {% extends "./base.njk" %}
 
-{% block surfkit_base_layout %}
-  <header class="page-header page-header--post">
-    <h1 class="display__1">{{title}}</h1>
-    <p class="subtitle__1">{{description}}</p>
-    <time datetime="{{date}}">{{ date | formatPostDate }}</time>
+{% block page_layout %}
+  <main class="page-container" id="main-content">
+    <header class="post-header">
+      {% set hd_header = title %}
+      <h1 id="{{hd_header| slugify}}" tabindex="-1">{{hd_header}}
+        <a href="#{{hd_header| slugify}}" class="header-anchor">#</a>
+      </h1>
+      <p>
+        <time datetime="{{date}}">{{date | formatPostDate}}</time> | Reading Time: {{ content | readingTime }}</span>
+    </p>
   </header>
-  <article class="sk-content sk-content--modified">
+  <article class="stack">
     {{ content | safe }}
   </article>
+  {% include "aside.njk" %}
+  {% if update %}
+    <footer class="page-footer">
+      <p>Last update: {{ update | formatLocaleDate }}</p>
+    </footer>
+  {% endif %}
+</main>
 {% endblock %}

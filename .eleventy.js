@@ -9,6 +9,7 @@ import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
 import pluginIcons from "eleventy-plugin-icons";
 import postcssConfig from "postcss-load-config";
 import pluginTOC from "@uncenter/eleventy-plugin-toc";
+import readingTime from "eleventy-plugin-reading-time";
 import filters from "./config/filters.js";
 
 export default async function (eleventyConfig) {
@@ -27,12 +28,13 @@ export default async function (eleventyConfig) {
     ignoredElements: ["a"],
     flat: true,
   });
+  eleventyConfig.addPlugin(readingTime);
 
   eleventyConfig.addPassthroughCopy("src/static");
 
   /* collections */
   eleventyConfig.addCollection("news", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("src/content/news/posts/*.md");
+    return collectionApi.getFilteredByGlob("src/pages/news/content/*.md");
   });
 
   /* layout aliases */
