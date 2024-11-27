@@ -5,4 +5,6 @@ archived: true
 
 ## Ocean
 
-Coming Soon ;)
+### v2.0.0
+
+**Initial public release!**
