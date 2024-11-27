@@ -86,3 +86,8 @@ summary {
   align-items: center;
   gap: 0.5em;
 }
+
+.sk-label {
+  font-size: var(--type--1);
+  color: var(--type-subtle);
+}
