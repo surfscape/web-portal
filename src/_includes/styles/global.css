@@ -128,3 +128,27 @@
     grid-area: footer;
   }
 }
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-list li {
+  border-left: 4px solid var(--primary);
+}
+
+.post-list li a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  transition: 150ms all ease-in-out;
+}
+
+.post-list li a time {
+  color: var(--type-subtle);
+}
+
+.post-list li a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
