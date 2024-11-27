@@ -13,10 +13,10 @@
       </h1>
       <p></p>
     </header>
+    {% include "aside.njk" %}
     <article class="stack">
       {{ content | safe }}
     </article>
-    {% include "aside.njk" %}
     {% if update or archived == true %}
       <footer class="page-footer">
         {% if update %}
