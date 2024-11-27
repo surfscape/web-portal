@@ -48,7 +48,12 @@
   margin-top: var(--_space);
 }
 
-.page-container > aside,
+.page-container > aside {
+  padding-block: 0.5em;
+  border-top: 1px dotted var(--muted);
+  border-bottom: 1px dotted var(--muted);
+}
+
 .home-container > aside {
   margin-block-start: 1em;
   padding-block-start: 1em;
@@ -118,6 +123,9 @@
   .page-container > aside,
   .home-container > aside {
     padding-inline-start: 1em;
+
+    padding-block-start: 1em;
+
     grid-area: aside;
     align-self: start;
     position: sticky;
