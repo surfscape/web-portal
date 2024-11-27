@@ -22,20 +22,7 @@
           {{ content | safe }}
         </article>
         <aside>
-          <section class="stack">
-            <h2>Quickies</h2>
-            <ul class="aside-quickies">
-              {% for item in frontpage_news.quickies %}
-                <li>
-                  <b>{{item.title}}</b>
-                  <small>
-                    <time datetime="">{{item.date}}</time>
-                  </small>
-                  <p>{{item.content | safe}}</p>
-                </li>
-              {% endfor %}
-            </ul>
-          </section>
+          {% include "quickies.njk" %}
         </aside>
       </main>
     {% endblock page_layout %}

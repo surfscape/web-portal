@@ -1,9 +1,10 @@
 <aside>
-    <section class="stack">
-        <h2>Table of contents</h2>
-        {% set toc = mod_toc | default(true) %}
-        {% if toc == true %}
-            {{ content | toc | safe }}
-        {% endif %}
-    </section>
+    {% if slots.sidebar %}
+        {% renderTemplate 'njk,md',
+        slots %}
+        {{ sidebar | safe }}
+        {% endrenderTemplate %}
+    {% else %}
+        {% include "toc.njk" %}
+    {% endif %}
 </aside>

@@ -1,11 +1,14 @@
 ---
 title: News
 permalink: "/news/"
-mod_toc: false
 layout: page
 ---
 
-<ul>
+{% slot 'sidebar' %}
+{% include "quickies.njk" %}
+{% endslot %}
+
+<ul class="post-list">
     {% for post in collections.news %}
         <li>
             <a href="{{post.url}}">
