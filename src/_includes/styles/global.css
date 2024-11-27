@@ -123,9 +123,8 @@
   .page-container > aside,
   .home-container > aside {
     padding-inline-start: 1em;
-
     padding-block-start: 1em;
-
+    border-bottom: 0;
     grid-area: aside;
     align-self: start;
     position: sticky;
