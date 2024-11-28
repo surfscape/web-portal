@@ -4,7 +4,7 @@
   --type-1: clamp(1.125rem, 1.0313rem + 0.4688vw, 1.2656rem);
   --type-2: clamp(1.2656rem, 1.1602rem + 0.5273vw, 1.4238rem);
   --type-3: clamp(1.4238rem, 1.3052rem + 0.5933vw, 1.6018rem);
-  --type-4: clamp(1.6018rem, 1.4683rem + 0.6674vw, 1.802rem);
+  --type-4: clamp(1.6018rem, 1.4683rem + 0.6674vw, 2.25rem);
   --type-5: clamp(1.802rem, 1.1371rem + 3.3244vw, 2.7994rem);
 
   --heading-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,

@@ -2,7 +2,7 @@
 title: Ecosystem
 ---
 
-This page contains a list of all SurfScape services and applications and their privacy policy and their website.
+This page contains a list of all SurfScape services & applications and their privacy policy and web location.
 
 <div class="table-resposive">
 

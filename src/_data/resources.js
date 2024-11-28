@@ -96,7 +96,7 @@ export default {
   ],
   fonts: [
     {
-      title: "Dafont",
+      title: "DaFont",
       description: "Archive of freely downloadable fonts.",
       url: "https://www.dafont.com/",
     },
