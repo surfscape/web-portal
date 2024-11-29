@@ -18,14 +18,6 @@
         {
           "title": "Ecosia",
           "url": "https://ecosia.org"
-        },
-        {
-          "title": "Google",
-          "url": "https://google.com"
-        },
-        {
-          "title": "Bing",
-          "url": "https://bing.com"
         }
       ]
     },
@@ -41,20 +33,8 @@
           "url": "https://tutanota.com"
         },
         {
-          "title": "Skiff Mail",
-          "url": "https://skiff.com/mail"
-        },
-        {
           "title": "Disroot",
           "url": "https://disroot.org"
-        },
-        {
-          "title": "Outlook",
-          "url": "https://outlook.com"
-        },
-        {
-          "title": "Gmail",
-          "url": "https://mail.google.com"
         }
       ]
     },
@@ -62,42 +42,22 @@
       "title": "Cloud Storage",
       "links": [
         {
-          "title": "Mega",
-          "url": "https://mega.nz"
-        },
-        {
           "title": "Proton Drive",
           "url": "https://proton.me/drive"
+        },
+        {
+          "title": "Filen",
+          "url": "https://filen.io/"
         },
         {
           "title": "Tresorit",
           "url": "https://tresorit.com/"
         },
         {
-          "title": "Skiff Drive",
-          "url": "https://skiff.com/drive"
-        },
-        {
-          "title": "Dropbox",
-          "url": "https://www.dropbox.com/"
-        },
-        {
-          "title": "Google Drive",
-          "url": "https://drive.google.com"
+          "title": "MEGA",
+          "url": "https://mega.nz"
         }
       ]
-    }
-  ],
-  "neocitiesDir": [
-    {
-      "title": "angel",
-      "url": "https://artangel.neocities.org", 
-      "summary": "Your ultimate destination for all things pastel perfection! ⸜(｡˃ ᵕ ˂ )⸝♡ ⟶ Art, links, resources etc. "
-    }, 
-    {
-      "title": "Neonriser",
-      "url": "https://neonriser.neocities.org",
-      "summary": "A dream journal with extra spice. Enjoy!"
     }
   ]
 }
