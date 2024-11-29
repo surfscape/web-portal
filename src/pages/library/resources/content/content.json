@@ -1,4 +1,4 @@
 {
-  "layout": "page.njk",
+  "layout": "page",
   "permalink": "/resources/{{title | slugify }}/"
 }
