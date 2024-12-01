@@ -9,7 +9,7 @@ Find stuff from web building resources, responsive layouts, icons and fonts, web
     <li>
     <h3 id="directory" tabindex="-1">Directory</h3>
     <p>A simple directory of various web services ranked by privacy.</p>
-    <a href="/library/directory" class="sk-button sk-util-title" title="directory">Go to directory</a>
+    <a href="/library/directory" class="sk-button" title="directory">Go to directory</a>
     </li>
     <li>
     <h3 id="resources" tabindex="-1">Resources</h3>
