@@ -1,0 +1,37 @@
+---
+title: Directory
+---
+
+{%- for directorySites in directory.directorySites -%}
+
+    <section class="sk-card stack" style="--radius: var(--rad-3);">
+
+        <h2 id="{{ directorySites.title | slugify }}">{{ directorySites.title }}</h2>
+
+        <div class="auto-grid" style="--min-size: 300px;">
+
+            {%- for item in directorySites.links -%}
+
+                <section class="sk-card" style="--radius: var(--rad-2);">
+
+                    <h3 id="{{item.title | slugify}}" style="margin-bottom:0.5em;display:flex;justify-content:space-between;">{{item.title}}
+                        <span style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+                            {%- for features in item.features -%}
+                                <span class="sk-util-title"  title="{{features.title}}">
+                                    <img src="/static/icons/{{features.icon}}.svg" alt="{{features.title}}" width="20px" height="20px">
+                                </span>
+                            {%- endfor -%}
+                        </span>
+                    </h3>
+
+                    <a href="{{item.url}}" class="sk-button">Learn More <img src="/static/icons/external.svg" alt="This is an external link" target="_blank" rel="noopener" width="20px" height="20px"></a>
+
+                </section>
+
+            {%- endfor -%}
+
+        </div>
+
+    </section>
+
+{%- endfor -%}

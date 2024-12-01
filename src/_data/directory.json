@@ -58,6 +58,34 @@
           "url": "https://mega.nz"
         }
       ]
+    },
+    {
+      "title": "Messaging",
+      "links": [
+        {
+          "title": "Signal",
+          "url": "https://signal.org",
+          "features": [
+            {
+              "title": "End-to-End Encrypted",
+              "icon": "lock"
+            },
+            {
+              "title": "Open Source",
+              "icon": "door-open"
+            }
+          ]
+        },
+        {
+          "title": "Matrix",
+          "url": "https://matrix.org"
+        },
+
+        {
+          "title": "Threema",
+          "url": "https://threema.ch/en"
+        }
+      ]
     }
   ]
 }
