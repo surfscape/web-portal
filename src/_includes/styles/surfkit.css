@@ -106,7 +106,6 @@ summary {
   --_trans-speed: 225ms;
   content: attr(title);
   position: absolute;
-  display: block;
   margin: auto;
   left: 0;
   right: 0;
