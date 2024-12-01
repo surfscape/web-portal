@@ -15,7 +15,10 @@ html {
 
 a:focus-visible,
 button:focus-visible,
-.sk-button:focus-visible {
+.sk-button:focus-visible,
+a:focus,
+button:focus,
+.sk-button:focus {
   box-shadow: 0 0 0 4px #5a75b4;
   outline: 2px solid #a2d1ff;
 }
