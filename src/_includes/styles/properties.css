@@ -15,7 +15,12 @@
   --viewport: 1024px;
   --background: hsl(0, 0%, 95%);
   --primary: hsl(214, 80%, 30%);
+  --primary-state: hsl(214, 75%, 37%);
   --type-base: hsl(0, 0%, 10%);
   --type-subtle: hsl(0, 0%, 27%);
   --muted: hsl(0, 0%, 77%);
+
+  --rad-1: 0.3rem;
+  --rad-2: 0.6rem;
+  --rad-3: 0.9rem;
 }
