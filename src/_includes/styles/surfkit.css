@@ -15,41 +15,37 @@
 
 .sk-button,
 button {
-  --_sk-btn-bg: var(--sk-btn-bg, var(--sk-color-accent));
-  --_sk-btn-color: var(--sk-btn-color, var(--sk-color-on-accent));
-  --_sk-btn-border: var(--sk-btn-border, var(--sk_sk-btn-bg));
+  --_sk-btn-bg: var(--sk-btn-bg, var(--primary));
+  --_sk-btn-color: var(--sk-btn-color, white);
+  --_sk-btn-border: var(--sk-btn-border, var(--primary));
   display: flex;
   align-items: center;
   width: max-content;
-  padding: 0.5em 0.75em;
-  background: var(--primary);
-  color: white;
+  padding: 0.35em 0.65em;
+  background: var(--_sk-btn-bg);
+  border-radius: var(--rad-1);
+  color: var(--_sk-btn-color);
+  border: 1px solid var(--_sk-btn-border);
   text-decoration: none;
   cursor: pointer;
   gap: 0.5em;
-  transition: 150ms all ease-in-out;
+  transition: 175ms all ease-in-out;
 }
 
 .sk-button:hover,
 button:hover {
-  --_sk-btn-bg-hover: var(--sk-btn-bg-hover, var(--sk-color-accent--state));
-  --_sk-btn-color-hover: var(--sk-btn-color-hover, var(--sk-color-on-accent));
-  --_sk-btn-border-hover: var(--sk-btn-border-hover, var(--sk-btn-bg-hover));
-  background: var(--muted);
-  color: var(--type-base);
-  outline: 2px solid var(--primary);
-  outline-offset: 2px;
+  --_sk-btn-bg-hover: var(--sk-btn-bg-hover, var(--primary-state));
+  --_sk-btn-color-hover: var(--sk-btn-color-hover, white);
+  --_sk-btn-border-hover: var(--sk-btn-border-hover, var(--primary-state));
+  background: var(--_sk-btn-bg-hover);
+  color: var(--_sk-btn-color-hover);
+  border-color: var(--_sk-btn-border-hover);
 }
 
 .sk-button svg,
 button svg {
   width: 1em;
   height: 1em;
-}
-
-.sk-button:active,
-button:active {
-  outline-color: var(--type-base);
 }
 
 .sk-btnrow {
@@ -62,6 +58,7 @@ hr {
   border: none;
   border-bottom: 1px solid var(--sk-color-outline);
 }
+
 blockquote {
   padding: 0.25em 1em 0.25em 1em;
   background: rgb(221, 221, 221);
@@ -76,9 +73,13 @@ summary {
   padding: 0;
 }
 
-.sk-card-list li {
-  padding: 0.75rem;
+.sk-card-list li,
+.sk-card {
+  --_radius: var(--radius, var(--rad-2));
+  padding: 1rem;
+  border-radius: var(--_radius);
   border: 1px solid var(--muted);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .sk-card-list li h3 {
@@ -92,26 +93,50 @@ summary {
   color: var(--type-subtle);
 }
 
-.auto-grid {
-  --_min-size: var(--min-size, 200px);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--_min-size), 1fr));
-}
-
+/* custom tooltip/title style */
 .sk-util-title {
   position: relative;
 }
 
-.sk-util-title:hover::after {
+.sk-util-title {
+  position: relative; /* Ensure the ::after element is positioned correctly */
+}
+
+.sk-util-title::after {
+  --_trans-speed: 225ms;
   content: attr(title);
   position: absolute;
-  top: -100%;
+  display: block;
   margin: auto;
   left: 0;
   right: 0;
+  opacity: 0;
   text-align: center;
-  width: fit-content;
+  width: max-content;
+  visibility: hidden;
   background: white;
+  font-size: 1rem;
+  color: var(--type-subtle);
+  border-radius: var(--rad-1);
+  border: 1px solid var(--muted);
   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
   padding: 0.1rem 0.5rem;
+  transform: translateY(16px) scale(0);
+  transition: transform var(--_trans-speed) ease,
+    opacity var(--_trans-speed) ease, visibility var(--_trans-speed) ease;
+  transition-delay: 200ms;
+  z-index: 999;
+}
+
+.sk-util-title:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-4rem) scale(1);
+}
+
+.auto-grid {
+  --_min-size: var(--min-size, 200px);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(var(--_min-size), 1fr));
 }
