@@ -12,7 +12,8 @@ SurfScape is a project focused on developing resources, services, and software t
 
 As of now most of SurfScape is still in construction, however there is content available, but you should consider them in a alpha state.
 
-- [Templates](/library/templates) - Various website templates to start your own website with a good base.
+- [Directory](/library/directory) - Various web services categorized and ranked by their privacy measures;
+- [Resources](/library/resources) - Sites and resources on various topics (web building, minimalism, etc);
 - [Community](/community) - Our Discord server (more platforms in the future).
 
 <!--
