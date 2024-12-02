@@ -98,10 +98,6 @@ summary {
   position: relative;
 }
 
-.sk-util-title {
-  position: relative; /* Ensure the ::after element is positioned correctly */
-}
-
 .sk-util-title::after {
   --_trans-speed: 225ms;
   content: attr(title);
