@@ -12,7 +12,7 @@ export default {
       projectTitle: "Labs",
       projectSummary:
         "A place to plan and test new services and features from the SurfScape project.",
-      projectPage: "/p/labs",
+      projectPage: "https://github.com/surfscape/labs",
       projectBrand: "labs.png",
     },
   ],
