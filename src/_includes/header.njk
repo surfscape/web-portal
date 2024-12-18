@@ -1,6 +1,6 @@
 <header class="app-header">
   <a href="/" style="display:inline-block;" title="Go to home">
-    <img src="/static/images/branding/logo_dark.png" alt="SurfScape Petal logo in dark gray" height="56px"></a>
+    <img src="/static/images/branding/logo_light.png" alt="SurfScape Petal logo in dark gray" height="56px"></a>
   <nav class="app-navbar">
     {% for nav in nav.mainNav %}
       <a href="{{nav.url}}" {% if (nav.url != "/" and page.url.startsWith(nav.url)) or page.url == nav.url %}aria-current="page"{% endif %}>{{nav.title}}</a>
