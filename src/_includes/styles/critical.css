@@ -202,3 +202,14 @@ th {
   width: 100%;
   overflow-x: auto;
 }
+
+input {
+  border-radius: 4px;
+  background: #454750;
+  border: none;
+  padding: 0.25rem 0.5rem;
+}
+
+input::placeholder {
+  color: #afb0b2;
+}
