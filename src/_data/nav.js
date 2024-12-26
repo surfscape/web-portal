@@ -21,7 +21,11 @@ export default {
       url: "/community/",
     },
     {
-      title: "About Us",
+      title: "Extras",
+      url: "/extras/",
+    },
+    {
+      title: "About",
       url: "/about/",
     },
   ],
