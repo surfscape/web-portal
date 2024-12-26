@@ -12,13 +12,15 @@
   --base-font: system-ui, "Inter", "Helvetica", "Segoe UI", "Ubuntu", "Roboto",
     "Cantarell", "Noto Sans", "San Francisco", sans-serif;
 
-  --viewport: 1024px;
-  --background: hsl(220, 3%, 19%);
+  --viewport: 1216px;
+  --background: #35363b;
   --primary: hsl(214, 52%, 50%);
   --primary-state: hsl(214, 50%, 55%);
   --type-base: hsl(0, 0%, 98%);
   --type-subtle: hsl(0, 0%, 84%);
   --muted: hsl(0, 0%, 34%);
+
+  --container-bg: #24262d;
 
   --rad-1: 0.3rem;
   --rad-2: 0.6rem;
