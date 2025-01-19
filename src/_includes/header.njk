@@ -1,19 +1,21 @@
 <header class="app-header">
   <a href="/" style="display:inline-block;" title="Go to home">
-    <img src="/static/images/branding/logo_light.png" alt="SurfScape Petal logo in dark gray" height="94px">
+    <img src="/static/images/branding/logo_light.png" alt="SurfScape Petal logo in dark gray" height="76px">
   </a>
-  <div class="stack" style="--spacer:0.5em;">
-    <noscript>The search feature needs JavaScript to work.</noscript>
-    <form id="searchFeature">
-      <input type="text" placeholder="Search SurfScape">
-      <button for="" class="sk-icon-btn">
-        <span class="ic--drop-down-cirlce-outline-rounded"></span></button>
-    </form>
-
-    <nav class="app-navbar">
-      {% for nav in nav.mainNav %}
-        <a href="{{nav.url}}" {% if (nav.url != "/" and page.url.startsWith(nav.url)) or page.url == nav.url %}aria-current="page"{% endif %}>{{nav.title}}</a>
-      {% endfor %}
-    </nav>
-  </div>
+  <noscript>The search feature needs JavaScript to work.</noscript>
+  <form id="searchFeature">
+    <input type="text" placeholder="Search SurfScape">
+    <button for="" class="sk-icon-btn">
+      <span class="ic--search-rounded"></span></button>
+  </form>
 </header>
+<div class="navbar-container">
+  <nav class="app-navbar" id="navbar">
+    {% for nav in nav.mainNav %}
+      <a href="{{nav.url}}" {% if (nav.url != "/" and page.url.startsWith(nav.url)) or page.url == nav.url %}aria-current="page"{% endif %}>{{nav.title}}</a>
+    {% endfor %}
+  </nav>
+  <a href="#navbar" class="sk-button sk-icon-btn">
+    <span class="ic--drop-down-cirlce-outline-rounded"></span></a>
+</div>
+</div>

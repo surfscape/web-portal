@@ -57,21 +57,51 @@ img.full-width {
 
 .app-header {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 0.5rem;
-  align-items: flex-end;
 }
 
-.app-header a {
+.app-header > a {
+  flex-shrink: 0;
+}
+
+.app-header a,
+.app-navbar a {
   display: inline-block;
   transition: 175ms all ease-in-out;
 }
 
-.app-header a:hover {
+.app-header a:hover,
+.app-navbar a:hover {
   background: hsla(217, 25%, 20%, 0.5);
 }
 
 .app-header > a {
   padding: 1rem;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: baseline;
+}
+
+#navbar:target {
+  height: auto;
+  overflow: initial;
+}
+
+#navbar:target ~ a[href="#navbar"] span {
+  rotate: 180deg;
+}
+
+.app-navbar {
+  display: flex;
+  align-items: center;
+  height: 3em;
+  padding-inline: 4px;
+  overflow-x: hidden;
 }
 
 .app-navbar a {
@@ -83,8 +113,8 @@ img.full-width {
 }
 
 .app-navbar a[aria-current="page"] {
-  outline: 1px solid var(--primary);
-  color: var(--primary);
+  outline: 1px solid var(--accent);
+  color: var(--accent);
 }
 
 .home-container,
