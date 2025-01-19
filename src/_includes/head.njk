@@ -26,13 +26,14 @@
     {% include "styles/global.css" %}
     {% include "styles/properties.css" %}
     {% include "styles/features.css" %}
+
     {% endcss %}
     <style>
         {% getBundle "css" %}
     </style>
     {% css "surfkit" %}
-    {% include "styles/icons.css" %}
     {% include "styles/surfkit.css" %}
+    {% include "styles/icons.css" %}
     {% endcss %}
     <link rel="stylesheet" href="{% getBundleFileUrl 'css', 'surfkit' %}">
     {% if style_slot %}
