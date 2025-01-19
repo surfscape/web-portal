@@ -71,12 +71,12 @@ body {
 }
 
 ::selection {
-  background: rgba(74, 183, 238, 0.3);
-  color: #06608e;
+  background: hsla(217, 20%, 60%, 0.3);
+  color: #81a9ea;
 }
 
 a {
-  color: var(--primary);
+  color: var(--accent);
 }
 
 a:hover {
@@ -140,8 +140,8 @@ b {
 h1:target,
 h2:target,
 h3:target {
-  background: hsla(214, 40%, 61%, 0.3);
-  color: var(--primary);
+  background: hsla(217, 20%, 60%, 0.3);
+  color: #81a9ea;
 }
 
 .header-anchor {
@@ -205,11 +205,11 @@ th {
 
 input {
   border-radius: 4px;
-  background: #454750;
+  background: var(--container-bg);
   border: none;
   padding: 0.25rem 0.5rem;
 }
 
 input::placeholder {
-  color: #afb0b2;
+  color: var(--muted);
 }

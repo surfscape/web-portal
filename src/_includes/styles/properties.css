@@ -7,22 +7,22 @@
   --type-4: clamp(1.6018rem, 1.4683rem + 0.6674vw, 2.25rem);
   --type-5: clamp(1.802rem, 1.1371rem + 3.3244vw, 2.7994rem);
 
-  --heading-font: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
-    serif;
+  --heading-font: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+    "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
   --base-font: system-ui, "Inter", "Helvetica", "Segoe UI", "Ubuntu", "Roboto",
     "Cantarell", "Noto Sans", "San Francisco", sans-serif;
 
-  --viewport: 1216px;
-  --background: #35363b;
-  --primary: hsl(214, 52%, 50%);
-  --primary-state: hsl(214, 50%, 55%);
-  --type-base: hsl(0, 0%, 98%);
-  --type-subtle: hsl(0, 0%, 84%);
-  --muted: hsl(0, 0%, 34%);
+  --viewport: 1172px;
+  --background: hsl(217, 20%, 13%);
+  --accent: hsl(217, 89%, 72%);
+  --primary: hsl(217, 54%, 50%);
+  --primary-state: hsl(217, 60%, 37%);
+  --type-base: hsl(217, 63%, 89%);
+  --type-subtle: hsl(217, 35%, 75%);
+  --muted: hsl(217, 35%, 71%);
 
-  --container-bg: #24262d;
+  --container-bg: hsl(217, 20%, 20%);
 
-  --rad-1: 0.3rem;
-  --rad-2: 0.6rem;
-  --rad-3: 0.9rem;
+  --rad: 0.35rem;
+  color-scheme: dark;
 }

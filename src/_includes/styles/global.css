@@ -44,6 +44,7 @@ img.full-width {
 
 .app-toolbar {
   background: var(--container-bg);
+  padding: 0.5rem 0;
 }
 
 .app-toolbar nav {
@@ -56,15 +57,17 @@ img.full-width {
 
 .app-header {
   display: flex;
+  gap: 0.5rem;
   align-items: flex-end;
 }
 
 .app-header a {
   display: inline-block;
+  transition: 175ms all ease-in-out;
 }
 
 .app-header a:hover {
-  background: #484a51;
+  background: hsla(217, 25%, 20%, 0.5);
 }
 
 .app-header > a {
