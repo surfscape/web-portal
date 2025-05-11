@@ -1,4 +1,6 @@
-# Web Portal
+# Web Portal [DEPRECATED]
+
+**The web portal has been deprecated and replaced with [surfscape/surfscape](https://github.com/surfscape/surfscape)**
 
 The source code for the SurfScape web portal (project frontpage, news, updates, content, access to other services, and more).
 
